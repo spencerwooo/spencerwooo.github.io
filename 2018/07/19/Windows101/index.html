@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spencer&#39;s Blog">
+    <meta name="keyword"  content="Spencer">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/web_icon.svg" color="#FFFFFF">
+
+    <title>
+        
+          Windows One On One - Spencer Woo
+        
+    </title>
+
+    <link rel="canonical" href="https://spencerwoo.com/2018/07/19/Windows101/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spencer Woo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/about/">BIO</a>
+                        </li>
+                        
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/people/">GODS</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">TAG</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">ARCHIVES</a>
+                        </li>
+                        
+
+                    
+
+                    <li>
+                        <a href="https://500px.com/spencerwoo98/galleries">PORTFOLIO</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+        /* background-image: url('https://i.loli.net/2018/07/18/5b4e145827a18.png') */
+        background-image: url('https://i.loli.net/2018/07/18/5b4e145827a18.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                            <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                tutorial
+                            </a>
+                            
+                            <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                sexy moves
+                            </a>
+                            
+                    </div>
+                    <h1>Windows One On One</h1>
+                    <h2 class="subheading">从 macOS 转换到 Windows 生态圈的自我修养</h2>
+                    <span class="meta">
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-book"></i>
+                        </span> 作者
+                    Spencer Woo
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-calendar"></i>
+                        </span> 日期
+                        2018-07-19
+                            <br><br>
+                            <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-bar-chart"></i>
+                        </span> 共
+                            2,329 字
+                                <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-hourglass-2"></i>
+                        </span> 可能要读上
+                                9 分钟
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <script src="/assets/js/APlayer.min.js"> </script><p>Hi~ o(<em>￣▽￣</em>)ブ</p>
+<p>我最近将自己的全部家当从 macOS 转移到了 Windows，为了更大的屏幕，更符合人类的键盘和更多的 USB 接口。当然，这也带来了卓越的性能提升和更多的折腾机会。毕竟，好看是第一生产力。</p>
+<p><img src="https://i.loli.net/2018/03/11/5aa5377418b17.jpg" alt="img"></p>
+<h1 id="0x01-macOS-上什么让我在折腾完全部家当之后依旧流连忘返？"><a href="#0x01-macOS-上什么让我在折腾完全部家当之后依旧流连忘返？" class="headerlink" title="0x01 macOS 上什么让我在折腾完全部家当之后依旧流连忘返？"></a>0x01 macOS 上什么让我在折腾完全部家当之后依旧流连忘返？</h1><p>我不得不承认我的 12“ MacBook 性能羸弱（Intel Core™ m5-6Y54），接口贫瘠（USB Type-C × 1 和耳机孔 × 1），但是我也不得不承认这些都不妨碍我这两年来用 macOS 的体验，我在它上面用 Final Cut Pro X 剪出了我的第一个视频，用 Android Studio 编译了我的第一个安卓项目，用 iTerm2 + oh-my-zsh 的环境与 <code>Git</code> 项目管理工具在 GitHub 上发布了我的第一个项目，也用 Typora 写出并用 <code>hexo</code> 搭建了我的第一篇博客。 两年来，我真切的体验了 macOS 的生产力。</p>
+<blockquote>
+<p>是的，我用 m5 渲染了一个五分钟的 1080p 的视频，渲染了半个小时有余，MacBook 烫的可以煎鸡蛋 🍳。</p>
+</blockquote>
+<p>讲道理，macOS 上最让我依赖的，作为从事软件与计算机方面学习的我来说，是一套可以媲美 Linux 的开发环境。比如包管理系统 <code>Homebrew</code>，原生的 <code>ssh</code> 与 <code>git</code> 等等，这些大大方便了我的学习过程。据我所知，在 WSL (Windows Subsystem for Linux) 还尚未普及的时候，Windows 上用 <code>Cygwin</code> 或者 <code>Git Bash</code> 等等做代替都很难受，这也让在 Windows 上配置可用的终端环境、开发环境都异常艰难。</p>
+<p>除此之外，在 Windows 上我也很艰苦的寻找了 iCloud，AirDrop 等等的替代品，以及无缝衔接剪贴板同步的方式。这些补救方法虽然看似拙劣，但确实提升了我同时使用 iPhone 和 Windows 的体验，可以近似的媲美 macOS 与 iPhone 的无缝联动了。</p>
+<p><br></p>
+<h1 id="0x02-Windows-上面我都做了哪些补救？"><a href="#0x02-Windows-上面我都做了哪些补救？" class="headerlink" title="0x02 Windows 上面我都做了哪些补救？"></a>0x02 Windows 上面我都做了哪些补救？</h1><h3 id="1-开发环境"><a href="#1-开发环境" class="headerlink" title="1. 开发环境"></a>1. 开发环境</h3><blockquote>
+<p>Reference: <a href="https://github.com/lloydstubber/my-wsl-setup" target="_blank" rel="noopener">My WSL Setup by lloydstubber</a></p>
+</blockquote>
+<p>经过近两年的开发，目前 Windows Subsystem For Linux（以下简称 WSL）已经十分完善。我从微软商店下载安装了 Ubuntu 18.04 作为 WSL 的系统，并使用 Ubuntu 下的 <code>aptitude</code> 包管理工具链配置了我的开发环境。安装 WSL 的详细步骤在 –&gt; <a href="https://docs.microsoft.com/zh-cn/windows/wsl/install-win10" target="_blank" rel="noopener">这里</a>。</p>
+<p><img src="https://i.loli.net/2018/07/19/5b4f7a8b68d2a.png" alt="ubuntu.png"></p>
+<p>在 WSL 中我安装了我的必备开发工具：</p>
+<ul>
+<li><code>git</code> 代码版本控制</li>
+<li><code>ssh</code> 远程服务器连接 🔗</li>
+<li><code>zsh</code> 与 <code>oh-my-zsh</code> Shell 环境</li>
+</ul>
+<p>在 Windows 中我通过 Hyper 终端环境进行实战。</p>
+<p>Hyper 是一个基于 Election 的终端 Terminal Emulator，是一个插件丰富的、跨平台的终端。我写过一个有关它的详细介绍，在这里 –&gt; <a href="https://spencerwoo.com/2018/06/16/Terminal/">HOW TO | 让自己的终端漂亮得不像实力派</a>。在 Windows 下，可以通过 Hyper 调用 WSL <code>bash.exe</code>，这样就不用面对万恶的小黑框了 😈。</p>
+<ol>
+<li>更改 <code>.hyper.js</code>（打开 Hyper 之后调用快捷键 <code>Ctrl</code> + <code>,</code> 来开启）将 <code>shell</code> 一项改为：<code>shell: &#39;C:\\Windows\\System32\\bash.exe&#39;</code>，重启终端，这样 Hyper 就可以开启 WSL 环境；</li>
+<li>安装主题与插件：WSL 下直接运行 <code>hyper</code> 命令有问题，可以通过直接在 <code>.hyper.js</code> 中的 <code>plugins</code> 一项中添加主题或插件名称来安装；</li>
+<li>WSL 终端的一些命令执行后字体渲染有问题，我们通过这样的方式进行完善 <code>ls</code> 和 <code>cd</code> 之后显示的颜色，在 <code>.zshrc</code> 文件尾部添加如下代码：<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash">Change ls colours</span></div><div class="line">LS_COLORS="ow=01;36;40" &amp;&amp; export LS_COLORS</div><div class="line"></div><div class="line"><span class="meta">#</span><span class="bash">make <span class="built_in">cd</span> use the ls colours</span></div><div class="line">zstyle ':completion:*' list-colors "$&#123;(@s.:.)LS_COLORS&#125;"</div><div class="line">autoload -Uz compinit</div><div class="line">compinit</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这样一套可用的 WSL 终端环境就基本完工了。</p>
+<p><img src="https://i.loli.net/2018/07/19/5b4f8002ad837.png" alt="hyper.png"></p>
+<h3 id="2-效率工具"><a href="#2-效率工具" class="headerlink" title="2. 效率工具"></a>2. 效率工具</h3><blockquote>
+<p>Reference: <a href="https://github.com/Awesome-Windows/Awesome" target="_blank" rel="noopener">Awesome Windows on GitHub</a></p>
+</blockquote>
+<h4 id="①-Wox-An-effective-launcher-for-windows-和-Everything-The-fastest-file-folder-search-tool-by-name"><a href="#①-Wox-An-effective-launcher-for-windows-和-Everything-The-fastest-file-folder-search-tool-by-name" class="headerlink" title="① Wox -  An effective launcher for windows 和 Everything - The fastest file/folder search tool by name"></a>① <a href="https://github.com/Wox-launcher/Wox" target="_blank" rel="noopener">Wox -  An effective launcher for windows</a> 和 <a href="https://www.voidtools.com/" target="_blank" rel="noopener">Everything - The fastest file/folder search tool by name</a></h4><p><img src="https://i.loli.net/2018/07/19/5b502832a3a27.png" alt="wox.png"></p>
+<p>这两个完美结合，可以媲美 macOS 上的 Alfred。</p>
+<p>Wox 是 Windows 上大名鼎鼎的效率工具，免费、开源，我派对它有详尽的介绍 –&gt; 在<a href="https://sspai.com/post/33460" target="_blank" rel="noopener">这里</a>。</p>
+<h4 id="②-QuickLook-一个空格键预览工具"><a href="#②-QuickLook-一个空格键预览工具" class="headerlink" title="② QuickLook - 一个空格键预览工具"></a>② QuickLook - 一个空格键预览工具</h4><p><img src="https://i.loli.net/2018/07/19/5b4f81ba243c8.png" alt="quicklook.png"></p>
+<p>macOS 上的空格预览文件内容绝对是一个经典，用过的人赞不绝口。在 Windows 上，这款 QuickLook 程序可以完美实现空格预览的功能，并且它可以在 Windows 应用商店下载得到，因此不必担心安全问题。</p>
+<h4 id="③-快贴-真正的云剪贴板"><a href="#③-快贴-真正的云剪贴板" class="headerlink" title="③ 快贴 - 真正的云剪贴板"></a>③ <a href="http://clipber.com/clipber/?rnd=7.387842810337832&amp;source=www" target="_blank" rel="noopener">快贴 - 真正的云剪贴板</a></h4><blockquote>
+<p>Reference: <a href="https://sspai.com/post/43775" target="_blank" rel="noopener">少数派 - 好用的全平台剪切板工具，我们为你找到了这 3 款</a></p>
+</blockquote>
+<p>快贴是一个跨平台的剪贴板同步工具，虽说体验肯定不如 macOS 闭源的生态系统好，但是至少我不必用微信当作我电脑与手机沟通的渠道了。</p>
+<h4 id="④-Send-Anywhere"><a href="#④-Send-Anywhere" class="headerlink" title="④ Send Anywhere"></a>④ <a href="https://send-anywhere.com/file-transfer" target="_blank" rel="noopener">Send Anywhere</a></h4><blockquote>
+<p>Reference: <a href="https://sspai.com/post/40047" target="_blank" rel="noopener">少数派 - 免费全平台的文件分享利器：SendAnywhere</a></p>
+</blockquote>
+<p>Send Anywhere 将文件上传到一个 p2p 网络上面，并非其服务器上，通过随机六位接收码进行文件接受。这样的传输方式保证了文件的安全性和完整性，又能有相当的上传、下载和传输速度。Send Anywhere 可以说是全平台 Airdrop 了。</p>
+<p><img src="https://i.loli.net/2018/07/19/5b502ce929342.jpg" alt="Send Anywhere.jpg"></p>
+<p>同时 Send Anywhere 有设备记忆功能，于是在曾经传输过文件的设备上，下一次传输连那个六位接收码都不必输入了。这样的分享文件的特性可以说是跨平台的救命稻草了。</p>
+<h4 id="⑤-smpic-开源的-sm-ms-图床上传软件"><a href="#⑤-smpic-开源的-sm-ms-图床上传软件" class="headerlink" title="⑤ smpic - 开源的 sm.ms 图床上传软件"></a>⑤ <a href="https://github.com/kookob/smpic" target="_blank" rel="noopener">smpic - 开源的 sm.ms 图床上传软件</a></h4><p>我的博客图片全部都放到了第三方的图床上面，这让我需要有一个便捷的图片上传途径。</p>
+<p>在 macOS 上面，这篇文章里面：<a href="https://spencerwoo.com/2018/01/28/SM-MS/">SM.MS - 一名优秀的图床的艺术之旅</a> 我介绍了利用 Automator 实现一个全局上传并自动转换为 Markdown 格式的图片路径的解决方案。在 Windows 上也有同样的便捷手段。</p>
+<p>smpic 通过 SM.MS 图床的 API 与大名鼎鼎的 AutoHotKey 脚本实现了这样的图片上传利器，</p>
+<h4 id="⑥-Typora-可能是-Windows-上最好的-Markdown-编辑器"><a href="#⑥-Typora-可能是-Windows-上最好的-Markdown-编辑器" class="headerlink" title="⑥ Typora - 可能是 Windows 上最好的 Markdown 编辑器"></a>⑥ Typora - 可能是 Windows 上最好的 Markdown 编辑器</h4><p><img src="https://i.loli.net/2018/07/19/5b5035748035d.png" alt="typora.png"></p>
+<p>Typora 不必多说了，基本上是 Windows 上写 Markdown 的必备利器了。我的这篇文章就是在 Windows 的 Typora 上面编写完成的。我派对 Typora 也有详尽的介绍，在这里 –&gt; <a href="https://sspai.com/post/30292" target="_blank" rel="noopener">让 Markdown 写作更简单，免费极简编辑器：Typora</a></p>
+<h4 id="⑦-Snipaste-可能是-Windows-上最好的截图工具"><a href="#⑦-Snipaste-可能是-Windows-上最好的截图工具" class="headerlink" title="⑦ Snipaste - 可能是 Windows 上最好的截图工具"></a>⑦ Snipaste - 可能是 Windows 上最好的截图工具</h4><p><img src="https://i.loli.net/2018/07/19/5b5024ce5bd88.png" alt="snipaste.png"></p>
+<p>Snipaste 着实是 Windows 上最好的截图工具。但 Snipaste 除了我们常见的截图标注、窗口检测、全局快捷键等等简朴必备技能，还有贴图、取色等等高阶可玩性。</p>
+<p><img src="https://i.loli.net/2018/07/19/5b5034c7c0e71.gif" alt="snipaste2.gif"></p>
+<p>Snipaste 的开发者对 Snipaste 很是上心，我派单独采访了这位同学，在这里有更加具体的介绍 –&gt; <a href="https://sspai.com/post/35097" target="_blank" rel="noopener">幕后丨他做了最强免费「截图」工具 Snipaste 后，还有上万字的话想说</a></p>
+<p>上面介绍的工具中，除了 ⑤ 和 ⑥ 这两个外，剩下的都有幸被我加入开机自启动名单。🎉</p>
+<h3 id="3-桌面-Windows-化"><a href="#3-桌面-Windows-化" class="headerlink" title="3. 桌面 Windows 化"></a>3. 桌面 Windows 化</h3><p><img src="https://i.loli.net/2018/07/19/5b4f763b5c845.png" alt="desktop.png"></p>
+<h4 id="①-TranslucentTB-开源的任务栏透明小工具-⭐⭐⭐⭐⭐"><a href="#①-TranslucentTB-开源的任务栏透明小工具-⭐⭐⭐⭐⭐" class="headerlink" title="① TranslucentTB - 开源的任务栏透明小工具 ⭐⭐⭐⭐⭐"></a>① TranslucentTB - 开源的任务栏透明小工具 ⭐⭐⭐⭐⭐</h4><p><a href="https://sspai.com/post/43178" target="_blank" rel="noopener">Windows 10 上纯粹的任务栏透明化软件：TranslucentTB</a> 免费、开源、绿色，完美解决了 Windows 任务栏透明的问题，它利用了 Windows 10 API，简洁小巧。五星推荐。</p>
+<h4 id="②-Rainmeter-大名鼎鼎的-Windows-桌面专业美化插件"><a href="#②-Rainmeter-大名鼎鼎的-Windows-桌面专业美化插件" class="headerlink" title="② Rainmeter - 大名鼎鼎的 Windows 桌面专业美化插件"></a>② Rainmeter - 大名鼎鼎的 Windows 桌面专业美化插件</h4><p>对于深度美化 Windows 桌面的同学来说，Rainmeter 的重要性可想而知。我只小小利用了其桌面时钟的显示。</p>
+<h4 id="③-Simple-Desktops-极简风格壁纸提供站点"><a href="#③-Simple-Desktops-极简风格壁纸提供站点" class="headerlink" title="③ Simple Desktops - 极简风格壁纸提供站点"></a>③ <a href="http://simpledesktops.com/browse/" target="_blank" rel="noopener">Simple Desktops</a> - 极简风格壁纸提供站点</h4><p>Windows 美化方面，壁纸可以说是重中之重。一张简单可爱的壁纸可以奠定整个工作的态度。在 Simple Desktops 里我总能找到可爱的壁纸。</p>
+<h4 id="④-极简风格的审美要求和苛刻到极致的完美追求"><a href="#④-极简风格的审美要求和苛刻到极致的完美追求" class="headerlink" title="④ 极简风格的审美要求和苛刻到极致的完美追求"></a>④ 极简风格的审美要求和苛刻到极致的完美追求</h4><p>这一方面就是仁者见仁智者见智了。简洁的文件管理、不复杂凌乱的桌面和长清理的使用习惯会让你的 Windows 使用体验蒸蒸日上。💗</p>
+<p><br></p>
+<h1 id="0x03-体验呢？"><a href="#0x03-体验呢？" class="headerlink" title="0x03 体验呢？"></a>0x03 体验呢？</h1><blockquote>
+<p>要不是为了你这么舒服的键盘、这么大的屏幕、可以接受的轻巧、以及三个标准 USB 插口，我才不会抛弃我的 MacBook！😈</p>
+</blockquote>
+<p>确实，通过上面的折腾，我已经能够让自己在 Windows 上的开发、学习与撰写文章的体验近似 macOS 了，同时得益于我现在这台 Windows 电脑 (ThinkPad X1 Yoga) 出色的显示性能 (2K OLED) 我并没有失去 MacBook Retina Display 的使用体验，反而性能提升让我能够更加自由方便的使用 Photoshop 和 Premier 了。</p>
+<p>这台二合一的显示色彩着实出色，其触屏和 4096 压感的 Wacom 手写笔也让我能够充分发挥其笔记、绘画和 PDF 的标注功能。</p>
+<p><br></p>
+<h1 id="0x04-Finally"><a href="#0x04-Finally" class="headerlink" title="0x04 Finally"></a>0x04 Finally</h1><p><img src="https://i.loli.net/2018/07/17/5b4e108c8c9fe.jpg" alt="ThinkPad.JPG"></p>
+<p>虽然服役两年的 MacBook 因为被动散热和 m5 处理器让我无奈使其退役，但是这款 MacBook 依旧是我使用过最为美丽的电脑之一。</p>
+<blockquote>
+<p>我看过太多人被习惯绑架。比如，用 IE 浏览器习惯了，不习惯用 Chrome；用 Windows 习惯了，觉得 macOS 用起来别扭。哪怕是买了 Mac 笔记本也要去安装一个盗版 Windows；用 iPhone 习惯了，用不了 Android；用一门编程语言用习惯了，不想学第二门编程语言。</p>
+</blockquote>
+<p>人不能被工具禁锢啊。</p>
+<p>就这样。撒花。</p>
+<p><br></p>
+<p><a href="https://spencerwoo.com">© Spencer Woo</a></p>
+
+
+                    <hr>
+
+                    <!-- Reward Code -->
+
+
+<script src="/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/donate.css">
+<script src="/js/donate.js"></script>
+
+<div class="post_reward">
+    <label class="reward_btn">请喝咖啡</label>
+    <div class="qr_code">
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg" title="WeChat">
+        </div>
+
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg" title="AliPay">
+        </div>
+    </div>
+
+    <div class="powered_text">
+        Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
+    </div>
+</div>
+
+
+
+
+                    <!-- Gitment 评论系统代码开始 -->
+                    <div id="container"></div>
+                    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+                    <link rel="stylesheet" href="/css/comment.css">
+                    <script src="/js/comment.js"></script>
+                    <script>
+                        var gitment = new Gitment({
+                            id: 'https://spencerwoo.com/2018/07/19/Windows101/', // 可选。默认为 location.href
+                            owner: 'spencerwoo98',
+                            repo: 'spencerwoo98.github.io',
+                            oauth: {
+                                client_id: 'f702458a6c7ee94af614',
+                                client_secret: 'e30b70e5f4cf3ff2399c2c6d9ed164fbe10941ef',
+                            },
+                        })
+                        gitment.render('container')
+                    </script>
+                    <!-- Gitment 评论系统代码结束 -->
+
+                    <ul class="pager">
+                        
+                                
+                                    <li class="next">
+                                        <a href="/2018/07/09/Humble/" data-toggle="tooltip" data-placement="top" title="應用推介 | Humble New Tab Page for Chrome">Next Post &rarr;</a>
+                                    </li>
+                                    
+                    </ul>
+
+                    
+
+            </div>
+            <!-- Side Catalog Container -->
+            <!--  -->
+
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                    <section>
+                        <!-- no hr -->
+                        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            
+                                <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                    tutorial
+                                </a>
+                                
+                                <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                    sexy moves
+                                </a>
+                                
+                        </div>
+                    </section>
+                    
+
+                        <!-- Friends Blog -->
+                        
+                            <hr>
+                            <h5>FRIENDS</h5>
+                            <ul class="list-inline">
+
+                                
+                                    <li>
+                                        <a href="https://spencerwoo.com" target="_blank">
+                                            Spencer&#39;s Blog
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://life.felinae98.cn" target="_blank">
+                                            Felinae&#39;s Life
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://code.felinae98.cn" target="_blank">
+                                            Felinae&#39;s Code
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://tenkeyseven.com" target="_blank">
+                                            Tenkey
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://blog.csdn.net/silvester123" target="_blank">
+                                            Big Old Zan&#39;s CSDN
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://39.106.10.62/" target="_blank">
+                                            Big Old Zan&#39;s WordPress
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.trafalga.cn/" target="_blank">
+                                            Brandon
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.ricky29.tech" target="_blank">
+                                            Ricky
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://portfolio.spencerwoo.com" target="_blank">
+                                            It helps SEO
+                                        </a>
+                                    </li>
+                                    
+                            </ul>
+                            
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+        
+            <!-- async load function -->
+            <script>
+                function async (u, c) {
+                    var d = document,
+                        t = 'script',
+                        o = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    o.src = u;
+                    if (c) {
+                        o.addEventListener('load', function(e) {
+                            c(null, e);
+                        }, false);
+                    }
+                    s.parentNode.insertBefore(o, s);
+                }
+            </script>
+            <!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
+            <script>
+                async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'right',
+                        // icon: '→'
+                    };
+                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+                })
+            </script>
+            <style>
+                /* place left on bigger screen */
+
+                @media all and (min-width: 800px) {
+                    .anchorjs-link {
+                        position: absolute;
+                        left: -0.75em;
+                        font-size: 1.1em;
+                        margin-top: -0.1em;
+                    }
+                }
+            </style>
+            
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/spencer-woo-64/activities">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://weibo.com/6265807914/profile?topnav=1&amp;wvr=6&amp;is_all=1">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/vertigo_woo98">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/spencerwoo98">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+
+                <!-- using busuanzi for visitor statistics -->
+                <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+                <p class="copyright text-muted">
+                    &copy; 2017 - 2018
+                    Spencer Woo
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-code"></i>
+                    </span>
+                    Proudly powered by
+                    <a href="https://hexo.io">Hexo</a>
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-github-alt"></i>
+                    </span>
+                    Hosted on <a href="https://github.com">Github</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-cloud"></i>
+                    </span>
+                    DNS resolved by <a href="https://www.cloudflare.com/">Cloudflare</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-line-chart"></i>
+                    </span>
+                    Visitor statistics by <a href="http://busuanzi.ibruce.info/">不蒜子</a> and <a href="https://www.google.com/analytics/">Google Analytics</a>
+
+                    <br> -->
+                    2017 年来我已经写了 31.5k 字
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    感谢来看我的 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 个小朋友
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-ban"></i>
+                    </span> -->
+                    <img src="https://i.loli.net/2018/04/09/5acb82c270987.png" width="15px">
+                    <a href="https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://spencerwoo.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-111664763-1';
+    var _gaDomain = 'spencerwoo.com';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+<!--  -->
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

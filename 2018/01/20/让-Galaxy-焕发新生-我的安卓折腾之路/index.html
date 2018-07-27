@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spencer&#39;s Blog">
+    <meta name="keyword"  content="Spencer">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/web_icon.svg" color="#FFFFFF">
+
+    <title>
+        
+          让 Galaxy 焕发新生 | 我的安卓折腾之路 - Spencer Woo
+        
+    </title>
+
+    <link rel="canonical" href="https://spencerwoo.com/2018/01/20/让-Galaxy-焕发新生-我的安卓折腾之路/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spencer Woo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/about/">BIO</a>
+                        </li>
+                        
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/people/">GODS</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">TAG</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">ARCHIVES</a>
+                        </li>
+                        
+
+                    
+
+                    <li>
+                        <a href="https://500px.com/spencerwoo98/galleries">PORTFOLIO</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+        /* background-image: url('http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-brooke-lark-3855071.jpg') */
+        background-image: url('http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-brooke-lark-3855071.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                            <a class="tag" href="/tags/#code" title="code">
+                                code
+                            </a>
+                            
+                            <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                sexy moves
+                            </a>
+                            
+                            <a class="tag" href="/tags/#android" title="android">
+                                android
+                            </a>
+                            
+                    </div>
+                    <h1>让 Galaxy 焕发新生 | 我的安卓折腾之路</h1>
+                    <h2 class="subheading">辣鸡 Touchwiz，ME like Lineage OS</h2>
+                    <span class="meta">
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-book"></i>
+                        </span> 作者
+                    Spencer Woo
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-calendar"></i>
+                        </span> 日期
+                        2018-01-20
+                            <br><br>
+                            <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-bar-chart"></i>
+                        </span> 共
+                            1,176 字
+                                <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-hourglass-2"></i>
+                        </span> 可能要读上
+                                4 分钟
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>世界就是这样告终，不是嘭的一声，而是嘘的一声。</p>
+</blockquote>
+<p><br></p>
+<p><strong>- 先来一段回忆杀 -</strong></p>
+<p>2011 年的 6 月，我的生日，我买到了人生中第一台 Apple 的产品：iPod Touch. (4th-gen)</p>
+<p>2016 年的 8 月，我迎来了人生中第一台 Mac. (MacBook, 12-inch, Early 2016)</p>
+<p>2016 年的 11 月，我买来了人生中第一台 iPhone. (iPhone 7 Plus)</p>
+<p>紧接着，我也迎来了不可避免的 Apple Watch，以及好感度爆棚的 AirPods。我想，这可能就标志着我开始了在所谓的「生态系统」中不能自拔的经历。</p>
+<p><br></p>
+<hr>
+<p>如今，为了我<strong>大金老师</strong>的安卓开发，我翻出来了陪伴我整个高二，只有在考试的时候失误了一次，才迫使我抛弃了它的 Galaxy S5，让它在 2018 年焕发新生。</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5.JPG" alt="img"></p>
+<p>Galaxy S5 是一部 2014 年春天发布的机器。除了它万年不变的塑料廉价质感的外壳，别的都是当年安卓界的翘楚，如日中天的三星令当年的小米华为之流难以望其项背。</p>
+<p>但是它那令人难堪的塑料背壳，毫无设计感可言的塑料边框，和难用同嚼蜡的 TouchWiz 真是令人失望。</p>
+<p>2018 年的今天，软件部分的改造工程从升级系统开始。</p>
+<p><br></p>
+<h1 id="壹-ME-x2764-Lineage-OS"><a href="#壹-ME-x2764-Lineage-OS" class="headerlink" title="壹. ME &#x2764; Lineage OS"></a>壹. ME <span class="github-emoji" title="heart" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png?v8">&#x2764;</span> Lineage OS</h1><p>自从上次刷机我不小心给我的 Galaxy S4 同时刷了两个二进制文件（SuperSU 和 Magisk 的二进制）进去导致了 Bootloop 让我的小 S4 变砖的惨痛经历，我这次异常谨慎。</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_WholeView.JPG" alt="img"></p>
+<p>翻遍了百度，由于我的 S5 是坑父亲的电信定制版，所以就算是大神云集的论坛：<a href="http://www.xda-developers.com" target="_blank" rel="noopener">xda-developers</a> 都很难找到第三方的 ROM。不过还好有 Lineage OS，令人激动。再说一遍，ME <span class="github-emoji" title="heart" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png?v8">&#x2764;</span> Lineage OS.</p>
+<p>这里具体步骤参考了 —&gt; <a href="http://bbs.gfan.com/forum.php?mod=viewthread&amp;tid=9153633" target="_blank" rel="noopener">机锋论坛上的这个帖子</a></p>
+<ol>
+<li>到  <a href="http://www.lineageosdownloads.com/lineage-os-rom-downloads-build-status" target="_blank" rel="noopener">Lineage OS 的官网</a>下载 Lineage OS 卡刷版，电信定制版（G9009W）对应版本为 Galaxy S5 Duos China (kltechnduo)，最高对应版本为 Lineage OS 14.1 基于 Android 7.1.2.</li>
+<li>到 <a href="http://twrp.me" target="_blank" rel="noopener">TWRP 官网</a>下载第三方 Recovery 线刷版，最新版本是 2017 年 12 月 9 日更新的 3.2.1-0 Released.</li>
+<li>到 <a href="http://odindownload.com" target="_blank" rel="noopener">谁知道这是不是 Odin 的官网反正下载的 Odin 挺好用的官网</a>下载 Windows 版的 Odin3，它是三星刷机用的电脑客户端，最新版本是Odin 3.12.3.</li>
+<li>依次刷入：① TWRP Recovery ② Lineage OS</li>
+</ol>
+<p>成功的标志：S5 的中国电信开机动画变成了 Lineage OS 的标志性小圈圈，稍等片刻便进入系统。</p>
+<p><br></p>
+<h1 id="贰-ME-x2764-Magisk"><a href="#贰-ME-x2764-Magisk" class="headerlink" title="贰. ME &#x2764; Magisk"></a>贰. ME <span class="github-emoji" title="heart" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png?v8">&#x2764;</span> Magisk</h1><p>Magisk 是一名台湾的大佬开发的以「系统外挂」方式存在的 Root 插件。</p>
+<p>听说 SuperSU 被中国某个毒瘤厂家收购了，于是我转而投靠 Magisk 的怀抱。</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_SystemInfo.JPG" alt="img"></p>
+<p><a href="http://forum.xda-developers.com/apps/magisk" target="_blank" rel="noopener">XDA Developers Forum: Magisk</a></p>
+<p>Magisk 也是通过 TWRP 第三方 Recovery 卡刷的，原理同上。</p>
+<p>丢下一个链接就逃跑。</p>
+<p><br></p>
+<h1 id="叁-ME-x2764-Xposed"><a href="#叁-ME-x2764-Xposed" class="headerlink" title="叁. ME &#x2764; Xposed"></a>叁. ME <span class="github-emoji" title="heart" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png?v8">&#x2764;</span> Xposed</h1><p><strong>上帝之手</strong>，我只能这样形容 Xposed。</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5-xposed-magisk.jpg" alt="img"></p>
+<p>从安卓 4.x 就存在的神器：Xposed 可以在不修改 apk 本身的情况下直接干预系统行为。</p>
+<p>那些 wx 自动抢红包，wx 防撤回，修改应用启动图等等等等玄乎其玄的东东，都是 Xposed 干的。</p>
+<p>上一个步骤安装 Magisk 除了提取 root 权限，还有一个目的就是让 Android 7.1.2 吃上 Xposed，具体刷入 Xposed 的步骤在这个链接：<a href="http://forum.xda-developers.com/xposed/unofficial-systemless-xposed-t3388268" target="_blank" rel="noopener">XDA Developers Forum: Systemless Xposed Framework based on Magisk</a></p>
+<p>刷入 Xposed Framework 之后，我们就几乎可以在系统中为所欲为了。</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_Xposed_NeteaseMusic.JPG" alt="img"></p>
+<p>这里，我启用了 Xposed SDK25，安装了这些插件：</p>
+<ul>
+<li>网易云音乐插件：去除启动页广告，自动签到，<strong>本地显示</strong>会员、网易音乐人等等.</li>
+<li>绿色守护：组织国产毒瘤软件自启动与链接启动.</li>
+<li>Gravity Box：修改锁屏、桌面、通知栏、状态栏的利器.</li>
+<li>PerfectColorBar：强制全局自适应状态栏颜色.</li>
+<li>MinMinGuard：全局去广告.</li>
+<li>…</li>
+</ul>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-xposed%20framework.jpg" alt="img"></p>
+<h1 id="Finally"><a href="#Finally" class="headerlink" title="Finally."></a>Finally.</h1><p>在我折腾的这段时间，我让：</p>
+<ul>
+<li>一个曾经半天待机就把自己耗没电的老机器变成能坚持一天.</li>
+<li>一个停留在安卓 5.0.x 时代，还有着辣鸡到炸裂的系统 UI 的老机器吃上 Android Nougat.</li>
+<li>一个可自定义东西少之又少的机器，拥有上帝之手，整个系统尽在掌控.</li>
+</ul>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-battery-drain.jpg" alt="img"></p>
+<blockquote>
+<p>是黄书，但也是好书，一本黄书，写得人民群众手不释纸，夜不能寐，虽不能催泪，至少能催情。人民群众喜欢读，自己读了，还要给朋友读，甭管黄不黄，都是好书。</p>
+</blockquote>
+<p>晚安。</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-ECD88335-584A-41CE-B44C-E0BC365BC5BF.JPG" alt="img"></p>
+<p>这是我的第二只猫猫，他叫小脑斧。</p>
+<p><br></p>
+<p><br></p>
+<p>© Spencer Woo</p>
+
+
+                    <hr>
+
+                    <!-- Reward Code -->
+
+
+<script src="/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/donate.css">
+<script src="/js/donate.js"></script>
+
+<div class="post_reward">
+    <label class="reward_btn">请喝咖啡</label>
+    <div class="qr_code">
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg" title="WeChat">
+        </div>
+
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg" title="AliPay">
+        </div>
+    </div>
+
+    <div class="powered_text">
+        Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
+    </div>
+</div>
+
+
+
+
+                    <!-- Gitment 评论系统代码开始 -->
+                    <div id="container"></div>
+                    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+                    <link rel="stylesheet" href="/css/comment.css">
+                    <script src="/js/comment.js"></script>
+                    <script>
+                        var gitment = new Gitment({
+                            id: 'https://spencerwoo.com/2018/01/20/让-Galaxy-焕发新生-我的安卓折腾之路/', // 可选。默认为 location.href
+                            owner: 'spencerwoo98',
+                            repo: 'spencerwoo98.github.io',
+                            oauth: {
+                                client_id: 'f702458a6c7ee94af614',
+                                client_secret: 'e30b70e5f4cf3ff2399c2c6d9ed164fbe10941ef',
+                            },
+                        })
+                        gitment.render('container')
+                    </script>
+                    <!-- Gitment 评论系统代码结束 -->
+
+                    <ul class="pager">
+                        
+                            <li class="previous">
+                                <a href="/2018/01/26/Spencer-s-HTTPS-ed-Blog-v1-0/" data-toggle="tooltip" data-placement="top" title="Spencer's HTTPS-ed Blog - v1.0">&larr; Previous Post</a>
+                            </li>
+                            
+                                
+                                    <li class="next">
+                                        <a href="/2018/01/04/HANDS-ON-盘点一下-2017-年购入的最令人满意的东东/" data-toggle="tooltip" data-placement="top" title="HANDS ON | 盘点一下 2017 年购入的最令人满意的东东">Next Post &rarr;</a>
+                                    </li>
+                                    
+                    </ul>
+
+                    
+
+            </div>
+            <!-- Side Catalog Container -->
+            <!--  -->
+
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                    <section>
+                        <!-- no hr -->
+                        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            
+                                <a class="tag" href="/tags/#code" title="code">
+                                    code
+                                </a>
+                                
+                                <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                    sexy moves
+                                </a>
+                                
+                                <a class="tag" href="/tags/#android" title="android">
+                                    android
+                                </a>
+                                
+                        </div>
+                    </section>
+                    
+
+                        <!-- Friends Blog -->
+                        
+                            <hr>
+                            <h5>FRIENDS</h5>
+                            <ul class="list-inline">
+
+                                
+                                    <li>
+                                        <a href="https://spencerwoo.com" target="_blank">
+                                            Spencer&#39;s Blog
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://life.felinae98.cn" target="_blank">
+                                            Felinae&#39;s Life
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://code.felinae98.cn" target="_blank">
+                                            Felinae&#39;s Code
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://tenkeyseven.com" target="_blank">
+                                            Tenkey
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://blog.csdn.net/silvester123" target="_blank">
+                                            Big Old Zan&#39;s CSDN
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://39.106.10.62/" target="_blank">
+                                            Big Old Zan&#39;s WordPress
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.trafalga.cn/" target="_blank">
+                                            Brandon
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.ricky29.tech" target="_blank">
+                                            Ricky
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://portfolio.spencerwoo.com" target="_blank">
+                                            It helps SEO
+                                        </a>
+                                    </li>
+                                    
+                            </ul>
+                            
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+        
+            <!-- async load function -->
+            <script>
+                function async (u, c) {
+                    var d = document,
+                        t = 'script',
+                        o = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    o.src = u;
+                    if (c) {
+                        o.addEventListener('load', function(e) {
+                            c(null, e);
+                        }, false);
+                    }
+                    s.parentNode.insertBefore(o, s);
+                }
+            </script>
+            <!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
+            <script>
+                async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'right',
+                        // icon: '→'
+                    };
+                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+                })
+            </script>
+            <style>
+                /* place left on bigger screen */
+
+                @media all and (min-width: 800px) {
+                    .anchorjs-link {
+                        position: absolute;
+                        left: -0.75em;
+                        font-size: 1.1em;
+                        margin-top: -0.1em;
+                    }
+                }
+            </style>
+            
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/spencer-woo-64/activities">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://weibo.com/6265807914/profile?topnav=1&amp;wvr=6&amp;is_all=1">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/vertigo_woo98">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/spencerwoo98">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+
+                <!-- using busuanzi for visitor statistics -->
+                <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+                <p class="copyright text-muted">
+                    &copy; 2017 - 2018
+                    Spencer Woo
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-code"></i>
+                    </span>
+                    Proudly powered by
+                    <a href="https://hexo.io">Hexo</a>
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-github-alt"></i>
+                    </span>
+                    Hosted on <a href="https://github.com">Github</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-cloud"></i>
+                    </span>
+                    DNS resolved by <a href="https://www.cloudflare.com/">Cloudflare</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-line-chart"></i>
+                    </span>
+                    Visitor statistics by <a href="http://busuanzi.ibruce.info/">不蒜子</a> and <a href="https://www.google.com/analytics/">Google Analytics</a>
+
+                    <br> -->
+                    2017 年来我已经写了 31.5k 字
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    感谢来看我的 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 个小朋友
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-ban"></i>
+                    </span> -->
+                    <img src="https://i.loli.net/2018/04/09/5acb82c270987.png" width="15px">
+                    <a href="https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://spencerwoo.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-111664763-1';
+    var _gaDomain = 'spencerwoo.com';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+<!--  -->
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

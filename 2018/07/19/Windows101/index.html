@@ -90,7 +90,7 @@
 
                         
                         <li>
-                            <a href="/archives/">ARCHIVES</a>
+                            <a href="/about/">BIO</a>
                         </li>
                         
 
@@ -98,8 +98,12 @@
 
                         
                         <li>
-                            <a href="/about/">BIO</a>
+                            <a href="/tags/">TAG</a>
                         </li>
+                        
+
+                    
+
                         
 
                     
@@ -113,12 +117,8 @@
                     
 
                         
-
-                    
-
-                        
                         <li>
-                            <a href="/tags/">TAG</a>
+                            <a href="/archives/">ARCHIVES</a>
                         </li>
                         
 
@@ -209,11 +209,11 @@
                             <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-bar-chart"></i>
                         </span> 共
-                            2,329 字
+                            3,334 字
                                 <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-hourglass-2"></i>
                         </span> 可能要读上
-                                9 分钟
+                                12 分钟
                                     </span>
                 </div>
             </div>
@@ -232,21 +232,86 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <script src="/assets/js/APlayer.min.js"> </script><p>Hi~ o(<em>￣▽￣</em>)ブ</p>
-<p>我最近将自己的全部家当从 macOS 转移到了 Windows，为了更大的屏幕，更符合人类的键盘和更多的 USB 接口。当然，这也带来了卓越的性能提升和更多的折腾机会。毕竟，好看是第一生产力。</p>
-<p><img src="https://i.loli.net/2018/03/11/5aa5377418b17.jpg" alt="img"></p>
-<h1 id="0x01-macOS-上什么让我在折腾完全部家当之后依旧流连忘返？"><a href="#0x01-macOS-上什么让我在折腾完全部家当之后依旧流连忘返？" class="headerlink" title="0x01 macOS 上什么让我在折腾完全部家当之后依旧流连忘返？"></a>0x01 macOS 上什么让我在折腾完全部家当之后依旧流连忘返？</h1><p>我不得不承认我的 12“ MacBook 性能羸弱（Intel Core™ m5-6Y54），接口贫瘠（USB Type-C × 1 和耳机孔 × 1），但是我也不得不承认这些都不妨碍我这两年来用 macOS 的体验，我在它上面用 Final Cut Pro X 剪出了我的第一个视频，用 Android Studio 编译了我的第一个安卓项目，用 iTerm2 + oh-my-zsh 的环境与 <code>Git</code> 项目管理工具在 GitHub 上发布了我的第一个项目，也用 Typora 写出并用 <code>hexo</code> 搭建了我的第一篇博客。 两年来，我真切的体验了 macOS 的生产力。</p>
-<blockquote>
-<p>是的，我用 m5 渲染了一个五分钟的 1080p 的视频，渲染了半个小时有余，MacBook 烫的可以煎鸡蛋 🍳。</p>
+                <script src="/assets/js/APlayer.min.js"> </script><h1 id="Mac-To-Win-不完全迁移体验指北"><a href="#Mac-To-Win-不完全迁移体验指北" class="headerlink" title="Mac To Win | 不完全迁移体验指北"></a>Mac To Win | 不完全迁移体验指北</h1><blockquote>
+<p><a href="https://sspai.com/post/45742" target="_blank" rel="noopener">迁移到 Windows 后，我如何找回熟悉的 macOS 体验</a> 首发，本文为 Hum 老师修改前的样子。</p>
 </blockquote>
-<p>讲道理，macOS 上最让我依赖的，作为从事软件与计算机方面学习的我来说，是一套可以媲美 Linux 的开发环境。比如包管理系统 <code>Homebrew</code>，原生的 <code>ssh</code> 与 <code>git</code> 等等，这些大大方便了我的学习过程。据我所知，在 WSL (Windows Subsystem for Linux) 还尚未普及的时候，Windows 上用 <code>Cygwin</code> 或者 <code>Git Bash</code> 等等做代替都很难受，这也让在 Windows 上配置可用的终端环境、开发环境都异常艰难。</p>
-<p>除此之外，在 Windows 上我也很艰苦的寻找了 iCloud，AirDrop 等等的替代品，以及无缝衔接剪贴板同步的方式。这些补救方法虽然看似拙劣，但确实提升了我同时使用 iPhone 和 Windows 的体验，可以近似的媲美 macOS 与 iPhone 的无缝联动了。</p>
+<p>最近，我将自己的全部家当从 macOS 迁移到了 Windows，我相信这样的变迁很多人都会遇到。无论是开学之初被 Mac 的精美设计吸引但是经过一段时间的使用发现专业软件在 macOS 上没有适配、还是工作之后业务需求让自己必须从使用多年的 macOS 切换到 Windows，从一个系统切换到另一个系统都伴随着无比的「折腾」。</p>
+<p>我必须承认，macOS 是优秀的、有设计感的系统。我在它上面用 Final Cut Pro X 剪出了我的第一个视频，用 Android Studio 编译了我的第一个安卓项目，用 iTerm2 + <code>oh-my-zsh</code> 的环境与 <code>Git</code> 项目管理工具在 GitHub 上发布了我的第一个项目，也用 Typora 写出并用 <code>hexo</code> 搭建了我的第一篇博客。 两年来，我真切的体验了 macOS 的生产力。</p>
+<p>但与此同时，macOS 上与之 <strong>利益无关</strong> 的软件所作的适配也总是不尽人意。就像 <a href="https://radiopublic.com/anywayfm-GbPYER" target="_blank" rel="noopener">Anyway.FM 设计杂谈</a> 在「№39: 设计师的调校」一期节目中说到：</p>
+<blockquote>
+<p>没忍住，容我喷一下：<strong>Mac 版的 Office 套件就是辣鸡</strong>。</p>
+</blockquote>
+<p>于是，为了数据分析、性能提升和接口兼容，我无奈将服役两年有余的 12” MacBook 淘汰，迁移到了 Windows 平台，开始拥抱 Windows 与开源的生态圈。🐾</p>
 <p><br></p>
-<h1 id="0x02-Windows-上面我都做了哪些补救？"><a href="#0x02-Windows-上面我都做了哪些补救？" class="headerlink" title="0x02 Windows 上面我都做了哪些补救？"></a>0x02 Windows 上面我都做了哪些补救？</h1><h3 id="1-开发环境"><a href="#1-开发环境" class="headerlink" title="1. 开发环境"></a>1. 开发环境</h3><blockquote>
+<h2 id="What-did-I-miss"><a href="#What-did-I-miss" class="headerlink" title="What did I miss?"></a>What did I miss?</h2><p>从 macOS 迁移到 Windows 的过程中，必然有体验上的差别。在使用 iPhone 的同时，下面这些在 Apple 生态系统中使用 Mac 的体验让我尤其想念：</p>
+<ul>
+<li><strong>桌面美学：</strong>macOS 具有设计感的桌面和 Dock</li>
+<li><strong>macOS 系统原生的工具：</strong><ul>
+<li>空格键预览</li>
+<li>Handoff、Airdrop 等与其他苹果设备的无缝联动</li>
+<li>方便的原生截图、窗口检测与背景阴影</li>
+</ul>
+</li>
+<li><p><strong>专为 macOS 开发的效率工具：</strong></p>
+<ul>
+<li>全局启动器 Alfred（或者原生的 Spotlight）</li>
+<li>类似 iPic 的图床工具</li>
+<li>MWeb 等优秀的 Markdown 写作工具</li>
+</ul>
+</li>
+<li><p><strong>开发环境：</strong>得益于 macOS 类 Unix 系统的属性而有的一套可以媲美 Linux 的开发环境（比如 <code>Homebrew</code> 与原生的 <code>git</code> 和 <code>ssh</code>）</p>
+</li>
+</ul>
+<p>那么在使用 Windows 与 iPhone 的时候，我能不能找回一些如此顺滑的体验呢？我在 Windows 上做了这样的折腾。 🐟</p>
+<p><br></p>
+<h2 id="在-Windows-上的折腾"><a href="#在-Windows-上的折腾" class="headerlink" title="在 Windows 上的折腾"></a>在 Windows 上的折腾</h2><h3 id="设计桌面"><a href="#设计桌面" class="headerlink" title="设计桌面"></a>设计桌面</h3><p>Apple 是一家标榜设计的公司，macOS 的桌面美学确实让包括我在内的很多人赞叹。当然我在使用 Windows 的这一周以来，经过 Fluent Design 重新设计的 Windows 10 也相比之前的老一代 Windows 有着巨大的美学改善。下面这些小工具、壁纸和使用设计理念可能会让你的 Windows 美的不可方物。</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b63509ff85.png" alt="01_我的桌面.png"></p>
+<h4 id="①-TranslucentTB-开源的任务栏透明小工具-⭐⭐⭐⭐⭐"><a href="#①-TranslucentTB-开源的任务栏透明小工具-⭐⭐⭐⭐⭐" class="headerlink" title="① TranslucentTB - 开源的任务栏透明小工具 ⭐⭐⭐⭐⭐"></a>① <a href="https://github.com/TranslucentTB/TranslucentTB/" target="_blank" rel="noopener">TranslucentTB</a> - 开源的任务栏透明小工具 ⭐⭐⭐⭐⭐</h4><p>美化桌面必不可少的需要对 Windows 那不透明影响体验的任务栏进行修改。修改注册表不仅很是危险，还只能将任务栏半透明化，而另外一些如 StarDock 之流的美化软件又很占内存。这个开源的 TranslucentTB 则不然，既小巧、不占内存、还可以将任务栏透明、半透明、模糊、或是直接显示纯色，可以说是功能全面了。显示效果就像上图那样，能够完整的呈现我们的壁纸而不必担心任务栏挡掉一部分。</p>
+<h4 id="②-Rainmeter-大名鼎鼎的-Windows-桌面专业美化插件-⭐⭐⭐⭐"><a href="#②-Rainmeter-大名鼎鼎的-Windows-桌面专业美化插件-⭐⭐⭐⭐" class="headerlink" title="② Rainmeter - 大名鼎鼎的 Windows 桌面专业美化插件 ⭐⭐⭐⭐"></a>② Rainmeter - 大名鼎鼎的 Windows 桌面专业美化插件 ⭐⭐⭐⭐</h4><p>对于深度美化 Windows 桌面的同学来说，Rainmeter 的重要性可想而知。在 Rainmeter 的 <a href="https://www.rainmeter.net/" target="_blank" rel="noopener">官网</a>、<a href="https://forum.rainmeter.net/" target="_blank" rel="noopener">官方用户社区</a>、和 <a href="https://www.deviantart.com/rainmeter" target="_blank" rel="noopener">DeviantArt 设计站点</a>，都有大量设计精美的 Rainmeter 插件，但是我也并不推荐将插件直接堆砌在桌面上，一团糟的样子不仅不美观，还占用了大量的系统资源。我只小小利用了其桌面时钟、日期的显示。</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b638246400.png" alt="02_Rainmeter.png"></p>
+<p>FYI，我目前使用的 Rainmeter 主题在这里可以下载到 → <a href="https://www.deviantart.com/lilshizzy/art/Rainmeter-Elegance-2-244373054" target="_blank" rel="noopener">Rainmeter Elegance 2.0</a></p>
+<h4 id="③-Simple-Desktops-极简风格壁纸提供站点-⭐⭐⭐⭐⭐"><a href="#③-Simple-Desktops-极简风格壁纸提供站点-⭐⭐⭐⭐⭐" class="headerlink" title="③ Simple Desktops - 极简风格壁纸提供站点 ⭐⭐⭐⭐⭐"></a>③ <a href="http://simpledesktops.com/browse/" target="_blank" rel="noopener">Simple Desktops</a> - 极简风格壁纸提供站点 ⭐⭐⭐⭐⭐</h4><p>美化桌面方面，壁纸可以说是重中之重。一张简单可爱的壁纸可以奠定整个工作的态度。在 Simple Desktops 里我总能找到可爱的壁纸。</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b639d1e926.png" alt="03_Simple Desktop.png"></p>
+<p>除此之外，大名鼎鼎的无版权图片社区 <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>、免费图片社区 <a href="https://pixabay.com/zh/" target="_blank" rel="noopener">Pixabay</a>、甚至是必应每日壁纸等等都是优秀的壁纸来源。</p>
+<h4 id="④-极简风格的审美要求和苛刻到极致的完美追求-玄学！"><a href="#④-极简风格的审美要求和苛刻到极致的完美追求-玄学！" class="headerlink" title="④ 极简风格的审美要求和苛刻到极致的完美追求 - 玄学！"></a>④ 极简风格的审美要求和苛刻到极致的完美追求 - 玄学！</h4><p>这一方面就是仁者见仁智者见智了。简洁的文件管理、不复杂凌乱的桌面和常清理的使用习惯自然会让你的 Windows 使用体验蒸蒸日上。💗</p>
+<h3 id="系统工具"><a href="#系统工具" class="headerlink" title="系统工具"></a>系统工具</h3><blockquote>
+<p>Reference: <a href="https://github.com/Awesome-Windows/Awesome" target="_blank" rel="noopener">Awesome Windows on GitHub</a></p>
+</blockquote>
+<h4 id="①-WoX-An-effective-launcher-for-windows-和-Everything-The-fastest-file-folder-search-tool-by-name-⭐⭐⭐⭐⭐"><a href="#①-WoX-An-effective-launcher-for-windows-和-Everything-The-fastest-file-folder-search-tool-by-name-⭐⭐⭐⭐⭐" class="headerlink" title="① WoX -  An effective launcher for windows 和 Everything - The fastest file/folder search tool by name ⭐⭐⭐⭐⭐"></a>① <a href="https://github.com/Wox-launcher/Wox" target="_blank" rel="noopener">WoX -  An effective launcher for windows</a> 和 <a href="https://www.voidtools.com/" target="_blank" rel="noopener">Everything - The fastest file/folder search tool by name</a> ⭐⭐⭐⭐⭐</h4><p><img src="https://i.loli.net/2018/07/28/5b5b63b935a7b.png" alt="04_WoX 全局搜索.png"></p>
+<p>WoX 是 Windows 上大名鼎鼎的开源启动器，我派对它有详尽的介绍 → 在<a href="https://sspai.com/post/33460" target="_blank" rel="noopener">这里</a>。</p>
+<p>WoX 的看家功夫是基于 Everything 的基本文件搜索功能，它能在不到一秒钟的时间内将你想要的文件进行搜索并展现出来，快如闪电，当然这也包括将你要打开的应用快捷方式搜索出来，因而 WoX 可以充当应用程序的快捷启动器。除此之外，WoX 还可以调用计算器、预览颜色、打开控制面板的某项选项、直接调用搜索引擎搜索内容和直接运行 Shell 命令等等，而这些功能都归功于其强大的 Plugin 插件功能。当然 WoX 也提供了外观主题的定制功能。</p>
+<p>WoX 和 Everything 两工具的完美结合，在使用体验上可以媲美 macOS 上的 Spotlight、Alfred 之流。</p>
+<h4 id="②-QuickLook-一个空格键预览工具-⭐⭐⭐⭐⭐"><a href="#②-QuickLook-一个空格键预览工具-⭐⭐⭐⭐⭐" class="headerlink" title="② QuickLook - 一个空格键预览工具 ⭐⭐⭐⭐⭐"></a>② QuickLook - 一个空格键预览工具 ⭐⭐⭐⭐⭐</h4><p><img src="https://i.loli.net/2018/07/28/5b5b63d23e934.png" alt="05_QuickLook.png"></p>
+<p>macOS 上的「一指禅」—— 空格预览文件内容，绝对是一个经典、令人印象深刻的功能。在 Windows 上，QuickLook 可以完美实现空格预览的功能，能够预览图片、文本、docx 文档、甚至是各种源码等等一系列文件。macOS 一指禅在 Windows 上也能完美践行了。🦄</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b63ee8646d.png" alt="06_空格预览图片、文本和 Markdown.png"></p>
+<p>QuickLook 可以直接在 Windows 应用商店免费下载得到。</p>
+<h4 id="③-快贴-真正的云剪贴板-⭐⭐⭐⭐"><a href="#③-快贴-真正的云剪贴板-⭐⭐⭐⭐" class="headerlink" title="③ 快贴 - 真正的云剪贴板 ⭐⭐⭐⭐"></a>③ <a href="http://clipber.com/clipber/?rnd=7.387842810337832&amp;source=www" target="_blank" rel="noopener">快贴 - 真正的云剪贴板</a> ⭐⭐⭐⭐</h4><blockquote>
+<p>Reference: <a href="https://sspai.com/post/43775" target="_blank" rel="noopener">少数派 - 好用的全平台剪切板工具，我们为你找到了这 3 款</a></p>
+</blockquote>
+<p>快贴是一个免费的跨平台的剪贴板同步工具，能够在多端设备同步剪贴板，并对剪贴板涉密内容进行自动识别、加密传输。</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b64126cc58.jpg" alt="07_快贴全局快捷键.jpg"></p>
+<p>我在 iOS 和 Windows 端同时下载了快贴，在 iOS 保持后台运行的情况下，我在手机上复制的内容，能够很快的同步到云端，进而在 Windows 端能够粘贴。但是这个过程比 macOS 繁琐的地方在于，我需要通过全局快捷键来手动触发粘贴端的同步，这样的多一步操作虽说影响体验，也肯定不如 macOS 闭源的生态系统好，但是至少我不必用微信、QQ 之流当作我电脑与手机沟通的渠道了。</p>
+<h4 id="④-Send-Anywhere-⭐⭐⭐⭐⭐"><a href="#④-Send-Anywhere-⭐⭐⭐⭐⭐" class="headerlink" title="④ Send Anywhere ⭐⭐⭐⭐⭐"></a>④ <a href="https://send-anywhere.com/file-transfer" target="_blank" rel="noopener">Send Anywhere</a> ⭐⭐⭐⭐⭐</h4><blockquote>
+<p>Reference: <a href="https://sspai.com/post/40047" target="_blank" rel="noopener">少数派 - 免费全平台的文件分享利器：SendAnywhere</a></p>
+</blockquote>
+<p>Send Anywhere 将文件上传到一个 p2p 网络上面，并非其服务器上，接受端通过随机六位接收码进行文件接受。这样的传输方式保证了文件的安全性和完整性，又能有相当的上传、下载和传输速度。Send Anywhere 可以说是全平台 Airdrop 了。</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b642dd63cd.jpg" alt="08_Send Anywhere.jpg"></p>
+<p>同时 Send Anywhere 有设备记忆功能，在曾经传输过文件的设备上，下一次传输的时候，六位接收码都不必输入。这样的分享文件的特性可以说是跨平台的救命稻草了。我在使用过程中除了在 Windows 平台传输结束之后 Send Anywhere 本身有几次会卡死，其他体验都极佳。</p>
+<h3 id="效率工具"><a href="#效率工具" class="headerlink" title="效率工具"></a>效率工具</h3><h4 id="①-smpic-开源的-sm-ms-图床上传软件"><a href="#①-smpic-开源的-sm-ms-图床上传软件" class="headerlink" title="① smpic - 开源的 sm.ms 图床上传软件"></a>① smpic - 开源的 sm.ms 图床上传软件</h4><p>我的博客图片全部都放到了第三方的图床上面，这让我需要有一个便捷的图片上传途径。</p>
+<p>在 macOS 上面，这篇文章里面：<a href="https://spencerwoo.com/2018/01/28/SM-MS/">SM.MS - 一名优秀的图床的艺术之旅</a> 我介绍了利用 Automator 实现一个全局上传并自动转换为 Markdown 格式的图片路径的解决方案。在 Windows 上也有同样的便捷手段。</p>
+<p>smpic 通过 SM.MS 图床的 API 与大名鼎鼎的 AutoHotKey 脚本实现了这样的图片上传利器，我将快捷键绑定为 <code>Ctrl</code> + <code>Alt</code> + <code>U</code>，这样点击图片按下快捷键直接就可以将图片上传至图床，并同时返回相应的图片引用链接，一气呵成。smpic 同样，是一款开源、免费的软件，可以在这里 → <a href="https://github.com/kookob/smpic" target="_blank" rel="noopener">smpic - 开源的 sm.ms 图床上传软件</a> 进行下载</p>
+<h4 id="②-Typora-可能是-Windows-上最好的-Markdown-编辑器"><a href="#②-Typora-可能是-Windows-上最好的-Markdown-编辑器" class="headerlink" title="② Typora - 可能是 Windows 上最好的 Markdown 编辑器"></a>② Typora - 可能是 Windows 上最好的 Markdown 编辑器</h4><p><img src="https://i.loli.net/2018/07/28/5b5b6447c9297.png" alt="09_Typora.png"></p>
+<p>Typora 不必多说了，基本上是 Windows 上写 Markdown 的必备利器了。我的这篇文章就是在 Windows 的 Typora 上面编写完成的。我派对 Typora 也有详尽的介绍，在这里 –&gt; <a href="https://sspai.com/post/30292" target="_blank" rel="noopener">让 Markdown 写作更简单，免费极简编辑器：Typora</a></p>
+<h4 id="③-Snipaste-可能是-Windows-上最好的截图工具"><a href="#③-Snipaste-可能是-Windows-上最好的截图工具" class="headerlink" title="③ Snipaste - 可能是 Windows 上最好的截图工具"></a>③ Snipaste - 可能是 Windows 上最好的截图工具</h4><p><img src="https://i.loli.net/2018/07/28/5b5b646422f4c.png" alt="10_Snipaste.png"></p>
+<p>Snipaste 着实是 Windows 上最好的截图工具。但 Snipaste 除了我们常见的截图标注、窗口检测、全局快捷键等等简朴必备技能，还有贴图、取色等等高阶可玩性。目前 Snipaste 在 Windows 商店就可以下载得到，并且就在最近几天 Snipaste 也发布了 Pro 版本，增加了更多的玩法。</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b6480499fa.gif" alt="11_Snipaste In Action.gif"></p>
+<p>Snipaste 的开发者对 Snipaste 很是上心，我派单独采访了这位同学，在这里有更加具体的介绍 –&gt; <a href="https://sspai.com/post/35097" target="_blank" rel="noopener">幕后丨他做了最强免费「截图」工具 Snipaste 后，还有上万字的话想说</a></p>
+<p>上面介绍的工具中，除了 Typora 和图床上传工具 smpic 以外（smpic 因为免安装，所以不支持开机自启动），剩下的都有幸被我加入开机自启动名单。🎉</p>
+<h3 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h3><blockquote>
 <p>Reference: <a href="https://github.com/lloydstubber/my-wsl-setup" target="_blank" rel="noopener">My WSL Setup by lloydstubber</a></p>
 </blockquote>
 <p>经过近两年的开发，目前 Windows Subsystem For Linux（以下简称 WSL）已经十分完善。我从微软商店下载安装了 Ubuntu 18.04 作为 WSL 的系统，并使用 Ubuntu 下的 <code>aptitude</code> 包管理工具链配置了我的开发环境。安装 WSL 的详细步骤在 –&gt; <a href="https://docs.microsoft.com/zh-cn/windows/wsl/install-win10" target="_blank" rel="noopener">这里</a>。</p>
-<p><img src="https://i.loli.net/2018/07/19/5b4f7a8b68d2a.png" alt="ubuntu.png"></p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b6498e87db.png" alt="12_Ubuntu WSL.png"></p>
 <p>在 WSL 中我安装了我的必备开发工具：</p>
 <ul>
 <li><code>git</code> 代码版本控制</li>
@@ -254,62 +319,20 @@
 <li><code>zsh</code> 与 <code>oh-my-zsh</code> Shell 环境</li>
 </ul>
 <p>在 Windows 中我通过 Hyper 终端环境进行实战。</p>
-<p>Hyper 是一个基于 Election 的终端 Terminal Emulator，是一个插件丰富的、跨平台的终端。我写过一个有关它的详细介绍，在这里 –&gt; <a href="https://spencerwoo.com/2018/06/16/Terminal/">HOW TO | 让自己的终端漂亮得不像实力派</a>。在 Windows 下，可以通过 Hyper 调用 WSL <code>bash.exe</code>，这样就不用面对万恶的小黑框了 😈。</p>
-<ol>
-<li>更改 <code>.hyper.js</code>（打开 Hyper 之后调用快捷键 <code>Ctrl</code> + <code>,</code> 来开启）将 <code>shell</code> 一项改为：<code>shell: &#39;C:\\Windows\\System32\\bash.exe&#39;</code>，重启终端，这样 Hyper 就可以开启 WSL 环境；</li>
-<li>安装主题与插件：WSL 下直接运行 <code>hyper</code> 命令有问题，可以通过直接在 <code>.hyper.js</code> 中的 <code>plugins</code> 一项中添加主题或插件名称来安装；</li>
-<li>WSL 终端的一些命令执行后字体渲染有问题，我们通过这样的方式进行完善 <code>ls</code> 和 <code>cd</code> 之后显示的颜色，在 <code>.zshrc</code> 文件尾部添加如下代码：<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash">Change ls colours</span></div><div class="line">LS_COLORS="ow=01;36;40" &amp;&amp; export LS_COLORS</div><div class="line"></div><div class="line"><span class="meta">#</span><span class="bash">make <span class="built_in">cd</span> use the ls colours</span></div><div class="line">zstyle ':completion:*' list-colors "$&#123;(@s.:.)LS_COLORS&#125;"</div><div class="line">autoload -Uz compinit</div><div class="line">compinit</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>这样一套可用的 WSL 终端环境就基本完工了。</p>
-<p><img src="https://i.loli.net/2018/07/19/5b4f8002ad837.png" alt="hyper.png"></p>
-<h3 id="2-效率工具"><a href="#2-效率工具" class="headerlink" title="2. 效率工具"></a>2. 效率工具</h3><blockquote>
-<p>Reference: <a href="https://github.com/Awesome-Windows/Awesome" target="_blank" rel="noopener">Awesome Windows on GitHub</a></p>
-</blockquote>
-<h4 id="①-Wox-An-effective-launcher-for-windows-和-Everything-The-fastest-file-folder-search-tool-by-name"><a href="#①-Wox-An-effective-launcher-for-windows-和-Everything-The-fastest-file-folder-search-tool-by-name" class="headerlink" title="① Wox -  An effective launcher for windows 和 Everything - The fastest file/folder search tool by name"></a>① <a href="https://github.com/Wox-launcher/Wox" target="_blank" rel="noopener">Wox -  An effective launcher for windows</a> 和 <a href="https://www.voidtools.com/" target="_blank" rel="noopener">Everything - The fastest file/folder search tool by name</a></h4><p><img src="https://i.loli.net/2018/07/19/5b502832a3a27.png" alt="wox.png"></p>
-<p>这两个完美结合，可以媲美 macOS 上的 Alfred。</p>
-<p>Wox 是 Windows 上大名鼎鼎的效率工具，免费、开源，我派对它有详尽的介绍 –&gt; 在<a href="https://sspai.com/post/33460" target="_blank" rel="noopener">这里</a>。</p>
-<h4 id="②-QuickLook-一个空格键预览工具"><a href="#②-QuickLook-一个空格键预览工具" class="headerlink" title="② QuickLook - 一个空格键预览工具"></a>② QuickLook - 一个空格键预览工具</h4><p><img src="https://i.loli.net/2018/07/19/5b4f81ba243c8.png" alt="quicklook.png"></p>
-<p>macOS 上的空格预览文件内容绝对是一个经典，用过的人赞不绝口。在 Windows 上，这款 QuickLook 程序可以完美实现空格预览的功能，并且它可以在 Windows 应用商店下载得到，因此不必担心安全问题。</p>
-<h4 id="③-快贴-真正的云剪贴板"><a href="#③-快贴-真正的云剪贴板" class="headerlink" title="③ 快贴 - 真正的云剪贴板"></a>③ <a href="http://clipber.com/clipber/?rnd=7.387842810337832&amp;source=www" target="_blank" rel="noopener">快贴 - 真正的云剪贴板</a></h4><blockquote>
-<p>Reference: <a href="https://sspai.com/post/43775" target="_blank" rel="noopener">少数派 - 好用的全平台剪切板工具，我们为你找到了这 3 款</a></p>
-</blockquote>
-<p>快贴是一个跨平台的剪贴板同步工具，虽说体验肯定不如 macOS 闭源的生态系统好，但是至少我不必用微信当作我电脑与手机沟通的渠道了。</p>
-<h4 id="④-Send-Anywhere"><a href="#④-Send-Anywhere" class="headerlink" title="④ Send Anywhere"></a>④ <a href="https://send-anywhere.com/file-transfer" target="_blank" rel="noopener">Send Anywhere</a></h4><blockquote>
-<p>Reference: <a href="https://sspai.com/post/40047" target="_blank" rel="noopener">少数派 - 免费全平台的文件分享利器：SendAnywhere</a></p>
-</blockquote>
-<p>Send Anywhere 将文件上传到一个 p2p 网络上面，并非其服务器上，通过随机六位接收码进行文件接受。这样的传输方式保证了文件的安全性和完整性，又能有相当的上传、下载和传输速度。Send Anywhere 可以说是全平台 Airdrop 了。</p>
-<p><img src="https://i.loli.net/2018/07/19/5b502ce929342.jpg" alt="Send Anywhere.jpg"></p>
-<p>同时 Send Anywhere 有设备记忆功能，于是在曾经传输过文件的设备上，下一次传输连那个六位接收码都不必输入了。这样的分享文件的特性可以说是跨平台的救命稻草了。</p>
-<h4 id="⑤-smpic-开源的-sm-ms-图床上传软件"><a href="#⑤-smpic-开源的-sm-ms-图床上传软件" class="headerlink" title="⑤ smpic - 开源的 sm.ms 图床上传软件"></a>⑤ <a href="https://github.com/kookob/smpic" target="_blank" rel="noopener">smpic - 开源的 sm.ms 图床上传软件</a></h4><p>我的博客图片全部都放到了第三方的图床上面，这让我需要有一个便捷的图片上传途径。</p>
-<p>在 macOS 上面，这篇文章里面：<a href="https://spencerwoo.com/2018/01/28/SM-MS/">SM.MS - 一名优秀的图床的艺术之旅</a> 我介绍了利用 Automator 实现一个全局上传并自动转换为 Markdown 格式的图片路径的解决方案。在 Windows 上也有同样的便捷手段。</p>
-<p>smpic 通过 SM.MS 图床的 API 与大名鼎鼎的 AutoHotKey 脚本实现了这样的图片上传利器，</p>
-<h4 id="⑥-Typora-可能是-Windows-上最好的-Markdown-编辑器"><a href="#⑥-Typora-可能是-Windows-上最好的-Markdown-编辑器" class="headerlink" title="⑥ Typora - 可能是 Windows 上最好的 Markdown 编辑器"></a>⑥ Typora - 可能是 Windows 上最好的 Markdown 编辑器</h4><p><img src="https://i.loli.net/2018/07/19/5b5035748035d.png" alt="typora.png"></p>
-<p>Typora 不必多说了，基本上是 Windows 上写 Markdown 的必备利器了。我的这篇文章就是在 Windows 的 Typora 上面编写完成的。我派对 Typora 也有详尽的介绍，在这里 –&gt; <a href="https://sspai.com/post/30292" target="_blank" rel="noopener">让 Markdown 写作更简单，免费极简编辑器：Typora</a></p>
-<h4 id="⑦-Snipaste-可能是-Windows-上最好的截图工具"><a href="#⑦-Snipaste-可能是-Windows-上最好的截图工具" class="headerlink" title="⑦ Snipaste - 可能是 Windows 上最好的截图工具"></a>⑦ Snipaste - 可能是 Windows 上最好的截图工具</h4><p><img src="https://i.loli.net/2018/07/19/5b5024ce5bd88.png" alt="snipaste.png"></p>
-<p>Snipaste 着实是 Windows 上最好的截图工具。但 Snipaste 除了我们常见的截图标注、窗口检测、全局快捷键等等简朴必备技能，还有贴图、取色等等高阶可玩性。</p>
-<p><img src="https://i.loli.net/2018/07/19/5b5034c7c0e71.gif" alt="snipaste2.gif"></p>
-<p>Snipaste 的开发者对 Snipaste 很是上心，我派单独采访了这位同学，在这里有更加具体的介绍 –&gt; <a href="https://sspai.com/post/35097" target="_blank" rel="noopener">幕后丨他做了最强免费「截图」工具 Snipaste 后，还有上万字的话想说</a></p>
-<p>上面介绍的工具中，除了 ⑤ 和 ⑥ 这两个外，剩下的都有幸被我加入开机自启动名单。🎉</p>
-<h3 id="3-桌面-Windows-化"><a href="#3-桌面-Windows-化" class="headerlink" title="3. 桌面 Windows 化"></a>3. 桌面 Windows 化</h3><p><img src="https://i.loli.net/2018/07/19/5b4f763b5c845.png" alt="desktop.png"></p>
-<h4 id="①-TranslucentTB-开源的任务栏透明小工具-⭐⭐⭐⭐⭐"><a href="#①-TranslucentTB-开源的任务栏透明小工具-⭐⭐⭐⭐⭐" class="headerlink" title="① TranslucentTB - 开源的任务栏透明小工具 ⭐⭐⭐⭐⭐"></a>① TranslucentTB - 开源的任务栏透明小工具 ⭐⭐⭐⭐⭐</h4><p><a href="https://sspai.com/post/43178" target="_blank" rel="noopener">Windows 10 上纯粹的任务栏透明化软件：TranslucentTB</a> 免费、开源、绿色，完美解决了 Windows 任务栏透明的问题，它利用了 Windows 10 API，简洁小巧。五星推荐。</p>
-<h4 id="②-Rainmeter-大名鼎鼎的-Windows-桌面专业美化插件"><a href="#②-Rainmeter-大名鼎鼎的-Windows-桌面专业美化插件" class="headerlink" title="② Rainmeter - 大名鼎鼎的 Windows 桌面专业美化插件"></a>② Rainmeter - 大名鼎鼎的 Windows 桌面专业美化插件</h4><p>对于深度美化 Windows 桌面的同学来说，Rainmeter 的重要性可想而知。我只小小利用了其桌面时钟的显示。</p>
-<h4 id="③-Simple-Desktops-极简风格壁纸提供站点"><a href="#③-Simple-Desktops-极简风格壁纸提供站点" class="headerlink" title="③ Simple Desktops - 极简风格壁纸提供站点"></a>③ <a href="http://simpledesktops.com/browse/" target="_blank" rel="noopener">Simple Desktops</a> - 极简风格壁纸提供站点</h4><p>Windows 美化方面，壁纸可以说是重中之重。一张简单可爱的壁纸可以奠定整个工作的态度。在 Simple Desktops 里我总能找到可爱的壁纸。</p>
-<h4 id="④-极简风格的审美要求和苛刻到极致的完美追求"><a href="#④-极简风格的审美要求和苛刻到极致的完美追求" class="headerlink" title="④ 极简风格的审美要求和苛刻到极致的完美追求"></a>④ 极简风格的审美要求和苛刻到极致的完美追求</h4><p>这一方面就是仁者见仁智者见智了。简洁的文件管理、不复杂凌乱的桌面和长清理的使用习惯会让你的 Windows 使用体验蒸蒸日上。💗</p>
+<p>Hyper 是一个基于 Election 的终端 Terminal Emulator，是一个插件丰富的、跨平台的终端。我写过一个有关它的详细介绍，在这里 –&gt; <a href="https://spencerwoo.com/2018/06/16/Terminal/">HOW TO | 让自己的终端漂亮得不像实力派</a>。在 Windows 下，可以通过 Hyper 调用 WSL 中的 <code>bash.exe</code>，这样就不用面对万恶的小黑框了。😈</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b64b2096d5.png" alt="13_我的当前开发环境.png"></p>
+<p>这样折腾之后，一套可用的基于命令行的开发环境也处于可用状态了。目前存在的问题是从 Windows 端调用 Linux 内部的指令还是有些问题，比如我在 Visual Studio Code 中试图调用 Linux 环境下的 Python 解释器进行调试就异常麻烦，目前 Visual Studio Code 团队对 C/C++ 和 Node.js 的调试都已经适配完成，至于 Python、Go 等语言，我相信未来的适配也会越来越完善。</p>
 <p><br></p>
-<h1 id="0x03-体验呢？"><a href="#0x03-体验呢？" class="headerlink" title="0x03 体验呢？"></a>0x03 体验呢？</h1><blockquote>
-<p>要不是为了你这么舒服的键盘、这么大的屏幕、可以接受的轻巧、以及三个标准 USB 插口，我才不会抛弃我的 MacBook！😈</p>
-</blockquote>
-<p>确实，通过上面的折腾，我已经能够让自己在 Windows 上的开发、学习与撰写文章的体验近似 macOS 了，同时得益于我现在这台 Windows 电脑 (ThinkPad X1 Yoga) 出色的显示性能 (2K OLED) 我并没有失去 MacBook Retina Display 的使用体验，反而性能提升让我能够更加自由方便的使用 Photoshop 和 Premier 了。</p>
-<p>这台二合一的显示色彩着实出色，其触屏和 4096 压感的 Wacom 手写笔也让我能够充分发挥其笔记、绘画和 PDF 的标注功能。</p>
-<p><br></p>
-<h1 id="0x04-Finally"><a href="#0x04-Finally" class="headerlink" title="0x04 Finally"></a>0x04 Finally</h1><p><img src="https://i.loli.net/2018/07/17/5b4e108c8c9fe.jpg" alt="ThinkPad.JPG"></p>
+<h2 id="最后的体验"><a href="#最后的体验" class="headerlink" title="最后的体验"></a>最后的体验</h2><p>经过这样的折腾，我也基本上实现了 iPhone 和 Windows 的无缝联动，在 Windows 上面，效率工具和开发环境的体验也和 macOS 上的体验相差无几了。</p>
+<p>当然，为了习惯去让一个系统无谓的模拟另一个系统的体验是毫无意义的，我在 Windows 上可以使用 OneDrive 方便的同步我的文件，可以利用手写笔方便的对 PDF 进行标注，在 OneNote 上进行笔记书写，甚至可以用 Autodesk SketchBook 进行绘画。这些都是 macOS 上无法完成的功能。同时，Windows 上 Office 套件的体验，我不得不承认要比在 macOS 上好 100 倍。</p>
+<p>现在对我而言，Windows 最不方便的地方还是在于，在做软件与计算机方面学习，下载依赖有着诸多不便，毕竟不是原生的 Unix，但综合体验上，无论是美学、还是效率，我给我目前的 Windows 打五星。⭐⭐⭐⭐⭐</p>
+<p><img src="https://i.loli.net/2018/07/28/5b5b64c596554.jpg" alt="14_My ThinkPad.jpg"></p>
 <p>虽然服役两年的 MacBook 因为被动散热和 m5 处理器让我无奈使其退役，但是这款 MacBook 依旧是我使用过最为美丽的电脑之一。</p>
 <blockquote>
-<p>我看过太多人被习惯绑架。比如，用 IE 浏览器习惯了，不习惯用 Chrome；用 Windows 习惯了，觉得 macOS 用起来别扭。哪怕是买了 Mac 笔记本也要去安装一个盗版 Windows；用 iPhone 习惯了，用不了 Android；用一门编程语言用习惯了，不想学第二门编程语言。</p>
+<p>我看过太多人被习惯绑架。比如，用 IE 浏览器习惯了，不习惯用 Chrome；用 Windows 习惯了，觉得 macOS  用起来别扭。哪怕是买了 Mac 笔记本也要去安装一个盗版 Windows；用 iPhone 习惯了，用不了  Android；用一门编程语言用习惯了，不想学第二门编程语言。</p>
 </blockquote>
 <p>人不能被工具禁锢啊。</p>
-<p>就这样。撒花。</p>
+<p>就这样，撒花。🎉</p>
 <p><br></p>
 <p><a href="https://spencerwoo.com">© Spencer Woo</a></p>
 
@@ -605,7 +628,7 @@
                     Visitor statistics by <a href="http://busuanzi.ibruce.info/">不蒜子</a> and <a href="https://www.google.com/analytics/">Google Analytics</a>
 
                     <br> -->
-                    2017 年来我已经写了 31.5k 字
+                    2017 年来我已经写了 32.5k 字
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-heart"></i>
                     </span>

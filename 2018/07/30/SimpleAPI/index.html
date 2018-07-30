@@ -15,11 +15,11 @@
 
     <title>
         
-          一个有意思的 Python 训练项目集 | 二周目 - Spencer Woo
+          Simple Deskop API | 一喵一图 - Spencer Woo
         
     </title>
 
-    <link rel="canonical" href="https://spencerwoo.com/2018/04/28/PythonTwo/">
+    <link rel="canonical" href="https://spencerwoo.com/2018/07/30/SimpleAPI/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -174,8 +174,8 @@
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header {
-        /* background-image: url('https://i.loli.net/2018/04/28/5ae497625015a.jpg') */
-        background-image: url('https://i.loli.net/2018/04/28/5ae497625015a.jpg')
+        /* background-image: url('https://i.loli.net/2018/07/31/5b5f3cde5cc6a.jpg') */
+        background-image: url('https://i.loli.net/2018/07/31/5b5f3cde5cc6a.jpg')
     }
 </style>
 <header class="intro-header">
@@ -189,6 +189,10 @@
                                 sexy moves
                             </a>
                             
+                            <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                tutorial
+                            </a>
+                            
                             <a class="tag" href="/tags/#code" title="code">
                                 code
                             </a>
@@ -198,8 +202,8 @@
                             </a>
                             
                     </div>
-                    <h1>一个有意思的 Python 训练项目集 | 二周目</h1>
-                    <h2 class="subheading">Dumb ways to code 2.</h2>
+                    <h1>Simple Deskop API | 一喵一图</h1>
+                    <h2 class="subheading">An image API displaying random pictures curated by Simple Desktops.</h2>
                     <span class="meta">
                         <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-book"></i>
@@ -208,12 +212,12 @@
                         <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-calendar"></i>
                         </span> 日期
-                        2018-04-28
+                        2018-07-30
                             <br><br>
                             <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-bar-chart"></i>
                         </span> 共
-                            803 字
+                            789 字
                                 <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-hourglass-2"></i>
                         </span> 可能要读上
@@ -236,49 +240,45 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <script src="/assets/js/APlayer.min.js"> </script><p><a href="https://spencerwoo.com/2018/04/26/PythonOne/">【上一篇：一个有意思的 Python 训练项目集 | 一周目】</a></p>
-<p>今天没有进展。</p>
-<p>4 月的尾巴我把它消耗在折腾 Linux 上面了。</p>
-<p>Linux 是个无底洞。我在虚拟机上玩耍甚至能让我着迷 3 天。我先后安装了 CentOS 四次，Arch Linux 一次，Ubuntu 一次。折腾 Gnome 桌面，折腾 <code>yum</code>, <code>pacman</code> 和 <code>apt</code> 源，折腾 <code>wine</code>，折腾各种东西。</p>
-<p><img src="https://i.loli.net/2018/04/28/5ae49915eca0d.jpg" alt="img"></p>
-<p>我最终得到结论是：macOS 是最好的 Linux(-like) Distribution.</p>
+                <script src="/assets/js/APlayer.min.js"> </script><p>「一喵一图」：一个异常简单的随机图片 API，图源自极简主义桌面壁纸提供站点 → <a href="http://simpledesktops.com" target="_blank" rel="noopener">Simple Desktops</a> 🎉🎉🎉</p>
+<p><br></p>
+<h2 id="Simple-Desktops-这是什么？"><a href="#Simple-Desktops-这是什么？" class="headerlink" title="Simple Desktops? 这是什么？"></a>Simple Desktops? 这是什么？</h2><p>在上一篇文章：<a href="https://sspai.com/post/45742" target="_blank" rel="noopener">Mac To Win | 不完全迁移体验指北</a> 中我提到了一个优质的图片社区：Simple Desktops。</p>
+<p>Simple Desktops 提供了…</p>
 <blockquote>
-<p>因为，我有原生的 QQ 和微信，我有依赖干活的原生的 Photoshop 和 Illustrator，我还有独占的 Final Cut Pro X 和 Motion。而且我看到的好看的 Gnome 主题，（他敏感词的）居然都是类 macOS 的，我这按着我的审美配置之后，结果不是 macOS-like 就是 Ubuntu-like，甚至是 Combined flavor，就如上图。</p>
+<p>A collection of wallpapers designed to make your computer beautiful without distraction.</p>
 </blockquote>
-<p><strong>— EOF —</strong></p>
+<p>一组特别设计的壁纸，让你电脑桌面美观的同时又不妖艳而令人分心。</p>
+<p>但是很遗憾的是，Simple Desktops 的网站开发者们并没有提供一个结实可用的 API 给我们，如果想要在网络上使用 Simple Desktops 提供的图片，我们只能将图片下载到本地，再上传到自己的图床上进行使用。</p>
+<p>长期维护一个博客的我，经常因为文章首页题图而烦恼。曾经我使用的「Unsplash 无版权图片社区」提供了一个完美可用的 API，我能够直接将 Unsplash 给开发者提供的代码嵌入我的博客或者其他页面来引用它们的图片，这样的方便程度实在是令人印象深刻。</p>
+<p>我个人十分喜欢 Simple Desktops 提供的壁纸，它们简单、清晰，又符合设计美学。因此我也很想通过类似 Unsplash 提供的方式将 Simple Desktops 上面的壁纸用作我博客题图、文章配图等等地方。我于是设计了这样一个 API，它能够十分方便的将 Simple Desktops 的图片直接嵌入任何地方。</p>
+<p>我将它称作「一喵一图」。</p>
 <p><br></p>
-<h1 id="二周目的题目-批量压缩图片"><a href="#二周目的题目-批量压缩图片" class="headerlink" title="二周目的题目 | 批量压缩图片"></a>二周目的题目 | 批量压缩图片</h1><blockquote>
-<p><strong>【第 0005 题】</strong></p>
-<p>你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone5 分辨率的大小。</p>
-</blockquote>
-<h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><p>这个题要求实现的内容，讲道理，真的超级实用。特别是对于拥有大篇幅图片的博客作者，like 我。之前我的图片压缩操作是：</p>
-<ol>
-<li>从 Unsplash 上面下载 4 MB 甚至更大的图片；</li>
-<li>拖到 Photoshop 里面；</li>
-<li>另存为：选择最小尺寸，保存。</li>
-</ol>
-<p>然后图片就能变成大概 500 KB 左右那样子。然后压缩之后的照片还是超级难看，有摩尔斑纹那种的难看。</p>
-<p>但是为了网页的访问速度，我不得不一张一张压缩图片。</p>
-<h3 id="目标具象"><a href="#目标具象" class="headerlink" title="目标具象"></a>目标具象</h3><p><img src="https://i.loli.net/2018/04/29/5ae49bd8eb8b4.jpg" alt="img"></p>
-<p>如图里面两个文件夹的五张图片，要用 <code>os</code> 库将 <code>original</code> 文件夹里面的全部图片读取，进行压缩，然后输出到 <code>result</code> 文件夹里面。这是我们的目标。</p>
-<p>用到了 <code>os</code>, <code>glob</code> 库和 <code>PIL</code> 里面的 <code>Image</code> 库。</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>直接将下面代码嵌入到任何你想要放的地方。不必担心是否支持 <code>https</code>，因为不仅 <code>API</code> 的 <code>GET</code> 请求是通过 <code>https</code> 传输的，图片本身也是通过 <code>https</code> 传输的。( •̀ ω •́ )y</p>
+<p><strong>1. API 地址</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://api.spencerwoo.com</div></pre></td></tr></table></figure>
+<p><strong>2. Markdown</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![img](https://api.spencerwoo.com)</div></pre></td></tr></table></figure>
+<p><strong>3. HTML</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://api.spencerwoo.com"</span> <span class="attr">alt</span>=<span class="string">"img.png"</span> <span class="attr">title</span>=<span class="string">"img.png"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<p>图片随机显示并且每次刷新都将更新新的图片。由于版权问题以及 Simple Desktops 本身并没有将图片进行分类，我自然无法将图片分类，同时由于 Simple Desktops 网站本身不支持 <code>https</code>，我无法也无益直接提供 Simple Desktops 的图片外链。</p>
 <p><br></p>
-<h1 id="Talk-is-cheap-show-me-the-code"><a href="#Talk-is-cheap-show-me-the-code" class="headerlink" title="Talk is cheap, show me the code."></a>Talk is cheap, show me the code.</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env python3</span></div><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"></div><div class="line"><span class="string">"""</span></div><div class="line"><span class="string">你有一个目录，装了很多照片，把它们的尺寸变成都不大于 iPhone5 分辨率的大小。</span></div><div class="line"><span class="string">"""</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</div><div class="line"><span class="keyword">import</span> glob</div><div class="line"></div><div class="line"></div><div class="line">origin_dir = <span class="string">'original'</span></div><div class="line">target_dir = <span class="string">'result'</span></div><div class="line"><span class="comment"># threshold: iPhone 5 maximum resolution</span></div><div class="line">width_limit = <span class="number">1136</span></div><div class="line">height_limit = <span class="number">640</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">compress_image</span><span class="params">(image_dir, result_dir, target_width, target_height)</span>:</span></div><div class="line">    working_dir = os.path.dirname(os.path.realpath(__file__))</div><div class="line"></div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        print(<span class="string">'---&gt; Loading images...'</span>)</div><div class="line">        my_images = glob.glob(<span class="string">'&#123;&#125;/*'</span>.format(image_dir))</div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(result_dir):</div><div class="line">            os.makedirs(result_dir)</div><div class="line"></div><div class="line">        <span class="keyword">for</span> each_img, i <span class="keyword">in</span> zip(my_images, range(<span class="number">1</span>, len(my_images)+<span class="number">1</span>)):</div><div class="line">            print(str(i) + <span class="string">':'</span>, each_img)</div><div class="line">            <span class="keyword">with</span> Image.open(each_img) <span class="keyword">as</span> img:</div><div class="line">                width, height = img.size</div><div class="line">                <span class="comment"># print(each_img, width, height, os.path.getsize(each_img))</span></div><div class="line">                <span class="keyword">if</span> os.path.getsize(each_img) &gt; target_width * target_height:</div><div class="line">                    <span class="comment"># print(each_img)</span></div><div class="line">                    <span class="keyword">if</span> width &gt; height:</div><div class="line">                        new_width = target_width</div><div class="line">                        new_height = int(new_width * height / width)</div><div class="line">                    <span class="keyword">else</span>:</div><div class="line">                        new_height = target_width</div><div class="line">                        new_width = int(new_height * width / height)</div><div class="line">                    <span class="comment"># print(new_width, new_height)</span></div><div class="line">                    result_img = img.resize((new_width, new_height))</div><div class="line">                    result_img_name = each_img.replace(image_dir, result_dir)</div><div class="line">                    result_img.save(result_img_name)</div><div class="line"></div><div class="line">        print(<span class="string">'---&gt;'</span>, i, <span class="string">'images loaded and compressed.'</span>)</div><div class="line">        print(<span class="string">'---&gt; Saved in'</span>, working_dir + <span class="string">'/'</span> + result_dir)</div><div class="line"></div><div class="line">    <span class="keyword">except</span> OSError <span class="keyword">as</span> e:</div><div class="line">        print(e)</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></div><div class="line">    compress_image(origin_dir, target_dir, width_limit, height_limit)</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    main()</div></pre></td></tr></table></figure>
-<h3 id="坑点分析"><a href="#坑点分析" class="headerlink" title="坑点分析"></a>坑点分析</h3><ul>
-<li>利用 <code>glob</code> 来进行文件匹配：<ul>
-<li><code>my_images = glob.glob(&#39;{}/*&#39;.format(image_dir))</code> 即表示找到 <code>image_dir</code> 下面的全部文件</li>
+<h2 id="好看吗？"><a href="#好看吗？" class="headerlink" title="好看吗？"></a>好看吗？</h2><p><img src="https://i.loli.net/2018/07/30/5b5ecdb7b783a.png" alt="sshot-1.png"></p>
+<p>目前在使用 <strong>「一喵一图」</strong> 的网站有这些:</p>
+<ul>
+<li><a href="https://spencerwoo.com">https://spencerwoo.com</a></li>
 </ul>
-</li>
-<li>因为压缩目标是根据图片分辨率来判断的，即在 <code>compress_image()</code> 函数中两个参数：<code>width_limit</code> 和 <code>height_limit</code>，so 得判断一下图片是横着还是竖着。</li>
-<li>我就想到这两个坑点。</li>
-<li>我悄咪咪写了如果只有一张图片就直接输出到 <code>workspace</code> 目录，省事er。</li>
+<p>如果你在使用我的 API 并且想将你的网站加到列表里面来，<a href="https://github.com/spencerwoo98/spencer-simple-desktop-api" target="_blank" rel="noopener">请直接 fork 本项目</a>，修改这里的列表，然后给我发一个 PR 就 ok 了。或者你也可以直接在项目的 Issue 区、本页面的评论区、少数派私信等等各种能够联系到我的方式告知我，干杯。🎉</p>
+<p>欢迎 Star，欢迎 PR。</p>
+<p><br></p>
+<h2 id="致谢与版权声明"><a href="#致谢与版权声明" class="headerlink" title="致谢与版权声明"></a>致谢与版权声明</h2><p><strong>服务稳定全靠天，随时跑路不留名。</strong></p>
+<ul>
+<li>Images at Simple Desktops are for personal use and for personal use only. They shouldn’t be sold or reposted without the expressed written consent of the desktop creator. See <a href="http://simpledesktops.com/about/" target="_blank" rel="noopener">Simple Desktops</a> for more details.</li>
+<li>A huge thank you to SM.MS for providing such a stable and awesome image hosting service. </li>
+<li>Server provided by <a href="https://www.vultr.com/" target="_blank" rel="noopener">VULTR - The Infrastructure Cloud™</a>.</li>
 </ul>
-<p>就这些。</p>
+<p>项目经由 MIT License 发布。</p>
 <p><br></p>
-<h1 id="REPO"><a href="#REPO" class="headerlink" title="REPO"></a>REPO</h1><p>【项目地址】<a href="https://github.com/spencerwoo98/Dumb-Ways-To-Code" target="_blank" rel="noopener">spencerwoo98 | Dumb ways to code</a></p>
-<p><br></p>
-<p><br></p>
-<p>© Spencer Woo</p>
+<p><a href="https://spencerwoo.com">© Spencer Woo</a></p>
 
 
                     <hr>
@@ -318,7 +318,7 @@
                     <script src="/js/comment.js"></script>
                     <script>
                         var gitment = new Gitment({
-                            id: 'https://spencerwoo.com/2018/04/28/PythonTwo/', // 可选。默认为 location.href
+                            id: 'https://spencerwoo.com/2018/07/30/SimpleAPI/', // 可选。默认为 location.href
                             owner: 'spencerwoo98',
                             repo: 'spencerwoo98.github.io',
                             oauth: {
@@ -332,13 +332,9 @@
 
                     <ul class="pager">
                         
-                            <li class="previous">
-                                <a href="/2018/04/29/LinuxWall/" data-toggle="tooltip" data-placement="top" title="Material Designed Wallpaper for Linux | 一点微小的工作">&larr; Previous Post</a>
-                            </li>
-                            
                                 
                                     <li class="next">
-                                        <a href="/2018/04/26/PythonOne/" data-toggle="tooltip" data-placement="top" title="一个有意思的 Python 训练项目集 | 一周目">Next Post &rarr;</a>
+                                        <a href="/2018/07/19/Windows101/" data-toggle="tooltip" data-placement="top" title="Windows One On One">Next Post &rarr;</a>
                                     </li>
                                     
                     </ul>
@@ -365,6 +361,10 @@
                             
                                 <a class="tag" href="/tags/#sexy moves" title="sexy moves">
                                     sexy moves
+                                </a>
+                                
+                                <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                    tutorial
                                 </a>
                                 
                                 <a class="tag" href="/tags/#code" title="code">

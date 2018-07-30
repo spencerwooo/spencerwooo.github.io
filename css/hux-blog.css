@@ -61,11 +61,10 @@
 }
 
 .photocredit {
-  font-family: 'Noto Serif CJK SC', sans-serif;
+  font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   color: rgba(255, 255, 255, 0.80);
   font-size: 10px;
-  text-decoration: overline;
-  text-align: end;
+  text-align: start;
   font-weight: 100;
   padding: 20px;
 }
@@ -77,6 +76,10 @@
 .photocredit a:hover,
 a:focus {
   color: rgba(255, 255, 255, 1);
+}
+
+.header-black-shade {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 body {

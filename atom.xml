@@ -3,7 +3,7 @@
   <title>Spencer Woo</title>
   <icon>https://www.gravatar.com/avatar/3ac258739291acea853bf86b8882e6e2</icon>
   <subtitle>啊，你在看我的主页。</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="//atom.xml" rel="self"/>
   
   <link href="https://spencerwoo.com/"/>
   <updated>2018-07-30T16:46:04.309Z</updated>
@@ -36,11 +36,11 @@
     </summary>
     
     
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
-    
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -66,9 +66,9 @@
     </summary>
     
     
-      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
   </entry>
   
@@ -92,9 +92,9 @@
     </summary>
     
     
-      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
   </entry>
   
@@ -119,11 +119,11 @@
     </summary>
     
     
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
-    
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -148,9 +148,9 @@
     </summary>
     
     
-      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
   </entry>
   
@@ -228,9 +228,9 @@
     </summary>
     
     
-      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -282,9 +282,9 @@
     </summary>
     
     
-      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -312,9 +312,9 @@
     </summary>
     
     
-      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -397,9 +397,9 @@
       <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
     
     
-      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
   </entry>
   
@@ -451,9 +451,9 @@
     </summary>
     
     
-      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -482,13 +482,13 @@
       <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
     
     
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
     
       <category term="atom" scheme="https://spencerwoo.com/tags/atom/"/>
-    
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -566,9 +566,9 @@
     </summary>
     
     
-      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
-    
       <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
     
       <category term="mac" scheme="https://spencerwoo.com/tags/mac/"/>
     

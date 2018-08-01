@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Spencer Woo</title>
+  <icon>https://www.gravatar.com/avatar/3ac258739291acea853bf86b8882e6e2</icon>
+  <subtitle>啊，你在看我的主页。</subtitle>
+  <link href="/feed.xml" rel="self"/>
+  
+  <link href="https://spencerwoo.com/"/>
+  <updated>2018-07-30T16:46:04.309Z</updated>
+  <id>https://spencerwoo.com/</id>
+  
+  <author>
+    <name>Spencer Woo</name>
+    <email>spencerwoo98@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Simple Deskop API | 一喵一图</title>
+    <link href="https://spencerwoo.com/2018/07/30/SimpleAPI/"/>
+    <id>https://spencerwoo.com/2018/07/30/SimpleAPI/</id>
+    <published>2018-07-30T15:32:08.000Z</published>
+    <updated>2018-07-30T16:46:04.309Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/spencerwoo98/spencer-simple-desktop-api&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows One On One</title>
+    <link href="https://spencerwoo.com/2018/07/19/Windows101/"/>
+    <id>https://spencerwoo.com/2018/07/19/Windows101/</id>
+    <published>2018-07-19T07:19:16.000Z</published>
+    <updated>2018-07-27T19:34:08.960Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;Mac-To-Win-不完全迁移体验指北&quot;&gt;&lt;a href=&quot;#Mac-To-Win-不完全迁移体验指北&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>應用推介 | Humble New Tab Page for Chrome</title>
+    <link href="https://spencerwoo.com/2018/07/09/Humble/"/>
+    <id>https://spencerwoo.com/2018/07/09/Humble/</id>
+    <published>2018-07-09T06:38:09.000Z</published>
+    <updated>2018-07-14T16:17:08.130Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Chrome 浏览器因为其众多扩展和丰富的插件使之成为浏览器的一哥，丰富的插件也让我们能够高度定制化我们的 Chrome
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vultr Helper | 随时随地，看你的服务器</title>
+    <link href="https://spencerwoo.com/2018/06/28/VultrHelper/"/>
+    <id>https://spencerwoo.com/2018/06/28/VultrHelper/</id>
+    <published>2018-06-28T08:12:05.000Z</published>
+    <updated>2018-07-09T06:03:44.540Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/06/25/5b30d07d03b86.png&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;What is
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HOW TO | 让自己的终端漂亮得不像实力派</title>
+    <link href="https://spencerwoo.com/2018/06/16/Terminal/"/>
+    <id>https://spencerwoo.com/2018/06/16/Terminal/</id>
+    <published>2018-06-16T14:40:40.000Z</published>
+    <updated>2018-06-17T10:08:47.950Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+&lt;p&gt;本篇文章在 macOS 下编写， 在 Windows
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fragments | 你好貳拾 再見知乎</title>
+    <link href="https://spencerwoo.com/2018/06/10/ByeZhihu/"/>
+    <id>https://spencerwoo.com/2018/06/10/ByeZhihu/</id>
+    <published>2018-06-10T07:19:44.000Z</published>
+    <updated>2018-06-10T08:09:04.440Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="碎碎念" scheme="https://spencerwoo.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="fragments" scheme="https://spencerwoo.com/tags/fragments/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HOW TO | 魔改 macOS 状态栏</title>
+    <link href="https://spencerwoo.com/2018/05/29/MacStatusBar/"/>
+    <id>https://spencerwoo.com/2018/05/29/MacStatusBar/</id>
+    <published>2018-05-29T07:42:50.000Z</published>
+    <updated>2018-06-04T10:05:53.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;开源的 FreeBSD 成就了今天的 macOS，但是今天的 macOS 却因为闭源而失去了很多可定制化的地方。在 Linux 下动动编辑器改改代码就可以实现所谓的 UI
+        
+      
+    
+    </summary>
+    
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个有意思的 Python 训练项目集 | 三周目</title>
+    <link href="https://spencerwoo.com/2018/05/07/PyThree/"/>
+    <id>https://spencerwoo.com/2018/05/07/PyThree/</id>
+    <published>2018-05-07T05:29:20.000Z</published>
+    <updated>2018-05-07T06:21:25.700Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;a href=&quot;https://spencerwoo.com/2018/04/28/PythonTwo/&quot;&gt;【上一篇：一个有意思的 Python 训练项目集 |
+        
+      
+    
+    </summary>
+    
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Material Designed Wallpaper for Linux | 一点微小的工作</title>
+    <link href="https://spencerwoo.com/2018/04/29/LinuxWall/"/>
+    <id>https://spencerwoo.com/2018/04/29/LinuxWall/</id>
+    <published>2018-04-29T13:34:37.000Z</published>
+    <updated>2018-04-29T15:44:11.380Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h1 id=&quot;设计初衷&quot;&gt;&lt;a href=&quot;#设计初衷&quot; class=&quot;headerlink&quot; title=&quot;设计初衷&quot;&gt;&lt;/a&gt;设计初衷&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个有意思的 Python 训练项目集 | 二周目</title>
+    <link href="https://spencerwoo.com/2018/04/28/PythonTwo/"/>
+    <id>https://spencerwoo.com/2018/04/28/PythonTwo/</id>
+    <published>2018-04-28T15:42:11.000Z</published>
+    <updated>2018-05-07T05:29:56.080Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;a href=&quot;https://spencerwoo.com/2018/04/26/PythonOne/&quot;&gt;【上一篇：一个有意思的 Python 训练项目集 |
+        
+      
+    
+    </summary>
+    
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个有意思的 Python 训练项目集 | 一周目</title>
+    <link href="https://spencerwoo.com/2018/04/26/PythonOne/"/>
+    <id>https://spencerwoo.com/2018/04/26/PythonOne/</id>
+    <published>2018-04-26T11:09:27.000Z</published>
+    <updated>2018-04-28T15:55:47.300Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+&lt;p&gt;A python a day keeps the PM away.&lt;/p&gt;
+&lt;p&gt;因为太菜，所以这是第一篇技术博，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>啊 记录碎片</title>
+    <link href="https://spencerwoo.com/2018/04/19/Fragments-2/"/>
+    <id>https://spencerwoo.com/2018/04/19/Fragments-2/</id>
+    <published>2018-04-19T10:57:16.000Z</published>
+    <updated>2018-04-19T12:36:50.380Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;div align=&quot;center&quot;&gt;&lt;br&gt;    &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="碎碎念" scheme="https://spencerwoo.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="fragments" scheme="https://spencerwoo.com/tags/fragments/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>泰山 | LOG</title>
+    <link href="https://spencerwoo.com/2018/04/13/%E6%B3%B0%E5%B1%B1-LOG/"/>
+    <id>https://spencerwoo.com/2018/04/13/泰山-LOG/</id>
+    <published>2018-04-13T13:41:46.000Z</published>
+    <updated>2018-04-13T15:48:39.020Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="碎碎念" scheme="https://spencerwoo.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HOW TO | iPhone 带壳截屏终极体验指北</title>
+    <link href="https://spencerwoo.com/2018/04/01/HOW-TO-%E5%B8%A6%E5%A3%B3%E6%88%AA%E5%B1%8F/"/>
+    <id>https://spencerwoo.com/2018/04/01/HOW-TO-带壳截屏/</id>
+    <published>2018-04-01T11:16:05.000Z</published>
+    <updated>2018-04-02T14:56:37.420Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+&lt;p&gt;本文首发于我的博客：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
+    
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fragments | 鱼二与鱼</title>
+    <link href="https://spencerwoo.com/2018/03/29/Fragments-%E9%B1%BC%E4%BA%8C%E4%B8%8E%E9%B1%BC/"/>
+    <id>https://spencerwoo.com/2018/03/29/Fragments-鱼二与鱼/</id>
+    <published>2018-03-29T12:24:43.000Z</published>
+    <updated>2018-04-18T05:44:57.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h4 id=&quot;鱼二&quot;&gt;&lt;a href=&quot;#鱼二&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="碎碎念" scheme="https://spencerwoo.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="fragments" scheme="https://spencerwoo.com/tags/fragments/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sexy Donate</title>
+    <link href="https://spencerwoo.com/2018/03/15/Sexy-Donate/"/>
+    <id>https://spencerwoo.com/2018/03/15/Sexy-Donate/</id>
+    <published>2018-03-15T10:49:07.000Z</published>
+    <updated>2018-03-15T12:20:02.820Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;前几天稍微写了一个小小的打赏 &lt;strong&gt;碎片。&lt;/strong&gt; 给 Hexo
+        
+      
+    
+    </summary>
+    
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Atom 入坑指南</title>
+    <link href="https://spencerwoo.com/2018/03/11/Atom-%E5%85%A5%E5%9D%91%E6%8C%87%E5%8D%97/"/>
+    <id>https://spencerwoo.com/2018/03/11/Atom-入坑指南/</id>
+    <published>2018-03-11T11:18:57.000Z</published>
+    <updated>2018-04-09T01:00:36.010Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+&lt;p&gt;本文首发于我的博客 - &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
+    
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="atom" scheme="https://spencerwoo.com/tags/atom/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>知乎 | 如何鉴别文艺青年</title>
+    <link href="https://spencerwoo.com/2018/03/05/%E7%9F%A5%E4%B9%8E-%E5%A6%82%E4%BD%95%E9%89%B4%E5%88%AB%E6%96%87%E8%89%BA%E9%9D%92%E5%B9%B4/"/>
+    <id>https://spencerwoo.com/2018/03/05/知乎-如何鉴别文艺青年/</id>
+    <published>2018-03-05T11:35:34.000Z</published>
+    <updated>2018-03-05T12:27:04.100Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="碎碎念" scheme="https://spencerwoo.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="speak out" scheme="https://spencerwoo.com/tags/speak-out/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Lightroom</title>
+    <link href="https://spencerwoo.com/2018/02/27/The-Lightroom/"/>
+    <id>https://spencerwoo.com/2018/02/27/The-Lightroom/</id>
+    <published>2018-02-27T12:38:40.000Z</published>
+    <updated>2018-03-01T12:56:12.580Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;好看的照片三千一张，有趣的灵魂加个狗头。&quot;&gt;&lt;a href=&quot;#好看的照片三千一张，有趣的灵魂加个狗头。&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="碎碎念" scheme="https://spencerwoo.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SM.MS</title>
+    <link href="https://spencerwoo.com/2018/01/28/SM-MS/"/>
+    <id>https://spencerwoo.com/2018/01/28/SM-MS/</id>
+    <published>2018-01-28T08:25:32.000Z</published>
+    <updated>2018-01-28T12:12:10.130Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="mac" scheme="https://spencerwoo.com/tags/mac/"/>
+    
+  </entry>
+  
+</feed>

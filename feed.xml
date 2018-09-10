@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://spencerwoo.com/"/>
-  <updated>2018-08-11T16:27:23.888Z</updated>
+  <updated>2018-09-10T12:49:08.333Z</updated>
   <id>https://spencerwoo.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown 进阶操作 | 流程图、时序图制作</title>
+    <link href="https://spencerwoo.com/2018/09/10/MDCharts/"/>
+    <id>https://spencerwoo.com/2018/09/10/MDCharts/</id>
+    <published>2018-09-10T12:14:55.000Z</published>
+    <updated>2018-09-10T12:49:08.333Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://i.loli.net/2018/09/10/5b966095542c3.png" alt="1 Markdown with Typora.png"></p><p>自从我派在 2014 年发布了「<a href="https://sspai.com/post/25137" target="_blank" rel="noopener">认识与入门 Markdown</a>」这篇文章，Markdown 这个简洁、轻量而又强大的标记语言就逐渐走进了非专业人士的生活中。无论是对于程序员，还是博客作者、微信公众平台作者等等，Markdown 语言都逐渐深入人心。</p><p>作为可能是市面上免费的 Markdown 编辑器中最优雅的一个，还是全平台（Windows, macOS 和绝大多数 Linux 发行版）支持的 Markdown 利器 —— Typora，除了最基础的「标题」「列表」「表格」「图片」「代码」等等功能，你可能不知道的是：<strong>Typora 还原生支持直接绘制时序图 Sequence、流程图 Flow Chart，</strong>甚至<strong>直接集成了 Mermaid 渲染引擎。</strong></p><p>本文写作环境为 Windows 10 1803，Typora 版本 0.9.57 (beta)。在 Typora「偏好设置 → Markdown 扩展语法」中打开「序列图、流程图和 Mermaid 选项」即可开启相关绘制功能。</p><p><img src="https://i.loli.net/2018/09/10/5b9660b0a1ff3.png" alt="2 Typora Settings.png"></p><blockquote><p>Typora 官网参考：<a href="https://support.typora.io/Draw-Diagrams-With-Markdown/" target="_blank" rel="noopener">Draw Diagrams With Markdown</a></p></blockquote><h2 id="时序图-Sequence"><a href="#时序图-Sequence" class="headerlink" title="时序图 Sequence"></a>时序图 Sequence</h2><blockquote><p>Typora 的时序图渲染引擎是 <a href="https://bramp.github.io/js-sequence-diagrams/#syntax" target="_blank" rel="noopener"><code>js-sequence</code> - Turns text into UML sequence diagrams.</a></p></blockquote><p>在 Typora 中，你可以通过下面的方式开启时序图渲染：</p><p><img src="https://i.loli.net/2018/09/10/5b9663525d683.png" alt="code.png"></p><p>上面是时序图的代码例子，渲染之后，这个时序图是这个样子的：</p><p><img src="https://i.loli.net/2018/09/10/5b96613e8708f.png" alt="3 Sequence-1.png"></p><p>实际上时序图是一个循环，其<strong>基本元素包括标题 <code>Title</code>、参与者 <code>participant</code>、箭头 <code>-&gt;</code> 和标签 <code>Notes</code></strong>。经过渲染之后，每个参与者 <code>participant</code> 由两个元素块构成，一条线段将两个元素块连接，这样就可以方便的用箭头表示他们之间的转换关系了。</p><h3 id="标题和箭头的语法"><a href="#标题和箭头的语法" class="headerlink" title="标题和箭头的语法"></a>标题和箭头的语法</h3><p><img src="https://i.loli.net/2018/09/10/5b9663c41df18.png" alt="code.png"></p><p><strong>在时序图基本语法中：</strong>标题 <code>Title</code> 放在第一行，之后是参与者与用箭头标识的参与者之间的相互关系。</p><p>箭头有四种形式：常规箭头、虚线箭头、开口箭头和虚线开口箭头。分别通过：<code>-&gt;</code>、<code>--&gt;</code>、<code>-&gt;&gt;</code>、<code>--&gt;&gt;</code> 来表示。</p><p><img src="https://i.loli.net/2018/09/10/5b9661553d5ea.png" alt="4 Sequence-2.png"></p><h3 id="标签语法"><a href="#标签语法" class="headerlink" title="标签语法"></a>标签语法</h3><p><img src="https://i.loli.net/2018/09/10/5b9663f6e7036.png" alt="code.png"></p><p>在时序图中，我们可以通过「标签」这个组件来给我们的某个参与者或是某些参与者进行标注。标签可以放在参与者的左侧 - <code>Note left of A</code>、右侧 - <code>Note right of A</code> 或者浮于参与者上方 - <code>Note over A</code>。当然，标签也可以同时浮于两个参与者上方 - <code>Note over A,B</code>。</p><p><img src="https://i.loli.net/2018/09/10/5b966168e5334.png" alt="5 Sequence-3.png"></p><h3 id="参与者顺序语法"><a href="#参与者顺序语法" class="headerlink" title="参与者顺序语法"></a>参与者顺序语法</h3><p><img src="https://i.loli.net/2018/09/10/5b966422a0f8f.png" alt="code.png"></p><p>如果我们希望更改参与者的顺序，那么可以在一开始按照我们想要的顺序，先列出参与者的名字：<code>participant A</code> 这样。</p><p><img src="https://i.loli.net/2018/09/10/5b9661789a6bd.png" alt="6 Sequence-4.png"></p><p>上面的几个例子是 Typora 所支持的基本时序图绘制语法，除了这些相对大的语法外，还有注释：<code># 你的注释</code> 和在某个模块中换行：<code>\n</code> 这两个重要的语法。基本上通过这样的方式，我们就能绘制出简单的时序图了。🍻</p><p>更加详细的语法可以通过下图进行实现，深黄色为关键保留词，浅黄色为具体信息：</p><p><img src="https://i.loli.net/2018/09/10/5b96619b6d8c9.png" alt="7 Grammar.png"></p><h2 id="流程图-Flow-Chart"><a href="#流程图-Flow-Chart" class="headerlink" title="流程图 Flow Chart"></a>流程图 Flow Chart</h2><blockquote><p>Typora 的时序图渲染引擎是 <a href="http://flowchart.js.org" target="_blank" rel="noopener"><code>flowchart.js</code> - Draws simple SVG flow chart diagrams from textual representation of the diagram.</a></p></blockquote><p>流程图的代码部分相对复杂。我们先从 Typora 官方文档给出的例子开始：</p><p><img src="https://i.loli.net/2018/09/10/5b966447ac1d6.png" alt="code.png"></p><p>上面这部分代码，我们可以看到流程图的渲染代码<strong>大体分为两个部分：元素定义部分、元素连接部分。</strong>即：首先在第一部分，我们<strong>定义整个流程图中的节点元素</strong>；之后在第二部分，我们将各个节点通过箭头连接，以<strong>表示整个图表的流向。</strong></p><p>经过渲染之后，我们可以得到以下这样的基础流程图：</p><p><img src="https://i.loli.net/2018/09/10/5b9661aa79bd2.png" alt="8 Flow-1.png"></p><h4 id="第一部分：元素定义"><a href="#第一部分：元素定义" class="headerlink" title="第一部分：元素定义"></a>第一部分：元素定义</h4><p>我们从第一部分开始，可以看到，一个流程图的基本元素有六大类别：</p><ul><li><code>start</code>：流程图开始</li><li><code>end</code>：流程图结束</li><li><code>operation</code>：操作</li><li><code>subroutine</code>：子进程</li><li><code>condition</code>：判断条件</li><li><code>inputoutput</code>：输入输出</li></ul><p>元素定义部分的基本代码结构是这样的：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tag=&gt;type: content:&gt;url</div></pre></td></tr></table></figure><p>其中：</p><ul><li><code>tag</code>：就是作为第二部分连接元素时候引用我们定义元素时的名称，这个 <code>tag</code> 需要独一无二。</li><li><code>type</code>：就是我们流程图的六大基本元素类别，选择元素种类填入即可。</li><li><code>content</code>：是我们流程图元素中所显示的文字。这里的冒号与文本之间一定要有个空格。</li><li><code>url</code>：是元素所带有的超链接。🔗</li></ul><p>这样就是我们元素定义部分的基本语法了。🎉🎉🎉</p><h4 id="第二部分：元素连接"><a href="#第二部分：元素连接" class="headerlink" title="第二部分：元素连接"></a>第二部分：元素连接</h4><p>第二部分就是将我们在第一部分定义的元素通过我们想要的方式进行连接。</p><p>在这一部分，连接十分简单，就是利用 <code>-&gt;</code> 来连接我们在第一部分定义的那些元素，元素利用 <code>tag</code> 来区分。这里面需要注意的是：</p><ul><li>对于每个「判断条件元素」 <code>condition</code>，都会有 <code>yes</code> 和 <code>no</code> 两个分支，比如上面代码中的 <code>cond(yes)</code> 和 <code>cond(no)</code>。</li><li>每个元素可以制定分支走向，默认是 <code>向下</code> 的，也可以用 <code>right</code> 指向右边，比如下面这个流程图中，我们可以将「子进程元素」 <code>subroutine</code> 放在右侧显示：</li></ul><p><img src="https://i.loli.net/2018/09/10/5b96647b9b6fc.png" alt="code.png"></p><p><img src="https://i.loli.net/2018/09/10/5b9661cb98988.png" alt="9 Flow-2.png"></p><h2 id="Mermaid-集成"><a href="#Mermaid-集成" class="headerlink" title="Mermaid 集成"></a>Mermaid 集成</h2><blockquote><p>Typora also has integration with <a href="https://knsv.github.io/mermaid/#mermaid" target="_blank" rel="noopener">mermaid</a>, which supports sequence, flowchart and Gantt.</p></blockquote><p>Mermaid 是另一种更加方便的生成流程图、时序图的语法 ——「Generation of diagrams and flowcharts from text in a similar manner as markdown.」。其官方文档在这里 → <a href="https://mermaidjs.github.io/" target="_blank" rel="noopener">mermaid.js</a>。Typora 集成了 Mermaid 渲染引擎，我们可以直接用 Mermaid 语法画时序图、流程图和甘特图。🎉🎉🎉</p><p>这部分语法相对更加复杂，而本篇文章我已经写了近两千字了，因此我决定另起一篇文章进行介绍：包括 Mermaid 基础语法的介绍、甘特图 Gantt 的介绍和利用 Mermaid 绘制 Sequence, Flowchart 和 Gantt 这三种基本图像的方法。👌</p><p>感谢阅读。🍻</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
+    
+      <category term="sspai" scheme="https://spencerwoo.com/tags/sspai/"/>
+    
+  </entry>
   
   <entry>
     <title>主页推荐 | 新时代的互联网门户 - 万花筒</title>
@@ -38,9 +68,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="sspai" scheme="https://spencerwoo.com/tags/sspai/"/>
     
@@ -68,11 +98,11 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="sspai" scheme="https://spencerwoo.com/tags/sspai/"/>
     
@@ -102,9 +132,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="sspai" scheme="https://spencerwoo.com/tags/sspai/"/>
     
@@ -132,9 +162,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -160,11 +190,11 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="sspai" scheme="https://spencerwoo.com/tags/sspai/"/>
     
@@ -192,9 +222,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -280,9 +310,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -338,9 +368,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -368,9 +398,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -458,9 +488,9 @@
       <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -516,9 +546,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="github" scheme="https://spencerwoo.com/tags/github/"/>
     
@@ -548,11 +578,11 @@
       <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="atom" scheme="https://spencerwoo.com/tags/atom/"/>
     
@@ -640,9 +670,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="mac" scheme="https://spencerwoo.com/tags/mac/"/>
     
@@ -670,9 +700,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -700,9 +730,9 @@
       <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="android" scheme="https://spencerwoo.com/tags/android/"/>
     
@@ -786,9 +816,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="sublime text" scheme="https://spencerwoo.com/tags/sublime-text/"/>
     
@@ -816,11 +846,11 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -846,9 +876,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -900,9 +930,9 @@
     </summary>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="Java" scheme="https://spencerwoo.com/tags/Java/"/>
     
@@ -962,9 +992,9 @@
       <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
   </entry>
   
@@ -1089,7 +1119,7 @@
     <published>2017-10-01T13:27:43.000Z</published>
     <updated>2018-01-26T04:05:02.580Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="10月1日-举国同庆"><a href="#10月1日-举国同庆" class="headerlink" title="10月1日 举国同庆"></a>10月1日 举国同庆</h2><p><br><br><div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"video":{"url":"http://owkccdyrm.bkt.clouddn.com/Lana%20Del%20Rey%20-%20White%20Mustang%20%28Official%20Video%29.mp4","pic":"http://owkccdyrm.bkt.clouddn.com/3.jpg"}});</script><!-- dplayer used1 --><br><br><br>我刚刚回到哈尔滨。<br><br><br>「自古逢秋悲寂寥 我言秋日胜春朝」<br><br><br>啥意思呢。<br>真 TM 冷。<br>寒冷是一个城市对一个人最大的恶意。<br><br></p><h3 id="约拍"><a href="#约拍" class="headerlink" title="约拍"></a>约拍</h3><p><br><br>约见了唐朝 —— 人称「人型三脚架 人抖手不抖」<br>要继续拍我的「东方树叶」镜头，特写，戏精博博。<br>最后成片，1分半的镜头。<br><strong>有1分15秒是废的。</strong><br><br><br><img src="http://owkccdyrm.bkt.clouddn.com/39FAA52D-52A1-463A-8971-657BBF73408E.JPG" alt="img"><br>▲凯德广场地下超市 | 农夫山泉区 | EOS 650D f/5.0 1/60s ISO 1000<br><br><br>这里遇见的人。<br>都觉得看着三瓶东方树叶傻笑的我。<br>和旁边举着单反傻笑的唐朝。<br>是傻子。<br><br><br>哎。<br><strong>做电影的人总得有点戏份加身。</strong><br>职业素养。<br><br></p><h3 id="大风"><a href="#大风" class="headerlink" title="大风"></a>大风</h3><p><br><br>今天感受到了这座城市深深的恶意。<br>穿了三件衣服。<br>T恤、衬衫、外套。<br>寒风还是彻骨的冷。<br><br><br><img src="http://owkccdyrm.bkt.clouddn.com/9AB2055A-549F-4E01-B756-B5EA8C68491E.JPG" alt="img"><br>▲哈工大西门 | EOS 650D f/5.6 1/50s ISO 6400<br><br><br>旁边有烤苞米的师傅。<br>他问我假期怎么没回家啊。<br>哎，我都说「这烤苞米是怎么卖的」了，都不够证明我是东北人吗。<br><br><br>工大里面的小姐姐都没有我的小姐姐可爱。<br>工大旁边的烧烤倒是比陪小姐姐吃的火锅好吃。<br>下次要带小姐姐吃烧烤、火锅、烤羊排、披萨、薯条和烤冷面。<br>小姐姐请多穿。<br><br></p><h3 id="市井的"><a href="#市井的" class="headerlink" title="市井的"></a>市井的</h3><p><br><br>五点多的天已经开始黑起来了。<br>刚刚吃完烧烤的我。<br><strong>饥肠辘辘。</strong><br><br><br><img src="http://owkccdyrm.bkt.clouddn.com/12498C79-FCD5-42B5-9827-CCE00D8B51D3.JPG" alt="img"><br>▲哈工大西门 | 唯有爱与美食不可辜负的大鱿鱼 | EOS 650D f/5.6 1/50s ISO 6400<br><br><br><br><br><img src="http://owkccdyrm.bkt.clouddn.com/6362F135-09A8-4AB5-B41C-70F477F26625.JPG" alt="img"><br>▲哈工大西门 | 烤面筋 | EOS 650D f/5.6 1.50s ISO 6400<br><br><br>唯有美食与爱不可辜负。<br>烤鱿鱼的师傅可以说是很文艺了。<br><br><br>我在这附近走啊走啊走。<br>可我约的车就是没到。<br><br><br>累。<br><br></p><blockquote><p>我也知晓，岁月无情、姑娘无尽。但亦遗憾，不能永世和你在一起。<br>所以祝你幸福，祝你幸福。<br>祝你幸福。</p></blockquote><p><br><br>鞠躬。<br><br><br><br></p><p>©2017 Spencer Woo</p>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="10月1日-举国同庆"><a href="#10月1日-举国同庆" class="headerlink" title="10月1日 举国同庆"></a>10月1日 举国同庆</h2><p><br><br><div id="dplayer2" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer2 = new DPlayer({"element":document.getElementById("dplayer2"),"video":{"url":"http://owkccdyrm.bkt.clouddn.com/Lana%20Del%20Rey%20-%20White%20Mustang%20%28Official%20Video%29.mp4","pic":"http://owkccdyrm.bkt.clouddn.com/3.jpg"}});</script><!-- dplayer used1 --><br><br><br>我刚刚回到哈尔滨。<br><br><br>「自古逢秋悲寂寥 我言秋日胜春朝」<br><br><br>啥意思呢。<br>真 TM 冷。<br>寒冷是一个城市对一个人最大的恶意。<br><br></p><h3 id="约拍"><a href="#约拍" class="headerlink" title="约拍"></a>约拍</h3><p><br><br>约见了唐朝 —— 人称「人型三脚架 人抖手不抖」<br>要继续拍我的「东方树叶」镜头，特写，戏精博博。<br>最后成片，1分半的镜头。<br><strong>有1分15秒是废的。</strong><br><br><br><img src="http://owkccdyrm.bkt.clouddn.com/39FAA52D-52A1-463A-8971-657BBF73408E.JPG" alt="img"><br>▲凯德广场地下超市 | 农夫山泉区 | EOS 650D f/5.0 1/60s ISO 1000<br><br><br>这里遇见的人。<br>都觉得看着三瓶东方树叶傻笑的我。<br>和旁边举着单反傻笑的唐朝。<br>是傻子。<br><br><br>哎。<br><strong>做电影的人总得有点戏份加身。</strong><br>职业素养。<br><br></p><h3 id="大风"><a href="#大风" class="headerlink" title="大风"></a>大风</h3><p><br><br>今天感受到了这座城市深深的恶意。<br>穿了三件衣服。<br>T恤、衬衫、外套。<br>寒风还是彻骨的冷。<br><br><br><img src="http://owkccdyrm.bkt.clouddn.com/9AB2055A-549F-4E01-B756-B5EA8C68491E.JPG" alt="img"><br>▲哈工大西门 | EOS 650D f/5.6 1/50s ISO 6400<br><br><br>旁边有烤苞米的师傅。<br>他问我假期怎么没回家啊。<br>哎，我都说「这烤苞米是怎么卖的」了，都不够证明我是东北人吗。<br><br><br>工大里面的小姐姐都没有我的小姐姐可爱。<br>工大旁边的烧烤倒是比陪小姐姐吃的火锅好吃。<br>下次要带小姐姐吃烧烤、火锅、烤羊排、披萨、薯条和烤冷面。<br>小姐姐请多穿。<br><br></p><h3 id="市井的"><a href="#市井的" class="headerlink" title="市井的"></a>市井的</h3><p><br><br>五点多的天已经开始黑起来了。<br>刚刚吃完烧烤的我。<br><strong>饥肠辘辘。</strong><br><br><br><img src="http://owkccdyrm.bkt.clouddn.com/12498C79-FCD5-42B5-9827-CCE00D8B51D3.JPG" alt="img"><br>▲哈工大西门 | 唯有爱与美食不可辜负的大鱿鱼 | EOS 650D f/5.6 1/50s ISO 6400<br><br><br><br><br><img src="http://owkccdyrm.bkt.clouddn.com/6362F135-09A8-4AB5-B41C-70F477F26625.JPG" alt="img"><br>▲哈工大西门 | 烤面筋 | EOS 650D f/5.6 1.50s ISO 6400<br><br><br>唯有美食与爱不可辜负。<br>烤鱿鱼的师傅可以说是很文艺了。<br><br><br>我在这附近走啊走啊走。<br>可我约的车就是没到。<br><br><br>累。<br><br></p><blockquote><p>我也知晓，岁月无情、姑娘无尽。但亦遗憾，不能永世和你在一起。<br>所以祝你幸福，祝你幸福。<br>祝你幸福。</p></blockquote><p><br><br>鞠躬。<br><br><br><br></p><p>©2017 Spencer Woo</p>]]></content>
     
     <summary type="html">
     
@@ -1164,9 +1194,9 @@
       <category term="摄影" scheme="https://spencerwoo.com/categories/%E6%91%84%E5%BD%B1/"/>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="photography" scheme="https://spencerwoo.com/tags/photography/"/>
     
@@ -1179,7 +1209,7 @@
     <published>2017-09-21T11:47:14.000Z</published>
     <updated>2018-04-09T01:00:50.580Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h3><p>才疏学浅，不知所云。<br><br><br>学弟问我，大一开始学 C 语言，很难的样子。<br>第一堂课不知道老师说了些什么。不知道写什么，也不知道用什么写。<br><br><br>是啊，为什么要用 C 语言，作为一门入门编程语言呢。日常唉声叹气。<br><br></p><h2 id="The-C-Programming-Language"><a href="#The-C-Programming-Language" class="headerlink" title="The C Programming Language"></a>The C Programming Language</h2><p>C 语言是一门悠久的语言，悠久到1972年。<br>然而过了40年，现在教我们入门 C 语言的老师们，仍在叫我们用 <a href="http://baike.baidu.com/item/Microsoft%20Visual%20C++%206.0/8120077?fr=aladdin&amp;fromid=2703807&amp;fromtitle=vc%2B%2B6.0" target="_blank" rel="noopener">VC++ 6.0</a>，这个来自上个世纪，和我一般大小的，1998年的 IDE。<br><br><br>心疼。<br><br></p><h2 id="HOW-TO"><a href="#HOW-TO" class="headerlink" title="HOW TO"></a>HOW TO</h2><p>最简单的 C 语言代码。<br>最经典的 C 语言代码。<br>嗯。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment">* @Author: spencerwoo</span></div><div class="line"><span class="comment">* @Date:   2017-09-21 20:48:06</span></div><div class="line"><span class="comment">* @Last Modified by:   spencerwoo</span></div><div class="line"><span class="comment">* @Last Modified time: 2017-09-21 20:48:20</span></div><div class="line"><span class="comment">*/</span></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span>&#123;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"Hello world.\n"</span>);</div><div class="line"><span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>好了。我们实现了利用 C 语言输出一段文字「Hello world.」到控制台「Console」。<br><strong>鼓掌。</strong><br>所以呢，我们在哪里写这段代码，怎么编译再运行这段代码呢？<br>新手的你我，先用 IDE 吧。<br><br></p><h2 id="IDE——集成开发环境"><a href="#IDE——集成开发环境" class="headerlink" title="IDE——集成开发环境"></a>IDE——集成开发环境</h2><p>Integrated Development Environment<br>集成开发环境</p><p>市面上有哪些比较适合新人的能编写 C 语言 IDE？<br>按照我对它们的好感度，我排了个序。<br><br></p><h3 id="C语言最好最可爱的-IDE-有什么"><a href="#C语言最好最可爱的-IDE-有什么" class="headerlink" title="C语言最好最可爱的 IDE 有什么!"></a>C语言最好最可爱的 IDE 有什么!</h3><ol><li><a href="http://www.codeblocks.org" target="_blank" rel="noopener">Codeblock</a><br> 轻便，实用，编译快，体积小，没广告，还跨平台(Windows, Linux, macOS)。</li><li><a href="http://www.visualstudio.com/zh-hans/?rr=http%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DBnjZjnni1FE4vM64sPEdPFTsmxa1lrrP3IjDV-f2iuKYKGDOOBRdeCguoZh1kgkr%26wd%3D%26eqid%3Db8fe73c20006b3fb0000000359c3af73" target="_blank" rel="noopener">Visual Studio 2017 Community</a><br> 地表最强 IDE，巨硬开发。大、全、不仅能开发 C语言程序，还能开发其他各种应用。臃肿，容易把电脑弄坏。谨慎食用，但上手体验极佳。</li><li><a href="http://www.jetbrains.com/clion/" target="_blank" rel="noopener">CLion</a><br> 逼格最高 IDE，JetBrain家的。极为强大。极为高贵。极贵。</li><li><a href="http://www.bloodshed.net/devcpp.html" target="_blank" rel="noopener">Dev C++</a><br> 最受欢迎，最丑，最容易上手。emmm，其实还是可用的。(ACM-ICPC集训队推荐)</li><li>记事本<br> 不解释。甩链接 -&gt;<ul><li><a href="http://spencerwoo98.github.io/2017/09/20/3/" target="_blank" rel="noopener">Why you should use Sublime Text 3 as your text editor.</a></li><li><a href="http://zhuanlan.zhihu.com/p/28045283" target="_blank" rel="noopener">如何优雅的在 macOS 上编译调试 C++ 程序？</a><br>希望进阶的同学，敬请等待更新。<br><br></li></ul></li></ol><h2 id="编译运行？喵喵喵？？"><a href="#编译运行？喵喵喵？？" class="headerlink" title="编译运行？喵喵喵？？"></a>编译运行？喵喵喵？？</h2><p><strong>C语言源代码</strong></p><ul><li>编译—-&gt;形成目标代码，目标代码是在目标机器上运行的代码。</li><li>连接—-&gt;将目标代码与C函数库相连接，并将源程序所用的库代码与目标代码合并，并形成最终可执行的二进制机器代码（程序）。</li><li>执行—-&gt;在特定的机器环境下运行C程序。</li></ul><p>这三个步骤，由操作系统以及 IDE 帮助我们进行。<br>请看具体操作。</p><h4 id="具体操作-Code-Blocks-示例"><a href="#具体操作-Code-Blocks-示例" class="headerlink" title="具体操作(Code::Blocks 示例)"></a>具体操作(Code::Blocks 示例)</h4><ol><li>创建新文件<ul><li>主菜单中选择「File -&gt; New -&gt; Project…」</li><li>在弹出的菜单中选择「Console application」（这是控制台程序的意思）</li><li>下面界面，选择开发语言，我们选 C</li><li>然后弹出界面，这里「Project title」填你要创建的工程名，「Folder to create project in」选择你要保存工程文件的目录。后面两个是自动生成的工程文件，和工程文件的位置。每个工程都对应一个工程文件</li><li>后面全部选择默认选项，直接 Next</li><li>向导结束后，工程创建完成。在左边 Projects 窗口中，我们能够看到创建好的工程里默认有一个名为「main.c」的文件</li></ul></li><li>编写代码</li><li>编译：<code>Ctrl</code> + <code>F9</code></li><li>运行：<code>F9</code></li></ol><p>最后我们的成功标志，就是在黑框框里面（终端/Console/CMD）出现 Hello World. 的字样。<br><br><br>FYI，如果你在 Mac 上面在终端里面用 gcc 编译运行，出现的效果大概是这个样子。<br><img src="http://owkccdyrm.bkt.clouddn.com/Jietu20170921-204928@2x.jpg" alt="img"><br>这代表我们的代码执行成功。<br><br></p><h4 id="下面这个视频是我在自己的-MacBook-上面用-Sublime-Text-3-创建文件-helloworld-c，在终端用-gcc-命令编译运行的过程。"><a href="#下面这个视频是我在自己的-MacBook-上面用-Sublime-Text-3-创建文件-helloworld-c，在终端用-gcc-命令编译运行的过程。" class="headerlink" title="下面这个视频是我在自己的 MacBook 上面用 Sublime Text 3 创建文件 helloworld.c，在终端用 gcc 命令编译运行的过程。"></a>下面这个视频是我在自己的 MacBook 上面用 Sublime Text 3 创建文件 helloworld.c，在终端用 gcc 命令编译运行的过程。</h4><div id="dplayer2" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer2 = new DPlayer({"element":document.getElementById("dplayer2"),"video":{"url":"http://owkccdyrm.bkt.clouddn.com/2.mov","pic":"http://owkccdyrm.bkt.clouddn.com/sublime-mac-c.jpg"}});</script><!-- dplayer used1 --><p><br></p><h2 id="最后最后"><a href="#最后最后" class="headerlink" title="最后最后"></a>最后最后</h2><p>学习新的语言都是艰难的过程。<br>Learning curve 很陡峭。<br>共勉。<br><br><br>毕竟，3年前的我，还不知道什么是 gcc 呢。<br><br><br>鞠躬。<br><br><br><br><br>©2017 Spencer Woo</p>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h3 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h3><p>才疏学浅，不知所云。<br><br><br>学弟问我，大一开始学 C 语言，很难的样子。<br>第一堂课不知道老师说了些什么。不知道写什么，也不知道用什么写。<br><br><br>是啊，为什么要用 C 语言，作为一门入门编程语言呢。日常唉声叹气。<br><br></p><h2 id="The-C-Programming-Language"><a href="#The-C-Programming-Language" class="headerlink" title="The C Programming Language"></a>The C Programming Language</h2><p>C 语言是一门悠久的语言，悠久到1972年。<br>然而过了40年，现在教我们入门 C 语言的老师们，仍在叫我们用 <a href="http://baike.baidu.com/item/Microsoft%20Visual%20C++%206.0/8120077?fr=aladdin&amp;fromid=2703807&amp;fromtitle=vc%2B%2B6.0" target="_blank" rel="noopener">VC++ 6.0</a>，这个来自上个世纪，和我一般大小的，1998年的 IDE。<br><br><br>心疼。<br><br></p><h2 id="HOW-TO"><a href="#HOW-TO" class="headerlink" title="HOW TO"></a>HOW TO</h2><p>最简单的 C 语言代码。<br>最经典的 C 语言代码。<br>嗯。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"><span class="comment">* @Author: spencerwoo</span></div><div class="line"><span class="comment">* @Date:   2017-09-21 20:48:06</span></div><div class="line"><span class="comment">* @Last Modified by:   spencerwoo</span></div><div class="line"><span class="comment">* @Last Modified time: 2017-09-21 20:48:20</span></div><div class="line"><span class="comment">*/</span></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span>&#123;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"Hello world.\n"</span>);</div><div class="line"><span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>好了。我们实现了利用 C 语言输出一段文字「Hello world.」到控制台「Console」。<br><strong>鼓掌。</strong><br>所以呢，我们在哪里写这段代码，怎么编译再运行这段代码呢？<br>新手的你我，先用 IDE 吧。<br><br></p><h2 id="IDE——集成开发环境"><a href="#IDE——集成开发环境" class="headerlink" title="IDE——集成开发环境"></a>IDE——集成开发环境</h2><p>Integrated Development Environment<br>集成开发环境</p><p>市面上有哪些比较适合新人的能编写 C 语言 IDE？<br>按照我对它们的好感度，我排了个序。<br><br></p><h3 id="C语言最好最可爱的-IDE-有什么"><a href="#C语言最好最可爱的-IDE-有什么" class="headerlink" title="C语言最好最可爱的 IDE 有什么!"></a>C语言最好最可爱的 IDE 有什么!</h3><ol><li><a href="http://www.codeblocks.org" target="_blank" rel="noopener">Codeblock</a><br> 轻便，实用，编译快，体积小，没广告，还跨平台(Windows, Linux, macOS)。</li><li><a href="http://www.visualstudio.com/zh-hans/?rr=http%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DBnjZjnni1FE4vM64sPEdPFTsmxa1lrrP3IjDV-f2iuKYKGDOOBRdeCguoZh1kgkr%26wd%3D%26eqid%3Db8fe73c20006b3fb0000000359c3af73" target="_blank" rel="noopener">Visual Studio 2017 Community</a><br> 地表最强 IDE，巨硬开发。大、全、不仅能开发 C语言程序，还能开发其他各种应用。臃肿，容易把电脑弄坏。谨慎食用，但上手体验极佳。</li><li><a href="http://www.jetbrains.com/clion/" target="_blank" rel="noopener">CLion</a><br> 逼格最高 IDE，JetBrain家的。极为强大。极为高贵。极贵。</li><li><a href="http://www.bloodshed.net/devcpp.html" target="_blank" rel="noopener">Dev C++</a><br> 最受欢迎，最丑，最容易上手。emmm，其实还是可用的。(ACM-ICPC集训队推荐)</li><li>记事本<br> 不解释。甩链接 -&gt;<ul><li><a href="http://spencerwoo98.github.io/2017/09/20/3/" target="_blank" rel="noopener">Why you should use Sublime Text 3 as your text editor.</a></li><li><a href="http://zhuanlan.zhihu.com/p/28045283" target="_blank" rel="noopener">如何优雅的在 macOS 上编译调试 C++ 程序？</a><br>希望进阶的同学，敬请等待更新。<br><br></li></ul></li></ol><h2 id="编译运行？喵喵喵？？"><a href="#编译运行？喵喵喵？？" class="headerlink" title="编译运行？喵喵喵？？"></a>编译运行？喵喵喵？？</h2><p><strong>C语言源代码</strong></p><ul><li>编译—-&gt;形成目标代码，目标代码是在目标机器上运行的代码。</li><li>连接—-&gt;将目标代码与C函数库相连接，并将源程序所用的库代码与目标代码合并，并形成最终可执行的二进制机器代码（程序）。</li><li>执行—-&gt;在特定的机器环境下运行C程序。</li></ul><p>这三个步骤，由操作系统以及 IDE 帮助我们进行。<br>请看具体操作。</p><h4 id="具体操作-Code-Blocks-示例"><a href="#具体操作-Code-Blocks-示例" class="headerlink" title="具体操作(Code::Blocks 示例)"></a>具体操作(Code::Blocks 示例)</h4><ol><li>创建新文件<ul><li>主菜单中选择「File -&gt; New -&gt; Project…」</li><li>在弹出的菜单中选择「Console application」（这是控制台程序的意思）</li><li>下面界面，选择开发语言，我们选 C</li><li>然后弹出界面，这里「Project title」填你要创建的工程名，「Folder to create project in」选择你要保存工程文件的目录。后面两个是自动生成的工程文件，和工程文件的位置。每个工程都对应一个工程文件</li><li>后面全部选择默认选项，直接 Next</li><li>向导结束后，工程创建完成。在左边 Projects 窗口中，我们能够看到创建好的工程里默认有一个名为「main.c」的文件</li></ul></li><li>编写代码</li><li>编译：<code>Ctrl</code> + <code>F9</code></li><li>运行：<code>F9</code></li></ol><p>最后我们的成功标志，就是在黑框框里面（终端/Console/CMD）出现 Hello World. 的字样。<br><br><br>FYI，如果你在 Mac 上面在终端里面用 gcc 编译运行，出现的效果大概是这个样子。<br><img src="http://owkccdyrm.bkt.clouddn.com/Jietu20170921-204928@2x.jpg" alt="img"><br>这代表我们的代码执行成功。<br><br></p><h4 id="下面这个视频是我在自己的-MacBook-上面用-Sublime-Text-3-创建文件-helloworld-c，在终端用-gcc-命令编译运行的过程。"><a href="#下面这个视频是我在自己的-MacBook-上面用-Sublime-Text-3-创建文件-helloworld-c，在终端用-gcc-命令编译运行的过程。" class="headerlink" title="下面这个视频是我在自己的 MacBook 上面用 Sublime Text 3 创建文件 helloworld.c，在终端用 gcc 命令编译运行的过程。"></a>下面这个视频是我在自己的 MacBook 上面用 Sublime Text 3 创建文件 helloworld.c，在终端用 gcc 命令编译运行的过程。</h4><div id="dplayer1" class="dplayer" style="margin-bottom: 20px;"></div><script>var dplayer1 = new DPlayer({"element":document.getElementById("dplayer1"),"video":{"url":"http://owkccdyrm.bkt.clouddn.com/2.mov","pic":"http://owkccdyrm.bkt.clouddn.com/sublime-mac-c.jpg"}});</script><!-- dplayer used1 --><p><br></p><h2 id="最后最后"><a href="#最后最后" class="headerlink" title="最后最后"></a>最后最后</h2><p>学习新的语言都是艰难的过程。<br>Learning curve 很陡峭。<br>共勉。<br><br><br>毕竟，3年前的我，还不知道什么是 gcc 呢。<br><br><br>鞠躬。<br><br><br><br><br>©2017 Spencer Woo</p>]]></content>
     
     <summary type="html">
     
@@ -1196,11 +1226,11 @@
       <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="tutorial" scheme="https://spencerwoo.com/tags/tutorial/"/>
     
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="sublime text" scheme="https://spencerwoo.com/tags/sublime-text/"/>
     
@@ -1230,9 +1260,9 @@
       <category term="教程向" scheme="https://spencerwoo.com/categories/%E6%95%99%E7%A8%8B%E5%90%91/"/>
     
     
-      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
-    
       <category term="code" scheme="https://spencerwoo.com/tags/code/"/>
+    
+      <category term="sexy moves" scheme="https://spencerwoo.com/tags/sexy-moves/"/>
     
       <category term="sublime text" scheme="https://spencerwoo.com/tags/sublime-text/"/>
     

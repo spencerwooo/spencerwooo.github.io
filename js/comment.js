@@ -1,6 +1,6 @@
 var Gitment =
     /******/
-    (function(modules) { // webpackBootstrap
+    (function (modules) { // webpackBootstrap
         /******/ // The module cache
         /******/
         var installedModules = {};
@@ -52,13 +52,13 @@ var Gitment =
         /******/
         /******/ // identity function for calling harmony imports with the correct context
         /******/
-        __webpack_require__.i = function(value) {
+        __webpack_require__.i = function (value) {
             return value;
         };
         /******/
         /******/ // define getter function for harmony exports
         /******/
-        __webpack_require__.d = function(exports, name, getter) {
+        __webpack_require__.d = function (exports, name, getter) {
             /******/
             if (!__webpack_require__.o(exports, name)) {
                 /******/
@@ -78,7 +78,7 @@ var Gitment =
         /******/
         /******/ // getDefaultExport function for compatibility with non-harmony modules
         /******/
-        __webpack_require__.n = function(module) {
+        __webpack_require__.n = function (module) {
             /******/
             var getter = module && module.__esModule ?
                 /******/
@@ -98,7 +98,7 @@ var Gitment =
         /******/
         /******/ // Object.prototype.hasOwnProperty.call
         /******/
-        __webpack_require__.o = function(object, property) {
+        __webpack_require__.o = function (object, property) {
             return Object.prototype.hasOwnProperty.call(object, property);
         };
         /******/
@@ -116,7 +116,7 @@ var Gitment =
 ([
     /* 0 */
     /***/
-    (function(module, exports, __webpack_require__) {
+    (function (module, exports, __webpack_require__) {
 
         "use strict";
 
@@ -133,30 +133,30 @@ var Gitment =
     }),
     /* 1 */
     /***/
-    (function(module, exports, __webpack_require__) {
+    (function (module, exports, __webpack_require__) {
 
         "use strict";
         /* WEBPACK VAR INJECTION */
-        (function(global) {
+        (function (global) {
 
-            var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
+            var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
                 return typeof obj;
-            } : function(obj) {
+            } : function (obj) {
                 return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
             };
 
-            var __extends = undefined && undefined.__extends || function() {
+            var __extends = undefined && undefined.__extends || function () {
                 var extendStatics = Object.setPrototypeOf || {
                     __proto__: []
                 }
-                instanceof Array && function(d, b) {
+                instanceof Array && function (d, b) {
                     d.__proto__ = b;
-                } || function(d, b) {
+                } || function (d, b) {
                     for (var p in b) {
                         if (b.hasOwnProperty(p)) d[p] = b[p];
                     }
                 };
-                return function(d, b) {
+                return function (d, b) {
                     extendStatics(d, b);
 
                     function __() {
@@ -192,20 +192,20 @@ var Gitment =
                 __MOBX_DEVTOOLS_GLOBAL_HOOK__.injectMobx(module.exports);
             }
             module.exports.default = module.exports;
-            var actionFieldDecorator = createClassPropertyDecorator(function(target, key, value, args, originalDescriptor) {
+            var actionFieldDecorator = createClassPropertyDecorator(function (target, key, value, args, originalDescriptor) {
                 var actionName = args && args.length === 1 ? args[0] : value.name || key || "<unnamed action>";
                 var wrappedAction = action(actionName, value);
                 addHiddenProp(target, key, wrappedAction);
-            }, function(key) {
+            }, function (key) {
                 return this[key];
-            }, function() {
+            }, function () {
                 invariant(false, getMessage("m001"));
             }, false, true);
-            var boundActionDecorator = createClassPropertyDecorator(function(target, key, value) {
+            var boundActionDecorator = createClassPropertyDecorator(function (target, key, value) {
                 defineBoundAction(target, key, value);
-            }, function(key) {
+            }, function (key) {
                 return this[key];
-            }, function() {
+            }, function () {
                 invariant(false, getMessage("m001"));
             }, false, false);
             var action = function action(arg1, arg2, arg3, arg4) {
@@ -225,7 +225,7 @@ var Gitment =
             };
 
             function namedActionDecorator(name) {
-                return function(target, prop, descriptor) {
+                return function (target, prop, descriptor) {
                     if (descriptor && typeof descriptor.value === "function") {
                         descriptor.value = createAction(name, descriptor.value);
                         descriptor.enumerable = false;
@@ -274,7 +274,7 @@ var Gitment =
                 invariant(typeof view === "function", getMessage("m004"));
                 invariant(isAction(view) === false, getMessage("m005"));
                 if (scope) view = view.bind(scope);
-                var reaction = new Reaction(name, function() {
+                var reaction = new Reaction(name, function () {
                     this.track(reactionRunner);
                 });
 
@@ -299,7 +299,7 @@ var Gitment =
                     effect = arg2;
                     scope = arg3;
                 }
-                var disposer = autorun(name, function(r) {
+                var disposer = autorun(name, function (r) {
                     if (predicate.call(scope)) {
                         r.dispose();
                         var prevUntracked = untrackedStart();
@@ -328,10 +328,10 @@ var Gitment =
                 if (delay === void 0) delay = 1;
                 if (scope) func = func.bind(scope);
                 var isScheduled = false;
-                var r = new Reaction(name, function() {
+                var r = new Reaction(name, function () {
                     if (!isScheduled) {
                         isScheduled = true;
-                        setTimeout(function() {
+                        setTimeout(function () {
                             isScheduled = false;
                             if (!r.isDisposed) r.track(reactionRunner);
                         }, delay);
@@ -370,12 +370,12 @@ var Gitment =
                 var firstTime = true;
                 var isScheduled = false;
                 var nextValue;
-                var r = new Reaction(opts.name, function() {
+                var r = new Reaction(opts.name, function () {
                     if (firstTime || opts.delay < 1) {
                         reactionRunner();
                     } else if (!isScheduled) {
                         isScheduled = true;
-                        setTimeout(function() {
+                        setTimeout(function () {
                             isScheduled = false;
                             reactionRunner();
                         }, opts.delay);
@@ -385,7 +385,7 @@ var Gitment =
                 function reactionRunner() {
                     if (r.isDisposed) return;
                     var changed = false;
-                    r.track(function() {
+                    r.track(function () {
                         var v = expression(r);
                         changed = valueDidChange(opts.compareStructural, nextValue, v);
                         nextValue = v;
@@ -400,16 +400,16 @@ var Gitment =
             exports.reaction = reaction;
 
             function createComputedDecorator(compareStructural) {
-                return createClassPropertyDecorator(function(target, name, _, __, originalDescriptor) {
+                return createClassPropertyDecorator(function (target, name, _, __, originalDescriptor) {
                     invariant(typeof originalDescriptor !== "undefined", getMessage("m009"));
                     invariant(typeof originalDescriptor.get === "function", getMessage("m010"));
                     var adm = asObservableObject(target, "");
                     defineComputedProperty(adm, name, originalDescriptor.get, originalDescriptor.set, compareStructural, false);
-                }, function(name) {
+                }, function (name) {
                     var observable = this.$mobx.values[name];
                     if (observable === undefined) return undefined;
                     return observable.get();
-                }, function(name, value) {
+                }, function (name, value) {
                     this.$mobx.values[name].set(value);
                 }, false, false);
             }
@@ -432,18 +432,18 @@ var Gitment =
                 invariant(typeof transformer === "function" && transformer.length < 2, "createTransformer expects a function that accepts one argument");
                 var objectCache = {};
                 var resetId = globalState.resetId;
-                var Transformer = function(_super) {
+                var Transformer = function (_super) {
                     __extends(Transformer, _super);
 
                     function Transformer(sourceIdentifier, sourceObject) {
-                        var _this = _super.call(this, function() {
+                        var _this = _super.call(this, function () {
                             return transformer(sourceObject);
                         }, undefined, false, "Transformer-" + transformer.name + "-" + sourceIdentifier, undefined) || this;
                         _this.sourceIdentifier = sourceIdentifier;
                         _this.sourceObject = sourceObject;
                         return _this;
                     }
-                    Transformer.prototype.onBecomeUnobserved = function() {
+                    Transformer.prototype.onBecomeUnobserved = function () {
                         var lastValue = this.value;
                         _super.prototype.onBecomeUnobserved.call(this);
                         delete objectCache[this.sourceIdentifier];
@@ -451,7 +451,7 @@ var Gitment =
                     };
                     return Transformer;
                 }(ComputedValue);
-                return function(object) {
+                return function (object) {
                     if (resetId !== globalState.resetId) {
                         objectCache = {};
                         resetId = globalState.resetId;
@@ -505,7 +505,7 @@ var Gitment =
                 invariant(arguments.length >= 2, getMessage("m014"));
                 invariant((typeof target === "undefined" ? "undefined" : _typeof(target)) === "object", getMessage("m015"));
                 invariant(!isObservableMap(target), getMessage("m016"));
-                properties.forEach(function(propSet) {
+                properties.forEach(function (propSet) {
                     invariant((typeof propSet === "undefined" ? "undefined" : _typeof(propSet)) === "object", getMessage("m017"));
                     invariant(!isObservable(propSet), getMessage("m018"));
                 });
@@ -605,68 +605,68 @@ var Gitment =
                 if (res !== v) return res;
                 return observable.box(v);
             }
-            var IObservableFactories = function() {
+            var IObservableFactories = function () {
                 function IObservableFactories() {}
-                IObservableFactories.prototype.box = function(value, name) {
+                IObservableFactories.prototype.box = function (value, name) {
                     if (arguments.length > 2) incorrectlyUsedAsDecorator("box");
                     return new ObservableValue(value, deepEnhancer, name);
                 };
-                IObservableFactories.prototype.shallowBox = function(value, name) {
+                IObservableFactories.prototype.shallowBox = function (value, name) {
                     if (arguments.length > 2) incorrectlyUsedAsDecorator("shallowBox");
                     return new ObservableValue(value, referenceEnhancer, name);
                 };
-                IObservableFactories.prototype.array = function(initialValues, name) {
+                IObservableFactories.prototype.array = function (initialValues, name) {
                     if (arguments.length > 2) incorrectlyUsedAsDecorator("array");
                     return new ObservableArray(initialValues, deepEnhancer, name);
                 };
-                IObservableFactories.prototype.shallowArray = function(initialValues, name) {
+                IObservableFactories.prototype.shallowArray = function (initialValues, name) {
                     if (arguments.length > 2) incorrectlyUsedAsDecorator("shallowArray");
                     return new ObservableArray(initialValues, referenceEnhancer, name);
                 };
-                IObservableFactories.prototype.map = function(initialValues, name) {
+                IObservableFactories.prototype.map = function (initialValues, name) {
                     if (arguments.length > 2) incorrectlyUsedAsDecorator("map");
                     return new ObservableMap(initialValues, deepEnhancer, name);
                 };
-                IObservableFactories.prototype.shallowMap = function(initialValues, name) {
+                IObservableFactories.prototype.shallowMap = function (initialValues, name) {
                     if (arguments.length > 2) incorrectlyUsedAsDecorator("shallowMap");
                     return new ObservableMap(initialValues, referenceEnhancer, name);
                 };
-                IObservableFactories.prototype.object = function(props, name) {
+                IObservableFactories.prototype.object = function (props, name) {
                     if (arguments.length > 2) incorrectlyUsedAsDecorator("object");
                     var res = {};
                     asObservableObject(res, name);
                     extendObservable(res, props);
                     return res;
                 };
-                IObservableFactories.prototype.shallowObject = function(props, name) {
+                IObservableFactories.prototype.shallowObject = function (props, name) {
                     if (arguments.length > 2) incorrectlyUsedAsDecorator("shallowObject");
                     var res = {};
                     asObservableObject(res, name);
                     extendShallowObservable(res, props);
                     return res;
                 };
-                IObservableFactories.prototype.ref = function() {
+                IObservableFactories.prototype.ref = function () {
                     if (arguments.length < 2) {
                         return createModifierDescriptor(referenceEnhancer, arguments[0]);
                     } else {
                         return refDecorator.apply(null, arguments);
                     }
                 };
-                IObservableFactories.prototype.shallow = function() {
+                IObservableFactories.prototype.shallow = function () {
                     if (arguments.length < 2) {
                         return createModifierDescriptor(shallowEnhancer, arguments[0]);
                     } else {
                         return shallowDecorator.apply(null, arguments);
                     }
                 };
-                IObservableFactories.prototype.deep = function() {
+                IObservableFactories.prototype.deep = function () {
                     if (arguments.length < 2) {
                         return createModifierDescriptor(deepEnhancer, arguments[0]);
                     } else {
                         return deepDecorator.apply(null, arguments);
                     }
                 };
-                IObservableFactories.prototype.struct = function() {
+                IObservableFactories.prototype.struct = function () {
                     if (arguments.length < 2) {
                         return createModifierDescriptor(deepStructEnhancer, arguments[0]);
                     } else {
@@ -678,11 +678,11 @@ var Gitment =
             exports.IObservableFactories = IObservableFactories;
             var observable = createObservable;
             exports.observable = observable;
-            Object.keys(IObservableFactories.prototype).forEach(function(key) {
+            Object.keys(IObservableFactories.prototype).forEach(function (key) {
                 return observable[key] = IObservableFactories.prototype[key];
             });
             observable.deep.struct = observable.struct;
-            observable.ref.struct = function() {
+            observable.ref.struct = function () {
                 if (arguments.length < 2) {
                     return createModifierDescriptor(refStructEnhancer, arguments[0]);
                 } else {
@@ -696,16 +696,16 @@ var Gitment =
 
             function createDecoratorForEnhancer(enhancer) {
                 invariant(!!enhancer, ":(");
-                return createClassPropertyDecorator(function(target, name, baseValue, _, baseDescriptor) {
+                return createClassPropertyDecorator(function (target, name, baseValue, _, baseDescriptor) {
                     assertPropertyConfigurable(target, name);
                     invariant(!baseDescriptor || !baseDescriptor.get, getMessage("m022"));
                     var adm = asObservableObject(target, undefined);
                     defineObservableProperty(adm, name, baseValue, enhancer);
-                }, function(name) {
+                }, function (name) {
                     var observable = this.$mobx.values[name];
                     if (observable === undefined) return undefined;
                     return observable.get();
-                }, function(name, value) {
+                }, function (name, value) {
                     setPropertyValue(this, name, value);
                 }, true, false);
             }
@@ -745,7 +745,7 @@ var Gitment =
                     }
                     if (isObservableArray(source)) {
                         var res = cache([]);
-                        var toAdd = source.map(function(value) {
+                        var toAdd = source.map(function (value) {
                             return toJS(value, detectCycles, __alreadySeen);
                         });
                         res.length = toAdd.length;
@@ -763,7 +763,7 @@ var Gitment =
                     }
                     if (isObservableMap(source)) {
                         var res_1 = cache({});
-                        source.forEach(function(value, key) {
+                        source.forEach(function (value, key) {
                             return res_1[key] = toJS(value, detectCycles, __alreadySeen);
                         });
                         return res_1;
@@ -903,7 +903,7 @@ var Gitment =
             function allowStateChangesEnd(prev) {
                 globalState.allowStateChanges = prev;
             }
-            var BaseAtom = function() {
+            var BaseAtom = function () {
                 function BaseAtom(name) {
                     if (name === void 0) {
                         name = "Atom@" + getNextId();
@@ -916,22 +916,22 @@ var Gitment =
                     this.lastAccessedBy = 0;
                     this.lowestObserverState = IDerivationState.NOT_TRACKING;
                 }
-                BaseAtom.prototype.onBecomeUnobserved = function() {};
-                BaseAtom.prototype.reportObserved = function() {
+                BaseAtom.prototype.onBecomeUnobserved = function () {};
+                BaseAtom.prototype.reportObserved = function () {
                     reportObserved(this);
                 };
-                BaseAtom.prototype.reportChanged = function() {
+                BaseAtom.prototype.reportChanged = function () {
                     startBatch();
                     propagateChanged(this);
                     endBatch();
                 };
-                BaseAtom.prototype.toString = function() {
+                BaseAtom.prototype.toString = function () {
                     return this.name;
                 };
                 return BaseAtom;
             }();
             exports.BaseAtom = BaseAtom;
-            var Atom = function(_super) {
+            var Atom = function (_super) {
                 __extends(Atom, _super);
 
                 function Atom(name, onBecomeObservedHandler, onBecomeUnobservedHandler) {
@@ -952,7 +952,7 @@ var Gitment =
                     _this.isBeingTracked = false;
                     return _this;
                 }
-                Atom.prototype.reportObserved = function() {
+                Atom.prototype.reportObserved = function () {
                     startBatch();
                     _super.prototype.reportObserved.call(this);
                     if (!this.isBeingTracked) {
@@ -962,7 +962,7 @@ var Gitment =
                     endBatch();
                     return !!globalState.trackingDerivation;
                 };
-                Atom.prototype.onBecomeUnobserved = function() {
+                Atom.prototype.onBecomeUnobserved = function () {
                     this.isBeingTracked = false;
                     this.onBecomeUnobservedHandler();
                 };
@@ -970,7 +970,7 @@ var Gitment =
             }(BaseAtom);
             exports.Atom = Atom;
             var isAtom = createInstanceofPredicate("Atom", BaseAtom);
-            var ComputedValue = function() {
+            var ComputedValue = function () {
                 function ComputedValue(derivation, scope, compareStructural, name, setter) {
                     this.derivation = derivation;
                     this.scope = scope;
@@ -993,15 +993,15 @@ var Gitment =
                     this.name = name || "ComputedValue@" + getNextId();
                     if (setter) this.setter = createAction(name + "-setter", setter);
                 }
-                ComputedValue.prototype.onBecomeStale = function() {
+                ComputedValue.prototype.onBecomeStale = function () {
                     propagateMaybeChanged(this);
                 };
-                ComputedValue.prototype.onBecomeUnobserved = function() {
+                ComputedValue.prototype.onBecomeUnobserved = function () {
                     invariant(this.dependenciesState !== IDerivationState.NOT_TRACKING, getMessage("m029"));
                     clearObserving(this);
                     this.value = undefined;
                 };
-                ComputedValue.prototype.get = function() {
+                ComputedValue.prototype.get = function () {
                     invariant(!this.isComputing, "Cycle detected in computation " + this.name, this.derivation);
                     if (globalState.inBatch === 0) {
                         startBatch();
@@ -1016,12 +1016,12 @@ var Gitment =
                     if (isCaughtException(result)) throw result.cause;
                     return result;
                 };
-                ComputedValue.prototype.peek = function() {
+                ComputedValue.prototype.peek = function () {
                     var res = this.computeValue(false);
                     if (isCaughtException(res)) throw res.cause;
                     return res;
                 };
-                ComputedValue.prototype.set = function(value) {
+                ComputedValue.prototype.set = function (value) {
                     if (this.setter) {
                         invariant(!this.isRunningSetter, "The setter of computed value '" + this.name + "' is trying to update itself. Did you intend to update an _observable_ value, instead of the computed property?");
                         this.isRunningSetter = true;
@@ -1032,7 +1032,7 @@ var Gitment =
                         }
                     } else invariant(false, "[ComputedValue '" + this.name + "'] It is not possible to assign a new value to a computed value.");
                 };
-                ComputedValue.prototype.trackAndCompute = function() {
+                ComputedValue.prototype.trackAndCompute = function () {
                     if (isSpyEnabled()) {
                         spyReport({
                             object: this.scope,
@@ -1044,7 +1044,7 @@ var Gitment =
                     var newValue = this.value = this.computeValue(true);
                     return isCaughtException(newValue) || valueDidChange(this.compareStructural, newValue, oldValue);
                 };
-                ComputedValue.prototype.computeValue = function(track) {
+                ComputedValue.prototype.computeValue = function (track) {
                     this.isComputing = true;
                     globalState.computationDepth++;
                     var res;
@@ -1061,11 +1061,11 @@ var Gitment =
                     this.isComputing = false;
                     return res;
                 };;
-                ComputedValue.prototype.observe = function(listener, fireImmediately) {
+                ComputedValue.prototype.observe = function (listener, fireImmediately) {
                     var _this = this;
                     var firstTime = true;
                     var prevValue = undefined;
-                    return autorun(function() {
+                    return autorun(function () {
                         var newValue = _this.get();
                         if (!firstTime || fireImmediately) {
                             var prevU = untrackedStart();
@@ -1081,21 +1081,21 @@ var Gitment =
                         prevValue = newValue;
                     });
                 };
-                ComputedValue.prototype.toJSON = function() {
+                ComputedValue.prototype.toJSON = function () {
                     return this.get();
                 };
-                ComputedValue.prototype.toString = function() {
+                ComputedValue.prototype.toString = function () {
                     return this.name + "[" + this.derivation.toString() + "]";
                 };
-                ComputedValue.prototype.valueOf = function() {
+                ComputedValue.prototype.valueOf = function () {
                     return toPrimitive(this.get());
                 };;
-                ComputedValue.prototype.whyRun = function() {
+                ComputedValue.prototype.whyRun = function () {
                     var isTracking = Boolean(globalState.trackingDerivation);
-                    var observing = unique(this.isComputing ? this.newObserving : this.observing).map(function(dep) {
+                    var observing = unique(this.isComputing ? this.newObserving : this.observing).map(function (dep) {
                         return dep.name;
                     });
-                    var observers = unique(getObservers(this).map(function(dep) {
+                    var observers = unique(getObservers(this).map(function (dep) {
                         return dep.name;
                     }));
                     return "\nWhyRun? computation '" + this.name + "':\n * Running because: " + (isTracking ? "[active] the value of this computation is needed by a reaction" : this.isComputing ? "[get] The value of this computed was requested outside a reaction" : "[idle] not running at the moment") + "\n" + (this.dependenciesState === IDerivationState.NOT_TRACKING ? getMessage("m032") : " * This computation will re-run if any of the following observables changes:\n    " + joinStrings(observing) + "\n    " + (this.isComputing && isTracking ? " (... or any observable accessed during the remainder of the current run)" : "") + "\n\t" + getMessage("m038") + "\n\n  * If the outcome of this computation changes, the following observers will be re-run:\n    " + joinStrings(observers) + "\n");
@@ -1105,14 +1105,14 @@ var Gitment =
             ComputedValue.prototype[primitiveSymbol()] = ComputedValue.prototype.valueOf;
             var isComputedValue = createInstanceofPredicate("ComputedValue", ComputedValue);
             var IDerivationState;
-            (function(IDerivationState) {
+            (function (IDerivationState) {
                 IDerivationState[IDerivationState["NOT_TRACKING"] = -1] = "NOT_TRACKING";
                 IDerivationState[IDerivationState["UP_TO_DATE"] = 0] = "UP_TO_DATE";
                 IDerivationState[IDerivationState["POSSIBLY_STALE"] = 1] = "POSSIBLY_STALE";
                 IDerivationState[IDerivationState["STALE"] = 2] = "STALE";
             })(IDerivationState || (IDerivationState = {}));
             exports.IDerivationState = IDerivationState;
-            var CaughtException = function() {
+            var CaughtException = function () {
                 function CaughtException(cause) {
                     this.cause = cause;
                 }
@@ -1255,7 +1255,7 @@ var Gitment =
                 }
             }
             var persistentKeys = ["mobxGuid", "resetId", "spyListeners", "strictMode", "runId"];
-            var MobXGlobals = function() {
+            var MobXGlobals = function () {
                 function MobXGlobals() {
                     this.version = 5;
                     this.trackingDerivation = null;
@@ -1392,7 +1392,7 @@ var Gitment =
             }
 
             function invariantLOS(observable, msg) {
-                var min = getObservers(observable).reduce(function(a, b) {
+                var min = getObservers(observable).reduce(function (a, b) {
                     return Math.min(a, b.dependenciesState);
                 }, 2);
                 if (min >= observable.lowestObserverState) return;
@@ -1436,7 +1436,7 @@ var Gitment =
                     }
                 }
             }
-            var Reaction = function() {
+            var Reaction = function () {
                 function Reaction(name, onInvalidate) {
                     if (name === void 0) {
                         name = "Reaction@" + getNextId();
@@ -1455,20 +1455,20 @@ var Gitment =
                     this._isTrackPending = false;
                     this._isRunning = false;
                 }
-                Reaction.prototype.onBecomeStale = function() {
+                Reaction.prototype.onBecomeStale = function () {
                     this.schedule();
                 };
-                Reaction.prototype.schedule = function() {
+                Reaction.prototype.schedule = function () {
                     if (!this._isScheduled) {
                         this._isScheduled = true;
                         globalState.pendingReactions.push(this);
                         runReactions();
                     }
                 };
-                Reaction.prototype.isScheduled = function() {
+                Reaction.prototype.isScheduled = function () {
                     return this._isScheduled;
                 };
-                Reaction.prototype.runReaction = function() {
+                Reaction.prototype.runReaction = function () {
                     if (!this.isDisposed) {
                         startBatch();
                         this._isScheduled = false;
@@ -1485,7 +1485,7 @@ var Gitment =
                         endBatch();
                     }
                 };
-                Reaction.prototype.track = function(fn) {
+                Reaction.prototype.track = function (fn) {
                     startBatch();
                     var notify = isSpyEnabled();
                     var startTime;
@@ -1512,7 +1512,7 @@ var Gitment =
                     }
                     endBatch();
                 };
-                Reaction.prototype.reportExceptionInDerivation = function(error) {
+                Reaction.prototype.reportExceptionInDerivation = function (error) {
                     var _this = this;
                     if (this.errorHandler) {
                         this.errorHandler(error, this);
@@ -1529,11 +1529,11 @@ var Gitment =
                             object: this
                         });
                     }
-                    globalState.globalReactionErrorHandlers.forEach(function(f) {
+                    globalState.globalReactionErrorHandlers.forEach(function (f) {
                         return f(error, _this);
                     });
                 };
-                Reaction.prototype.dispose = function() {
+                Reaction.prototype.dispose = function () {
                     if (!this.isDisposed) {
                         this.isDisposed = true;
                         if (!this._isRunning) {
@@ -1543,17 +1543,17 @@ var Gitment =
                         }
                     }
                 };
-                Reaction.prototype.getDisposer = function() {
+                Reaction.prototype.getDisposer = function () {
                     var r = this.dispose.bind(this);
                     r.$mobx = this;
                     r.onError = registerErrorHandler;
                     return r;
                 };
-                Reaction.prototype.toString = function() {
+                Reaction.prototype.toString = function () {
                     return "Reaction[" + this.name + "]";
                 };
-                Reaction.prototype.whyRun = function() {
-                    var observing = unique(this._isRunning ? this.newObserving : this.observing).map(function(dep) {
+                Reaction.prototype.whyRun = function () {
+                    var observing = unique(this._isRunning ? this.newObserving : this.observing).map(function (dep) {
                         return dep.name;
                     });
                     return "\nWhyRun? reaction '" + this.name + "':\n * Status: [" + (this.isDisposed ? "stopped" : this._isRunning ? "running" : this.isScheduled() ? "scheduled" : "idle") + "]\n * This reaction will re-run if any of the following observables changes:\n    " + joinStrings(observing) + "\n    " + (this._isRunning ? " (... or any observable accessed during the remainder of the current run)" : "") + "\n\t" + getMessage("m038") + "\n";
@@ -1570,7 +1570,7 @@ var Gitment =
 
             function onReactionError(handler) {
                 globalState.globalReactionErrorHandlers.push(handler);
-                return function() {
+                return function () {
                     var idx = globalState.globalReactionErrorHandlers.indexOf(handler);
                     if (idx >= 0) globalState.globalReactionErrorHandlers.splice(idx, 1);
                 };
@@ -1606,7 +1606,7 @@ var Gitment =
             function setReactionScheduler(fn) {
                 var baseScheduler = reactionScheduler;
                 reactionScheduler = function reactionScheduler(f) {
-                    return fn(function() {
+                    return fn(function () {
                         return baseScheduler(f);
                     });
                 };
@@ -1641,7 +1641,7 @@ var Gitment =
 
             function spy(listener) {
                 globalState.spyListeners.push(listener);
-                return once(function() {
+                return once(function () {
                     var idx = globalState.spyListeners.indexOf(listener);
                     if (idx !== -1) globalState.spyListeners.splice(idx, 1);
                 });
@@ -1655,7 +1655,7 @@ var Gitment =
             function registerInterceptor(interceptable, handler) {
                 var interceptors = interceptable.interceptors || (interceptable.interceptors = []);
                 interceptors.push(handler);
-                return once(function() {
+                return once(function () {
                     var idx = interceptors.indexOf(handler);
                     if (idx !== -1) interceptors.splice(idx, 1);
                 });
@@ -1684,7 +1684,7 @@ var Gitment =
             function registerListener(listenable, handler) {
                 var listeners = listenable.changeListeners || (listenable.changeListeners = []);
                 listeners.push(handler);
-                return once(function() {
+                return once(function () {
                     var idx = listeners.indexOf(handler);
                     if (idx !== -1) listeners.splice(idx, 1);
                 });
@@ -1781,7 +1781,7 @@ var Gitment =
                 return v;
             }
             var MAX_SPLICE_SIZE = 10000;
-            var safariPrototypeSetterInheritanceBug = function() {
+            var safariPrototypeSetterInheritanceBug = function () {
                 var v = false;
                 var p = {};
                 Object.defineProperty(p, "0", {
@@ -1793,12 +1793,12 @@ var Gitment =
                 return v === false;
             }();
             var OBSERVABLE_ARRAY_BUFFER_SIZE = 0;
-            var StubArray = function() {
+            var StubArray = function () {
                 function StubArray() {}
                 return StubArray;
             }();
             StubArray.prototype = [];
-            var ObservableArrayAdministration = function() {
+            var ObservableArrayAdministration = function () {
                 function ObservableArrayAdministration(name, enhancer, array, owned) {
                     this.array = array;
                     this.owned = owned;
@@ -1806,14 +1806,14 @@ var Gitment =
                     this.interceptors = null;
                     this.changeListeners = null;
                     this.atom = new BaseAtom(name || "ObservableArray@" + getNextId());
-                    this.enhancer = function(newV, oldV) {
+                    this.enhancer = function (newV, oldV) {
                         return enhancer(newV, oldV, name + "[..]");
                     };
                 }
-                ObservableArrayAdministration.prototype.intercept = function(handler) {
+                ObservableArrayAdministration.prototype.intercept = function (handler) {
                     return registerInterceptor(this, handler);
                 };
-                ObservableArrayAdministration.prototype.observe = function(listener, fireImmediately) {
+                ObservableArrayAdministration.prototype.observe = function (listener, fireImmediately) {
                     if (fireImmediately === void 0) {
                         fireImmediately = false;
                     }
@@ -1830,11 +1830,11 @@ var Gitment =
                     }
                     return registerListener(this, listener);
                 };
-                ObservableArrayAdministration.prototype.getArrayLength = function() {
+                ObservableArrayAdministration.prototype.getArrayLength = function () {
                     this.atom.reportObserved();
                     return this.values.length;
                 };
-                ObservableArrayAdministration.prototype.setArrayLength = function(newLength) {
+                ObservableArrayAdministration.prototype.setArrayLength = function (newLength) {
                     if (typeof newLength !== "number" || newLength < 0) throw new Error("[mobx.array] Out of range: " + newLength);
                     var currentLength = this.values.length;
                     if (newLength === currentLength) return;
@@ -1846,12 +1846,12 @@ var Gitment =
                         this.spliceWithArray(currentLength, 0, newItems);
                     } else this.spliceWithArray(newLength, currentLength - newLength);
                 };
-                ObservableArrayAdministration.prototype.updateArrayLength = function(oldLength, delta) {
+                ObservableArrayAdministration.prototype.updateArrayLength = function (oldLength, delta) {
                     if (oldLength !== this.lastKnownLength) throw new Error("[mobx] Modification exception: the internal structure of an observable array was changed. Did you use peek() to change it?");
                     this.lastKnownLength += delta;
                     if (delta > 0 && oldLength + delta + 1 > OBSERVABLE_ARRAY_BUFFER_SIZE) reserveArrayBuffer(oldLength + delta + 1);
                 };
-                ObservableArrayAdministration.prototype.spliceWithArray = function(index, deleteCount, newItems) {
+                ObservableArrayAdministration.prototype.spliceWithArray = function (index, deleteCount, newItems) {
                     var _this = this;
                     checkIfStateModificationsAreAllowed(this.atom);
                     var length = this.values.length;
@@ -1874,7 +1874,7 @@ var Gitment =
                         deleteCount = change.removedCount;
                         newItems = change.added;
                     }
-                    newItems = newItems.map(function(v) {
+                    newItems = newItems.map(function (v) {
                         return _this.enhancer(v, undefined);
                     });
                     var lengthDelta = newItems.length - deleteCount;
@@ -1883,7 +1883,7 @@ var Gitment =
                     if (deleteCount !== 0 || newItems.length !== 0) this.notifyArraySplice(index, newItems, res);
                     return res;
                 };
-                ObservableArrayAdministration.prototype.spliceItemsIntoValues = function(index, deleteCount, newItems) {
+                ObservableArrayAdministration.prototype.spliceItemsIntoValues = function (index, deleteCount, newItems) {
                     if (newItems.length < MAX_SPLICE_SIZE) {
                         return (_a = this.values).splice.apply(_a, [index, deleteCount].concat(newItems));
                     } else {
@@ -1893,7 +1893,7 @@ var Gitment =
                     }
                     var _a;
                 };
-                ObservableArrayAdministration.prototype.notifyArrayChildUpdate = function(index, newValue, oldValue) {
+                ObservableArrayAdministration.prototype.notifyArrayChildUpdate = function (index, newValue, oldValue) {
                     var notifySpy = !this.owned && isSpyEnabled();
                     var notify = hasListeners(this);
                     var change = notify || notifySpy ? {
@@ -1908,7 +1908,7 @@ var Gitment =
                     if (notify) notifyListeners(this, change);
                     if (notifySpy) spyReportEnd();
                 };
-                ObservableArrayAdministration.prototype.notifyArraySplice = function(index, added, removed) {
+                ObservableArrayAdministration.prototype.notifyArraySplice = function (index, added, removed) {
                     var notifySpy = !this.owned && isSpyEnabled();
                     var notify = hasListeners(this);
                     var change = notify || notifySpy ? {
@@ -1927,7 +1927,7 @@ var Gitment =
                 };
                 return ObservableArrayAdministration;
             }();
-            var ObservableArray = function(_super) {
+            var ObservableArray = function (_super) {
                 __extends(ObservableArray, _super);
 
                 function ObservableArray(initialValues, enhancer, name, owned) {
@@ -1942,7 +1942,7 @@ var Gitment =
                     addHiddenFinalProp(_this, "$mobx", adm);
                     if (initialValues && initialValues.length) {
                         adm.updateArrayLength(0, initialValues.length);
-                        adm.values = initialValues.map(function(v) {
+                        adm.values = initialValues.map(function (v) {
                             return enhancer(v, undefined, name + "[..]");
                         });
                         adm.notifyArraySplice(0, adm.values.slice(), EMPTY_ARRAY);
@@ -1954,41 +1954,41 @@ var Gitment =
                     }
                     return _this;
                 }
-                ObservableArray.prototype.intercept = function(handler) {
+                ObservableArray.prototype.intercept = function (handler) {
                     return this.$mobx.intercept(handler);
                 };
-                ObservableArray.prototype.observe = function(listener, fireImmediately) {
+                ObservableArray.prototype.observe = function (listener, fireImmediately) {
                     if (fireImmediately === void 0) {
                         fireImmediately = false;
                     }
                     return this.$mobx.observe(listener, fireImmediately);
                 };
-                ObservableArray.prototype.clear = function() {
+                ObservableArray.prototype.clear = function () {
                     return this.splice(0);
                 };
-                ObservableArray.prototype.concat = function() {
+                ObservableArray.prototype.concat = function () {
                     var arrays = [];
                     for (var _i = 0; _i < arguments.length; _i++) {
                         arrays[_i] = arguments[_i];
                     }
                     this.$mobx.atom.reportObserved();
-                    return Array.prototype.concat.apply(this.peek(), arrays.map(function(a) {
+                    return Array.prototype.concat.apply(this.peek(), arrays.map(function (a) {
                         return isObservableArray(a) ? a.peek() : a;
                     }));
                 };
-                ObservableArray.prototype.replace = function(newItems) {
+                ObservableArray.prototype.replace = function (newItems) {
                     return this.$mobx.spliceWithArray(0, this.$mobx.values.length, newItems);
                 };
-                ObservableArray.prototype.toJS = function() {
+                ObservableArray.prototype.toJS = function () {
                     return this.slice();
                 };
-                ObservableArray.prototype.toJSON = function() {
+                ObservableArray.prototype.toJSON = function () {
                     return this.toJS();
                 };
-                ObservableArray.prototype.peek = function() {
+                ObservableArray.prototype.peek = function () {
                     return this.$mobx.values;
                 };
-                ObservableArray.prototype.find = function(predicate, thisArg, fromIndex) {
+                ObservableArray.prototype.find = function (predicate, thisArg, fromIndex) {
                     if (fromIndex === void 0) {
                         fromIndex = 0;
                     }
@@ -2000,7 +2000,7 @@ var Gitment =
                     }
                     return undefined;
                 };
-                ObservableArray.prototype.splice = function(index, deleteCount) {
+                ObservableArray.prototype.splice = function (index, deleteCount) {
                     var newItems = [];
                     for (var _i = 2; _i < arguments.length; _i++) {
                         newItems[_i - 2] = arguments[_i];
@@ -2015,10 +2015,10 @@ var Gitment =
                     }
                     return this.$mobx.spliceWithArray(index, deleteCount, newItems);
                 };
-                ObservableArray.prototype.spliceWithArray = function(index, deleteCount, newItems) {
+                ObservableArray.prototype.spliceWithArray = function (index, deleteCount, newItems) {
                     return this.$mobx.spliceWithArray(index, deleteCount, newItems);
                 };
-                ObservableArray.prototype.push = function() {
+                ObservableArray.prototype.push = function () {
                     var items = [];
                     for (var _i = 0; _i < arguments.length; _i++) {
                         items[_i] = arguments[_i];
@@ -2027,13 +2027,13 @@ var Gitment =
                     adm.spliceWithArray(adm.values.length, 0, items);
                     return adm.values.length;
                 };
-                ObservableArray.prototype.pop = function() {
+                ObservableArray.prototype.pop = function () {
                     return this.splice(Math.max(this.$mobx.values.length - 1, 0), 1)[0];
                 };
-                ObservableArray.prototype.shift = function() {
+                ObservableArray.prototype.shift = function () {
                     return this.splice(0, 1)[0];
                 };
-                ObservableArray.prototype.unshift = function() {
+                ObservableArray.prototype.unshift = function () {
                     var items = [];
                     for (var _i = 0; _i < arguments.length; _i++) {
                         items[_i] = arguments[_i];
@@ -2042,17 +2042,17 @@ var Gitment =
                     adm.spliceWithArray(0, 0, items);
                     return adm.values.length;
                 };
-                ObservableArray.prototype.reverse = function() {
+                ObservableArray.prototype.reverse = function () {
                     this.$mobx.atom.reportObserved();
                     var clone = this.slice();
                     return clone.reverse.apply(clone, arguments);
                 };
-                ObservableArray.prototype.sort = function(compareFn) {
+                ObservableArray.prototype.sort = function (compareFn) {
                     this.$mobx.atom.reportObserved();
                     var clone = this.slice();
                     return clone.sort.apply(clone, arguments);
                 };
-                ObservableArray.prototype.remove = function(value) {
+                ObservableArray.prototype.remove = function (value) {
                     var idx = this.$mobx.values.indexOf(value);
                     if (idx > -1) {
                         this.splice(idx, 1);
@@ -2060,7 +2060,7 @@ var Gitment =
                     }
                     return false;
                 };
-                ObservableArray.prototype.move = function(fromIndex, toIndex) {
+                ObservableArray.prototype.move = function (fromIndex, toIndex) {
                     function checkIndex(index) {
                         if (index < 0) {
                             throw new Error("[mobx.array] Index out of bounds: " + index + " is negative");
@@ -2084,17 +2084,17 @@ var Gitment =
                     }
                     this.replace(newItems);
                 };
-                ObservableArray.prototype.toString = function() {
+                ObservableArray.prototype.toString = function () {
                     this.$mobx.atom.reportObserved();
                     return Array.prototype.toString.apply(this.$mobx.values, arguments);
                 };
-                ObservableArray.prototype.toLocaleString = function() {
+                ObservableArray.prototype.toLocaleString = function () {
                     this.$mobx.atom.reportObserved();
                     return Array.prototype.toLocaleString.apply(this.$mobx.values, arguments);
                 };
                 return ObservableArray;
             }(StubArray);
-            declareIterator(ObservableArray.prototype, function() {
+            declareIterator(ObservableArray.prototype, function () {
                 return arrayAsIterator(this.slice());
             });
             makeNonEnumerable(ObservableArray.prototype, ["constructor", "intercept", "observe", "clear", "concat", "replace", "toJS", "toJSON", "peek", "find", "splice", "spliceWithArray", "push", "pop", "shift", "unshift", "reverse", "sort", "remove", "move", "toString", "toLocaleString"]);
@@ -2108,10 +2108,10 @@ var Gitment =
                     this.$mobx.setArrayLength(newLength);
                 }
             });
-            ["every", "filter", "forEach", "indexOf", "join", "lastIndexOf", "map", "reduce", "reduceRight", "slice", "some"].forEach(function(funcName) {
+            ["every", "filter", "forEach", "indexOf", "join", "lastIndexOf", "map", "reduce", "reduceRight", "slice", "some"].forEach(function (funcName) {
                 var baseFunc = Array.prototype[funcName];
                 invariant(typeof baseFunc === "function", "Base function not defined on Array prototype: '" + funcName + "'");
-                addHiddenProp(ObservableArray.prototype, funcName, function() {
+                addHiddenProp(ObservableArray.prototype, funcName, function () {
                     this.$mobx.atom.reportObserved();
                     return baseFunc.apply(this.$mobx.values, arguments);
                 });
@@ -2135,7 +2135,7 @@ var Gitment =
             }
 
             function createArraySetter(index) {
-                return function(newValue) {
+                return function (newValue) {
                     var adm = this.$mobx;
                     var values = adm.values;
                     if (index < values.length) {
@@ -2164,7 +2164,7 @@ var Gitment =
             }
 
             function createArrayGetter(index) {
-                return function() {
+                return function () {
                     var impl = this.$mobx;
                     if (impl) {
                         if (index < impl.values.length) {
@@ -2191,7 +2191,7 @@ var Gitment =
             }
             exports.isObservableArray = isObservableArray;
             var ObservableMapMarker = {};
-            var ObservableMap = function() {
+            var ObservableMap = function () {
                 function ObservableMap(initialData, enhancer, name) {
                     if (enhancer === void 0) {
                         enhancer = deepEnhancer;
@@ -2209,16 +2209,16 @@ var Gitment =
                     this.changeListeners = null;
                     this.merge(initialData);
                 }
-                ObservableMap.prototype._has = function(key) {
+                ObservableMap.prototype._has = function (key) {
                     return typeof this._data[key] !== "undefined";
                 };
-                ObservableMap.prototype.has = function(key) {
+                ObservableMap.prototype.has = function (key) {
                     if (!this.isValidKey(key)) return false;
                     key = "" + key;
                     if (this._hasMap[key]) return this._hasMap[key].get();
                     return this._updateHasMapEntry(key, false).get();
                 };
-                ObservableMap.prototype.set = function(key, value) {
+                ObservableMap.prototype.set = function (key, value) {
                     this.assertValidKey(key);
                     key = "" + key;
                     var hasKey = this._has(key);
@@ -2239,7 +2239,7 @@ var Gitment =
                     }
                     return this;
                 };
-                ObservableMap.prototype.delete = function(key) {
+                ObservableMap.prototype.delete = function (key) {
                     var _this = this;
                     this.assertValidKey(key);
                     key = "" + key;
@@ -2261,7 +2261,7 @@ var Gitment =
                             name: key
                         } : null;
                         if (notifySpy) spyReportStart(change);
-                        runInTransaction(function() {
+                        runInTransaction(function () {
                             _this._keys.remove(key);
                             _this._updateHasMapEntry(key, false);
                             var observable = _this._data[key];
@@ -2274,7 +2274,7 @@ var Gitment =
                     }
                     return false;
                 };
-                ObservableMap.prototype._updateHasMapEntry = function(key, value) {
+                ObservableMap.prototype._updateHasMapEntry = function (key, value) {
                     var entry = this._hasMap[key];
                     if (entry) {
                         entry.setNewValue(value);
@@ -2283,7 +2283,7 @@ var Gitment =
                     }
                     return entry;
                 };
-                ObservableMap.prototype._updateValue = function(name, newValue) {
+                ObservableMap.prototype._updateValue = function (name, newValue) {
                     var observable = this._data[name];
                     newValue = observable.prepareNewValue(newValue);
                     if (newValue !== UNCHANGED) {
@@ -2302,9 +2302,9 @@ var Gitment =
                         if (notifySpy) spyReportEnd();
                     }
                 };
-                ObservableMap.prototype._addValue = function(name, newValue) {
+                ObservableMap.prototype._addValue = function (name, newValue) {
                     var _this = this;
-                    runInTransaction(function() {
+                    runInTransaction(function () {
                         var observable = _this._data[name] = new ObservableValue(newValue, _this.enhancer, _this.name + "." + name, false);
                         newValue = observable.value;
                         _this._updateHasMapEntry(name, true);
@@ -2322,61 +2322,61 @@ var Gitment =
                     if (notify) notifyListeners(this, change);
                     if (notifySpy) spyReportEnd();
                 };
-                ObservableMap.prototype.get = function(key) {
+                ObservableMap.prototype.get = function (key) {
                     key = "" + key;
                     if (this.has(key)) return this._data[key].get();
                     return undefined;
                 };
-                ObservableMap.prototype.keys = function() {
+                ObservableMap.prototype.keys = function () {
                     return arrayAsIterator(this._keys.slice());
                 };
-                ObservableMap.prototype.values = function() {
+                ObservableMap.prototype.values = function () {
                     return arrayAsIterator(this._keys.map(this.get, this));
                 };
-                ObservableMap.prototype.entries = function() {
+                ObservableMap.prototype.entries = function () {
                     var _this = this;
-                    return arrayAsIterator(this._keys.map(function(key) {
+                    return arrayAsIterator(this._keys.map(function (key) {
                         return [key, _this.get(key)];
                     }));
                 };
-                ObservableMap.prototype.forEach = function(callback, thisArg) {
+                ObservableMap.prototype.forEach = function (callback, thisArg) {
                     var _this = this;
-                    this.keys().forEach(function(key) {
+                    this.keys().forEach(function (key) {
                         return callback.call(thisArg, _this.get(key), key, _this);
                     });
                 };
-                ObservableMap.prototype.merge = function(other) {
+                ObservableMap.prototype.merge = function (other) {
                     var _this = this;
                     if (isObservableMap(other)) {
                         other = other.toJS();
                     }
-                    runInTransaction(function() {
-                        if (isPlainObject(other)) Object.keys(other).forEach(function(key) {
+                    runInTransaction(function () {
+                        if (isPlainObject(other)) Object.keys(other).forEach(function (key) {
                             return _this.set(key, other[key]);
                         });
-                        else if (Array.isArray(other)) other.forEach(function(_a) {
+                        else if (Array.isArray(other)) other.forEach(function (_a) {
                             var key = _a[0],
                                 value = _a[1];
                             return _this.set(key, value);
                         });
-                        else if (isES6Map(other)) other.forEach(function(value, key) {
+                        else if (isES6Map(other)) other.forEach(function (value, key) {
                             return _this.set(key, value);
                         });
                         else if (other !== null && other !== undefined) fail("Cannot initialize map from " + other);
                     });
                     return this;
                 };
-                ObservableMap.prototype.clear = function() {
+                ObservableMap.prototype.clear = function () {
                     var _this = this;
-                    runInTransaction(function() {
-                        untracked(function() {
+                    runInTransaction(function () {
+                        untracked(function () {
                             _this.keys().forEach(_this.delete, _this);
                         });
                     });
                 };
-                ObservableMap.prototype.replace = function(values) {
+                ObservableMap.prototype.replace = function (values) {
                     var _this = this;
-                    runInTransaction(function() {
+                    runInTransaction(function () {
                         _this.clear();
                         _this.merge(values);
                     });
@@ -2389,42 +2389,42 @@ var Gitment =
                     enumerable: true,
                     configurable: true
                 });
-                ObservableMap.prototype.toJS = function() {
+                ObservableMap.prototype.toJS = function () {
                     var _this = this;
                     var res = {};
-                    this.keys().forEach(function(key) {
+                    this.keys().forEach(function (key) {
                         return res[key] = _this.get(key);
                     });
                     return res;
                 };
-                ObservableMap.prototype.toJSON = function() {
+                ObservableMap.prototype.toJSON = function () {
                     return this.toJS();
                 };
-                ObservableMap.prototype.isValidKey = function(key) {
+                ObservableMap.prototype.isValidKey = function (key) {
                     if (key === null || key === undefined) return false;
                     if (typeof key === "string" || typeof key === "number" || typeof key === "boolean") return true;
                     return false;
                 };
-                ObservableMap.prototype.assertValidKey = function(key) {
+                ObservableMap.prototype.assertValidKey = function (key) {
                     if (!this.isValidKey(key)) throw new Error("[mobx.map] Invalid key: '" + key + "', only strings, numbers and booleans are accepted as key in observable maps.");
                 };
-                ObservableMap.prototype.toString = function() {
+                ObservableMap.prototype.toString = function () {
                     var _this = this;
-                    return this.name + "[{ " + this.keys().map(function(key) {
+                    return this.name + "[{ " + this.keys().map(function (key) {
                         return key + ": " + ("" + _this.get(key));
                     }).join(", ") + " }]";
                 };
-                ObservableMap.prototype.observe = function(listener, fireImmediately) {
+                ObservableMap.prototype.observe = function (listener, fireImmediately) {
                     invariant(fireImmediately !== true, getMessage("m033"));
                     return registerListener(this, listener);
                 };
-                ObservableMap.prototype.intercept = function(handler) {
+                ObservableMap.prototype.intercept = function (handler) {
                     return registerInterceptor(this, handler);
                 };
                 return ObservableMap;
             }();
             exports.ObservableMap = ObservableMap;
-            declareIterator(ObservableMap.prototype, function() {
+            declareIterator(ObservableMap.prototype, function () {
                 return this.entries();
             });
 
@@ -2435,7 +2435,7 @@ var Gitment =
             exports.map = map;
             var isObservableMap = createInstanceofPredicate("ObservableMap", ObservableMap);
             exports.isObservableMap = isObservableMap;
-            var ObservableObjectAdministration = function() {
+            var ObservableObjectAdministration = function () {
                 function ObservableObjectAdministration(target, name) {
                     this.target = target;
                     this.name = name;
@@ -2443,11 +2443,11 @@ var Gitment =
                     this.changeListeners = null;
                     this.interceptors = null;
                 }
-                ObservableObjectAdministration.prototype.observe = function(callback, fireImmediately) {
+                ObservableObjectAdministration.prototype.observe = function (callback, fireImmediately) {
                     invariant(fireImmediately !== true, "`observe` doesn't support the fire immediately property for observable objects.");
                     return registerListener(this, callback);
                 };
-                ObservableObjectAdministration.prototype.intercept = function(handler) {
+                ObservableObjectAdministration.prototype.intercept = function (handler) {
                     return registerInterceptor(this, handler);
                 };
                 return ObservableObjectAdministration;
@@ -2602,7 +2602,7 @@ var Gitment =
             }
             exports.isObservableObject = isObservableObject;
             var UNCHANGED = {};
-            var ObservableValue = function(_super) {
+            var ObservableValue = function (_super) {
                 __extends(ObservableValue, _super);
 
                 function ObservableValue(value, enhancer, name, notifySpy) {
@@ -2625,7 +2625,7 @@ var Gitment =
                     }
                     return _this;
                 }
-                ObservableValue.prototype.set = function(newValue) {
+                ObservableValue.prototype.set = function (newValue) {
                     var oldValue = this.value;
                     newValue = this.prepareNewValue(newValue);
                     if (newValue !== UNCHANGED) {
@@ -2642,7 +2642,7 @@ var Gitment =
                         if (notifySpy) spyReportEnd();
                     }
                 };
-                ObservableValue.prototype.prepareNewValue = function(newValue) {
+                ObservableValue.prototype.prepareNewValue = function (newValue) {
                     checkIfStateModificationsAreAllowed(this);
                     if (hasInterceptors(this)) {
                         var change = interceptChange(this, {
@@ -2656,7 +2656,7 @@ var Gitment =
                     newValue = this.enhancer(newValue, this.value, this.name);
                     return this.value !== newValue ? newValue : UNCHANGED;
                 };
-                ObservableValue.prototype.setNewValue = function(newValue) {
+                ObservableValue.prototype.setNewValue = function (newValue) {
                     var oldValue = this.value;
                     this.value = newValue;
                     this.reportChanged();
@@ -2669,14 +2669,14 @@ var Gitment =
                         });
                     }
                 };
-                ObservableValue.prototype.get = function() {
+                ObservableValue.prototype.get = function () {
                     this.reportObserved();
                     return this.value;
                 };
-                ObservableValue.prototype.intercept = function(handler) {
+                ObservableValue.prototype.intercept = function (handler) {
                     return registerInterceptor(this, handler);
                 };
-                ObservableValue.prototype.observe = function(listener, fireImmediately) {
+                ObservableValue.prototype.observe = function (listener, fireImmediately) {
                     if (fireImmediately) listener({
                         object: this,
                         type: "update",
@@ -2685,13 +2685,13 @@ var Gitment =
                     });
                     return registerListener(this, listener);
                 };
-                ObservableValue.prototype.toJSON = function() {
+                ObservableValue.prototype.toJSON = function () {
                     return this.get();
                 };
-                ObservableValue.prototype.toString = function() {
+                ObservableValue.prototype.toString = function () {
                     return this.name + "[" + this.value + "]";
                 };
-                ObservableValue.prototype.valueOf = function() {
+                ObservableValue.prototype.valueOf = function () {
                     return toPrimitive(this.get());
                 };
                 return ObservableValue;
@@ -2781,7 +2781,7 @@ var Gitment =
                         }
                         var value_1 = descriptor.value,
                             initializer_1 = descriptor.initializer;
-                        target.__mobxLazyInitializers.push(function(instance) {
+                        target.__mobxLazyInitializers.push(function (instance) {
                             onInitialize(instance, key, initializer_1 ? initializer_1.call(instance) : value_1, customArgs, descriptor);
                         });
                         return {
@@ -2799,11 +2799,11 @@ var Gitment =
                     }
                 }
                 if (allowCustomArguments) {
-                    return function() {
+                    return function () {
                         if (quacksLikeADecorator(arguments)) return classPropertyDecorator.apply(null, arguments);
                         var outerArgs = arguments;
                         var argLen = arguments.length;
-                        return function(target, key, descriptor) {
+                        return function (target, key, descriptor) {
                             return classPropertyDecorator(target, key, descriptor, outerArgs, argLen);
                         };
                     };
@@ -2821,7 +2821,7 @@ var Gitment =
                 if (instance.__mobxDidRunLazyInitializers === true) return;
                 if (instance.__mobxLazyInitializers) {
                     addHiddenProp(instance, "__mobxDidRunLazyInitializers", true);
-                    instance.__mobxDidRunLazyInitializers && instance.__mobxLazyInitializers.forEach(function(initializer) {
+                    instance.__mobxDidRunLazyInitializers && instance.__mobxLazyInitializers.forEach(function (initializer) {
                         return initializer(instance);
                     });
                 }
@@ -2927,7 +2927,7 @@ var Gitment =
 
             function once(func) {
                 var invoked = false;
-                return function() {
+                return function () {
                     if (invoked) return;
                     invoked = true;
                     return func.apply(this, arguments);
@@ -2937,7 +2937,7 @@ var Gitment =
 
             function unique(list) {
                 var res = [];
-                list.forEach(function(item) {
+                list.forEach(function (item) {
                     if (res.indexOf(item) === -1) res.push(item);
                 });
                 return res;
@@ -3050,7 +3050,7 @@ var Gitment =
                 } else if (aIsMap) {
                     if (a.size !== b.size) return false;
                     var equals_1 = true;
-                    a.forEach(function(value, key) {
+                    a.forEach(function (value, key) {
                         equals_1 = equals_1 && deepEqual(b.get(key), value);
                     });
                     return equals_1;
@@ -3073,7 +3073,7 @@ var Gitment =
             function createInstanceofPredicate(name, clazz) {
                 var propName = "isMobX" + name;
                 clazz.prototype[propName] = true;
-                return function(x) {
+                return function (x) {
                     return isObject(x) && x[propName] === true;
                 };
             }
@@ -3106,7 +3106,7 @@ var Gitment =
     }),
     /* 2 */
     /***/
-    (function(module, exports, __webpack_require__) {
+    (function (module, exports, __webpack_require__) {
 
         "use strict";
 
@@ -3115,7 +3115,7 @@ var Gitment =
             value: true
         });
 
-        var _slicedToArray = function() {
+        var _slicedToArray = function () {
             function sliceIterator(arr, i) {
                 var _arr = [];
                 var _n = true;
@@ -3138,7 +3138,7 @@ var Gitment =
                 }
                 return _arr;
             }
-            return function(arr, i) {
+            return function (arr, i) {
                 if (Array.isArray(arr)) {
                     return arr;
                 } else if (Symbol.iterator in Object(arr)) {
@@ -3163,7 +3163,7 @@ var Gitment =
             container.className = 'gitment-container gitment-header-container';
 
             var likeButton = document.createElement('span');
-            var likedReaction = reactions.find(function(reaction) {
+            var likedReaction = reactions.find(function (reaction) {
                 return reaction.content === 'heart' && reaction.user.login === user.login;
             });
             likeButton.className = 'gitment-header-like-btn';
@@ -3171,12 +3171,12 @@ var Gitment =
 
             if (likedReaction) {
                 likeButton.classList.add('liked');
-                likeButton.onclick = function() {
+                likeButton.onclick = function () {
                     return instance.unlike();
                 };
             } else {
                 likeButton.classList.remove('liked');
-                likeButton.onclick = function() {
+                likeButton.onclick = function () {
                     return instance.like();
                 };
             }
@@ -3216,9 +3216,9 @@ var Gitment =
                     var initHint = document.createElement('div');
                     var initButton = document.createElement('button');
                     initButton.className = 'gitment-comments-init-btn';
-                    initButton.onclick = function() {
+                    initButton.onclick = function () {
                         initButton.setAttribute('disabled', true);
-                        instance.init().catch(function(e) {
+                        instance.init().catch(function (e) {
                             initButton.removeAttribute('disabled');
                             alert(e);
                         });
@@ -3248,24 +3248,24 @@ var Gitment =
             var commentsList = document.createElement('ul');
             commentsList.className = 'gitment-comments-list';
 
-            comments.forEach(function(comment) {
+            comments.forEach(function (comment) {
                 var createDate = new Date(comment.created_at);
                 var updateDate = new Date(comment.updated_at);
                 var commentItem = document.createElement('li');
                 commentItem.className = 'gitment-comment';
                 commentItem.innerHTML = '\n      <a class="gitment-comment-avatar" href="' + comment.user.html_url + '" target="_blank">\n        <img class="gitment-comment-avatar-img" src="' + comment.user.avatar_url + '"/>\n      </a>\n      <div class="gitment-comment-main">\n        <div class="gitment-comment-header">\n          <a class="gitment-comment-name" href="' + comment.user.html_url + '" target="_blank">\n            ' + comment.user.login + '\n          </a>\n          commented on\n          <span title="' + createDate + '">' + createDate.toDateString() + '</span>\n          ' + (createDate.toString() !== updateDate.toString() ? ' \u2022 <span title="comment was edited at ' + updateDate + '">edited</span>' : '') + '\n          <div class="gitment-comment-like-btn">' + _icons.heart + ' ' + (comment.reactions.heart || '') + '</div>\n        </div>\n        <div class="gitment-comment-body gitment-markdown">' + comment.body_html + '</div>\n      </div>\n    ';
                 var likeButton = commentItem.querySelector('.gitment-comment-like-btn');
-                var likedReaction = commentReactions[comment.id] && commentReactions[comment.id].find(function(reaction) {
+                var likedReaction = commentReactions[comment.id] && commentReactions[comment.id].find(function (reaction) {
                     return reaction.content === 'heart' && reaction.user.login === user.login;
                 });
                 if (likedReaction) {
                     likeButton.classList.add('liked');
-                    likeButton.onclick = function() {
+                    likeButton.onclick = function () {
                         return instance.unlikeAComment(comment.id);
                     };
                 } else {
                     likeButton.classList.remove('liked');
-                    likeButton.onclick = function() {
+                    likeButton.onclick = function () {
                         return instance.likeAComment(comment.id);
                     };
                 }
@@ -3276,12 +3276,12 @@ var Gitment =
                 var markdownBody = commentItem.querySelector('.gitment-comment-body');
                 imgTrigger.className = 'gitment-hidden';
                 imgTrigger.src = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
-                imgTrigger.onload = function() {
+                imgTrigger.onload = function () {
                     if (markdownBody.clientHeight > instance.maxCommentHeight) {
                         markdownBody.classList.add('gitment-comment-body-folded');
                         markdownBody.style.maxHeight = instance.maxCommentHeight + 'px';
                         markdownBody.title = 'Click to Expand';
-                        markdownBody.onclick = function() {
+                        markdownBody.onclick = function () {
                             markdownBody.classList.remove('gitment-comment-body-folded');
                             markdownBody.style.maxHeight = '';
                             markdownBody.title = '';
@@ -3306,7 +3306,7 @@ var Gitment =
                         var previousButton = document.createElement('li');
                         previousButton.className = 'gitment-comments-page-item';
                         previousButton.innerText = 'Previous';
-                        previousButton.onclick = function() {
+                        previousButton.onclick = function () {
                             return instance.goto(currentPage - 1);
                         };
                         pagination.appendChild(previousButton);
@@ -3316,7 +3316,7 @@ var Gitment =
                         var pageItem = document.createElement('li');
                         pageItem.className = 'gitment-comments-page-item';
                         pageItem.innerText = i;
-                        pageItem.onclick = function() {
+                        pageItem.onclick = function () {
                             return instance.goto(i);
                         };
                         if (currentPage === i) pageItem.classList.add('gitment-selected');
@@ -3331,7 +3331,7 @@ var Gitment =
                         var nextButton = document.createElement('li');
                         nextButton.className = 'gitment-comments-page-item';
                         nextButton.innerText = 'Next';
-                        nextButton.onclick = function() {
+                        nextButton.onclick = function () {
                             return instance.goto(currentPage + 1);
                         };
                         pagination.appendChild(nextButton);
@@ -3356,7 +3356,7 @@ var Gitment =
             var disabledTip = user.login ? '' : 'Login to Comment';
             container.innerHTML = '\n      ' + (user.login ? '<a class="gitment-editor-avatar" href="' + user.html_url + '" target="_blank">\n            <img class="gitment-editor-avatar-img" src="' + user.avatar_url + '"/>\n          </a>' : user.isLoggingIn ? '<div class="gitment-editor-avatar">' + _icons.spinner + '</div>' : '<a class="gitment-editor-avatar" href="' + instance.loginLink + '" title="login with GitHub">\n              ' + _icons.github + '\n            </a>') + '\n    </a>\n    <div class="gitment-editor-main">\n      <div class="gitment-editor-header">\n        <nav class="gitment-editor-tabs">\n          <button class="gitment-editor-tab gitment-selected">Write</button>\n          <button class="gitment-editor-tab">Preview</button>\n        </nav>\n        <div class="gitment-editor-login">\n          ' + (user.login ? '<a class="gitment-editor-logout-link">Logout</a>' : user.isLoggingIn ? 'Logging in...' : '<a class="gitment-editor-login-link" href="' + instance.loginLink + '">Login</a> with GitHub') + '\n        </div>\n      </div>\n      <div class="gitment-editor-body">\n        <div class="gitment-editor-write-field">\n          <textarea placeholder="Leave a comment" title="' + disabledTip + '" ' + shouldDisable + '></textarea>\n        </div>\n        <div class="gitment-editor-preview-field gitment-hidden">\n          <div class="gitment-editor-preview gitment-markdown"></div>\n        </div>\n      </div>\n    </div>\n    <div class="gitment-editor-footer">\n      <a class="gitment-editor-footer-tip" href="https://guides.github.com/features/mastering-markdown/" target="_blank">\n        Styling with Markdown is supported\n      </a>\n      <button class="gitment-editor-submit" title="' + disabledTip + '" ' + shouldDisable + '>Comment</button>\n    </div>\n  ';
             if (user.login) {
-                container.querySelector('.gitment-editor-logout-link').onclick = function() {
+                container.querySelector('.gitment-editor-logout-link').onclick = function () {
                     return instance.logout();
                 };
             }
@@ -3365,7 +3365,7 @@ var Gitment =
             var previewField = container.querySelector('.gitment-editor-preview-field');
 
             var textarea = writeField.querySelector('textarea');
-            textarea.oninput = function() {
+            textarea.oninput = function () {
                 textarea.style.height = 'auto';
                 var style = window.getComputedStyle(textarea, null);
                 var height = parseInt(style.height, 10);
@@ -3381,7 +3381,7 @@ var Gitment =
                 writeTab = _container$querySelec2[0],
                 previewTab = _container$querySelec2[1];
 
-            writeTab.onclick = function() {
+            writeTab.onclick = function () {
                 writeTab.classList.add('gitment-selected');
                 previewTab.classList.remove('gitment-selected');
                 writeField.classList.remove('gitment-hidden');
@@ -3389,7 +3389,7 @@ var Gitment =
 
                 textarea.focus();
             };
-            previewTab.onclick = function() {
+            previewTab.onclick = function () {
                 previewTab.classList.add('gitment-selected');
                 writeTab.classList.remove('gitment-selected');
                 previewField.classList.remove('gitment-hidden');
@@ -3403,21 +3403,21 @@ var Gitment =
                 }
 
                 preview.innerText = 'Loading preview...';
-                instance.markdown(content).then(function(html) {
+                instance.markdown(content).then(function (html) {
                     return preview.innerHTML = html;
                 });
             };
 
             var submitButton = container.querySelector('.gitment-editor-submit');
-            submitButton.onclick = function() {
+            submitButton.onclick = function () {
                 submitButton.innerText = 'Submitting...';
                 submitButton.setAttribute('disabled', true);
-                instance.post(textarea.value.trim()).then(function(data) {
+                instance.post(textarea.value.trim()).then(function (data) {
                     textarea.value = '';
                     textarea.style.height = 'auto';
                     submitButton.removeAttribute('disabled');
                     submitButton.innerText = 'Comment';
-                }).catch(function(e) {
+                }).catch(function (e) {
                     alert(e);
                     submitButton.removeAttribute('disabled');
                     submitButton.innerText = 'Comment';
@@ -3458,7 +3458,7 @@ var Gitment =
     }),
     /* 3 */
     /***/
-    (function(module, exports, __webpack_require__) {
+    (function (module, exports, __webpack_require__) {
 
         "use strict";
 
@@ -3468,7 +3468,7 @@ var Gitment =
         });
         exports.http = exports.Query = exports.isString = undefined;
 
-        var _slicedToArray = function() {
+        var _slicedToArray = function () {
             function sliceIterator(arr, i) {
                 var _arr = [];
                 var _n = true;
@@ -3491,7 +3491,7 @@ var Gitment =
                 }
                 return _arr;
             }
-            return function(arr, i) {
+            return function (arr, i) {
                 if (Array.isArray(arr)) {
                     return arr;
                 } else if (Symbol.iterator in Object(arr)) {
@@ -3530,7 +3530,7 @@ var Gitment =
                 if (!search) return {};
                 var queryString = search[0] === '?' ? search.substring(1) : search;
                 var query = {};
-                queryString.split('&').forEach(function(queryStr) {
+                queryString.split('&').forEach(function (queryStr) {
                     var _queryStr$split = queryStr.split('='),
                         _queryStr$split2 = _slicedToArray(_queryStr$split, 2),
                         key = _queryStr$split2[0],
@@ -3544,7 +3544,7 @@ var Gitment =
             stringify: function stringify(query) {
                 var prefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '?';
 
-                var queryString = Object.keys(query).map(function(key) {
+                var queryString = Object.keys(query).map(function (key) {
                     return key + '=' + encodeURIComponent(query[key] || '');
                 }).join('&');
                 return queryString ? prefix + queryString : '';
@@ -3552,9 +3552,11 @@ var Gitment =
         };
 
         function ajaxFactory(method) {
-            return function(apiPath) {
+            return function (apiPath) {
                 var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
                 var base = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://api.github.com';
+
+                var headers = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
 
                 var req = new XMLHttpRequest();
                 var token = localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY);
@@ -3565,8 +3567,8 @@ var Gitment =
                     url += Query.stringify(data);
                 }
 
-                var p = new Promise(function(resolve, reject) {
-                    req.addEventListener('load', function() {
+                var p = new Promise(function (resolve, reject) {
+                    req.addEventListener('load', function () {
                         var contentType = req.getResponseHeader('content-type');
                         var res = req.responseText;
                         if (!/json/.test(contentType)) {
@@ -3580,7 +3582,7 @@ var Gitment =
                             resolve(data);
                         }
                     });
-                    req.addEventListener('error', function(error) {
+                    req.addEventListener('error', function (error) {
                         return reject(error);
                     });
                 });
@@ -3593,6 +3595,11 @@ var Gitment =
                 if (method !== 'GET' && method !== 'DELETE') {
                     body = JSON.stringify(data);
                     req.setRequestHeader('Content-Type', 'application/json');
+                }
+
+                //设置自定义的 header
+                for (let header in headers) {
+                    req.setRequestHeader([header], headers[header]);
                 }
 
                 req.send(body);
@@ -3611,21 +3618,21 @@ var Gitment =
     }),
     /* 4 */
     /***/
-    (function(module, exports, __webpack_require__) {
+    (function (module, exports, __webpack_require__) {
 
         "use strict";
 
 
-        var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
+        var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
             return typeof obj;
-        } : function(obj) {
+        } : function (obj) {
             return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
         };
 
         var g;
 
         // This works in non-strict mode
-        g = function() {
+        g = function () {
             return this;
         }();
 
@@ -3647,12 +3654,12 @@ var Gitment =
     }),
     /* 5 */
     /***/
-    (function(module, exports, __webpack_require__) {
+    (function (module, exports, __webpack_require__) {
 
         "use strict";
 
 
-        var _createClass = function() {
+        var _createClass = function () {
             function defineProperties(target, props) {
                 for (var i = 0; i < props.length; i++) {
                     var descriptor = props[i];
@@ -3662,7 +3669,7 @@ var Gitment =
                     Object.defineProperty(target, descriptor.key, descriptor);
                 }
             }
-            return function(Constructor, protoProps, staticProps) {
+            return function (Constructor, protoProps, staticProps) {
                 if (protoProps) defineProperties(Constructor.prototype, protoProps);
                 if (staticProps) defineProperties(Constructor, staticProps);
                 return Constructor;
@@ -3694,11 +3701,11 @@ var Gitment =
         var scope = 'public_repo';
 
         function extendRenderer(instance, renderer) {
-            instance[renderer] = function(container) {
+            instance[renderer] = function (container) {
                 var targetContainer = (0, _utils.getTargetContainer)(container);
                 var render = instance.theme[renderer] || instance.defaultTheme[renderer];
 
-                (0, _mobx.autorun)(function() {
+                (0, _mobx.autorun)(function () {
                     var e = render(instance.state, instance);
                     if (targetContainer.firstChild) {
                         targetContainer.replaceChild(e, targetContainer.firstChild);
@@ -3711,7 +3718,7 @@ var Gitment =
             };
         }
 
-        var Gitment = function() {
+        var Gitment = function () {
             _createClass(Gitment, [{
                 key: 'accessToken',
                 get: function get() {
@@ -3799,14 +3806,16 @@ var Gitment =
                     }, options);
 
                     this.state.user.isLoggingIn = true;
-                    _utils.http.post('https://github.com/login/oauth/access_token', {
+                    _utils.http.post('https://cors.wenjunjiang.win/?remoteUrl=https://github.com/login/oauth/access_token', {
                         code: code,
                         client_id: client_id,
                         client_secret: client_secret
-                    }, '').then(function(data) {
+                    }, '', {
+                        Accept: 'application/json'
+                    }).then(function (data) {
                         _this.accessToken = data.access_token;
                         _this.update();
-                    }).catch(function(e) {
+                    }).catch(function (e) {
                         _this.state.user.isLoggingIn = false;
                         alert(e);
                     });
@@ -3820,9 +3829,9 @@ var Gitment =
                 value: function init() {
                     var _this2 = this;
 
-                    return this.createIssue().then(function() {
+                    return this.createIssue().then(function () {
                         return _this2.loadComments();
-                    }).then(function(comments) {
+                    }).then(function (comments) {
                         _this2.state.error = null;
                         return comments;
                     });
@@ -3837,7 +3846,7 @@ var Gitment =
                     this.theme = theme;
 
                     var renderers = Object.keys(this.theme);
-                    renderers.forEach(function(renderer) {
+                    renderers.forEach(function (renderer) {
                         return extendRenderer(_this3, renderer);
                     });
                 }
@@ -3846,11 +3855,11 @@ var Gitment =
                 value: function update() {
                     var _this4 = this;
 
-                    return Promise.all([this.loadMeta(), this.loadUserInfo()]).then(function() {
-                        return Promise.all([_this4.loadComments().then(function() {
+                    return Promise.all([this.loadMeta(), this.loadUserInfo()]).then(function () {
+                        return Promise.all([_this4.loadComments().then(function () {
                             return _this4.loadCommentReactions();
                         }), _this4.loadReactions()]);
-                    }).catch(function(e) {
+                    }).catch(function (e) {
                         return _this4.state.error = e;
                     });
                 }
@@ -3880,7 +3889,7 @@ var Gitment =
                         title: title,
                         labels: labels.concat(['gitment', id]),
                         body: link + '\n\n' + desc
-                    }).then(function(meta) {
+                    }).then(function (meta) {
                         _this5.state.meta = meta;
                         return meta;
                     });
@@ -3897,11 +3906,11 @@ var Gitment =
                 value: function post(body) {
                     var _this6 = this;
 
-                    return this.getIssue().then(function(issue) {
+                    return this.getIssue().then(function (issue) {
                         return _utils.http.post(issue.comments_url, {
                             body: body
                         }, '');
-                    }).then(function(data) {
+                    }).then(function (data) {
                         _this6.state.meta.comments++;
                         var pageCount = Math.ceil(_this6.state.meta.comments / _this6.perPage);
                         if (_this6.state.currentPage === pageCount) {
@@ -3922,7 +3931,7 @@ var Gitment =
                     return _utils.http.get('/repos/' + owner + '/' + repo + '/issues', {
                         creator: owner,
                         labels: id
-                    }).then(function(issues) {
+                    }).then(function (issues) {
                         if (!issues.length) return Promise.reject(_constants.NOT_INITIALIZED_ERROR);
                         _this7.state.meta = issues[0];
                         return issues[0];
@@ -3935,12 +3944,12 @@ var Gitment =
 
                     var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.state.currentPage;
 
-                    return this.getIssue().then(function(issue) {
+                    return this.getIssue().then(function (issue) {
                         return _utils.http.get(issue.comments_url, {
                             page: page,
                             per_page: _this8.perPage
                         }, '');
-                    }).then(function(comments) {
+                    }).then(function (comments) {
                         _this8.state.comments = comments;
                         return comments;
                     });
@@ -3955,7 +3964,7 @@ var Gitment =
                         return Promise.resolve({});
                     }
 
-                    return _utils.http.get('/user').then(function(user) {
+                    return _utils.http.get('/user').then(function (user) {
                         _this9.state.user = user;
                         localStorage.setItem(_constants.LS_USER_KEY, JSON.stringify(user));
                         return user;
@@ -3971,10 +3980,10 @@ var Gitment =
                         return Promise.resolve([]);
                     }
 
-                    return this.getIssue().then(function(issue) {
+                    return this.getIssue().then(function (issue) {
                         if (!issue.reactions.total_count) return [];
                         return _utils.http.get(issue.reactions.url, {}, '');
-                    }).then(function(reactions) {
+                    }).then(function (reactions) {
                         _this10.state.reactions = reactions;
                         return reactions;
                     });
@@ -3992,15 +4001,15 @@ var Gitment =
                     var comments = this.state.comments;
                     var comentReactions = {};
 
-                    return Promise.all(comments.map(function(comment) {
+                    return Promise.all(comments.map(function (comment) {
                         if (!comment.reactions.total_count) return [];
 
                         var owner = _this11.owner,
                             repo = _this11.repo;
 
                         return _utils.http.get('/repos/' + owner + '/' + repo + '/issues/comments/' + comment.id + '/reactions', {});
-                    })).then(function(reactionsArray) {
-                        comments.forEach(function(comment, index) {
+                    })).then(function (reactionsArray) {
+                        comments.forEach(function (comment, index) {
                             comentReactions[comment.id] = reactionsArray[index];
                         });
                         _this11.state.commentReactions = comentReactions;
@@ -4043,7 +4052,7 @@ var Gitment =
 
                     return _utils.http.post('/repos/' + owner + '/' + repo + '/issues/' + this.state.meta.number + '/reactions', {
                         content: 'heart'
-                    }).then(function(reaction) {
+                    }).then(function (reaction) {
                         _this12.state.reactions.push(reaction);
                         _this12.state.meta.reactions.heart++;
                     });
@@ -4059,10 +4068,10 @@ var Gitment =
                         user = _state.user,
                         reactions = _state.reactions;
 
-                    var index = reactions.findIndex(function(reaction) {
+                    var index = reactions.findIndex(function (reaction) {
                         return reaction.user.login === user.login;
                     });
-                    return _utils.http.delete('/reactions/' + reactions[index].id).then(function() {
+                    return _utils.http.delete('/reactions/' + reactions[index].id).then(function () {
                         reactions.splice(index, 1);
                         _this13.state.meta.reactions.heart--;
                     });
@@ -4080,13 +4089,13 @@ var Gitment =
                     var owner = this.owner,
                         repo = this.repo;
 
-                    var comment = this.state.comments.find(function(comment) {
+                    var comment = this.state.comments.find(function (comment) {
                         return comment.id === commentId;
                     });
 
                     return _utils.http.post('/repos/' + owner + '/' + repo + '/issues/comments/' + commentId + '/reactions', {
                         content: 'heart'
-                    }).then(function(reaction) {
+                    }).then(function (reaction) {
                         _this14.state.commentReactions[commentId].push(reaction);
                         comment.reactions.heart++;
                     });
@@ -4097,16 +4106,16 @@ var Gitment =
                     if (!this.accessToken) return Promise.reject();
 
                     var reactions = this.state.commentReactions[commentId];
-                    var comment = this.state.comments.find(function(comment) {
+                    var comment = this.state.comments.find(function (comment) {
                         return comment.id === commentId;
                     });
                     var user = this.state.user;
 
-                    var index = reactions.findIndex(function(reaction) {
+                    var index = reactions.findIndex(function (reaction) {
                         return reaction.user.login === user.login;
                     });
 
-                    return _utils.http.delete('/reactions/' + reactions[index].id).then(function() {
+                    return _utils.http.delete('/reactions/' + reactions[index].id).then(function () {
                         reactions.splice(index, 1);
                         comment.reactions.heart--;
                     });
@@ -4122,7 +4131,7 @@ var Gitment =
     }),
     /* 6 */
     /***/
-    (function(module, exports, __webpack_require__) {
+    (function (module, exports, __webpack_require__) {
 
         "use strict";
 

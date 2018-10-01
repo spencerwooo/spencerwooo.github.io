@@ -100,20 +100,20 @@
 
                         
                         <li>
-                            <a href="/people/">GODS</a>
+                            <a href="/archives/">ARCHIVES</a>
                         </li>
-                        
-
-                    
-
                         
 
                     
 
                         
                         <li>
-                            <a href="/archives/">ARCHIVES</a>
+                            <a href="/people/">GODS</a>
                         </li>
+                        
+
+                    
+
                         
 
                     
@@ -334,7 +334,7 @@
 <ul>
 <li>在 Hyper 中打开位于 Linux 文件系统根目录的 <code>.bashrc</code> 并添加以下代码:</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Disable the bell sound on backspace</div><div class="line">set bell-style none</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> Disable the bell sound on backspace</span></div><div class="line">set bell-style none</div></pre></td></tr></table></figure>
 <ul>
 <li>加载设置：<code>source ~/.bashrc</code></li>
 </ul>
@@ -355,7 +355,7 @@
 <ul>
 <li>修改 <code>.zshrc</code>，添加如下代码</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Change ls colours</div><div class="line">LS_COLORS="ow=01;36;40" &amp;&amp; export LS_COLORS</div><div class="line"></div><div class="line"><span class="meta">#</span> make cd use the ls colours</div><div class="line">zstyle ':completion:*' list-colors "$&#123;(@s.:.)LS_COLORS&#125;"</div><div class="line">autoload -Uz compinit</div><div class="line">compinit</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> Change ls colours</span></div><div class="line">LS_COLORS="ow=01;36;40" &amp;&amp; export LS_COLORS</div><div class="line"></div><div class="line"><span class="meta">#</span><span class="bash"> make <span class="built_in">cd</span> use the ls colours</span></div><div class="line">zstyle ':completion:*' list-colors "$&#123;(@s.:.)LS_COLORS&#125;"</div><div class="line">autoload -Uz compinit</div><div class="line">compinit</div></pre></td></tr></table></figure>
 <ul>
 <li>加载设置：<code>source ~/.zshrc</code></li>
 </ul>
@@ -383,11 +383,11 @@
 <ul>
 <li>如果还没安装 npm 的话：</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Get npm if you don't have it already</div><div class="line">sudo apt-get install -yqq npm</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> Get npm <span class="keyword">if</span> you don<span class="string">'t have it already</span></span></div><div class="line">sudo apt-get install -yqq npm</div></pre></td></tr></table></figure>
 <ul>
 <li>然后安装 wsl-open：</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Install</div><div class="line">sudo npm install -g wsl-open</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash"> Install</span></div><div class="line">sudo npm install -g wsl-open</div></pre></td></tr></table></figure>
 <h2 id="使用-Visual-Studio-Code-作为主要代码编辑工具"><a href="#使用-Visual-Studio-Code-作为主要代码编辑工具" class="headerlink" title="使用 Visual Studio Code 作为主要代码编辑工具"></a>使用 Visual Studio Code 作为主要代码编辑工具</h2><blockquote>
 <p>💎 以下步骤适用于 Windows 这边安装的 Visual Studio Code。</p>
 <p>💎 目前存在的一个问题是：VSCode 和 WSL 侧的工具链兼容性都很糟糕（除了 Node.js），都需要一定的配置才能丝滑工作。这也是一个当前微软 VSCode 各大语言插件组和 WSL 开发组都知道并在解决的问题（参考 <a href="https://github.com/Microsoft/vscode-python/issues/67" target="_blank" rel="noopener">VSCode Python 插件 Issue #67</a>），由于 WSL 是一个 Runtime 环境，而 VSCode 只和 Windows 侧的组件进行沟通，因此当前一个比较好的解决方法是：在 Windows 侧手动创建一些脚本帮助 VSCode 和 WSL 侧安装的组件沟通。</p>

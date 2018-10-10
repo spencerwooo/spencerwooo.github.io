@@ -9,7 +9,7 @@ $(document).ready(function() {
             //change text of reward_btn based on visibility of qr_code div
             $reward_btn.text(function() {
                 //change text based on condition
-                return $qr_code.is(":visible") ? "点击收起" : "请喝咖啡";
+                return $qr_code.is(":visible") ? "点击收起 🎁" : "请喝咖啡 🍭";
             });
         });
     });

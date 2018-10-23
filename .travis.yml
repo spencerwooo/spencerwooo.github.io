@@ -1,5 +1,7 @@
 language: node_js
 
+sudo: required
+
 node_js: stable
 
 install:
@@ -26,6 +28,7 @@ script:
   - hexo generate
 
 after_script:
-  - git config user.name "${GIT_NAME}"
-  - git config user.email "{$GIT_EMAIL}"
-  - sed -i "s/gh_token/${GITHUB_TOKEN}/g" ./_config.yml
+  - git config user.name "$GIT_NAME"
+  - git config user.email "$GIT_EMAIL"
+  - sed -i "s/gh_token/$GITHUB_TOKEN/g" ./_config.yml
+  - hexo deploy

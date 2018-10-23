@@ -21,14 +21,19 @@ before_install:
 
 install:
   - npm install
-  - npm install hexo-deployer-git --save
 
 script:
   - hexo clean
   - hexo generate
 
-after_script:
-  - git config user.name "$GIT_NAME"
-  - git config user.email "$GIT_EMAIL"
-  - sed -i "s/gh_token/$GITHUB_TOKEN/g" ./_config.yml
-  - hexo deploy
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  name: $GIT_NAME
+  email: $GIT_EMAIL
+  keep-history: true
+  target-branch: master
+  on:
+    branch: hexo

@@ -179,5 +179,5 @@ theme: huxblog
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://gh_token@github.com/spencerwoo98/spencerwoo98.github.io.git
+  repository: https://github.com/spencerwoo98/spencerwoo98.github.io.git
   branch: master

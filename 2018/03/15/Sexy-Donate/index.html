@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spencer&#39;s Blog">
+    <meta name="keyword"  content="Spencer">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/web_icon.svg" color="#FFFFFF">
+
+    <title>
+        
+          Sexy Donate - Spencer Woo
+        
+    </title>
+
+    <link rel="canonical" href="https://spencerwoo.com/2018/03/15/Sexy-Donate/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <script src="https://use.fontawesome.com/e43f82ade4.js"></script> -->
+    <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spencer Woo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/about/">BIO</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">ARCHIVES</a>
+                        </li>
+                        
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/people/">GODS</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">TAG</a>
+                        </li>
+                        
+
+                    
+
+                    <li>
+                        <a href="https://500px.com/spencerwoo98/galleries">PORTFOLIO</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+        /* background-image: url('https://i.loli.net/2018/03/15/5aaa61d77b629.jpg') */
+        background-image: url('https://i.loli.net/2018/03/15/5aaa61d77b629.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                            <a class="tag" href="/tags/#code" title="code">
+                                code
+                            </a>
+                            
+                            <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                sexy moves
+                            </a>
+                            
+                            <a class="tag" href="/tags/#github" title="github">
+                                github
+                            </a>
+                            
+                    </div>
+                    <h1>Sexy Donate</h1>
+                    <h2 class="subheading">一只 200 行代码以内的小可爱「打赏」模块背后的思考</h2>
+                    <span class="meta">
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-book"></i>
+                        </span> 作者
+                    Spencer Woo
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-calendar"></i>
+                        </span> 日期
+                        2018-03-15
+                            <br><br>
+                            <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-bar-chart"></i>
+                        </span> 共
+                            899 字
+                                <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-hourglass-2"></i>
+                        </span> 可能要读上
+                                3 分钟
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <script src="/assets/js/APlayer.min.js"> </script><p>前几天稍微写了一个小小的打赏 <strong>碎片。</strong> 给 Hexo 做了一些微小的贡献。</p>
+<p>因为实在是太小了，实现也太过简单了，所以划重点：<strong>碎片</strong>。</p>
+<h1 id="0×01-Fragments"><a href="#0×01-Fragments" class="headerlink" title="0×01 Fragments"></a>0×01 Fragments</h1><p>之前看 Hexo 的主题，包括 Next 和 Material 主题，都直接集成了「打赏模块」。很可惜我的主题简洁到除了没有评论，也没有设计打赏模块！自己动手，丰衣足食。虽然很简单，但是有总比没有强。</p>
+<p>最初，我想要的是一个小小的按钮，点击打开一个抽屉，然后出现两个二维码。</p>
+<p>就像 iOS 6.0 以及之前的应用抽屉：</p>
+<p><img src="https://i.loli.net/2018/03/15/5aaa57113bc8b.jpg" alt="img"></p>
+<p>如果真的可以用纯 CSS 实现这个质感的背景 (svg)，我就实在是佩服自己了。</p>
+<p><br></p>
+<h1 id="0×02-Rewards"><a href="#0×02-Rewards" class="headerlink" title="0×02 Rewards"></a>0×02 Rewards</h1><p>最难的部分竟然是用  jQuery 实现点击下拉 + 点击隐藏，就是所谓的 Expand and Collapse.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">".reward_btn"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        $reward_btn = $(<span class="keyword">this</span>);</div><div class="line">        <span class="comment">//getting the next element</span></div><div class="line">        $qr_code = $reward_btn.next();</div><div class="line">        <span class="comment">//open up the qr_code needed - toggle the slide- if visible, slide up, if not slidedown.</span></div><div class="line">        $qr_code.slideToggle(<span class="number">500</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="comment">//execute this after slideToggle is done</span></div><div class="line">            <span class="comment">//change text of reward_btn based on visibility of qr_code div</span></div><div class="line">            $reward_btn.text(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                <span class="comment">//change text based on condition</span></div><div class="line">                <span class="keyword">return</span> $qr_code.is(<span class="string">":visible"</span>) ? <span class="string">"点击收起"</span> : <span class="string">"请喝咖啡"</span>;</div><div class="line">            &#125;);</div><div class="line">        &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>具体的 JavaScript 就是如上了。主要代码只有 6 行，感谢 StackOverflow 的大神。</p>
+<p>用 CSS 把按钮和图片变好看是最最最简单的了。虽然要比 JavaScript 多上 90 多行代码量。</p>
+<p>最后实现的效果在本页面最下面啦！</p>
+<p><br></p>
+<h1 id="0×03-GitHub-ify"><a href="#0×03-GitHub-ify" class="headerlink" title="0×03 GitHub-ify"></a>0×03 GitHub-ify</h1><p>前几天唐大佬在校内服务器上搞成功了一个 GitLab，间接地熟悉了 git 的各种命令。</p>
+<p>受 Telegram 上一个叫做「Apply for 🐸」的机器人启发，<strong>ALSO</strong> 也为了测试校内服务器，在 GitLab 上面上传了一个抒发对赞大佬崇拜之情的脚本。</p>
+<p>这个算作是自己第二个认认真真设计的项目吧。地址在这里 -&gt; <a href="https://github.com/spencerwoo98/sexy-donate" target="_blank" rel="noopener">SexyDonate on GitHub</a></p>
+<p>目前有两个小遗憾：</p>
+<ul>
+<li>一个是那个 iOS 拟物化风格的应用抽屉背景，用纯 CSS 实现。</li>
+<li>还有一个是整个 Fragment 用 JavaScript 渲染出来。这样直接引用更小的一部分代码，在其他网页上就可以出现了，现在还需要一点 HTML 配合。最终的想法应该是 Gitment 那样子的代码片段：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> gitment = <span class="keyword">new</span> Gitment(&#123;</div><div class="line">  id: <span class="string">'Your page ID'</span>, <span class="comment">// optional</span></div><div class="line">  owner: <span class="string">'Your GitHub ID'</span>,</div><div class="line">  repo: <span class="string">'The repo to store comments'</span>,</div><div class="line">  oauth: &#123;</div><div class="line">    client_id: <span class="string">'Your client ID'</span>,</div><div class="line">    client_secret: <span class="string">'Your client secret'</span>,</div><div class="line">  &#125;,</div><div class="line">  <span class="comment">// ...</span></div><div class="line">  <span class="comment">// For more available options, check out the documentation below</span></div><div class="line">&#125;)</div><div class="line"></div><div class="line">gitment.render(<span class="string">'comments'</span>)</div></pre></td></tr></table></figure>
+<p>如上吧，这是 Render Gitment 时候的 JavaScript 代码。这样的话，还可以直接设置 HTML 代码中的一些自定义的内容，包括二维码链接、按钮的文本等等。</p>
+<p>理想。</p>
+<p><br></p>
+<h1 id="0×04-Animista"><a href="#0×04-Animista" class="headerlink" title="0×04 Animista"></a>0×04 Animista</h1><p>昨天还有一个愿望，就是按钮可以对鼠标点击 (onClick) 或者悬停事件 (onHover) 做出一些反应，显得不那么单调，调皮一些。</p>
+<p>首先感谢 Chrome 的插件 AnywayFM，一群牛逼的设计师设计的首屏。美的不可方物。</p>
+<p>再感谢 <a href="http://animista.net/" target="_blank" rel="noopener">Animista</a>，由 AnywayFM 推荐的 CSS 合集。</p>
+<p>在上面我找到了能实现：鼠标悬停在按钮上，按钮会调皮的抖动的 CSS。实在是骚气。</p>
+<p><img src="https://i.loli.net/2018/03/14/5aa8bc4b20774.jpg" alt="img"></p>
+<p><br></p>
+<h1 id="0×05-设计"><a href="#0×05-设计" class="headerlink" title="0×05 设计"></a>0×05 设计</h1><p>我的 Java 和安卓老师，金大师。</p>
+<p>他在安卓课上讲到 Google 的 Material Design 的时候讲过，程序员不要接触设计相关的领域。</p>
+<p>脑子会烧掉的。</p>
+<p>让那些有美感的同学去做设计吧。</p>
+<p><strong>我是一万个不同意。</strong></p>
+<p><img src="https://i.loli.net/2018/03/11/5aa5377418b17.jpg" alt="img"></p>
+<p><strong>好看是第一生产力。</strong></p>
+<p>继续对简洁与效率的追求。这就是美。</p>
+<p><br></p>
+<p><br></p>
+<p>© Spencer Woo</p>
+<p>打赏 DEMO 如下 ↓↓↓ 打赏 DEMO 如下</p>
+
+
+                    <hr>
+
+                    <!-- Reward Code -->
+
+
+<script src="/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/donate.css">
+<script src="/js/donate.js"></script>
+
+
+<div class="post_reward">
+    <label class="reward_btn">请喝咖啡 🍭</label>
+    <div class="qr_code">
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg" title="WeChat">
+        </div>
+
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg" title="AliPay">
+        </div>
+
+    </div>    
+    <div class="powered_text">
+            Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
+    </div>
+</div>
+
+
+
+                    <!-- Gitment 评论系统代码开始 -->
+                    <div id="container"></div>
+                    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+                    <link rel="stylesheet" href="/css/comment.css">
+                    <script src="/js/comment.js"></script>
+                    <script>
+                        var gitment = new Gitment({
+                            id: 'https://spencerwoo.com/2018/03/15/Sexy-Donate/', // 可选。默认为 location.href
+                            owner: 'spencerwoo98',
+                            repo: 'spencerwoo98.github.io',
+                            oauth: {
+                                client_id: 'f702458a6c7ee94af614',
+                                client_secret: 'e30b70e5f4cf3ff2399c2c6d9ed164fbe10941ef',
+                            },
+                        })
+                        gitment.render('container')
+                    </script>
+                    <!-- Gitment 评论系统代码结束 -->
+
+                    <ul class="pager">
+                        
+                            <li class="previous">
+                                <a href="/2018/03/29/Fragments-鱼二与鱼/" data-toggle="tooltip" data-placement="top" title="Fragments | 鱼二与鱼">&larr; Previous Post</a>
+                            </li>
+                            
+                                
+                                    <li class="next">
+                                        <a href="/2018/03/11/Atom-入坑指南/" data-toggle="tooltip" data-placement="top" title="Atom 入坑指南">Next Post &rarr;</a>
+                                    </li>
+                                    
+                    </ul>
+
+                    
+
+            </div>
+            <!-- Side Catalog Container -->
+            <!--  -->
+
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                    <section>
+                        <!-- no hr -->
+                        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            
+                                <a class="tag" href="/tags/#code" title="code">
+                                    code
+                                </a>
+                                
+                                <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                    sexy moves
+                                </a>
+                                
+                                <a class="tag" href="/tags/#github" title="github">
+                                    github
+                                </a>
+                                
+                        </div>
+                    </section>
+                    
+
+                        <!-- Friends Blog -->
+                        
+                            <hr>
+                            <h5>FRIENDS</h5>
+                            <ul class="list-inline">
+
+                                
+                                    <li>
+                                        <a href="https://spencerwoo.com" target="_blank">
+                                            Spencer&#39;s Blog
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://code.felinae98.cn" target="_blank">
+                                            Felinae
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://tenkeyseven.com" target="_blank">
+                                            Tenkey
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://blog.csdn.net/silvester123" target="_blank">
+                                            Big Old Zan&#39;s CSDN
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.trafalga.cn/" target="_blank">
+                                            Brandon
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.ricky29.tech" target="_blank">
+                                            Ricky
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://felixxiong.github.io" target="_blank">
+                                            故事熊
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://chungzh.cn/" target="_blank">
+                                            ChungZH
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://api.spencerwoo.com" target="_blank">
+                                            It helps SEO
+                                        </a>
+                                    </li>
+                                    
+                            </ul>
+                            
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+        
+            <!-- async load function -->
+            <script>
+                function async (u, c) {
+                    var d = document,
+                        t = 'script',
+                        o = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    o.src = u;
+                    if (c) {
+                        o.addEventListener('load', function(e) {
+                            c(null, e);
+                        }, false);
+                    }
+                    s.parentNode.insertBefore(o, s);
+                }
+            </script>
+            <!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
+            <script>
+                // async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+                async ("https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js", function() {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'right',
+                        // icon: '→'
+                    };
+                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+                })
+            </script>
+            <style>
+                /* place left on bigger screen */
+
+                @media all and (min-width: 800px) {
+                    .anchorjs-link {
+                        position: absolute;
+                        left: -0.75em;
+                        font-size: 1.1em;
+                        margin-top: -0.1em;
+                    }
+                }
+            </style>
+            
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    
+                        <li>
+                            <a href="/feed.xml">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                    
+                    
+                        <li>
+                            <a target="_blank" href="https://www.zhihu.com/people/spencer-woo-64/activities">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">知</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://weibo.com/6265807914/profile?topnav=1&amp;wvr=6&amp;is_all=1">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/vertigo_woo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://github.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://500px.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-500px fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a target="_blank"  href="https://sspai.com/user/800610/posts">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">π</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://t.me/Spencer_Woo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+
+                    
+
+                </ul>
+
+                <!-- using busuanzi for visitor statistics -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+                <p class="copyright text-muted">
+                    &copy; 2017 - 2018
+                    Spencer Woo
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-code"></i>
+                    </span>
+                    Proudly powered by
+                    <a href="https://hexo.io">Hexo</a>
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-github-alt"></i>
+                    </span>
+                    Hosted on <a href="https://github.com">Github</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-cloud"></i>
+                    </span>
+                    DNS resolved by <a href="https://www.cloudflare.com/">Cloudflare</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-line-chart"></i>
+                    </span>
+                    Visitor statistics by <a href="http://busuanzi.ibruce.info/">不蒜子</a> and <a href="https://www.google.com/analytics/">Google Analytics</a>
+
+                    <br> -->
+                    2017 年来我已经写了 36.6k 字
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    感谢来看我的 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 个小朋友
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-ban"></i>
+                    </span> -->
+                    <img src="https://i.loli.net/2018/04/09/5acb82c270987.png" width="15px">
+                    <a href="https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://spencerwoo.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    // async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-111664763-1';
+    var _gaDomain = 'spencerwoo.com';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+<!--  -->
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

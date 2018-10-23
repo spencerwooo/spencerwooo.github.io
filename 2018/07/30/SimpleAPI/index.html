@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spencer&#39;s Blog">
+    <meta name="keyword"  content="Spencer">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/web_icon.svg" color="#FFFFFF">
+
+    <title>
+        
+          Simple Deskop API | 一喵一图 - Spencer Woo
+        
+    </title>
+
+    <link rel="canonical" href="https://spencerwoo.com/2018/07/30/SimpleAPI/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <script src="https://use.fontawesome.com/e43f82ade4.js"></script> -->
+    <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spencer Woo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/about/">BIO</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">ARCHIVES</a>
+                        </li>
+                        
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/people/">GODS</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">TAG</a>
+                        </li>
+                        
+
+                    
+
+                    <li>
+                        <a href="https://500px.com/spencerwoo98/galleries">PORTFOLIO</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+        /* background-image: url('https://i.loli.net/2018/07/31/5b5f3cde5cc6a.jpg') */
+        background-image: url('https://i.loli.net/2018/07/31/5b5f3cde5cc6a.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                            <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                tutorial
+                            </a>
+                            
+                            <a class="tag" href="/tags/#code" title="code">
+                                code
+                            </a>
+                            
+                            <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                sexy moves
+                            </a>
+                            
+                            <a class="tag" href="/tags/#sspai" title="sspai">
+                                sspai
+                            </a>
+                            
+                            <a class="tag" href="/tags/#github" title="github">
+                                github
+                            </a>
+                            
+                    </div>
+                    <h1>Simple Deskop API | 一喵一图</h1>
+                    <h2 class="subheading">An image API displaying random pictures curated by Simple Desktops.</h2>
+                    <span class="meta">
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-book"></i>
+                        </span> 作者
+                    Spencer Woo
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-calendar"></i>
+                        </span> 日期
+                        2018-07-30
+                            <br><br>
+                            <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-bar-chart"></i>
+                        </span> 共
+                            790 字
+                                <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-hourglass-2"></i>
+                        </span> 可能要读上
+                                3 分钟
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <script src="/assets/js/APlayer.min.js"> </script><p><a href="https://github.com/spencerwoo98/spencer-simple-desktop-api" target="_blank" rel="noopener">「一喵一图」</a>：一个异常简单的随机图片 API，图源自极简主义桌面壁纸提供站点 → <a href="http://simpledesktops.com" target="_blank" rel="noopener">Simple Desktops</a> 🎉🎉🎉</p>
+<p><br></p>
+<h2 id="Simple-Desktops-这是什么？"><a href="#Simple-Desktops-这是什么？" class="headerlink" title="Simple Desktops? 这是什么？"></a>Simple Desktops? 这是什么？</h2><p>在上一篇文章：<a href="https://sspai.com/post/45742" target="_blank" rel="noopener">Mac To Win | 不完全迁移体验指北</a> 中我提到了一个优质的图片社区：Simple Desktops。</p>
+<p>Simple Desktops 提供了…</p>
+<blockquote>
+<p>A collection of wallpapers designed to make your computer beautiful without distraction.</p>
+</blockquote>
+<p>一组特别设计的壁纸，让你电脑桌面美观的同时又不妖艳而令人分心。</p>
+<p>但是很遗憾的是，Simple Desktops 的网站开发者们并没有给我们提供一个结实可用的 API，如果想要在网络上使用 Simple Desktops 提供的图片，我们只能将图片下载到本地，再上传到自己的图床上进行使用。</p>
+<p>长期维护一个博客的我，经常因为文章首页题图而烦恼。曾经我使用的「Unsplash 无版权图片社区」提供了一个完美可用的 API，我能够直接将 Unsplash 给开发者提供的代码嵌入我的博客或者其他页面来引用它们的图片，这样的方便程度实在是令人印象深刻。</p>
+<p>我个人十分喜欢 Simple Desktops 提供的壁纸，它们简单、清晰，又符合设计美学。因此我也很想通过类似 Unsplash 提供的方式将 Simple Desktops 上面的壁纸用作我博客题图、文章配图等等地方。我于是设计了这样一个 API，它能够十分方便的将 Simple Desktops 的图片直接嵌入任何地方。</p>
+<p>我将它称作「一喵一图」。</p>
+<p><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>直接将下面代码嵌入到任何你想要放的地方。不必担心是否支持 <code>https</code>，因为不仅 <code>API</code> 的 <code>GET</code> 请求是通过 <code>https</code> 传输的，图片本身也是通过 <code>https</code> 传输的。( •̀ ω •́ )y</p>
+<p><strong>1. API 地址</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://api.spencerwoo.com</div></pre></td></tr></table></figure>
+<p><strong>2. Markdown</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![img](https://api.spencerwoo.com)</div></pre></td></tr></table></figure>
+<p><strong>3. HTML</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://api.spencerwoo.com"</span> <span class="attr">alt</span>=<span class="string">"img.png"</span> <span class="attr">title</span>=<span class="string">"img.png"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<p>图片随机显示并且每次刷新都将更新新的图片。由于版权问题以及 Simple Desktops 本身并没有将图片进行分类，我自然无法将图片分类，同时由于 Simple Desktops 网站本身不支持 <code>https</code>，我无法也无益直接提供 Simple Desktops 的图片外链。</p>
+<p><br></p>
+<h2 id="使用效果"><a href="#使用效果" class="headerlink" title="使用效果"></a>使用效果</h2><p><img src="https://i.loli.net/2018/07/30/5b5ecdb7b783a.png" alt="sshot-1.png"></p>
+<p>目前在使用 <strong>「一喵一图」</strong> 的网站有这些:</p>
+<ul>
+<li><a href="https://spencerwoo.com">https://spencerwoo.com</a></li>
+</ul>
+<p>如果你在使用我的 API 并且想将你的网站加到列表里面来，<a href="https://github.com/spencerwoo98/spencer-simple-desktop-api" target="_blank" rel="noopener">请直接 fork 本项目</a>，修改这里的列表，然后给我发一个 PR 就 ok 了。或者你也可以直接在项目的 Issue 区、本页面的评论区、少数派私信等等各种能够联系到我的方式告知我，干杯。🎉</p>
+<p>欢迎 Star，欢迎 PR。</p>
+<p><br></p>
+<h2 id="致谢与版权声明"><a href="#致谢与版权声明" class="headerlink" title="致谢与版权声明"></a>致谢与版权声明</h2><p><strong>服务稳定全靠天，随时跑路不留名。</strong></p>
+<ul>
+<li>Images at Simple Desktops are for personal use and for personal use only. They shouldn’t be sold or reposted without the expressed written consent of the desktop creator. See <a href="http://simpledesktops.com/about/" target="_blank" rel="noopener">Simple Desktops</a> for more details.</li>
+<li>A huge thank you to SM.MS for providing such a stable and awesome image hosting service. </li>
+<li>Server provided by <a href="https://www.vultr.com/" target="_blank" rel="noopener">VULTR - The Infrastructure Cloud™</a>.</li>
+</ul>
+<p>项目经由 MIT License 发布。</p>
+<p><br></p>
+<p><a href="https://spencerwoo.com">© Spencer Woo</a></p>
+
+
+                    <hr>
+
+                    <!-- Reward Code -->
+
+
+<script src="/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/donate.css">
+<script src="/js/donate.js"></script>
+
+
+<div class="post_reward">
+    <label class="reward_btn">请喝咖啡 🍭</label>
+    <div class="qr_code">
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg" title="WeChat">
+        </div>
+
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg" title="AliPay">
+        </div>
+
+    </div>    
+    <div class="powered_text">
+            Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
+    </div>
+</div>
+
+
+
+                    <!-- Gitment 评论系统代码开始 -->
+                    <div id="container"></div>
+                    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+                    <link rel="stylesheet" href="/css/comment.css">
+                    <script src="/js/comment.js"></script>
+                    <script>
+                        var gitment = new Gitment({
+                            id: 'https://spencerwoo.com/2018/07/30/SimpleAPI/', // 可选。默认为 location.href
+                            owner: 'spencerwoo98',
+                            repo: 'spencerwoo98.github.io',
+                            oauth: {
+                                client_id: 'f702458a6c7ee94af614',
+                                client_secret: 'e30b70e5f4cf3ff2399c2c6d9ed164fbe10941ef',
+                            },
+                        })
+                        gitment.render('container')
+                    </script>
+                    <!-- Gitment 评论系统代码结束 -->
+
+                    <ul class="pager">
+                        
+                            <li class="previous">
+                                <a href="/2018/08/11/whtim/" data-toggle="tooltip" data-placement="top" title="主页推荐 | 新时代的互联网门户 - 万花筒">&larr; Previous Post</a>
+                            </li>
+                            
+                                
+                                    <li class="next">
+                                        <a href="/2018/07/19/Windows101/" data-toggle="tooltip" data-placement="top" title="Windows One On One">Next Post &rarr;</a>
+                                    </li>
+                                    
+                    </ul>
+
+                    
+
+            </div>
+            <!-- Side Catalog Container -->
+            <!--  -->
+
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                    <section>
+                        <!-- no hr -->
+                        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            
+                                <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                    tutorial
+                                </a>
+                                
+                                <a class="tag" href="/tags/#code" title="code">
+                                    code
+                                </a>
+                                
+                                <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                    sexy moves
+                                </a>
+                                
+                                <a class="tag" href="/tags/#sspai" title="sspai">
+                                    sspai
+                                </a>
+                                
+                                <a class="tag" href="/tags/#github" title="github">
+                                    github
+                                </a>
+                                
+                        </div>
+                    </section>
+                    
+
+                        <!-- Friends Blog -->
+                        
+                            <hr>
+                            <h5>FRIENDS</h5>
+                            <ul class="list-inline">
+
+                                
+                                    <li>
+                                        <a href="https://spencerwoo.com" target="_blank">
+                                            Spencer&#39;s Blog
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://code.felinae98.cn" target="_blank">
+                                            Felinae
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://tenkeyseven.com" target="_blank">
+                                            Tenkey
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://blog.csdn.net/silvester123" target="_blank">
+                                            Big Old Zan&#39;s CSDN
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.trafalga.cn/" target="_blank">
+                                            Brandon
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.ricky29.tech" target="_blank">
+                                            Ricky
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://felixxiong.github.io" target="_blank">
+                                            故事熊
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://chungzh.cn/" target="_blank">
+                                            ChungZH
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://api.spencerwoo.com" target="_blank">
+                                            It helps SEO
+                                        </a>
+                                    </li>
+                                    
+                            </ul>
+                            
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+        
+            <!-- async load function -->
+            <script>
+                function async (u, c) {
+                    var d = document,
+                        t = 'script',
+                        o = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    o.src = u;
+                    if (c) {
+                        o.addEventListener('load', function(e) {
+                            c(null, e);
+                        }, false);
+                    }
+                    s.parentNode.insertBefore(o, s);
+                }
+            </script>
+            <!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
+            <script>
+                // async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+                async ("https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js", function() {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'right',
+                        // icon: '→'
+                    };
+                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+                })
+            </script>
+            <style>
+                /* place left on bigger screen */
+
+                @media all and (min-width: 800px) {
+                    .anchorjs-link {
+                        position: absolute;
+                        left: -0.75em;
+                        font-size: 1.1em;
+                        margin-top: -0.1em;
+                    }
+                }
+            </style>
+            
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    
+                        <li>
+                            <a href="/feed.xml">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                    
+                    
+                        <li>
+                            <a target="_blank" href="https://www.zhihu.com/people/spencer-woo-64/activities">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">知</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://weibo.com/6265807914/profile?topnav=1&amp;wvr=6&amp;is_all=1">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/vertigo_woo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://github.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://500px.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-500px fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a target="_blank"  href="https://sspai.com/user/800610/posts">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">π</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://t.me/Spencer_Woo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+
+                    
+
+                </ul>
+
+                <!-- using busuanzi for visitor statistics -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+                <p class="copyright text-muted">
+                    &copy; 2017 - 2018
+                    Spencer Woo
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-code"></i>
+                    </span>
+                    Proudly powered by
+                    <a href="https://hexo.io">Hexo</a>
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-github-alt"></i>
+                    </span>
+                    Hosted on <a href="https://github.com">Github</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-cloud"></i>
+                    </span>
+                    DNS resolved by <a href="https://www.cloudflare.com/">Cloudflare</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-line-chart"></i>
+                    </span>
+                    Visitor statistics by <a href="http://busuanzi.ibruce.info/">不蒜子</a> and <a href="https://www.google.com/analytics/">Google Analytics</a>
+
+                    <br> -->
+                    2017 年来我已经写了 36.6k 字
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    感谢来看我的 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 个小朋友
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-ban"></i>
+                    </span> -->
+                    <img src="https://i.loli.net/2018/04/09/5acb82c270987.png" width="15px">
+                    <a href="https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://spencerwoo.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    // async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-111664763-1';
+    var _gaDomain = 'spencerwoo.com';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+<!--  -->
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

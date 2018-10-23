@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spencer&#39;s Blog">
+    <meta name="keyword"  content="Spencer">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/web_icon.svg" color="#FFFFFF">
+
+    <title>
+        
+          Atom 入坑指南 - Spencer Woo
+        
+    </title>
+
+    <link rel="canonical" href="https://spencerwoo.com/2018/03/11/Atom-入坑指南/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <script src="https://use.fontawesome.com/e43f82ade4.js"></script> -->
+    <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spencer Woo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/about/">BIO</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">ARCHIVES</a>
+                        </li>
+                        
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/people/">GODS</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">TAG</a>
+                        </li>
+                        
+
+                    
+
+                    <li>
+                        <a href="https://500px.com/spencerwoo98/galleries">PORTFOLIO</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+        /* background-image: url('https://i.loli.net/2018/03/11/5aa51641a7154.jpg') */
+        background-image: url('https://i.loli.net/2018/03/11/5aa51641a7154.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                            <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                tutorial
+                            </a>
+                            
+                            <a class="tag" href="/tags/#code" title="code">
+                                code
+                            </a>
+                            
+                            <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                sexy moves
+                            </a>
+                            
+                            <a class="tag" href="/tags/#atom" title="atom">
+                                atom
+                            </a>
+                            
+                            <a class="tag" href="/tags/#sspai" title="sspai">
+                                sspai
+                            </a>
+                            
+                    </div>
+                    <h1>Atom 入坑指南</h1>
+                    <h2 class="subheading">用最酷的编辑器 写最美的代码</h2>
+                    <span class="meta">
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-book"></i>
+                        </span> 作者
+                    Spencer Woo
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-calendar"></i>
+                        </span> 日期
+                        2018-03-11
+                            <br><br>
+                            <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-bar-chart"></i>
+                        </span> 共
+                            1,476 字
+                                <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-hourglass-2"></i>
+                        </span> 可能要读上
+                                6 分钟
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>本文首发于我的博客 - <a href="https://spencerwoo.com">https://spencerwoo.com</a></p>
+</blockquote>
+<hr>
+<p>代码如诗。</p>
+<blockquote>
+<p>Code is poetry.</p>
+</blockquote>
+<p><img src="https://i.loli.net/2018/03/11/5aa5201dd7f2e.jpg" alt="img"></p>
+<p><em>▲ Vim - the ubiquitous text editor.</em></p>
+<p>写代码本应该是很享受的事情，我们有极客高效的 Vim，简约美丽的 Sublime Text，从小至最为纯粹的编辑器，到大至包罗万物的 IDE。一个好的、美观的、高效的代码编写环境着实能够提高一个人的写作、创作欲望。试想一个人把 VC 6.0 放在你的面前，黑底白字、没有高亮、没有颜色，有谁会爱上 C / C++？如果有人在 2018 年向你推荐 1998 年的 IDE，那么你觉得这个人的脑子该如何拯救？</p>
+<p><img src="https://i.loli.net/2018/03/11/5aa51aeacc4b0.jpg" alt="img"></p>
+<p><strong>生命不息，折腾不止。</strong></p>
+<p>经过近 2 年的摸索，从高中的 Dev C++ 到大一开学时的 Codeblock 与 Sublime Text，到现如今的 Atom，我想总结一下：<strong>一个高效美观、能激发一个人创作欲望的代码编写环境到底是怎样配置出来的。</strong>以拯救那些大一刚刚开学，即将或是已经被 C 语言 / Dev C++ / VC 6.0 荼毒半年有余的同学们。</p>
+<p><br></p>
+<h1 id="壹-→-Atom"><a href="#壹-→-Atom" class="headerlink" title="壹 → Atom"></a>壹 → Atom</h1><p><strong>Atom：A hackable text editor for the 21st Century</strong></p>
+<p><img src="https://i.loli.net/2018/03/11/5aa51fd0641a8.jpg" alt="img"></p>
+<p>首先，介绍工具：<strong>Atom 文本编辑器</strong>，由 Github 出品的基于 Electron / Node.js 的半开源文本编辑器。官网位于 -&gt; <a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a></p>
+<p>为什么我从一众优秀的文本编辑器中选择了 Atom，而不是 Vim，又放弃了我用了一年多的 Sublime Text？</p>
+<ul>
+<li><strong>开源。</strong>GitHub 上的大佬叫他是 Hackable 就不是吹的，配置文件是 <code>cson</code>，样式文件是 <code>CSS</code> 和 <code>Less</code>，所以理论上你可以把 Atom 配置成任何你想要的样子。</li>
+<li><strong>开箱即用。</strong>所谓的 Out-Of-The-Box Experience 说的就是 Atom。自带 4 组 UI 主题、4 组 Syntax 主题，自带 Markdown 渲染器、代码美化插件等等。</li>
+<li><strong>简单设置自带图形界面。</strong>无疑对我们这些 <code>Spicy Chicken</code> 很用户友好了，一些简单的设置是直接用下拉菜单的形式配置的，不需要打开诸如 <code>vimrc</code> 和 <code>User.sublime-settings</code> 然后费尽心思的直接改代码。</li>
+</ul>
+<p>又为什么我选择了 Atom 而不是 IDE？</p>
+<p>我只能说，就我们这些 <code>Spicy Chicken</code> 来说，写的代码还轮不到 IDE 的事情，毕竟刚开始的我们，C / C++ 一个项目不超过两个文件，一个文件不超过 500 行代码，用 IDE 来 <code>cmake</code> 一波岂不是很亏。因此我在 IDE 和轻量级可拓展的文本编辑器中选择了后者，又在文本编辑器中选择了半开源、可 Hack 的 Atom。<strong>以上。</strong></p>
+<p><br></p>
+<h1 id="贰-→-配置-Atom-成为写-C-C-的「IDE」"><a href="#贰-→-配置-Atom-成为写-C-C-的「IDE」" class="headerlink" title="贰 → 配置 Atom 成为写 C/C++ 的「IDE」"></a>贰 → 配置 Atom 成为写 C/C++ 的「IDE」</h1><p>文本编辑器的最大的优势在于你可以通过开源社区下载，甚至自己编译开发「插件 - Plugin」来完善它，实现「开箱即用」中所没有提供的功能。</p>
+<h2 id="1-写代码的时候"><a href="#1-写代码的时候" class="headerlink" title="1. 写代码的时候"></a>1. 写代码的时候</h2><p>一个有情怀的 IDE 基本都会实现<strong>代码自动补全</strong>，<strong>代码实时编译纠错</strong>，以及<strong>代码高亮</strong>（为了美丽）和<strong>代码自动整理。</strong>很可惜，Dev C++ 没有，Codeblock 也没有。因此，我们要完善我们崭新的 Atom 来实现以上功能。</p>
+<h3 id="代码自动补全"><a href="#代码自动补全" class="headerlink" title="代码自动补全"></a>代码自动补全</h3><p><strong>Plugin:</strong> autocomplete-clang</p>
+<p><img src="https://i.loli.net/2018/03/11/5aa52f724ffec.jpg" alt="img"></p>
+<h3 id="代码实时编译"><a href="#代码实时编译" class="headerlink" title="代码实时编译"></a>代码实时编译</h3><p><strong>Plugins:</strong> linter, linter-clang, linter-ui-default</p>
+<p><img src="https://i.loli.net/2018/03/11/5aa52fa12a4ec.jpg" alt="img"></p>
+<h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><p><strong>Themes</strong>，这里的问题主要在于个人审美，我相信一定有一个美丽的 UI 和配套的 Syntax 主题打动你。</p>
+<p><img src="https://i.loli.net/2018/03/11/5aa52fc316d12.jpg" alt="img"></p>
+<h3 id="代码自动整理"><a href="#代码自动整理" class="headerlink" title="代码自动整理"></a>代码自动整理</h3><p><strong>Plugin:</strong> Atom-beautify</p>
+<p><img src="https://i.loli.net/2018/03/11/5aa52ff2cb70f.jpg" alt="img"></p>
+<p><br></p>
+<h2 id="2-写完代码之后"><a href="#2-写完代码之后" class="headerlink" title="2. 写完代码之后"></a>2. 写完代码之后</h2><p>一个能正常操作的 IDE 都能通过，或是绿色箭头，或是组合键 <code>Fn + F5</code> 之类的方式编译运行。</p>
+<p>在 Atom 里我们也可以实现：</p>
+<h3 id="编译运行-C-C"><a href="#编译运行-C-C" class="headerlink" title="编译运行 C/C++"></a>编译运行 C/C++</h3><h4 id="一键编译：script"><a href="#一键编译：script" class="headerlink" title="一键编译：script"></a>一键编译：script</h4><p><img src="https://i.loli.net/2018/03/11/5aa53170e2991.jpg" alt="img"></p>
+<p>插件 script 实际上是通过识别文件类型来执行对应的命令编译源代码。比如 C++ 的编译命令实际上是 <code>[Command: bash -c &#39;xcrun clang++ -std=c++14 -Wall -include stdio.h -fcolor-diagnostics -include iostream &#39;$Path_To_CPP_File$/Test.cpp&#39; -o /tmp/cpp.out &amp;&amp; /tmp/cpp.out&#39;]</code>，通过快捷键 <code>⌘ + I</code> 直接运行指令来编译。</p>
+<p><img src="https://i.loli.net/2018/03/11/5aa533942bab0.jpg" alt="img"></p>
+<h4 id="调出终端：platform-ide-terminal"><a href="#调出终端：platform-ide-terminal" class="headerlink" title="调出终端：platform-ide-terminal"></a>调出终端：platform-ide-terminal</h4><p><img src="https://i.loli.net/2018/03/11/5aa531cb9e7b8.jpg" alt="img"></p>
+<p>如果不满意 script 一键编译运行的话，可以通过这个插件唤出终端，这样直接了当用 <code>g++ -o $File_Name$ $File_Name.cpp$</code> 这一命令来运行，这时候程序也支持输入，与 Windows 下 Dev C++ 中默认运行调出 Command Prompt 小黑框一般道理。同时这样也方便用 <code>gdb</code> 来进行调试。</p>
+<p><br></p>
+<h2 id="3-一个有情怀的工作流开发者的加成"><a href="#3-一个有情怀的工作流开发者的加成" class="headerlink" title="3. 一个有情怀的工作流开发者的加成"></a>3. 一个有情怀的工作流开发者的加成</h2><p>在 ACM 中，每段代码都是有标准输入和标准输出的。在 C / C++ 中我们可以通过这样的代码片段来读取输入：<code>in.txt</code> 并将程序输出、程序运行时间写入文件：<code>out.txt</code>。在保证 C / C++ 源代码和两个 TXT 文件再同一个文件目录下，这段代码是这样的：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> SUBMIT</span></div><div class="line">freopen(<span class="string">"in.txt"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line">freopen(<span class="string">"out.txt"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</div><div class="line"><span class="keyword">long</span> _begin_time = clock();</div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div><div class="line"></div><div class="line"><span class="comment">/* your code here */</span></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> SUBMIT</span></div><div class="line"><span class="keyword">long</span> _end_time = clock();</div><div class="line"><span class="built_in">printf</span>(<span class="string">"time = %ld ms"</span>, _end_time - _begin_time);</div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div></pre></td></tr></table></figure>
+<p>同时要在头文件定义时加入：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">define</span> SUBMIT <span class="comment">//本地运行这行留下，提交代码直接注释掉</span></span></div></pre></td></tr></table></figure>
+<p>这样在 Atom 中就可以形成工作流：代码区域 - 编写 → 输入内容 <code>in.txt</code> → 编译代码 → 查看输出文件内容、运行时间 <code>out.txt</code></p>
+<p><img src="https://i.loli.net/2018/03/11/5aa5377418b17.jpg" alt="img"></p>
+<p><strong>直观纯粹，效率优先。</strong></p>
+<p><img src="https://i.loli.net/2018/03/11/5aa53879150d8.jpg" alt="img"></p>
+<p>最后，上成果。这样的 Atom 配置在写 C / C++ 基础程序的时候，基本实现了：</p>
+<ul>
+<li>Linter: 基于 clang 的实时编译</li>
+<li>代码高亮与自动补全</li>
+<li>代码自动优化美化</li>
+<li>一键编译运行</li>
+<li>终端调试</li>
+</ul>
+<p>我相信，这样的配置不仅完美的适合小型项目的编写，还能极大的提升对代码的敏感和热爱。至少，这种解决方式，比 Dev C++ 和 VC 6.0 体面，也比 Visual Studio 和 CLion 纯粹、轻量。</p>
+<p>感谢阅读。</p>
+<p>鞠躬。</p>
+<p><br></p>
+<p><br></p>
+<p><a href="https://spencerwoo.com">©Spencer Woo</a></p>
+
+
+                    <hr>
+
+                    <!-- Reward Code -->
+
+
+<script src="/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/donate.css">
+<script src="/js/donate.js"></script>
+
+
+<div class="post_reward">
+    <label class="reward_btn">请喝咖啡 🍭</label>
+    <div class="qr_code">
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg" title="WeChat">
+        </div>
+
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg" title="AliPay">
+        </div>
+
+    </div>    
+    <div class="powered_text">
+            Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
+    </div>
+</div>
+
+
+
+                    <!-- Gitment 评论系统代码开始 -->
+                    <div id="container"></div>
+                    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+                    <link rel="stylesheet" href="/css/comment.css">
+                    <script src="/js/comment.js"></script>
+                    <script>
+                        var gitment = new Gitment({
+                            id: 'https://spencerwoo.com/2018/03/11/Atom-入坑指南/', // 可选。默认为 location.href
+                            owner: 'spencerwoo98',
+                            repo: 'spencerwoo98.github.io',
+                            oauth: {
+                                client_id: 'f702458a6c7ee94af614',
+                                client_secret: 'e30b70e5f4cf3ff2399c2c6d9ed164fbe10941ef',
+                            },
+                        })
+                        gitment.render('container')
+                    </script>
+                    <!-- Gitment 评论系统代码结束 -->
+
+                    <ul class="pager">
+                        
+                            <li class="previous">
+                                <a href="/2018/03/15/Sexy-Donate/" data-toggle="tooltip" data-placement="top" title="Sexy Donate">&larr; Previous Post</a>
+                            </li>
+                            
+                                
+                                    <li class="next">
+                                        <a href="/2018/03/05/知乎-如何鉴别文艺青年/" data-toggle="tooltip" data-placement="top" title="知乎 | 如何鉴别文艺青年">Next Post &rarr;</a>
+                                    </li>
+                                    
+                    </ul>
+
+                    
+
+            </div>
+            <!-- Side Catalog Container -->
+            <!--  -->
+
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                    <section>
+                        <!-- no hr -->
+                        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            
+                                <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                    tutorial
+                                </a>
+                                
+                                <a class="tag" href="/tags/#code" title="code">
+                                    code
+                                </a>
+                                
+                                <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                    sexy moves
+                                </a>
+                                
+                                <a class="tag" href="/tags/#atom" title="atom">
+                                    atom
+                                </a>
+                                
+                                <a class="tag" href="/tags/#sspai" title="sspai">
+                                    sspai
+                                </a>
+                                
+                        </div>
+                    </section>
+                    
+
+                        <!-- Friends Blog -->
+                        
+                            <hr>
+                            <h5>FRIENDS</h5>
+                            <ul class="list-inline">
+
+                                
+                                    <li>
+                                        <a href="https://spencerwoo.com" target="_blank">
+                                            Spencer&#39;s Blog
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://code.felinae98.cn" target="_blank">
+                                            Felinae
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://tenkeyseven.com" target="_blank">
+                                            Tenkey
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://blog.csdn.net/silvester123" target="_blank">
+                                            Big Old Zan&#39;s CSDN
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.trafalga.cn/" target="_blank">
+                                            Brandon
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.ricky29.tech" target="_blank">
+                                            Ricky
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://felixxiong.github.io" target="_blank">
+                                            故事熊
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://chungzh.cn/" target="_blank">
+                                            ChungZH
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://api.spencerwoo.com" target="_blank">
+                                            It helps SEO
+                                        </a>
+                                    </li>
+                                    
+                            </ul>
+                            
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+        
+            <!-- async load function -->
+            <script>
+                function async (u, c) {
+                    var d = document,
+                        t = 'script',
+                        o = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    o.src = u;
+                    if (c) {
+                        o.addEventListener('load', function(e) {
+                            c(null, e);
+                        }, false);
+                    }
+                    s.parentNode.insertBefore(o, s);
+                }
+            </script>
+            <!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
+            <script>
+                // async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+                async ("https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js", function() {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'right',
+                        // icon: '→'
+                    };
+                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+                })
+            </script>
+            <style>
+                /* place left on bigger screen */
+
+                @media all and (min-width: 800px) {
+                    .anchorjs-link {
+                        position: absolute;
+                        left: -0.75em;
+                        font-size: 1.1em;
+                        margin-top: -0.1em;
+                    }
+                }
+            </style>
+            
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    
+                        <li>
+                            <a href="/feed.xml">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                    
+                    
+                        <li>
+                            <a target="_blank" href="https://www.zhihu.com/people/spencer-woo-64/activities">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">知</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://weibo.com/6265807914/profile?topnav=1&amp;wvr=6&amp;is_all=1">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/vertigo_woo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://github.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://500px.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-500px fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a target="_blank"  href="https://sspai.com/user/800610/posts">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">π</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank"  href="https://t.me/Spencer_Woo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+
+                    
+
+                </ul>
+
+                <!-- using busuanzi for visitor statistics -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+                <p class="copyright text-muted">
+                    &copy; 2017 - 2018
+                    Spencer Woo
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-code"></i>
+                    </span>
+                    Proudly powered by
+                    <a href="https://hexo.io">Hexo</a>
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-github-alt"></i>
+                    </span>
+                    Hosted on <a href="https://github.com">Github</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-cloud"></i>
+                    </span>
+                    DNS resolved by <a href="https://www.cloudflare.com/">Cloudflare</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-line-chart"></i>
+                    </span>
+                    Visitor statistics by <a href="http://busuanzi.ibruce.info/">不蒜子</a> and <a href="https://www.google.com/analytics/">Google Analytics</a>
+
+                    <br> -->
+                    2017 年来我已经写了 36.6k 字
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    感谢来看我的 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 个小朋友
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-ban"></i>
+                    </span> -->
+                    <img src="https://i.loli.net/2018/04/09/5acb82c270987.png" width="15px">
+                    <a href="https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://spencerwoo.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    // async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-111664763-1';
+    var _gaDomain = 'spencerwoo.com';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+<!--  -->
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+language: node_js
+
+node_js: stable
+
+install:
+  - npm install
+
+cache: 
+  directories: 
+    - "node_modules"
+
+before_install: 
+  - export TZ='Asia/Shanghai'
+
+install:
+  - npm install hexo-cli -g
+
+script:
+  - hexo clean
+  - hexo generate
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  name: $GIT_NAME
+  email: $GIT_EMAIL
+  keep-history: true
+  target-branch: gh-pages
+  on:
+    branch: master

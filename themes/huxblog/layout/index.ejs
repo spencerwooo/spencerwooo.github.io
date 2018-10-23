@@ -1,0 +1,54 @@
+---
+layout: page
+---
+<!-- Main Content -->
+
+<% page.posts.each(function(post){ %>
+<div class="post-preview">
+
+    <a href="<%- config.root %><%- post.path %>">
+        <h2 class="post-title">
+            <%- post.title || "Untitled" %>
+        </h2>
+        <h3 class="post-subtitle">
+            <%- post.subtitle || "" %>
+        </h3>
+        <!-- Threw away post content preview as author think it unnecessary. -->
+        <!-- <div class="post-content-preview">
+            <%- truncate(strip_html(post.content), {length: 50, omission: '...'}) %>
+        </div> -->
+    </a>
+    <p class="post-meta">
+        <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-book"></i>
+        </span>
+        <%- post.author || config.author %>
+        <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-calendar"></i>
+        </span>
+        <%= post.date.format(config.date_format) %>
+        <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-paper-plane-o"></i>
+        </span>
+        <%- truncate(strip_html(post.content), {length: 12, omission: '...'}) %>
+    </p>
+
+</div>
+<hr>
+<% }); %>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    <% if (page.prev){ %>
+        <li class="previous">
+            <a href="<%- config.root %><%- page.prev_link %>">&larr; Newer Posts</a>
+        </li>
+    <% } %>
+    <% if (page.next){ %>
+        <li class="next">
+            <a href="<%- config.root %><%- page.next_link %>">Older Posts &rarr;</a>
+        </li>
+    <% } %>
+</ul>

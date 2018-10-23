@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spencer&#39;s Blog">
+    <meta name="keyword" content="Spencer">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/web_icon.svg" color="#FFFFFF">
+
+    <title>
+        
+          HOW TO | 如何整治百度网盘 - Spencer Woo
+        
+    </title>
+
+    <link rel="canonical" href="https://spencerwoo.com/2017/11/06/HOW-TO-如何整治百度网盘/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <script src="https://use.fontawesome.com/e43f82ade4.js"></script> -->
+    <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spencer Woo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/about/">BIO</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">ARCHIVES</a>
+                        </li>
+                        
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">TAG</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/people/">GODS</a>
+                        </li>
+                        
+
+                    
+
+                    <li>
+                        <a href="https://500px.com/spencerwoo98/galleries">PORTFOLIO</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+        /* background-image: url('http://owkccdyrm.bkt.clouddn.com/aria2c_header_img_mask.jpg') */
+        background-image: url('http://owkccdyrm.bkt.clouddn.com/aria2c_header_img_mask.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                            <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                sexy moves
+                            </a>
+                            
+                            <a class="tag" href="/tags/#code" title="code">
+                                code
+                            </a>
+                            
+                    </div>
+                    <h1>HOW TO | 如何整治百度网盘</h1>
+                    <h2 class="subheading">是时候进行技术打击了。</h2>
+                    <span class="meta">
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-book"></i>
+                        </span> 作者
+                    Spencer Woo
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-calendar"></i>
+                        </span> 日期
+                        2017-11-06
+                            <br><br>
+                            <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-bar-chart"></i>
+                        </span> 共
+                            703 字
+                                <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-hourglass-2"></i>
+                        </span> 可能要读上
+                                3 分钟
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <script src="/assets/js/APlayer.min.js"> </script><p>目标：榨干百度网盘的下载速度</p>
+<p>工具：<a href="http://aria2.github.io" target="_blank" rel="noopener">Aria2</a></p>
+<p>开发环境：macOS High Sierra 10.13</p>
+<p>依托：<a href="http://brew.sh" target="_blank" rel="noopener">Homebrew</a></p>
+<p><br></p>
+<h1 id="为什么要整治百度网盘"><a href="#为什么要整治百度网盘" class="headerlink" title="为什么要整治百度网盘"></a>为什么要整治百度网盘</h1><p><strong>慢。</strong></p>
+<p>慢的一匹。</p>
+<p>非「超级会员」在百度网盘限速下，下载速度能达到 100 KB/S。（同样网络环境 Steam 客户端下载速度能达到 1.5~2 MB/S）</p>
+<p>呵呵😑</p>
+<p><br></p>
+<h1 id="如何整治百度网盘"><a href="#如何整治百度网盘" class="headerlink" title="如何整治百度网盘"></a>如何整治百度网盘</h1><hr>
+<h2 id="安装依托：Homebrew"><a href="#安装依托：Homebrew" class="headerlink" title="安装依托：Homebrew"></a>安装依托：Homebrew</h2><blockquote>
+<p>Homebrew — The missing package manager for macOS</p>
+</blockquote>
+<p>利用 Homebrew 我们可以干净利落的下载、配置、安装我们所需要的下载利器：Aria2。</p>
+<p>首先，打开终端 (Terminal)，运行命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e "$(curl -fsSL http://raw.githubusercontent.com/Homebrew/install/master/install)"</span><br></pre></td></tr></table></figure>
+<p>代码会在执行任务前告诉你他要干什么，看清就可以一路进行下去。（该输密码输密码，该回车回车。）</p>
+<p>这样就安装好了 Homebrew，此时请不要关掉终端。</p>
+<p><br></p>
+<h2 id="利用-Homebrew-安装-Aria2"><a href="#利用-Homebrew-安装-Aria2" class="headerlink" title="利用  Homebrew 安装 Aria2"></a>利用  Homebrew 安装 Aria2</h2><ol>
+<li><p>在刚刚的终端窗口继续输入代码、运行命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install aria2c</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>继续输入代码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria2c -v</span><br></pre></td></tr></table></figure>
+<p>并运行，以测试是否安装成功，如果出现类似下图：</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/aria2c-v.jpg" alt="img"></p>
+<p>则证明安装 Aria2 成功。</p>
+</li>
+<li><p>安装完毕，搞定。</p>
+</li>
+</ol>
+<p><br></p>
+<h2 id="安装-Chrome-Safari-Firefox-插件：BaiduExporter"><a href="#安装-Chrome-Safari-Firefox-插件：BaiduExporter" class="headerlink" title="安装 Chrome/Safari/Firefox 插件：BaiduExporter"></a>安装 Chrome/Safari/Firefox 插件：BaiduExporter</h2><blockquote>
+<p>BaiduExporter — 可以方便的把百度网盘的下载地址导出到 aria2/aria2-rpc，支持 YAAW。</p>
+</blockquote>
+<h4 id="以-Chrome-浏览器为例，两个安装方式："><a href="#以-Chrome-浏览器为例，两个安装方式：" class="headerlink" title="以 Chrome 浏览器为例，两个安装方式："></a>以 Chrome 浏览器为例，两个安装方式：</h4><ol>
+<li><p>利用 <code>git</code>：</p>
+<ul>
+<li><p>打开终端，运行命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone http://github.com/acgotaku/BaiduExporter.git</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>效果如下图：</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/git_baidu_exporter.jpg" alt="img"></p>
+<ul>
+<li>在终端继续输入 <code>open BaiduExporter</code>，看到文件夹打开。</li>
+</ul>
+</li>
+<li><p>直接访问这里：<a href="http://github.com/acgotaku/BaiduExporter" target="_blank" rel="noopener">BaiduExporter on GitHub</a>，并点击绿色按钮 <code>Clone or download</code>，在弹出列表中点击 <code>Download ZIP</code>，这样将会下载源代码库文件压缩包 (.zip 文件) 至桌面，下载完成后解压打开。</p>
+</li>
+</ol>
+<h4 id="在文件夹中找到-Chrome-crx，直接拖入-Chrome-浏览器中，点击安装扩展程序。"><a href="#在文件夹中找到-Chrome-crx，直接拖入-Chrome-浏览器中，点击安装扩展程序。" class="headerlink" title="在文件夹中找到 Chrome.crx，直接拖入 Chrome 浏览器中，点击安装扩展程序。"></a>在文件夹中找到 Chrome.crx，直接拖入 Chrome 浏览器中，点击安装扩展程序。</h4><p><img src="http://owkccdyrm.bkt.clouddn.com/git_exporter_finder.jpg" alt="img"></p>
+<p><br></p>
+<h2 id="配置-Aria2-的-conf-文件"><a href="#配置-Aria2-的-conf-文件" class="headerlink" title="配置 Aria2 的 conf 文件"></a>配置 Aria2 的 conf 文件</h2><ol>
+<li><p>打开终端，执行如下代码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.aria2 &amp;&amp; cd ~/.aria2 &amp;&amp; touch aria2.conf &amp;&amp; touch aria2.session &amp;&amp; open aria2.conf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参考<a href="http://raw.githubusercontent.com/acgotaku/BaiduExporter/master/aria2c/aria2.conf" target="_blank" rel="noopener">配置文件</a>，将内容全部复制即可。</p>
+</li>
+</ol>
+<p><br></p>
+<h2 id="成功啦-使用方法"><a href="#成功啦-使用方法" class="headerlink" title="成功啦 | 使用方法"></a>成功啦 | 使用方法</h2><p>两种方法：首先，再次打开<strong>终端</strong></p>
+<ol>
+<li><p>输入命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria2c</span><br></pre></td></tr></table></figure>
+<p>在前端运行 Aria2，关闭终端命令窗口即关闭 Aria2。</p>
+</li>
+<li><p>或者，输入命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria2c -D</span><br></pre></td></tr></table></figure>
+<p>在后台运行，关闭可以通过 <code>kill</code> 命令来关闭。</p>
+</li>
+</ol>
+<p>现在用 Chrome 打开你的百度网盘，不出意外，就会出现「导出下载」。</p>
+<p>直接勾选要下载的文件，点击下面的 ARIA2 RPC。</p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/baidu_works.jpg" alt="img"></p>
+<p>成功。</p>
+<p>搞定。</p>
+<p><br></p>
+<hr>
+<h3 id="鸣谢-Reference"><a href="#鸣谢-Reference" class="headerlink" title="鸣谢 | Reference"></a>鸣谢 | Reference</h3><ul>
+<li><a href="http://blog.sunnyyoung.net/tong-guo-aria2-zha-gan-bai-du-wang-pan/" target="_blank" rel="noopener">通过 Aria2 榨干百度网盘</a></li>
+<li><a href="http://github.com/acgotaku/BaiduExporter" target="_blank" rel="noopener">BaiduExporter on GitHub</a></li>
+<li><a href="http://hencolle.com/2016/10/16/baidu_exporter/#last" target="_blank" rel="noopener">Guide on Packaging and Import Baidu Exporter to Chrome</a></li>
+</ul>
+<h3 id="另外-一种不需要命令行的带有-GUI-界面的-Aria2"><a href="#另外-一种不需要命令行的带有-GUI-界面的-Aria2" class="headerlink" title="另外 | 一种不需要命令行的带有 GUI 界面的 Aria2"></a>另外 | 一种不需要命令行的带有 GUI 界面的 Aria2</h3><ul>
+<li><a href="http://github.com/yangshun1029/aria2gui" target="_blank" rel="noopener">Aria2GUI for MAC OS X</a></li>
+<li><a href="http://www.jianshu.com/p/b58fff3fb946" target="_blank" rel="noopener">简单说一下Aria2GUI的配置方法</a></li>
+</ul>
+<p><br></p>
+<p><strong>鞠躬。</strong></p>
+<p><strong>告辞。</strong></p>
+<p><strong>百度，望安好。</strong></p>
+<p>🙂</p>
+<p><br></p>
+<p><br></p>
+<p>© Spencer Woo</p>
+
+
+                    <hr>
+
+                    <!-- Reward Code -->
+
+
+<script src="/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/donate.css">
+<script src="/js/donate.js"></script>
+
+
+<div class="post_reward">
+    <label class="reward_btn">请喝咖啡 🍭</label>
+    <div class="qr_code">
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg" title="WeChat">
+        </div>
+
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg" title="AliPay">
+        </div>
+
+    </div>    
+    <div class="powered_text">
+            Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
+    </div>
+</div>
+
+
+
+                    <!-- Gitment 评论系统代码开始 -->
+                    <div id="container"></div>
+                    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+                    <link rel="stylesheet" href="/css/comment.css">
+                    <script src="/js/comment.js"></script>
+                    <script>
+                        var gitment = new Gitment({
+                            id: 'https://spencerwoo.com/2017/11/06/HOW-TO-如何整治百度网盘/', // 可选。默认为 location.href
+                            owner: 'spencerwoo98',
+                            repo: 'spencerwoo98.github.io',
+                            oauth: {
+                                client_id: 'f702458a6c7ee94af614',
+                                client_secret: 'e30b70e5f4cf3ff2399c2c6d9ed164fbe10941ef',
+                            },
+                        })
+                        gitment.render('container')
+                    </script>
+                    <!-- Gitment 评论系统代码结束 -->
+
+                    <ul class="pager">
+                        
+                            <li class="previous">
+                                <a href="/2017/11/08/HANDS-ON-B-O-Beoplay-H5-上手/" data-toggle="tooltip" data-placement="top" title="HANDS ON | B&O Beoplay H5 上手">&larr; Previous Post</a>
+                            </li>
+                            
+                                
+                                    <li class="next">
+                                        <a href="/2017/10/30/天津-LOG/" data-toggle="tooltip" data-placement="top" title="天津 | LOG">Next Post &rarr;</a>
+                                    </li>
+                                    
+                    </ul>
+
+                    
+
+            </div>
+            <!-- Side Catalog Container -->
+            <!--  -->
+
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                    <section>
+                        <!-- no hr -->
+                        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            
+                                <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                    sexy moves
+                                </a>
+                                
+                                <a class="tag" href="/tags/#code" title="code">
+                                    code
+                                </a>
+                                
+                        </div>
+                    </section>
+                    
+
+                        <!-- Friends Blog -->
+                        
+                            <hr>
+                            <h5>FRIENDS</h5>
+                            <ul class="list-inline">
+
+                                
+                                    <li>
+                                        <a href="https://spencerwoo.com" target="_blank">
+                                            Spencer&#39;s Blog
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://code.felinae98.cn" target="_blank">
+                                            Felinae
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://tenkeyseven.com" target="_blank">
+                                            Tenkey
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://blog.csdn.net/silvester123" target="_blank">
+                                            Big Old Zan&#39;s CSDN
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.trafalga.cn/" target="_blank">
+                                            Brandon
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.ricky29.tech" target="_blank">
+                                            Ricky
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://felixxiong.github.io" target="_blank">
+                                            故事熊
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://chungzh.cn/" target="_blank">
+                                            ChungZH
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://api.spencerwoo.com" target="_blank">
+                                            It helps SEO
+                                        </a>
+                                    </li>
+                                    
+                            </ul>
+                            
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+        
+            <!-- async load function -->
+            <script>
+                function async (u, c) {
+                    var d = document,
+                        t = 'script',
+                        o = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    o.src = u;
+                    if (c) {
+                        o.addEventListener('load', function(e) {
+                            c(null, e);
+                        }, false);
+                    }
+                    s.parentNode.insertBefore(o, s);
+                }
+            </script>
+            <!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
+            <script>
+                // async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+                async ("https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js", function() {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'right',
+                        // icon: '→'
+                    };
+                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+                })
+            </script>
+            <style>
+                /* place left on bigger screen */
+
+                @media all and (min-width: 800px) {
+                    .anchorjs-link {
+                        position: absolute;
+                        left: -0.75em;
+                        font-size: 1.1em;
+                        margin-top: -0.1em;
+                    }
+                }
+            </style>
+            
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    
+                        <li>
+                            <a href="/feed.xml">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                    
+                    
+                        <li>
+                            <a target="_blank" href="https://www.zhihu.com/people/spencer-woo-64/activities">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">知</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://weibo.com/6265807914/profile?topnav=1&amp;wvr=6&amp;is_all=1">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/vertigo_woo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://github.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://500px.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-500px fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a target="_blank" href="https://sspai.com/user/800610/posts">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">π</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://t.me/Spencer_Woo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+
+                    
+
+                </ul>
+
+                <!-- using busuanzi for visitor statistics -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+                <p class="copyright text-muted">
+                    &copy; 2017 - 2018
+                    Spencer Woo
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-code"></i>
+                    </span>
+                    Proudly powered by
+                    <a href="https://hexo.io">Hexo</a>
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-github-alt"></i>
+                    </span>
+                    Hosted on <a href="https://github.com">Github</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-cloud"></i>
+                    </span>
+                    DNS resolved by <a href="https://www.cloudflare.com/">Cloudflare</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-line-chart"></i>
+                    </span>
+                    Visitor statistics by <a href="http://busuanzi.ibruce.info/">不蒜子</a> and <a href="https://www.google.com/analytics/">Google Analytics</a>
+
+                    <br> -->
+                    2017 年来我已经写了 37.0k 字
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    感谢来看我的 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 个小朋友
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-ban"></i>
+                    </span> -->
+                    <img src="https://i.loli.net/2018/04/09/5acb82c270987.png" width="15px">
+                    <a href="https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://spencerwoo.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    // async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-111664763-1';
+    var _gaDomain = 'spencerwoo.com';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+<!--  -->
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work --><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+</body>
+
+</html>

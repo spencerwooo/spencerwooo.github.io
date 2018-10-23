@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spencer&#39;s Blog">
+    <meta name="keyword" content="Spencer">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/img/web_icon.svg" color="#FFFFFF">
+
+    <title>
+        
+          HOW TO | 让自己的终端漂亮得不像实力派 - Spencer Woo
+        
+    </title>
+
+    <link rel="canonical" href="https://spencerwoo.com/2018/06/16/Terminal/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css">
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <!-- <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <script src="https://use.fontawesome.com/e43f82ade4.js"></script> -->
+    <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spencer Woo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/about/">BIO</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">ARCHIVES</a>
+                        </li>
+                        
+
+                    
+
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">TAG</a>
+                        </li>
+                        
+
+                    
+
+                        
+                        <li>
+                            <a href="/people/">GODS</a>
+                        </li>
+                        
+
+                    
+
+                    <li>
+                        <a href="https://500px.com/spencerwoo98/galleries">PORTFOLIO</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header {
+        /* background-image: url('https://i.loli.net/2018/06/17/5b25e3d258313.jpg') */
+        background-image: url('https://i.loli.net/2018/06/17/5b25e3d258313.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                            <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                sexy moves
+                            </a>
+                            
+                            <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                tutorial
+                            </a>
+                            
+                    </div>
+                    <h1>HOW TO | 让自己的终端漂亮得不像实力派</h1>
+                    <h2 class="subheading">万人瞩目的终端美化教程</h2>
+                    <span class="meta">
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-book"></i>
+                        </span> 作者
+                    Spencer Woo
+                        <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-calendar"></i>
+                        </span> 日期
+                        2018-06-16
+                            <br><br>
+                            <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-bar-chart"></i>
+                        </span> 共
+                            1,904 字
+                                <span style="display: inline-block; margin: 0 5px;">
+                            <i class="fa fa-hourglass-2"></i>
+                        </span> 可能要读上
+                                7 分钟
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <script src="/assets/js/APlayer.min.js"> </script><blockquote>
+<p>本篇文章在 macOS 下编写， 在 Windows 下的情况可能不尽相同，请根据自己系统情况进行自行改善。</p>
+</blockquote>
+<p>不论是在高中、大学时候学习基础编程课程，用 Dev C++ 或是别的软件学习 C 语言等等知识，还是在一些简陋的 Windows 系统纯命令行形式的软件运行时候，我们都遇到过所谓的小黑框「Command Prompt」，也就是「命令提示符」。</p>
+<blockquote>
+<p>如果不知道这个是什么的同学请：</p>
+<ul>
+<li>Windows 下：通过 <code>Win + R</code> 快捷键调出「运行」然后输入 <code>CMD</code> 并回车就可以看到下图所示的样子。</li>
+<li>macOS 下：通过 <code>⌘ + Space</code> 快捷键调出「聚焦搜索」然后输入 <code>Terminal</code> 并回车就可以打开 macOS 下系统默认终端。</li>
+<li>Linux 下：我不相信你不知道终端是什么 <span class="github-emoji" title="beers" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f37b.png?v8">&#x1f37b;</span></li>
+</ul>
+</blockquote>
+<p><img src="https://i.loli.net/2018/06/16/5b2523671606e.png" alt="img"></p>
+<p>对如上图样子的小黑框的无奈与抵触，可能成为了很多同学入门编程的障碍。可是大多数人们并不知道这就是所谓的终端，以及它在包括 Windows，macOS 和 Linux 下面的重要性。</p>
+<p>今天这篇文章我们就来对 macOS 和其他类 Unix 操作系统下的「终端」进行美化，就像项目 <code>Oh My Zsh</code> 说的一样：</p>
+<blockquote>
+<p><strong>Oh My Zsh will not make you a 10x developer…but you might feel like one.</strong></p>
+</blockquote>
+<p><strong>我们把终端变漂亮可能不会让你效率提升、码题牛逼，但是我们可以让你感觉自己特别厉害。<span class="github-emoji" title="wink" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png?v8">&#x1f609;</span></strong></p>
+<p><br></p>
+<h1 id="0x01-抛弃系统自带终端"><a href="#0x01-抛弃系统自带终端" class="headerlink" title="0x01 抛弃系统自带终端"></a>0x01 抛弃系统自带终端</h1><p>不论是 macOS 还是 Windows 下，我都不推荐使用系统自带终端。无论是可拓展性还是可编程性都被「系统自带」这样的特点限制。特别是 Windows 下的万恶之源「小黑框」，在 8012 年真的是一无是处。它所用的等宽字体 (Monospace) 甚至是宋体 <span class="github-emoji" title="poop" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a9.png?v8">&#x1f4a9;</span>. </p>
+<p>今天的主角是一款基于 <code>Electron</code> 的跨平台终端 Terminal Emulator: <strong>Hyper</strong>.</p>
+<p>下载地址在官网：<a href="https://hyper.is" target="_blank" rel="noopener">https://hyper.is</a></p>
+<blockquote>
+<p><a href="https://github.com/electron/electron" target="_blank" rel="noopener"><code>Electron</code></a> 是一个利用最新 Web 技术栈搭建跨平台应用的项目，比如 GitHub 出品的代码编辑器 Atom 和微软出品的 VSCode.</p>
+</blockquote>
+<p>Hyper 是一个开源的、全平台适用的、有着丰富主题和插件的现代化终端。又由于 Hyper 是基于 <code>Electron</code> 的，所以它的插件、主题等等可拓展性都非常强大。几行简单的 Javascript, HTML, CSS 代码，你就甚至可以定制自己的插件。</p>
+<p><br></p>
+<h1 id="0x02-善用-Hyper-插件"><a href="#0x02-善用-Hyper-插件" class="headerlink" title="0x02 善用 Hyper 插件"></a>0x02 善用 Hyper 插件</h1><p>安装 Hyper 终端插件十分简单，打开 Hyper 之后一行代码搞定：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hyper i verminal</span><br></pre></td></tr></table></figure>
+<p> 这样就安装了 <code>verminal</code> 这个插件。</p>
+<p>Hyper 的官方推荐全部插件在这里可以找到 –&gt; <a href="https://hyper.is/plugins" target="_blank" rel="noopener">https://hyper.is/plugins</a></p>
+<p>Hyper 的官方推荐全部主题在这里可以找到 –&gt; <a href="https://hyper.is/themes" target="_blank" rel="noopener">https://hyper.is/themes</a></p>
+<p>当然也有一个社区驱动的 awesome-hyper 项目，里面有着更多开源的 hyper 终端插件、主题等等，在这里 –&gt; <a href="https://github.com/bnb/awesome-hyper" target="_blank" rel="noopener">https://github.com/bnb/awesome-hyper</a></p>
+<p>这里我推荐一个十分有趣的插件：<code>hyperpower</code></p>
+<p>这个类似于 Atom 里面的一个叫做 <code>activate-power-mode</code> 的插件，能够实现下面十分皮的效果：</p>
+<p><img src="https://i.loli.net/2018/06/16/5b2529acc4788.gif" alt="img"></p>
+<p>Hyper 的设置选项是一个 <code>.hyper.js</code> 文件，可以进行具体的样式修改。比如我们可以通过修改 <code>fontFamily</code> 这一项来改变终端字体，<code>cursorColor</code> 来改变光标颜色等等。</p>
+<p><img src="https://i.loli.net/2018/06/16/5b252bc8bc9b3.png" alt="img"></p>
+<p>当然，在你完成了以上全部内容之后，我们也仅仅是将我们终端的外观进行了改善，这一套壳子仅仅是负责呈现外观，内部的 <code>shell</code> 仍然和系统相关，所以我们这里只能抛弃只能用 <code>Command Prompt</code> 和 <code>Windows Powershell</code>  的 Windows 同学了。<span class="github-emoji" title="wave" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44b.png?v8">&#x1f44b;</span></p>
+<p><br></p>
+<h1 id="0x03-macOS-下，抛弃-bash"><a href="#0x03-macOS-下，抛弃-bash" class="headerlink" title="0x03 macOS 下，抛弃 bash"></a>0x03 macOS 下，抛弃 <code>bash</code></h1><p>所谓的 <code>bash</code> 就是终端内在，即 <code>shell</code>。现在人们常在用的 <code>shell</code> 除了 <code>bash</code> 还有 <code>zsh</code>（当然还有 <code>csh</code>、<code>fish</code> 等等）。这里我介绍的 <code>zsh</code> 是我认为在类 Unix 系统下最优雅的 <code>shell</code> 。但是由于 <code>zsh</code> 设置复杂，从前总没有太多人在用，但是得益于开源社区，我们有了 <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="noopener">Oh My Zsh</a> 这个项目。</p>
+<blockquote>
+<p>Oh My Zsh is an open source, community-driven framework for managing your <a href="https://www.zsh.org/" target="_blank" rel="noopener">zsh</a> configuration.</p>
+</blockquote>
+<p>借助 Oh My Zsh 我们可以直接得到开箱即用的 <code>zsh</code> 体验。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>首先你的系统上需要有 <code>curl</code> 或 <code>wget</code> 与 <code>git</code>. </p>
+<p>之后，通过运行：</p>
+<ul>
+<li><p><code>curl</code> 下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>wget</code> 下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>稍等片刻，你就会发现你的终端变成了 <code>zsh</code> . 庆祝 <span class="github-emoji" title="fist" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/270a.png?v8">&#x270a;</span></p>
+<h2 id="配置（插件）"><a href="#配置（插件）" class="headerlink" title="配置（插件）"></a>配置（插件）</h2><p>Oh My Zsh 同样也支持诸多插件，比如默认开启的 Git 插件就可以十分清晰的显示出当前代码仓库里与远程仓库是否同步，以及最新同步日期等等信息。</p>
+<p>这里我推荐一个叫做 <a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener"><code>zsh-autosuggestions</code></a> 的插件，利用之我们可以实现命令自动补全：</p>
+<p><img src="https://i.loli.net/2018/06/17/5b25d7c865004.gif" alt="img"></p>
+<p>安装方法也很简单，在 macOS 下利用 Homebrew：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install zsh-autosuggestions</span><br></pre></td></tr></table></figure>
+<p>然后将下面加入 <code>.zshrc</code>:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh</span><br></pre></td></tr></table></figure>
+<p>（就是用你的文本编辑器，比如 Sublime Text、VSCode、Vim 等等，打开位于根目录的 <code>.zshrc</code> 文件然后将上面那行放到文件最后面就好。）</p>
+<p>重启终端，就能看到如图效果啦！<span class="github-emoji" title="call_me_hand" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f919.png?v8">&#x1f919;</span></p>
+<h2 id="配置（美化）"><a href="#配置（美化）" class="headerlink" title="配置（美化）"></a>配置（美化）</h2><p>下面就是 Oh My Zsh 的主题配置，这里也需要对 <code>.zshrc</code> 进行修改。</p>
+<p>Oh My Zsh 有着大量的主题，你可以在这里 –&gt;<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes" target="_blank" rel="noopener">https://github.com/robbyrussell/oh-my-zsh/wiki/themes</a> 找到所有支持的主题和他们的截屏。</p>
+<p>这里我以 avit 主题为例，介绍如何修改 <code>.zshrc</code> 文件来配置我们的主题：</p>
+<ul>
+<li><p>选择你最喜欢的文本编辑器打开位于根目录的 <code>.zshrc</code> 文件，如果你没想法也可以无脑执行下面的命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano ~/.zshrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在里面找到叫做 <code>ZSH_THEME</code> 的一行，将后面「“ … ”」里面的内容换成 avit，之后重启终端即可。</p>
+<p><img src="https://i.loli.net/2018/06/17/5b25db65974c1.png" alt="img"></p>
+</li>
+</ul>
+<h2 id="进阶：安装-Spaceship-Prompt"><a href="#进阶：安装-Spaceship-Prompt" class="headerlink" title="进阶：安装 Spaceship Prompt"></a>进阶：安装 Spaceship Prompt</h2><p>提供了更加丰富的 ZSH 展现形式的 Spaceship Prompt 是 ZSH 的另一个拓展，并且它可以与 Oh My Zsh 兼容。项目地址位于 –&gt; <a href="https://github.com/denysdovhan/spaceship-prompt" target="_blank" rel="noopener">https://github.com/denysdovhan/spaceship-prompt</a></p>
+<blockquote>
+<p>Spaceship is a minimalistic, powerful and extremely customizable <a href="http://zsh.org/" target="_blank" rel="noopener">Zsh</a> prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spaceship.</p>
+</blockquote>
+<p>比如我的 hexo 文件仓库里，利用强大的 Spaceship Prompt 可以直接显示出我的环境（node）版本，Git 版本等等，十分健壮 <span class="github-emoji" title="artificial_satellite" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f6f0.png?v8">&#x1f6f0;</span></p>
+<p><img src="https://i.loli.net/2018/06/17/5b25dd24e19d3.png" alt="img"></p>
+<p>安装了 Oh My Zsh 的你，安装这个拓展也是十分容易：</p>
+<p>在安装之前，由于 Spaceship Prompt 需要特殊的符号来显示开发环境版本信息（比如 <code>node</code>, <code>go</code> 等）所以需要安装特殊字体：<a href="https://github.com/powerline/fonts" target="_blank" rel="noopener">Powerline Fonts</a>，详细的安装文档在<a href="https://powerline.readthedocs.io/en/latest/installation/linux.html#fonts-installation" target="_blank" rel="noopener">这里</a>。简单来说，如果你是 macOS 用户，可以直接通过这样的方式来安装：</p>
+<ul>
+<li><p>首先安装最新版本的 Python：<code>brew install python</code></p>
+</li>
+<li><p>然后安装 Powerline Fonts：<code>pip install --user powerline-status</code></p>
+</li>
+<li>最后在 Hyper 终端的配置文件 <code>.hyper.js</code> 中修改字体，将 <code>fontFamily = &#39;...&#39;</code> 一项引号内添加「Meslo LG M for Powerline」或者其他 Powerline 字体，重启终端便可生效。</li>
+</ul>
+<p><img src="https://i.loli.net/2018/06/17/5b262d854e8a8.png" alt="img"></p>
+<p><strong>下面安装 Spaceship Prompt：</strong></p>
+<p>首先执行命令将源码克隆至本地：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"</span><br></pre></td></tr></table></figure>
+<p>然后将 <code>spaceship.zsh-theme</code> 链接到 Oh My Zsh 的主题文件夹下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s &quot;$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme&quot; &quot;$ZSH_CUSTOM/themes/spaceship.zsh-theme&quot;</span><br></pre></td></tr></table></figure>
+<p>最后像换主题一样，在 <code>.zshrc</code> 中修改 <code>ZSH_THEME=&quot;spaceship&quot;</code> 就大功告成！</p>
+<p><br></p>
+<h1 id="0x04-最后"><a href="#0x04-最后" class="headerlink" title="0x04 最后"></a>0x04 最后</h1><p><img src="https://i.loli.net/2018/03/11/5aa5377418b17.jpg" alt="img"></p>
+<p>好看是第一生产力。</p>
+<p>折腾不息，奋斗不止。</p>
+<p>全文完。</p>
+<p><br></p>
+<p><a href="https://spencerwoo.com">© Spencer Woo</a></p>
+
+
+                    <hr>
+
+                    <!-- Reward Code -->
+
+
+<script src="/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/donate.css">
+<script src="/js/donate.js"></script>
+
+
+<div class="post_reward">
+    <label class="reward_btn">请喝咖啡 🍭</label>
+    <div class="qr_code">
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg" title="WeChat">
+        </div>
+
+        <div class="qr_code_img">
+            <img class="image" src="https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg" title="AliPay">
+        </div>
+
+    </div>    
+    <div class="powered_text">
+            Powered by <a href="https://github.com/spencerwoo98/sexy-donate">SexyDonate</a>
+    </div>
+</div>
+
+
+
+                    <!-- Gitment 评论系统代码开始 -->
+                    <div id="container"></div>
+                    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+                    <link rel="stylesheet" href="/css/comment.css">
+                    <script src="/js/comment.js"></script>
+                    <script>
+                        var gitment = new Gitment({
+                            id: 'https://spencerwoo.com/2018/06/16/Terminal/', // 可选。默认为 location.href
+                            owner: 'spencerwoo98',
+                            repo: 'spencerwoo98.github.io',
+                            oauth: {
+                                client_id: 'f702458a6c7ee94af614',
+                                client_secret: 'e30b70e5f4cf3ff2399c2c6d9ed164fbe10941ef',
+                            },
+                        })
+                        gitment.render('container')
+                    </script>
+                    <!-- Gitment 评论系统代码结束 -->
+
+                    <ul class="pager">
+                        
+                            <li class="previous">
+                                <a href="/2018/06/28/VultrHelper/" data-toggle="tooltip" data-placement="top" title="Vultr Helper | 随时随地，看你的服务器">&larr; Previous Post</a>
+                            </li>
+                            
+                                
+                                    <li class="next">
+                                        <a href="/2018/06/10/ByeZhihu/" data-toggle="tooltip" data-placement="top" title="Fragments | 你好貳拾 再見知乎">Next Post &rarr;</a>
+                                    </li>
+                                    
+                    </ul>
+
+                    
+
+            </div>
+            <!-- Side Catalog Container -->
+            <!--  -->
+
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                    <section>
+                        <!-- no hr -->
+                        <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            
+                                <a class="tag" href="/tags/#sexy moves" title="sexy moves">
+                                    sexy moves
+                                </a>
+                                
+                                <a class="tag" href="/tags/#tutorial" title="tutorial">
+                                    tutorial
+                                </a>
+                                
+                        </div>
+                    </section>
+                    
+
+                        <!-- Friends Blog -->
+                        
+                            <hr>
+                            <h5>FRIENDS</h5>
+                            <ul class="list-inline">
+
+                                
+                                    <li>
+                                        <a href="https://spencerwoo.com" target="_blank">
+                                            Spencer&#39;s Blog
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://code.felinae98.cn" target="_blank">
+                                            Felinae
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://tenkeyseven.com" target="_blank">
+                                            Tenkey
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://blog.csdn.net/silvester123" target="_blank">
+                                            Big Old Zan&#39;s CSDN
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.trafalga.cn/" target="_blank">
+                                            Brandon
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://www.ricky29.tech" target="_blank">
+                                            Ricky
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://felixxiong.github.io" target="_blank">
+                                            故事熊
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://chungzh.cn/" target="_blank">
+                                            ChungZH
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="https://api.spencerwoo.com" target="_blank">
+                                            It helps SEO
+                                        </a>
+                                    </li>
+                                    
+                            </ul>
+                            
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+        
+            <!-- async load function -->
+            <script>
+                function async (u, c) {
+                    var d = document,
+                        t = 'script',
+                        o = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    o.src = u;
+                    if (c) {
+                        o.addEventListener('load', function(e) {
+                            c(null, e);
+                        }, false);
+                    }
+                    s.parentNode.insertBefore(o, s);
+                }
+            </script>
+            <!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
+            <script>
+                // async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+                async ("https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js", function() {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'right',
+                        // icon: '→'
+                    };
+                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+                })
+            </script>
+            <style>
+                /* place left on bigger screen */
+
+                @media all and (min-width: 800px) {
+                    .anchorjs-link {
+                        position: absolute;
+                        left: -0.75em;
+                        font-size: 1.1em;
+                        margin-top: -0.1em;
+                    }
+                }
+            </style>
+            
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    
+                        <li>
+                            <a href="/feed.xml">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                    
+                    
+                        <li>
+                            <a target="_blank" href="https://www.zhihu.com/people/spencer-woo-64/activities">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">知</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://weibo.com/6265807914/profile?topnav=1&amp;wvr=6&amp;is_all=1">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/vertigo_woo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://github.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://500px.com/spencerwoo98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-500px fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a target="_blank" href="https://sspai.com/user/800610/posts">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-stack-1x fa-inverse">π</i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a target="_blank" href="https://t.me/Spencer_Woo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+
+                    
+
+                </ul>
+
+                <!-- using busuanzi for visitor statistics -->
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+                <p class="copyright text-muted">
+                    &copy; 2017 - 2018
+                    Spencer Woo
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-code"></i>
+                    </span>
+                    Proudly powered by
+                    <a href="https://hexo.io">Hexo</a>
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-github-alt"></i>
+                    </span>
+                    Hosted on <a href="https://github.com">Github</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-cloud"></i>
+                    </span>
+                    DNS resolved by <a href="https://www.cloudflare.com/">Cloudflare</a>
+
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-line-chart"></i>
+                    </span>
+                    Visitor statistics by <a href="http://busuanzi.ibruce.info/">不蒜子</a> and <a href="https://www.google.com/analytics/">Google Analytics</a>
+
+                    <br> -->
+                    2017 年来我已经写了 37.0k 字
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    感谢来看我的 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 个小朋友
+                    <br>
+                    <!-- <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-ban"></i>
+                    </span> -->
+                    <img src="https://i.loli.net/2018/04/09/5acb82c270987.png" width="15px">
+                    <a href="https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://spencerwoo.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    // async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-111664763-1';
+    var _gaDomain = 'spencerwoo.com';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- Side Catalog -->
+<!--  -->
+
+
+
+<!-- Image to hack wechat -->
+<!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0" /> -->
+<!-- Migrate from head to bottom, no longer block render and still work --><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+</body>
+
+</html>

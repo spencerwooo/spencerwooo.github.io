@@ -33,7 +33,7 @@ keyword: "Spencer"
 RSS: true
 weibo_username: 6265807914/profile?topnav=1&wvr=6&is_all=1
 zhihu_username: spencer-woo-64/activities
-github_username: spencerwoo98
+github_username: spencerwooo
 instagram_username: vertigo_woo98
 px_username: spencerwoo98
 sspai_username: 800610
@@ -179,5 +179,5 @@ theme: huxblog
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/spencerwoo98/spencerwoo98.github.io.git
+  repository: https://github.com/spencerwooo/spencerwooo.github.io.git
   branch: master

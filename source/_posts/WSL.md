@@ -10,7 +10,7 @@ tags:
    - github
 ---
 
-为了更好的维护本项目，项目已经移动至 [Dev on Windows with WSL 💡](https://spencerwoo.com/Dev-on-Windows-with-WSL/)。
+为了更好的维护本项目，项目已经移动至 [Dev on Windows with WSL 💡](https://spencerwoo.com/dowww/)。
 
 ---
 
@@ -18,4 +18,4 @@ tags:
 
 Authored and maintained by Spencer Woo.
 
-[@Blog](https://spencerwoo.com/) · [ⒿJiKe](https://web.okjike.com/user/4DDA0425-FB41-4188-89E4-952CA15E3C5E/post) · [@GitHub](https://github.com/spencerwoo98)
+[@Blog](https://spencerwoo.com/) · [ⒿJiKe](https://web.okjike.com/user/4DDA0425-FB41-4188-89E4-952CA15E3C5E/post) · [@GitHub](https://github.com/spencerwooo)

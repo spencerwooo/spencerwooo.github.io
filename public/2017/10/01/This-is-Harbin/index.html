@@ -169,7 +169,7 @@
 
 
     <!-- Main Content -->
-    <script src="/assets/js/DPlayer.min.js"></script><link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"></link><script src="/assets/js/DPlayer.min.js"></script>
 <!-- Image to hack wechat -->
 <!-- <img src="https://spencerwoo.com/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
@@ -300,9 +300,10 @@
                 <!-- Gitment 评论系统代码结束 -->
 
                 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-                <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                <!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script> -->
+                <script src="/js/Valine.min.js"></script>
 
-                <div id="vcomments" style="font-size: 16px;"></div>
+                <div id="vcomments" style="font-size: 16px !important;"></div>
                 <script>
                     new Valine({
                         el: '#vcomments',

@@ -20,32 +20,36 @@ layout: layout
                 <div class="post-heading">
                     <div class="tags">
                         <% page.tags.forEach(function(tag){ %>
-                            <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>">
-                                <%= tag.name %>
-                            </a>
-                            <% }) %>
+                        <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>">
+                            <%= tag.name %>
+                        </a>
+                        <% }) %>
                     </div>
-                    <h1><%= page.title %></h1>
-                    <h2 class="subheading"><%= page.subtitle || "" %></h2>
+                    <h1>
+                        <%= page.title %>
+                    </h1>
+                    <h2 class="subheading">
+                        <%= page.subtitle || "" %>
+                    </h2>
                     <span class="meta">
                         <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-book"></i>
                         </span> 作者
-                    <%- page.author || config.author %>
+                        <%- page.author || config.author %>
                         <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-calendar"></i>
                         </span> 日期
                         <%= page.date.format(config.date_format) %>
-                            <br><br>
-                            <span style="display: inline-block; margin: 0 5px;">
+                        <br><br>
+                        <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-bar-chart"></i>
                         </span> 共
-                            <%= wordcount(page.content) %> 字
-                                <span style="display: inline-block; margin: 0 5px;">
+                        <%= wordcount(page.content) %> 字
+                        <span style="display: inline-block; margin: 0 5px;">
                             <i class="fa fa-hourglass-2"></i>
                         </span> 可能要读上
-                                <%= min2read(page.content) %> 分钟
-                                    </span>
+                        <%= min2read(page.content) %> 分钟
+                    </span>
                 </div>
             </div>
         </div>
@@ -65,17 +69,17 @@ layout: layout
 
                 <%- page.content %>
 
-                    <hr>
+                <hr>
 
-                    <%- partial('_partial/reward') %>
+                <%- partial('_partial/reward') %>
 
-                    <!-- Gitment 评论系统代码开始 -->
-                    <div id="container"></div>
-                    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                <!-- Gitment 评论系统代码开始 -->
+                <!-- <div id="container"></div> -->
+                <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
                     <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
-                    <%- css('css/comment.css') %>
-                    <%- js('js/comment.js') %>
-                    <script>
+                <!-- <%- css('css/comment.css') %> -->
+                <!-- <%- js('js/comment.js') %> -->
+                <!-- <script>
                         var gitment = new Gitment({
                             id: '<%= page.permalink %>', // 可选。默认为 location.href
                             owner: 'spencerwoo98',
@@ -86,29 +90,44 @@ layout: layout
                             },
                         })
                         gitment.render('container')
-                    </script>
-                    <!-- Gitment 评论系统代码结束 -->
+                    </script> -->
+                <!-- Gitment 评论系统代码结束 -->
 
-                    <ul class="pager">
-                        <% if (page.prev){ %>
-                            <li class="previous">
-                                <a href="<%- config.root %><%- page.prev.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.prev.title %>">&larr; Previous Post</a>
-                            </li>
-                            <% } %>
-                                <% if (page.next){ %>
-                                    <li class="next">
-                                        <a href="<%- config.root %><%- page.next.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.next.title %>">Next Post &rarr;</a>
-                                    </li>
-                                    <% } %>
-                    </ul>
+                <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-                    <% if(config['disqus_username']) { %>
-                        <!-- disqus 评论框 start -->
-                        <div class="comment">
-                            <div id="disqus_thread" class="disqus-thread"></div>
-                        </div>
-                        <!-- disqus 评论框 end -->
-                        <% } %>
+                <div id="vcomments"></div>
+                <script>
+                    new Valine({
+                        el: '#vcomments',
+                        appId: '05w1SFXH6ohhRP0SkK79fx4P-gzGzoHsz',
+                        appKey: 'EhTTYJV4vboGdRmAxBeIxCv0',
+                        placeholder: '(/ω＼)'
+                    })
+                </script>
+
+                <ul class="pager">
+                    <% if (page.prev){ %>
+                    <li class="previous">
+                        <a href="<%- config.root %><%- page.prev.path %>" data-toggle="tooltip" data-placement="top"
+                            title="<%- page.prev.title %>">&larr; Previous Post</a>
+                    </li>
+                    <% } %>
+                    <% if (page.next){ %>
+                    <li class="next">
+                        <a href="<%- config.root %><%- page.next.path %>" data-toggle="tooltip" data-placement="top"
+                            title="<%- page.next.title %>">Next Post &rarr;</a>
+                    </li>
+                    <% } %>
+                </ul>
+
+                <% if(config['disqus_username']) { %>
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
+                <% } %>
 
             </div>
             <!-- Side Catalog Container -->
@@ -138,34 +157,34 @@ layout: layout
 
                 <!-- Featured Tags -->
                 <% if(config['featured-tags']) { %>
-                    <section>
-                        <!-- no hr -->
-                        <h5><a href="<%= config.root %>tags/">FEATURED TAGS</a></h5>
-                        <div class="tags">
-                            <% page.tags.forEach(function(tag){ %>
-                                <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>">
-                                    <%= tag.name %>
-                                </a>
-                                <% }) %>
-                        </div>
-                    </section>
-                    <% }%>
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="<%= config.root %>tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        <% page.tags.forEach(function(tag){ %>
+                        <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>">
+                            <%= tag.name %>
+                        </a>
+                        <% }) %>
+                    </div>
+                </section>
+                <% }%>
 
-                        <!-- Friends Blog -->
-                        <% if(config.friends) { %>
-                            <hr>
-                            <h5>FRIENDS</h5>
-                            <ul class="list-inline">
+                <!-- Friends Blog -->
+                <% if(config.friends) { %>
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
 
-                                <% config.friends.forEach(function(friend){ %>
-                                    <li>
-                                        <a href="<%= friend.href %>" target="_blank">
-                                            <%= friend.title %>
-                                        </a>
-                                    </li>
-                                    <% }); %>
-                            </ul>
-                            <% }%>
+                    <% config.friends.forEach(function(friend){ %>
+                    <li>
+                        <a href="<%= friend.href %>" target="_blank">
+                            <%= friend.title %>
+                        </a>
+                    </li>
+                    <% }); %>
+                </ul>
+                <% }%>
             </div>
 
         </div>
@@ -173,63 +192,63 @@ layout: layout
 </article>
 
 <% if(config['disqus_username']) { %>
-    <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = "<%= config['disqus_username'] %>";
-        var disqus_identifier = "<%= page.permalink %>";
-        var disqus_url = "<%= page.permalink %>";
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "<%= config['disqus_username'] %>";
+    var disqus_identifier = "<%= page.permalink %>";
+    var disqus_url = "<%= page.permalink %>";
 
-        (function() {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <!-- disqus 公共JS代码 end -->
-    <% } %>
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+<% } %>
 
-        <% if(config['anchorjs']) { %>
-            <!-- async load function -->
-            <script>
-                function async (u, c) {
-                    var d = document,
-                        t = 'script',
-                        o = d.createElement(t),
-                        s = d.getElementsByTagName(t)[0];
-                    o.src = u;
-                    if (c) {
-                        o.addEventListener('load', function(e) {
-                            c(null, e);
-                        }, false);
-                    }
-                    s.parentNode.insertBefore(o, s);
-                }
-            </script>
-            <!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
-            <script>
-                // async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
-                async ("https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js", function() {
-                    anchors.options = {
-                        visible: 'hover',
-                        placement: 'right',
-                        // icon: '→'
-                    };
-                    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-                })
-            </script>
-            <style>
-                /* place left on bigger screen */
+<% if(config['anchorjs']) { %>
+<!-- async load function -->
+<script>
+    function async (u, c) {
+        var d = document,
+            t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) {
+            o.addEventListener('load', function (e) {
+                c(null, e);
+            }, false);
+        }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
+<script>
+    // async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    async ("https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js", function () {
+        anchors.options = {
+            visible: 'hover',
+            placement: 'right',
+            // icon: '→'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
 
-                @media all and (min-width: 800px) {
-                    .anchorjs-link {
-                        position: absolute;
-                        left: -0.75em;
-                        font-size: 1.1em;
-                        margin-top: -0.1em;
-                    }
-                }
-            </style>
-            <% } %>
+    @media all and (min-width: 800px) {
+        .anchorjs-link {
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top: -0.1em;
+        }
+    }
+</style>
+<% } %>

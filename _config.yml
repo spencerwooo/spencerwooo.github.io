@@ -70,6 +70,11 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+algolia:
+  applicationID: 'N0H6VWDJAW'
+  apiKey: 'b848ec2f6e2e471694f4316fc8a350a5'
+  indexName: 'blog_search'
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/

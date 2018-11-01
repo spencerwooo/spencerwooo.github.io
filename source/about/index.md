@@ -2,9 +2,7 @@
 layout: "about"
 title: "BIO"
 date: 2016-04-21 04:48:33
-description: "展信悦"
 top_img: "https://i.loli.net/2018/01/28/5a6d7a2d1ce68.jpg"
-comments: false
 ---
 
 > 我讨厌「装逼」这个词，它用犬儒、虚无的态度来消解一个人向美好事物靠拢的努力。
@@ -39,16 +37,20 @@ comments: false
 
 鞠躬。
 
-商业合作请走值乎。
 
 ---
+
 Contact Me:
 
-**𝓔** spencerwoo98@gmail.com
-**𝓢** Beijing Institute of Technology
-**𝓛** Beijing, China
+📧 Email: spencerwoo98@gmail.com
+🚀 Telegram: https://t.me/Spencer_Woo
+🏫 Beijing Institute of Technology
+📍 Beijing, China
 
-</br>
-</br>
+---
 
-©2017 Spencer Woo
+💡 Spencer's Blog © Spencer Woo. Released under the CC BY-NC-ND 4.0 International License.
+
+Authored and maintained by Spencer Woo.
+
+[@Blog](https://spencerwoo.com/) · [ⒿJiKe](https://web.okjike.com/user/4DDA0425-FB41-4188-89E4-952CA15E3C5E/post) · [@GitHub](https://github.com/spencerwooo)

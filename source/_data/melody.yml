@@ -17,6 +17,8 @@ menu:
   文章目录: /archives
   文章标签: /tags
   与我相关: /about
+  500px: https://500px.com/spencerwoo98
+  即刻关注: https://web.okjike.com/user/4DDA0425-FB41-4188-89E4-952CA15E3C5E/post
   #XXX: /xxx
 
 # Favicon
@@ -50,15 +52,17 @@ code_word_wrap: true # or false
 social:
   github: https://github.com/spencerwooo
   instagram: https://www.instagram.com/vertigo_woo98
-  500px: https://500px.com/spencerwoo98
-
 
 # Algolia search
 # ---------------
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 10
+  labels:
+    input_placeholder: 搜索文章
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+    hits_stats: "${hits} results found in ${time} ms"
 
 
 # Local search
@@ -83,7 +87,7 @@ fireworks: true
 # ---------------
 baidu_analytics: 
 
-google_analytics:
+google_analytics: UA-111664763-1
 
 # stylesheets loaded in the <head>
 # ---------------
@@ -159,10 +163,13 @@ slide:
   parallaxBackgroundHorizontal: null
   parallaxBackgroundVertical: null
 
-# QR_code:
-  # - itemlist:
-  #     img:
-  #     text:
+QR_code:
+  - itemlist:
+      img: https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg
+      text: WechatPay
+  - itemlist:
+      img: https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg
+      text: AliPay
 
 # adv:
   # enable: false

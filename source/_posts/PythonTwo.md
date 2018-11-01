@@ -2,7 +2,7 @@
 title: 一个有意思的 Python 训练项目集 | 二周目
 date: 2018-04-28 23:42:11
 subtitle: Dumb ways to code 2.
-header-img: https://i.loli.net/2018/04/28/5ae497625015a.jpg
+top_img: https://i.loli.net/2018/04/28/5ae497625015a.jpg
 tags:
     - code
     - sexy moves

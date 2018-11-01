@@ -1,7 +1,7 @@
 ---
 title: 让 Galaxy 焕发新生 | 我的安卓折腾之路
 subtitle: 辣鸡 Touchwiz，ME like Lineage OS
-header-img: "http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-brooke-lark-3855071.jpg"
+top_img: "http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-brooke-lark-3855071.jpg"
 categories: "教程向"
 date: 2018-01-20 20:09:56
 tags:

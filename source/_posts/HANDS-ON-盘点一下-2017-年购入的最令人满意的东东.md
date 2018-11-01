@@ -2,7 +2,7 @@
 title: HANDS ON | 盘点一下 2017 年购入的最令人满意的东东
 subtitle: 最好的当然是 Airpods 啦
 date: 2018-01-04 16:58:04
-header-img: "http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-joanna-kosinska-289519.jpg"
+top_img: "http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-joanna-kosinska-289519.jpg"
 tags:
     - sexy moves
     - hands on

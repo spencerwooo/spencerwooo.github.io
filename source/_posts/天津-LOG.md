@@ -3,7 +3,7 @@ title: 天津 | LOG
 subtitle: Travel log to THE CITY.
 date: 2017-10-30 10:33:34
 categories: "碎碎念"
-header-img: "http://owkccdyrm.bkt.clouddn.com/tianjin_title_bg.jpg"
+top_img: "http://owkccdyrm.bkt.clouddn.com/tianjin_title_bg.jpg"
 tags:
    - sexy moves
 ---

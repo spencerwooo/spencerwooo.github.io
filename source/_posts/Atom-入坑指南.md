@@ -1,7 +1,7 @@
 ---
 title: Atom 入坑指南
 subtitle: 用最酷的编辑器 写最美的代码
-header-img: "https://i.loli.net/2018/03/11/5aa51641a7154.jpg"
+top_img: "https://i.loli.net/2018/03/11/5aa51641a7154.jpg"
 date: 2018-03-11 19:18:57
 categories: "教程向"
 tags:

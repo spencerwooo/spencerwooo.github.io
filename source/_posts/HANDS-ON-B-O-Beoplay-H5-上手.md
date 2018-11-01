@@ -2,7 +2,7 @@
 title: HANDS ON | B&O Beoplay H5 上手
 subtitle: A heart-felt hands-on review.
 date: 2017-11-08 18:43:36
-header-img: "http://owkccdyrm.bkt.clouddn.com/Full_7.jpg"
+top_img: "http://owkccdyrm.bkt.clouddn.com/Full_7.jpg"
 tags:
 	- sexy moves
 	- hands on

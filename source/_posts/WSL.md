@@ -2,7 +2,7 @@
 title: Dev on Windows with WSL 💡
 date: 2018-10-01 16:16:22
 subtitle: 在 Windows 上面用 WSL 优雅开发
-header-img: "https://i.loli.net/2018/10/01/5bb1d3f780d16.jpg"
+top_img: "https://i.loli.net/2018/10/01/5bb1d3f780d16.jpg"
 tags:
    - sexy moves
    - tutorial

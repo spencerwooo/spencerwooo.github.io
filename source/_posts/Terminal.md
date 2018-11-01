@@ -2,7 +2,7 @@
 title: HOW TO | 让自己的终端漂亮得不像实力派
 subtitle: 万人瞩目的终端美化教程
 date: 2018-06-16 22:40:40
-header-img: "https://i.loli.net/2018/06/17/5b25e3d258313.jpg"
+top_img: "https://i.loli.net/2018/06/17/5b25e3d258313.jpg"
 tags:
 	- tutorial
 	- sexy moves

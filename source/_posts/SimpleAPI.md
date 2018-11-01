@@ -2,7 +2,7 @@
 title: Simple Deskop API | 一喵一图
 date: 2018-07-30 23:32:08
 subtitle: An image API displaying random pictures curated by Simple Desktops.
-header-img: "https://i.loli.net/2018/07/31/5b5f3cde5cc6a.jpg"
+top_img: "https://i.loli.net/2018/07/31/5b5f3cde5cc6a.jpg"
 tags:
    - sexy moves
    - tutorial

@@ -2,7 +2,7 @@
 title: Spencer's HTTPS-ed Blog - v1.0
 subtitle: 弄个证书真难。
 date: 2018-01-26 20:18:24
-header-img: "https://i.loli.net/2018/01/28/5a6d7b196f31a.jpg"
+top_img: "https://i.loli.net/2018/01/28/5a6d7b196f31a.jpg"
 tags:
     - code
     - sexy moves

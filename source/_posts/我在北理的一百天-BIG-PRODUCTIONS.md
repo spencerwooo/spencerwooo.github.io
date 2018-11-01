@@ -2,7 +2,7 @@
 title: 我在北理的一百天 | BIG PRODUCTIONS
 subtitle: A production by the BITJA
 date: 2017-11-27 15:34:33
-header-img: "http://owkccdyrm.bkt.clouddn.com/bg-img-100days.jpg"
+top_img: "http://owkccdyrm.bkt.clouddn.com/bg-img-100days.jpg"
 tags:
 	- sexy moves
 ---

@@ -2,7 +2,7 @@
 title: HOW TO | 魔改 macOS 状态栏
 date: 2018-05-29 15:42:50
 subtitle: 一点微小的工作
-header-img: https://source.unsplash.com/1NTFSnV-KLs/1600x900
+top_img: https://source.unsplash.com/1NTFSnV-KLs/1600x900
 tags:
     - sexy moves
     - github

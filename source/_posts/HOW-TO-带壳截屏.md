@@ -3,7 +3,7 @@ title: HOW TO | iPhone 带壳截屏终极体验指北
 subtitle: Mock up, as they say.
 date: 2018-04-01 19:16:05
 categories: "教程向"
-header-img: "https://i.loli.net/2018/04/01/5ac0c41a4d45e.jpg"
+top_img: "https://i.loli.net/2018/04/01/5ac0c41a4d45e.jpg"
 tags:
 	- tutorial
 	- sexy moves

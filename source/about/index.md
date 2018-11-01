@@ -3,7 +3,7 @@ layout: "about"
 title: "BIO"
 date: 2016-04-21 04:48:33
 description: "展信悦"
-header-img: "https://i.loli.net/2018/01/28/5a6d7a2d1ce68.jpg"
+top_img: "https://i.loli.net/2018/01/28/5a6d7a2d1ce68.jpg"
 comments: false
 ---
 

@@ -2,7 +2,7 @@
 title: Sexy Donate
 subtitle: 一只 200 行代码以内的小可爱「打赏」模块背后的思考
 date: 2018-03-15 18:49:07
-header-img: "https://i.loli.net/2018/03/15/5aaa61d77b629.jpg"
+top_img: "https://i.loli.net/2018/03/15/5aaa61d77b629.jpg"
 tags:
     - code
     - sexy moves

@@ -5,112 +5,24 @@
 # Site
 title: Spencer Woo
 subtitle: 啊，你在看我的主页。
+description:
+keywords:
 author: Spencer Woo
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
-## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://spencerwoo.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-#Custom Setting Start
-
-# Site settings
-SEOTitle: Spencer Woo
-# header-img: https://i.loli.net/2018/01/28/5a6d7b96f1b33.jpg
-# header-img: https://i.loli.net/2018/04/01/5ac0c2d852002.jpg
-# header-img: https://source.unsplash.com/collection/2081476/1600x900/daily
-header-img: https://api.spencerwoo.com
-email: spencerwoo98@gmail.com
-description: "Spencer's Blog"
-keyword: "Spencer"
-
-
-# SNS settings
-RSS: true
-weibo_username: 6265807914/profile?topnav=1&wvr=6&is_all=1
-zhihu_username: spencer-woo-64/activities
-github_username: spencerwooo
-instagram_username: vertigo_woo98
-px_username: spencerwoo98
-sspai_username: 800610
-telegram_username: Spencer_Woo
-# twitter_username:   Demonbane_x
-# facebook_username:  demonbane.cn
-# linkedin_username:  kaijun-chen-42089354
-
-# Build settings
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-# # Disqus settings
-# disqus_username: #hexo-theme-huxblog
-
-# Analytics settings
-# Baidu Analytics
-# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-ga_track_id: 'UA-111664763-1'            # Format: UA-xxxxxx-xx
-ga_domain: spencerwoo.com
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "把世界交給姑娘，把姑娘交給我。"
-# use absolute URL, seeing it's used in both `/` and `/about/`
-# sidebar-avatar: https://i.loli.net/2018/01/28/5a6d7bb29a103.jpg
-# sidebar-avatar: https://i.loli.net/2018/04/19/5ad8a82ed5502.jpg
-sidebar-avatar: https://i.loli.net/2018/07/17/5b4db9b098c40.jpg
-
-
-# Featured Tags
-featured-tags: true
-# whether or not using Feature-Tags
-featured-condition-size: 1
-# A tag will be featured if the size of it is more than this condition value
-
-
-# Friends
-friends: [
-    {
-        title: "Spencer's Blog",
-        href: "https://spencerwoo.com"
-    },{
-        title: "Felinae",
-        href: "https://code.felinae98.cn"
-    },{
-        title: "Tenkey",
-        href: "http://tenkeyseven.com"
-    },{
-        title: "Big Old Zan's CSDN",
-        href: "http://blog.csdn.net/silvester123"
-    },{
-        title: "Brandon",
-        href: "https://www.trafalga.cn/"
-    },{
-        title: "Ricky",
-        href: "https://www.ricky29.tech"
-    },{
-        title: "故事熊",
-        href: "https://felixxiong.github.io"
-    },{
-        title: "ChungZH",
-        href: "https://chungzh.cn/"
-    },{
-        title: "It helps SEO",
-        href: "https://api.spencerwoo.com"
-    }
-]
-#Custom Setting End
-
 # Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: i_dont_wanna_use_default_archives
+archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -123,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -131,7 +43,16 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -140,7 +61,7 @@ tag_map:
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
-## https://momentjs.com/docs/#/displaying/format/
+## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
@@ -149,35 +70,12 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
-githubEmojis:
-  enable: true
-  className: github-emoji
-  unicode: true
-  styles:
-  localEmojis:
-
-feed:
-  type: atom
-  path: feed.xml
-  limit: false
-  hub:
-  content: true
-  content_limit: 
-  content_limit_delim: ' '
-
-reward:
-  enable: true
-  wechat: https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg
-  alipay: https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg
-
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: huxblog
+theme: melody
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: https://github.com/spencerwooo/spencerwooo.github.io.git
-  branch: master
+  type:

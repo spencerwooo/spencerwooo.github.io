@@ -3,7 +3,7 @@ title: HOW TO | 如何整治百度网盘
 subtitle: 是时候进行技术打击了。
 date: 2017-11-06 19:53:40
 categories: "教程向"
-header-img: "http://owkccdyrm.bkt.clouddn.com/aria2c_header_img_mask.jpg"
+top_img: "http://owkccdyrm.bkt.clouddn.com/aria2c_header_img_mask.jpg"
 tags:
 	- code
 	- sexy moves

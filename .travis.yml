@@ -4,19 +4,16 @@ sudo: required
 
 node_js: stable
 
-install:
-  - npm install
-
 branches:
   only:
     - hexo
 
 before_install: 
   - export TZ='Asia/Shanghai'
-  - npm install hexo-cli -g
+  - yarn add global hexo-cli
 
 install:
-  - npm install
+  - yarn install
 
 script:
   - hexo clean

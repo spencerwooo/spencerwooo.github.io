@@ -2,7 +2,7 @@
 title: 應用推介 | Humble New Tab Page for Chrome 
 date: 2018-07-09 14:38:09
 subtitle: 可能是 Chrome 新标签页里面最低调的了
-header-img: "https://i.loli.net/2018/07/09/5b43277c25a8d.jpg"
+top_img: "https://i.loli.net/2018/07/09/5b43277c25a8d.jpg"
 tags:
    - sexy moves
    - tutorial

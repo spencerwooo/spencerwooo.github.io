@@ -2,7 +2,7 @@ language: node_js
 
 sudo: required
 
-node_js: stable
+node_js: '10'
 
 branches:
   only:
@@ -10,7 +10,7 @@ branches:
 
 before_install: 
   - export TZ='Asia/Shanghai'
-  - yarn add global hexo-cli
+  - yarn global add hexo-cli
 
 install:
   - yarn install

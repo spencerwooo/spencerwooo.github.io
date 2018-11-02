@@ -981,12 +981,11 @@ footer {
 }
 .article-sort-item__time {
   position: absolute;
-  top: 0.1rem;
   color: #c96480;
 }
 .article-sort-item__title {
   display: block;
-  margin-left: 5rem;
+  margin-left: 6rem;
   color: #4c4948;
   text-decoration: none;
   font-size: 0.8rem;

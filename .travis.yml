@@ -10,6 +10,7 @@ branches:
 
 before_install: 
   - export TZ='Asia/Shanghai'
+  - export HEXO_ALGOLIA_INDEXING_KEY=$HEXO_ALGOLIA_KEY
   - yarn global add hexo-cli
 
 install:
@@ -18,6 +19,7 @@ install:
 script:
   - hexo clean
   - hexo generate
+  - hexo algolia
 
 deploy:
   provider: pages

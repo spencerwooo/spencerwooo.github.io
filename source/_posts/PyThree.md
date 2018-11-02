@@ -25,7 +25,7 @@ tags:
 >
 > 使用 Python 生成类似于下图中的**字母验证码图片**
 
-![img](https://i.loli.net/2018/05/07/5aefe95386bec.jpg)
+![](https://i.loli.net/2018/05/07/5aefe95386bec.jpg)
 
 如题。
 
@@ -39,7 +39,7 @@ tags:
 
 经过这样的处理，并经过测试，腾讯提供的 OCR 是无法识别生成图片文本内容的。
 
-![img](https://i.loli.net/2018/05/07/5aefee4fa007a.gif)
+![](https://i.loli.net/2018/05/07/5aefee4fa007a.gif)
 
 
 

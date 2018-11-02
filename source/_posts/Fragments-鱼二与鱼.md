@@ -55,7 +55,7 @@ tags:
 
 「破乎药丸」
 
-![img](https://i.loli.net/2018/03/29/5abce1854edd3.jpg)
+![](https://i.loli.net/2018/03/29/5abce1854edd3.jpg)
 
 <br>
 

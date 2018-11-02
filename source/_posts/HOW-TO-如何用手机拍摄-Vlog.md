@@ -12,7 +12,7 @@ tags:
 <br>
 感谢邀请。
 <br>
-![img](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-1.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-1.jpg)
 
 ▲iPhone 7 plus 拍摄 Onetake 后期视频截图
 
@@ -66,20 +66,20 @@ Tim 毕竟有个专业拍摄团队，在英国留学，有 GH5，RED 和各种�
 
 
 
-![img](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-2.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-2.jpg)
 ▲ iPhone 7 plus 拍摄 Onetake 后期视频截图
 
 <br>
 
 **Onetake - Vlog & Video Editing by Blink Academy Ltd.**
 
-![img](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-3.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-3.jpg)
 
 为什么我用的是 Onetake 而不是上面许多人都提到的 VUE 甚至是 iMovie 之流呢？
 
 一个非常非常主要的原因是：Onetake 有很多我很是喜欢的字体，以及还有许多很适合 Vlog 的背景音乐。
 
-![img](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-4.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-4.jpg)
 
 ▲ Onetake 自带背景音乐 Optimized for Vlog
 
@@ -90,7 +90,7 @@ Tim 毕竟有个专业拍摄团队，在英国留学，有 GH5，RED 和各种�
 
 也就是说，当你把手机静止放在脚架上或者只是单纯的用手举着不动拍摄一个镜头的话，这两个会显得镜头不那么单调，很多延时摄影里面也会利用 Zoom in 和 Zoom out 这样的镜头。
 
-![img](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-5.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/vlog-with-iphone-5.jpg)
 ▲ Onetake 内置字体 Fonts 以及 Zoom 效果
 
 <br>

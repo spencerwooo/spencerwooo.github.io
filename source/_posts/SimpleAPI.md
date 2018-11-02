@@ -48,7 +48,7 @@ https://api.spencerwoo.com
 **2. Markdown**
 
 ```html
-![img](https://api.spencerwoo.com)
+![](https://api.spencerwoo.com)
 ```
 
 **3. HTML**

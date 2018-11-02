@@ -21,7 +21,7 @@ Gradle 和 Android SDK 的默认更新源都被阻挡在了国门之外。
 
 叹气。
 
-![img](https://i.loli.net/2018/03/01/5a97ef8acc9d4.jpg)
+![](https://i.loli.net/2018/03/01/5a97ef8acc9d4.jpg)
 
 <br>
 
@@ -36,13 +36,13 @@ Gradle 和 Android SDK 的默认更新源都被阻挡在了国门之外。
 - Theme: `ZSH_THEME="agnoster"`
 - Color Scheme: Solarized Dark High Contrast
 
-![img](https://i.loli.net/2018/03/01/5a97f0ed164c8.jpg)
+![](https://i.loli.net/2018/03/01/5a97f0ed164c8.jpg)
 
 <br>
 
 ## 有关光的艺术
 
-![img](https://i.loli.net/2018/03/01/5a97f14f5f795.jpg)
+![](https://i.loli.net/2018/03/01/5a97f14f5f795.jpg)
 
 Adobe 爸爸更新了 Lightroom，增加了 Adobe 云，并且把 UI 变好看了。
 

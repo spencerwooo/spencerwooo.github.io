@@ -9,7 +9,7 @@ top_img: "https://i.loli.net/2018/01/28/5a6d7a2d1ce68.jpg"
 >
 > 一个人不论出于什么目的去接近好的文学、电影、音乐，当然也可以包括冶金、电路、力学，总是希望自己变得更好，或看上去更好。
 
-![img](https://i.loli.net/2018/01/28/5a6d7a4cd63e0.jpg)
+![](https://i.loli.net/2018/01/28/5a6d7a4cd63e0.jpg)
 
 **见字好。**
 

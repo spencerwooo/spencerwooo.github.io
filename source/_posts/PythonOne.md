@@ -35,7 +35,7 @@ tags:
 
 <div style="display:block; margin-left: auto; margin-right: auto; width:20%; ">
 
-![img](https://i.loli.net/2018/04/26/5ae1bd7469715.jpg)
+![](https://i.loli.net/2018/04/26/5ae1bd7469715.jpg)
 
 </div>
 

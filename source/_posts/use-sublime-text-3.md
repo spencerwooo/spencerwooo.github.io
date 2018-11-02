@@ -55,7 +55,7 @@ Oh. This is also my first ever written blog.
 
 打开 Command Palette –> Install Package -> Theme 完成魔改。
 
-![img](http://owkccdyrm.bkt.clouddn.com/Jietu20171031-184914.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/Jietu20171031-184914.jpg)
 
 于是你有了 Dev C++ 之流很难拥有的美丽的外观，以及清晰美观的 Sidebar：侧边栏。
 
@@ -69,7 +69,7 @@ Oh. This is also my first ever written blog.
 
    > 这里有一个 gif 但我并不知道它能不能播放。
 
-   ![img](http://owkccdyrm.bkt.clouddn.com/IMB_LQv5Yj.GIF)
+   ![](http://owkccdyrm.bkt.clouddn.com/IMB_LQv5Yj.GIF)
 
    > 耶现在可以有动画了。特别酷。
 

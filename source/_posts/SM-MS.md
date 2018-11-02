@@ -19,7 +19,7 @@ tags:
 
 ---
 
-![img](https://i.loli.net/2018/01/28/5a6d937413bbd.jpg)
+![](https://i.loli.net/2018/01/28/5a6d937413bbd.jpg)
 
 托 V 站大佬的福，我用上了极为可靠的、支持 HTTPS 的、GeoTrust EV SSL CA - G4 签发证书的、**证书名字叫：Cat Networks, Inc 的图床！**—— [SM.MS](https://sm.ms/)
 
@@ -33,7 +33,7 @@ tags:
 
 # 基础 - 网页版点击文件直接上传
 
-![img](https://i.loli.net/2018/01/28/5a6d9ee69a62a.jpg)
+![](https://i.loli.net/2018/01/28/5a6d9ee69a62a.jpg)
 
 
 
@@ -49,7 +49,7 @@ tags:
 
 > iOS 上大名鼎鼎的 [Workflow](https://sspai.com/post/tag/workflow) 在[我派](https://sspai.com)是深入人心，许多大神研究了很多高阶的玩法，利用 Workflow 提高了不少的效率。不得不承认，自从我开始用 Workflow 之后，也是越来越离不开他。iOS 端有 Workflow 这样的神器，那么 Mac 端呢？当然有，而且还是 macOS 系统自带的，叫 Automator ，俗称「扛炮」。他在一个很不起眼的地方，你可以通过 Spotlight 搜索来启动它。
 
-![img](https://i.loli.net/2018/01/28/5a6da18d521a0.png)
+![](https://i.loli.net/2018/01/28/5a6da18d521a0.png)
 
 讲道理，第一次知道 Automator 叫扛炮，我笑的停不下来。
 
@@ -77,23 +77,23 @@ OR … 你也可以从 [GitHub](https://github.com/stedolan/jq/releases) 下载�
 
 #### b. 配置 Automator
 
-![img](https://i.loli.net/2018/01/28/5a6da5f8bc538.jpg)
+![](https://i.loli.net/2018/01/28/5a6da5f8bc538.jpg)
 
 首先，我们打开 Automator，在弹出的窗口中选择新建服务 (Service)，然后从左边的资源库中依次拖拽出「拷贝至剪贴板」(Copy to Clipboard)，「运行 Shell 脚本」(Run Shell Script) 和「显示通知」(Display Notification) 三个操作。
 
-![img](https://i.loli.net/2018/01/28/5a6da7f3e297d.png)
+![](https://i.loli.net/2018/01/28/5a6da7f3e297d.png)
 
-接着在 Shell 窗口中粘贴 `curl -F smfile=@$@ https://sm.ms/api/upload | /usr/local/bin/jq -r '.data.url' | sed 's/^/![img](&/; s/$/)&/'| pbcopy` ，并将右上角的「传递输入」选项设为「作为自变量」，即：Pass input: as arguments.
+接着在 Shell 窗口中粘贴 `curl -F smfile=@$@ https://sm.ms/api/upload | /usr/local/bin/jq -r '.data.url' | sed 's/^/![](&/; s/$/)&/'| pbcopy` ，并将右上角的「传递输入」选项设为「作为自变量」，即：Pass input: as arguments.
 
 上面我们在 Shell 窗口中所执行的命令主体依次是：`curl`，`jq`，`sed` 和 `pbcopy` 。
 
 1. 通过 `curl -F smfile=@$@ https://sm.ms/api/upload` 这一命令，我们选择的图片就已经上传到 SM.MS 图床上了，同时，服务器给我们返回了我们所需要的 JSON 文件，如果我们直接在终端执行这一命令会更直观的看到 JSON 的样子，如下图。
 
-   ![img](https://i.loli.net/2018/01/28/5a6dad980acd6.jpg)
+   ![](https://i.loli.net/2018/01/28/5a6dad980acd6.jpg)
 
 2. 通过 `/usr/local/bin/jq -r '.data.url'` 这个命令，我们就将服务器返回的 JSON 文件进行解析，得到我们的图片外链 url 并输出。
 
-3. 不过我还想直接得到 Markdown 格式图片链接，那么这段命令就起作用了 `sed 's/^/![img](&/; s/$/)&/'`，这段命令会调用 sed 流编辑器将图片链接转换为 Markdown 格式。
+3. 不过我还想直接得到 Markdown 格式图片链接，那么这段命令就起作用了 `sed 's/^/![](&/; s/$/)&/'`，这段命令会调用 sed 流编辑器将图片链接转换为 Markdown 格式。
 
 4. 最后我们用 `pbcopy` 将得到的图片外链复制到剪贴板。
 
@@ -101,7 +101,7 @@ OR … 你也可以从 [GitHub](https://github.com/stedolan/jq/releases) 下载�
 
 最后，我们保存服务，一个一键上传图片至 SM.MS 并复制图片链接的小工具就完成了。
 
-![img](https://i.loli.net/2018/01/28/5a6dab73911df.jpg)
+![](https://i.loli.net/2018/01/28/5a6dab73911df.jpg)
 
 正常使用这个 Service 的时候，我们可以通过在图片上方鼠标右键选择服务 (Service) 然后点击我们刚刚保存的 Workflow 名字 (PicbedSM - MD) 来执行这个操作。
 

@@ -8,7 +8,7 @@ tags:
   - sexy moves
 ---
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-13-hexo_logo.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-13-hexo_logo.jpg)
 
 这是一篇 `List`：A curated list of awesome things you can do with `Hexo` <3 `Github Pages`.
 
@@ -40,7 +40,7 @@ Yet another HTML5 music player.
 
 ### Demo
 
-{% aplayer "Radioactive (Acoustic)" "Imagine Dragons" "http://owkccdyrm.bkt.clouddn.com/Imagine%20Dragons%20-%20Radioactive%20%28Acoustic%29.mp3" "http://owkccdyrm.bkt.clouddn.com/WechatIMG8.jpeg" "autoplay" %}
+> Removed.
 
 ### 安装
 
@@ -75,7 +75,7 @@ Yet another HTML5 video player.
 
 ### Demo
 
-{% dplayer "url=http://owkccdyrm.bkt.clouddn.com/Lana%20Del%20Rey%20-%20White%20Mustang%20%28Official%20Video%29.mp4" "pic=http://owkccdyrm.bkt.clouddn.com/blog/2017-12-15-dplayer-demo-title-img.jpg" %}
+> Removed.
 
 ### 安装
 

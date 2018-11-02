@@ -10,7 +10,7 @@ tags:
 
 # 设计初衷
 
-![img](https://i.loli.net/2018/04/29/5ae5ca937f0c7.jpg)
+![](https://i.loli.net/2018/04/29/5ae5ca937f0c7.jpg)
 
 折腾 Ubuntu 和 CentOS 的桌面有一段时间了。
 
@@ -46,7 +46,7 @@ tags:
 
 # 什么样子？
 
-![img](https://i.loli.net/2018/04/29/5ae5d18625520.jpg)
+![](https://i.loli.net/2018/04/29/5ae5d18625520.jpg)
 
 先有这样的五张，后面可能会有更多。敬请期待。
 

@@ -35,7 +35,7 @@ What is **Workflow**?
 
 **[👉 曲线救国版 iPhone 屏幕截屏](https://workflow.is/workflows/abc27a53d2074c3684a920338605cdd7)**（点击链接直接保存 Workflow）
 
-![img](https://i.loli.net/2018/04/01/5ac0ce5e38a26.jpg)
+![](https://i.loli.net/2018/04/01/5ac0ce5e38a26.jpg)
 
 这种方式胜在轻便简洁，无需安装或者购买第三方程序就可以实现我们的功能。
 
@@ -51,7 +51,7 @@ What is **Workflow**?
 
 一个是由李大锤同学、威锋网和我派一起推荐过的，主要功能是长截图的应用：**Picsew**，售价 1 元，前段时间有过限免。
 
-![img](https://i.loli.net/2018/04/01/5ac0d06e7f48c.jpg)
+![](https://i.loli.net/2018/04/01/5ac0d06e7f48c.jpg)
 
 Picsew 是一个比较功能强大的截图应用，除了长截图与带壳截屏，Picsew 也可以：
 
@@ -59,7 +59,7 @@ Picsew 是一个比较功能强大的截图应用，除了长截图与带壳截�
 - 清理截屏状态栏，即把电量变成 100%，把时间变成 09:41，并把运营商信息去除。
 - 给截图打上水印。
 
-![img](https://i.loli.net/2018/04/01/5ac0d18b9bbfa.jpg)
+![](https://i.loli.net/2018/04/01/5ac0d18b9bbfa.jpg)
 
 ## OneScreen
 
@@ -71,13 +71,13 @@ Picsew 是一个比较功能强大的截图应用，除了长截图与带壳截�
 
 这也是一个我派推荐过的单品，他胜在花样众多，有着骚气的模板，能让你的截图跃然纸面。
 
-![img](https://i.loli.net/2018/04/01/5ac0d2ba38c09.jpg)
+![](https://i.loli.net/2018/04/01/5ac0d2ba38c09.jpg)
 
 [👉  延伸阅读：用这个 App 给你的套壳截图加上花式背景：OneScreen | App+1](https://sspai.com/post/43848)
 
 目前这个 App 的壳子对 iPhone X 比较友好，对其他版本 iPhone 并不特别友好。不过听说开发者即将添加更多的模板。
 
-![img](https://i.loli.net/2018/04/01/5ac0d42ba49b0.jpg)
+![](https://i.loli.net/2018/04/01/5ac0d42ba49b0.jpg)
 
 ## iFrame
 
@@ -89,7 +89,7 @@ Picsew 是一个比较功能强大的截图应用，除了长截图与带壳截�
 
 这是我探索了这么久唯一一个可以给 Apple Watch 上壳的应用。
 
-![img](https://i.loli.net/2018/04/01/5ac0d59094cdc.jpg)
+![](https://i.loli.net/2018/04/01/5ac0d59094cdc.jpg)
 
 可以说是很精致了。对于一个刚刚升级 iOS 11.3 和 watchOS 4.3 的，沉浸在可以用手表刷公交卡的愉悦与幸福中的人来说，真的是「除却巫山不是云」了。
 
@@ -101,17 +101,17 @@ Picsew 是一个比较功能强大的截图应用，除了长截图与带壳截�
 
 最后我要推荐我本文最初讲的这个网站 [👉 Mock Up World](https://www.mockupworld.co/)，其上面的 PSD 版本的 Mock Up 文件丰富、质量也很高，大部分还是免费的，因此我极力推荐。
 
-![img](https://i.loli.net/2018/04/01/5ac0d81d5fd12.jpg)
+![](https://i.loli.net/2018/04/01/5ac0d81d5fd12.jpg)
 
 用 Photoshop 做这种就很简单了，一般在 Mock Up World 中下载的 PSD 中都有一个带有「Change Me」字样的图层。截好屏幕之后将 PSD 文件中的这个图层进行替换就完成制作啦！
 
-![img](https://i.loli.net/2018/04/01/5ac0d9220b4db.jpg)
+![](https://i.loli.net/2018/04/01/5ac0d9220b4db.jpg)
 
 <br>
 
 其实上面提到的几个方法，大都有些功能性冗余，很多重复性功能也都没法避免。同时，令人伤心的是，安卓上早就系统集成的功能（Smartisan OS），在 iOS 上却需要这样探索才能实现。并且，安卓上面第三方应用对带壳截图的实现也更加具有设计感，比如添加阴影、极简设计的机器磨具、以及调整背景光照属性等等。这个强大的安卓应用叫做：[Screener](https://play.google.com/store/apps/details?id=de.toastcode.screener)。来自 Google Play，因此可能需要科学上网才能下载。
 
-![img](https://i.loli.net/2018/04/01/5ac0dc2fa0b6c.jpg)
+![](https://i.loli.net/2018/04/01/5ac0dc2fa0b6c.jpg)
 
 扼腕叹息。
 

@@ -107,7 +107,7 @@ Heart felt love.
 
 ## 0x05
 
-![img](https://i.loli.net/2018/06/10/5b1cda2d9cb3a.png)
+![](https://i.loli.net/2018/06/10/5b1cda2d9cb3a.png)
 
 所以，再见知乎。
 

@@ -17,7 +17,7 @@ tags:
 >
 > 让您的每日旅程更美妙
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_8666.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_8666.jpg)
 
 ▲ *外包装 来自 丹麦的 Bang & Olufsen🇩🇰*
 
@@ -33,7 +33,7 @@ tags:
 
 **粉色尤其好看。**
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_8668.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_8668.jpg)
 
 ▲ *打开盒子 看到粉色的两只耳朵*
 
@@ -59,7 +59,7 @@ tags:
 
 下层是说明书，以及各种配件，包括一个收纳袋、四对不同尺寸的硅胶套、三对不同尺寸的 COMPLY 记忆海绵套、三个带有 B&O logo 的塑料线夹、三对不同尺寸的「鲨鱼鳍」防掉耳挂。
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_8670.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_8670.jpg)
 
 ▲ *Includes COMPLY Premium Earphone Tips 的字样*
 
@@ -67,7 +67,7 @@ tags:
 
 ## 单独说说充电。
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_8675.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_8675.jpg)
 
 ▲ *磁吸式的充电底座*
 
@@ -91,7 +91,7 @@ tags:
 
 **这耳机是破烂**。
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_8676.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_8676.jpg)
 
 ▲ *四对硅胶套、三对 COMPLY 记忆海绵套、三个塑料线夹、三对「鲨鱼鳍」防掉耳挂 —— 丰富的配件*
 
@@ -129,7 +129,7 @@ tags:
 
 # 最后说说听感
 
-![img](http://owkccdyrm.bkt.clouddn.com/Beoplay%20H5%20Parameters.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/Beoplay%20H5%20Parameters.jpg)
 
 ▲ *来自 B&O 官网的参数*
 
@@ -153,7 +153,7 @@ tags:
 
 ### 就这样。
 
-![img](http://owkccdyrm.bkt.clouddn.com/Full_3.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/Full_3.jpg)
 
 真好看。
 

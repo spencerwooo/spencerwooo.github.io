@@ -8,30 +8,33 @@ tags:
    - code
    - sublime text
    - sexy moves
-
 ---
 
 ### 写在前面的话
 
 才疏学浅，不知所云。
-</br>
+
 学弟问我，大一开始学 C 语言，很难的样子。
+
 第一堂课不知道老师说了些什么。不知道写什么，也不知道用什么写。
-</br>
+  
 是啊，为什么要用 C 语言，作为一门入门编程语言呢。日常唉声叹气。
-</br>
 
 ## The C Programming Language
+
 C 语言是一门悠久的语言，悠久到1972年。
+
 然而过了40年，现在教我们入门 C 语言的老师们，仍在叫我们用 [VC++ 6.0](http://baike.baidu.com/item/Microsoft%20Visual%20C++%206.0/8120077?fr=aladdin&fromid=2703807&fromtitle=vc%2B%2B6.0)，这个来自上个世纪，和我一般大小的，1998年的 IDE。
-</br>
+  
 心疼。
-</br>
 
 ## HOW TO
 最简单的 C 语言代码。
+
 最经典的 C 语言代码。
+
 嗯。
+
 ```c
 /*
 * @Author: spencerwoo
@@ -47,21 +50,27 @@ int main(int argc, char const *argv[]){
 	return 0;
 }
 ```
+
 好了。我们实现了利用 C 语言输出一段文字「Hello world.」到控制台「Console」。
+
 **鼓掌。**
+
 所以呢，我们在哪里写这段代码，怎么编译再运行这段代码呢？
+
 新手的你我，先用 IDE 吧。
-</br>
 
 ## IDE——集成开发环境
+
 Integrated Development Environment
+
 集成开发环境
 
 市面上有哪些比较适合新人的能编写 C 语言 IDE？
+
 按照我对它们的好感度，我排了个序。
-</br>
 
 ### C语言最好最可爱的 IDE 有什么!
+
 1. [Codeblock](http://www.codeblocks.org)
 	轻便，实用，编译快，体积小，没广告，还跨平台(Windows, Linux, macOS)。
 2. [Visual Studio 2017 Community](http://www.visualstudio.com/zh-hans/?rr=http%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DBnjZjnni1FE4vM64sPEdPFTsmxa1lrrP3IjDV-f2iuKYKGDOOBRdeCguoZh1kgkr%26wd%3D%26eqid%3Db8fe73c20006b3fb0000000359c3af73)
@@ -75,18 +84,21 @@ Integrated Development Environment
 	- [Why you should use Sublime Text 3 as your text editor.](http://spencerwoo98.github.io/2017/09/20/3/)
 	- [如何优雅的在 macOS 上编译调试 C++ 程序？](http://zhuanlan.zhihu.com/p/28045283)
 	希望进阶的同学，敬请等待更新。
-</br>
-
+  
 ## 编译运行？喵喵喵？？
+
 **C语言源代码**
+
 - 编译---->形成目标代码，目标代码是在目标机器上运行的代码。
 - 连接---->将目标代码与C函数库相连接，并将源程序所用的库代码与目标代码合并，并形成最终可执行的二进制机器代码（程序）。
 - 执行---->在特定的机器环境下运行C程序。
 
 这三个步骤，由操作系统以及 IDE 帮助我们进行。
+
 请看具体操作。
 
 #### 具体操作(Code::Blocks 示例)
+
 1. 创建新文件
 	- 主菜单中选择「File -> New -> Project...」
 	- 在弹出的菜单中选择「Console application」（这是控制台程序的意思）
@@ -99,24 +111,26 @@ Integrated Development Environment
 4. 运行：`F9`
 
 最后我们的成功标志，就是在黑框框里面（终端/Console/CMD）出现 Hello World. 的字样。
-</br>
+  
 FYI，如果你在 Mac 上面在终端里面用 gcc 编译运行，出现的效果大概是这个样子。
-![img](http://owkccdyrm.bkt.clouddn.com/Jietu20170921-204928@2x.jpg)
+
+![](http://owkccdyrm.bkt.clouddn.com/Jietu20170921-204928@2x.jpg)
+
 这代表我们的代码执行成功。
-</br>
+  
 
 #### 下面这个视频是我在自己的 MacBook 上面用 Sublime Text 3 创建文件 helloworld.c，在终端用 gcc 命令编译运行的过程。
-{% dplayer "url=http://owkccdyrm.bkt.clouddn.com/2.mov" "pic=http://owkccdyrm.bkt.clouddn.com/sublime-mac-c.jpg" %}
-</br>
+
+> Removed.
 
 ## 最后最后
-学习新的语言都是艰难的过程。
+
+学习新的语言都是艰难的过程.
 Learning curve 很陡峭。
 共勉。
-</br>
+  
 毕竟，3年前的我，还不知道什么是 gcc 呢。
-</br>
+  
 鞠躬。
-</br>
-</br>
+  
 ©2017 Spencer Woo

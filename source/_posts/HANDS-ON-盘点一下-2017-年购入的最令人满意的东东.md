@@ -12,7 +12,7 @@ tags:
 
 ---
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Alipay_Shot.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Alipay_Shot.jpg)
 
 > 就像一个人穿越森林，总会途径沼泽与湿地，面临猛兽毒蛇，可这些总会过去。你穿过去，就能看见翠叶河与玫瑰花圃，会有人在花圃里等你，摘了一手的玫瑰，只为了送你。
 
@@ -24,7 +24,7 @@ tags:
 
 # 一. Airpods
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Airpods.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Airpods.jpg)
 
 ▲ *Airpods and Battery Case*
 
@@ -72,7 +72,7 @@ iPhone 自带小白耳机 Earpods 的舒适度完美的继承于 Airpods 上。
 
 迫使我们穷困的强迫症患者给它带上套子。
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Airpods_Battery_Case.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Airpods_Battery_Case.jpg)
 
 ▲ *Airpods Battery Case Close-up*
 
@@ -80,7 +80,7 @@ iPhone 自带小白耳机 Earpods 的舒适度完美的继承于 Airpods 上。
 
 # 二. 米家电动牙刷
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Vertical_Toothbrush.JPG)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Vertical_Toothbrush.JPG)
 
 ▲*米家电动牙刷*
 
@@ -98,7 +98,7 @@ iPhone 自带小白耳机 Earpods 的舒适度完美的继承于 Airpods 上。
 
 极为简洁，打开之后只有一枚牙刷手柄，右侧存放着的刷头、替换环、说明书以及充电器都用通体白色的盒子隐藏起来。特别令人惊艳的是：**刷头是真空包装哦。**:stuck_out_tongue:
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Toothbrush_head.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Toothbrush_head.jpg)
 
 ▲ *米家声波电动牙刷 刷头*
 
@@ -116,7 +116,7 @@ iPhone 自带小白耳机 Earpods 的舒适度完美的继承于 Airpods 上。
 
 
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Mijia_app.JPG)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-Mijia_app.JPG)
 
 ▲*Mijia App*
 
@@ -145,7 +145,7 @@ iPhone 自带小白耳机 Earpods 的舒适度完美的继承于 Airpods 上。
 
 以上没有时间顺序、没有重要程度顺序、没有任何顺序。
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-sanlian_seaside_library.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-sanlian_seaside_library.jpg)
 
 ▲ *秦皇岛 三联海边公益图书馆*
 

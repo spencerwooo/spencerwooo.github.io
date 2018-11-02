@@ -28,7 +28,7 @@ tags:
 
 漂亮的不像实力派。
 
-![img](https://i.loli.net/2018/04/13/5ad0c73dcd00b.jpg)
+![](https://i.loli.net/2018/04/13/5ad0c73dcd00b.jpg)
 
 <div style="text-align: center; font-size: 14px; color: #787D7B"; >*Image credit: Spencer Woo*</div>
 
@@ -60,9 +60,9 @@ tags:
 
 **我们**，不包括在没有栏杆的石头上皮的屯屯。
 
-![img](https://i.loli.net/2018/04/13/5ad0c8642c76f.jpg)
+![](https://i.loli.net/2018/04/13/5ad0c8642c76f.jpg)
 
-![img](https://i.loli.net/2018/04/13/5ad0c8c473daf.jpg)
+![](https://i.loli.net/2018/04/13/5ad0c8c473daf.jpg)
 
 <div style="text-align: center; font-size: 14px; color: #787D7B"; >*Image credit: Spencer Woo*</div>
 
@@ -70,7 +70,7 @@ tags:
 
 # 接下来的佛系济南
 
-![img](https://i.loli.net/2018/04/13/5ad0b8235e551.jpg)
+![](https://i.loli.net/2018/04/13/5ad0b8235e551.jpg)
 
 <div style="text-align: center; font-size: 14px; color: #787D7B"; >*Image credit: Tenkeyseven from [Tenkey's Blog](http://tenkeyseven.com/?p=375)*</div>
 
@@ -95,7 +95,7 @@ tags:
 - 不要让泰山上皮的要死的屯屯开船。
 - 不要觉得石头和三脚架一样稳。
 
-![img](https://i.loli.net/2018/04/13/5ad0d0f617f18.jpg)
+![](https://i.loli.net/2018/04/13/5ad0d0f617f18.jpg)
 
 是的，在趵突泉，我把日间长曝光的单反摔在大理石板上了。
 

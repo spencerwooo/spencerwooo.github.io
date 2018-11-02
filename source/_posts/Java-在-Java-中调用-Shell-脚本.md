@@ -111,11 +111,11 @@ emmm。
 
 ### 主页面
 
-![img](http://owkccdyrm.bkt.clouddn.com/2.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/2.jpg)
 
 ### 菜单
 
-![img](http://owkccdyrm.bkt.clouddn.com/UI1.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/UI1.jpg)
 
 不知道阳阳能给我实现到什么程度。
 

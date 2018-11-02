@@ -9,7 +9,7 @@ tags:
     - sexy moves
 ---
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-golang.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-golang.jpg)
 
 Hello Atom.
 
@@ -33,13 +33,13 @@ Atom 真可爱。
 
 ### 这个是写 C++ 的时候：
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-atom_cpp.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-atom_cpp.jpg)
 
 <br>
 
 ### 这个是玩耍 Go 的时候：
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-atom_go.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-atom_go.jpg)
 
 <br>
 
@@ -51,7 +51,7 @@ Keep Calm and **Use Solarized.**
 
 ### 这是 Atom 的 Markdown 实时预览：
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-atom_md.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-atom_md.jpg)
 
 <br>
 
@@ -63,7 +63,7 @@ Github 真不是吹的。
 
 # 贰
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-euler.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-euler.jpg)
 
 欧拉这个人真的是事情多得很。
 
@@ -77,7 +77,7 @@ Github 真不是吹的。
 
 就比如：
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-euler_formula.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-euler_formula.jpg)
 
 :mask:
 
@@ -87,7 +87,7 @@ Github 真不是吹的。
 
 知乎发布了「我的知乎 2017」。
 
-![img](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-zhihu_answers.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-zhihu_answers.jpg)
 
 嗝。
 

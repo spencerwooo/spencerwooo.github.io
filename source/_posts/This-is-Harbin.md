@@ -9,86 +9,105 @@ tags:
 ---
 
 ## 10月1日 举国同庆
-</br>
-{% dplayer "url=http://owkccdyrm.bkt.clouddn.com/Lana%20Del%20Rey%20-%20White%20Mustang%20%28Official%20Video%29.mp4" "pic=http://owkccdyrm.bkt.clouddn.com/3.jpg" %}
-</br>
+
 我刚刚回到哈尔滨。
-</br>
+
 「自古逢秋悲寂寥 我言秋日胜春朝」
-</br>
+
 啥意思呢。
+
 真 TM 冷。
+
 寒冷是一个城市对一个人最大的恶意。
-<br>
 
 ### 约拍
-</br>
+
 约见了唐朝 —— 人称「人型三脚架 人抖手不抖」
+
 要继续拍我的「东方树叶」镜头，特写，戏精博博。
+
 最后成片，1分半的镜头。
+
 **有1分15秒是废的。**
-</br>
-![img](http://owkccdyrm.bkt.clouddn.com/39FAA52D-52A1-463A-8971-657BBF73408E.JPG)
+
+![](http://owkccdyrm.bkt.clouddn.com/39FAA52D-52A1-463A-8971-657BBF73408E.JPG)
+
 ▲凯德广场地下超市 | 农夫山泉区 | EOS 650D f/5.0 1/60s ISO 1000
-</br>
+
 这里遇见的人。
+
 都觉得看着三瓶东方树叶傻笑的我。
+
 和旁边举着单反傻笑的唐朝。
+
 是傻子。
-</br>
+
 哎。
+
 **做电影的人总得有点戏份加身。**
+
 职业素养。
-</br>
 
 ### 大风
-</br>
+
 今天感受到了这座城市深深的恶意。
+
 穿了三件衣服。
+
 T恤、衬衫、外套。
+
 寒风还是彻骨的冷。
-<br>
-![img](http://owkccdyrm.bkt.clouddn.com/9AB2055A-549F-4E01-B756-B5EA8C68491E.JPG)
+
+![](http://owkccdyrm.bkt.clouddn.com/9AB2055A-549F-4E01-B756-B5EA8C68491E.JPG)
+
 ▲哈工大西门 | EOS 650D f/5.6 1/50s ISO 6400
-<br>
+
 旁边有烤苞米的师傅。
+
 他问我假期怎么没回家啊。
+
 哎，我都说「这烤苞米是怎么卖的」了，都不够证明我是东北人吗。
-</br>
+
 工大里面的小姐姐都没有我的小姐姐可爱。
+
 工大旁边的烧烤倒是比陪小姐姐吃的火锅好吃。
+
 下次要带小姐姐吃烧烤、火锅、烤羊排、披萨、薯条和烤冷面。
+
 小姐姐请多穿。
-</br>
 
 ### 市井的
-</br>
+
 五点多的天已经开始黑起来了。
+
 刚刚吃完烧烤的我。
+
 **饥肠辘辘。**
-</br>
-![img](http://owkccdyrm.bkt.clouddn.com/12498C79-FCD5-42B5-9827-CCE00D8B51D3.JPG)
+
+![](http://owkccdyrm.bkt.clouddn.com/12498C79-FCD5-42B5-9827-CCE00D8B51D3.JPG)
+
 ▲哈工大西门 | 唯有爱与美食不可辜负的大鱿鱼 | EOS 650D f/5.6 1/50s ISO 6400
-</br>
-</br>
-![img](http://owkccdyrm.bkt.clouddn.com/6362F135-09A8-4AB5-B41C-70F477F26625.JPG)
+
+![](http://owkccdyrm.bkt.clouddn.com/6362F135-09A8-4AB5-B41C-70F477F26625.JPG)
+
 ▲哈工大西门 | 烤面筋 | EOS 650D f/5.6 1.50s ISO 6400
-</br>
+
 唯有美食与爱不可辜负。
+
 烤鱿鱼的师傅可以说是很文艺了。
-</br>
+
 我在这附近走啊走啊走。
+
 可我约的车就是没到。
-<br>
+
 累。
-</br>
+
 > 我也知晓，岁月无情、姑娘无尽。但亦遗憾，不能永世和你在一起。
+
 所以祝你幸福，祝你幸福。
+
 祝你幸福。
 
-</br>
 鞠躬。
-</br>
-</br>
 
 ©2017 Spencer Woo

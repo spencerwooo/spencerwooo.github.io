@@ -21,7 +21,7 @@ tags:
 
 就像 iOS 6.0 以及之前的应用抽屉：
 
-![img](https://i.loli.net/2018/03/15/5aaa57113bc8b.jpg)
+![](https://i.loli.net/2018/03/15/5aaa57113bc8b.jpg)
 
 如果真的可以用纯 CSS 实现这个质感的背景 (svg)，我就实在是佩服自己了。
 
@@ -101,7 +101,7 @@ gitment.render('comments')
 
 在上面我找到了能实现：鼠标悬停在按钮上，按钮会调皮的抖动的 CSS。实在是骚气。
 
-![img](https://i.loli.net/2018/03/14/5aa8bc4b20774.jpg)
+![](https://i.loli.net/2018/03/14/5aa8bc4b20774.jpg)
 
 <br>
 
@@ -117,7 +117,7 @@ gitment.render('comments')
 
 **我是一万个不同意。**
 
-![img](https://i.loli.net/2018/03/11/5aa5377418b17.jpg)
+![](https://i.loli.net/2018/03/11/5aa5377418b17.jpg)
 
 **好看是第一生产力。**
 

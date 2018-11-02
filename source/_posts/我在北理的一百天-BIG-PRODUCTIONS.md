@@ -15,7 +15,7 @@ tags:
 >
 > 兴奋中，我开始了大学生活的第一天。
 
-![img](http://owkccdyrm.bkt.clouddn.com/100%20days.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/100%20days.jpg)
 
 <br>
 
@@ -29,7 +29,7 @@ tags:
 >
 > 我度过了北理工生活的第22天。
 
-![img](http://owkccdyrm.bkt.clouddn.com/100days_1.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/100days_1.jpg)
 
 <br>
 
@@ -43,7 +43,7 @@ tags:
 >
 > 我似乎也找到了志同道合的朋友。
 
-![img](http://owkccdyrm.bkt.clouddn.com/100days_2.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/100days_2.jpg)
 
 <br>
 
@@ -55,7 +55,7 @@ tags:
 >
 > 更加爱上了这所学校。
 
-![img](http://owkccdyrm.bkt.clouddn.com/100days_3.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/100days_3.jpg)
 
 <br>
 
@@ -73,7 +73,7 @@ tags:
 >
 >和父母通电话是走过一遍又一遍的宿舍走廊。
 
-![img](http://owkccdyrm.bkt.clouddn.com/100days_4.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/100days_4.jpg)
 
 <br>
 

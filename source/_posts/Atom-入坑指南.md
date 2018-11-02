@@ -20,13 +20,13 @@ tags:
 
 > Code is poetry.
 
-![img](https://i.loli.net/2018/03/11/5aa5201dd7f2e.jpg)
+![](https://i.loli.net/2018/03/11/5aa5201dd7f2e.jpg)
 
 *▲ Vim - the ubiquitous text editor.*
 
 写代码本应该是很享受的事情，我们有极客高效的 Vim，简约美丽的 Sublime Text，从小至最为纯粹的编辑器，到大至包罗万物的 IDE。一个好的、美观的、高效的代码编写环境着实能够提高一个人的写作、创作欲望。试想一个人把 VC 6.0 放在你的面前，黑底白字、没有高亮、没有颜色，有谁会爱上 C / C++？如果有人在 2018 年向你推荐 1998 年的 IDE，那么你觉得这个人的脑子该如何拯救？
 
-![img](https://i.loli.net/2018/03/11/5aa51aeacc4b0.jpg)
+![](https://i.loli.net/2018/03/11/5aa51aeacc4b0.jpg)
 
 **生命不息，折腾不止。**
 
@@ -38,7 +38,7 @@ tags:
 
 **Atom：A hackable text editor for the 21st Century**
 
-![img](https://i.loli.net/2018/03/11/5aa51fd0641a8.jpg)
+![](https://i.loli.net/2018/03/11/5aa51fd0641a8.jpg)
 
 首先，介绍工具：**Atom 文本编辑器**，由 Github 出品的基于 Electron / Node.js 的半开源文本编辑器。官网位于 -> https://atom.io/
 
@@ -67,25 +67,25 @@ tags:
 
 **Plugin:** autocomplete-clang
 
-![img](https://i.loli.net/2018/03/11/5aa52f724ffec.jpg)
+![](https://i.loli.net/2018/03/11/5aa52f724ffec.jpg)
 
 ### 代码实时编译
 
 **Plugins:** linter, linter-clang, linter-ui-default
 
-![img](https://i.loli.net/2018/03/11/5aa52fa12a4ec.jpg)
+![](https://i.loli.net/2018/03/11/5aa52fa12a4ec.jpg)
 
 ### 代码高亮
 
 **Themes**，这里的问题主要在于个人审美，我相信一定有一个美丽的 UI 和配套的 Syntax 主题打动你。
 
-![img](https://i.loli.net/2018/03/11/5aa52fc316d12.jpg)
+![](https://i.loli.net/2018/03/11/5aa52fc316d12.jpg)
 
 ### 代码自动整理
 
 **Plugin:** Atom-beautify
 
-![img](https://i.loli.net/2018/03/11/5aa52ff2cb70f.jpg)
+![](https://i.loli.net/2018/03/11/5aa52ff2cb70f.jpg)
 
 <br>
 
@@ -99,15 +99,15 @@ tags:
 
 #### 一键编译：script
 
-![img](https://i.loli.net/2018/03/11/5aa53170e2991.jpg)
+![](https://i.loli.net/2018/03/11/5aa53170e2991.jpg)
 
 插件 script 实际上是通过识别文件类型来执行对应的命令编译源代码。比如 C++ 的编译命令实际上是 `[Command: bash -c 'xcrun clang++ -std=c++14 -Wall -include stdio.h -fcolor-diagnostics -include iostream '$Path_To_CPP_File$/Test.cpp' -o /tmp/cpp.out && /tmp/cpp.out']`，通过快捷键 `⌘ + I` 直接运行指令来编译。
 
-![img](https://i.loli.net/2018/03/11/5aa533942bab0.jpg)
+![](https://i.loli.net/2018/03/11/5aa533942bab0.jpg)
 
 #### 调出终端：platform-ide-terminal
 
-![img](https://i.loli.net/2018/03/11/5aa531cb9e7b8.jpg)
+![](https://i.loli.net/2018/03/11/5aa531cb9e7b8.jpg)
 
 如果不满意 script 一键编译运行的话，可以通过这个插件唤出终端，这样直接了当用 `g++ -o $File_Name$ $File_Name.cpp$` 这一命令来运行，这时候程序也支持输入，与 Windows 下 Dev C++ 中默认运行调出 Command Prompt 小黑框一般道理。同时这样也方便用 `gdb` 来进行调试。
 
@@ -141,11 +141,11 @@ printf("time = %ld ms", _end_time - _begin_time);
 
 这样在 Atom 中就可以形成工作流：代码区域 - 编写 → 输入内容 `in.txt` → 编译代码 → 查看输出文件内容、运行时间 `out.txt`
 
-![img](https://i.loli.net/2018/03/11/5aa5377418b17.jpg)
+![](https://i.loli.net/2018/03/11/5aa5377418b17.jpg)
 
 **直观纯粹，效率优先。**
 
-![img](https://i.loli.net/2018/03/11/5aa53879150d8.jpg)
+![](https://i.loli.net/2018/03/11/5aa53879150d8.jpg)
 
 最后，上成果。这样的 Atom 配置在写 C / C++ 基础程序的时候，基本实现了：
 

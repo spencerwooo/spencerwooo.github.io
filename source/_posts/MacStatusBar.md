@@ -13,7 +13,7 @@ tags:
 
 Reddit 是一个神奇的地方，是一个比百度贴吧里面讨论得更激烈，还比百度贴吧的广告少的地方。在 Reddit 里面有一个主题最近引起了我的注意：`r/unixporn`
 
-![img](https://i.loli.net/2018/05/29/5b0d08c21ffbb.jpg)
+![](https://i.loli.net/2018/05/29/5b0d08c21ffbb.jpg)
 
 里面的同学将自己魔改的类 Unix 系统的桌面主题、通知主题、终端配色和壁纸发出来进行分享。甚至有这个社区主题板块的人举办 Unix 系统魔改大赛。
 
@@ -33,7 +33,7 @@ Reddit 是一个神奇的地方，是一个比百度贴吧里面讨论得更激�
 
 来实现这样的效果：
 
-![img](https://i.loli.net/2018/06/04/5b15089cdae60.jpg)
+![](https://i.loli.net/2018/06/04/5b15089cdae60.jpg)
 
 <br>
 
@@ -89,7 +89,7 @@ git clone https://github.com/zzzeyez/Pecan.git $HOME/Library/Application\ Suppor
 
 Pecan 内置了五个主题，分别叫这些：bliss, fillmore, hasel, nurse, santafe.
 
-<div style="width:360px; display:block; margin:0 auto;">![img](https://i.loli.net/2018/05/29/5b0d1c325a302.png)</div>
+<div style="width:360px; display:block; margin:0 auto;">![](https://i.loli.net/2018/05/29/5b0d1c325a302.png)</div>
 
 我们先开启启用主题脚本：
 
@@ -112,13 +112,13 @@ mv "$HOME/Library/Application\ Support/Übersicht/widgets/Pecan/pecan-style" "/u
 - 通过 `pecan-style --list` 来查看可用主题；
 - 通过 `pecan-style --load fillmore` 来加载 `fillmore` 主题。
 
-<div align="center">![img](https://i.loli.net/2018/05/29/5b0d17cec9cb0.jpg)</div>
+<div align="center">![](https://i.loli.net/2018/05/29/5b0d17cec9cb0.jpg)</div>
 
 <br>
 
 ## 3. 将系统原生状态栏设置自动隐藏
 
-<div align="center">![img](https://i.loli.net/2018/05/29/5b0d18b87fb81.jpg)</div>
+<div align="center">![](https://i.loli.net/2018/05/29/5b0d18b87fb81.jpg)</div>
 
 就这样，我们的高度可定制状态栏就实现了。
 

@@ -8,7 +8,7 @@ tags:
     - sexy moves
 ---
 
-![img](https://i.loli.net/2018/01/28/5a6d7b398184c.jpg)
+![](https://i.loli.net/2018/01/28/5a6d7b398184c.jpg)
 
 一个网站开头的小绿标是网站管理员的基本素养。
 
@@ -58,7 +58,7 @@ CloudFlare 是一家 CDN 提供商，它提供了免费的 HTTPS 服务，但不
 
 虽然通过上面的方法我们把全站大部分内容 实现了用 HTTPS 传输，可是这时候如果用 Chrome 访问我们的博客，会发现 Console 里面出现警告：`Mixed Content` 。其实这个是因为我在我的网站上放置图片的时候用的是七牛云的图床服务，而这部分资源（Resources）的传输是 HTTP 协议传输的。So...
 
-![img](https://i.loli.net/2018/01/28/5a6d7b66971f9.jpg)
+![](https://i.loli.net/2018/01/28/5a6d7b66971f9.jpg)
 
 > 遇见是两个人的事，离开却是一个人的决定。
 

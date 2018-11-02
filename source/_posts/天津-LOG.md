@@ -12,7 +12,7 @@ tags:
 
 # Nervous Breakdown
 
-![img](http://owkccdyrm.bkt.clouddn.com/7585940752_IMG_4913.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/7585940752_IMG_4913.jpg)
 
 ▲*天津 · 小白楼旁边的小屋子*
 
@@ -54,7 +54,7 @@ And I cannot stress this enough.
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/7585940752_IMG_4918.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/7585940752_IMG_4918.jpg)
 
 ▲*天津 · 小白楼附近的共享单车*
 
@@ -70,15 +70,15 @@ And I cannot stress this enough.
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/7518858448_IMG_5156.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/7518858448_IMG_5156.jpg)
 
 ▲ *天津 · 五大道景点 · 白色的墙面*
 
-![img](http://owkccdyrm.bkt.clouddn.com/7518858448_IMG_5117.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/7518858448_IMG_5117.jpg)
 
 ▲ *天津 · 五大道景点 · 水面*
 
-![img](http://owkccdyrm.bkt.clouddn.com/06394F98-7259-404F-AD04-7B4A2479DA47.JPG)
+![](http://owkccdyrm.bkt.clouddn.com/06394F98-7259-404F-AD04-7B4A2479DA47.JPG)
 
 ▲ *天津 · 五大道*
 
@@ -106,7 +106,7 @@ And I cannot stress this enough.
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_5158.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_5158.jpg)
 
 ▲ *天津 · 五大道风景区 · 纵深感*
 
@@ -120,7 +120,7 @@ And I cannot stress this enough.
 
 # 肆
 
-![img](http://owkccdyrm.bkt.clouddn.com/7585940752_IMG_4902.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/7585940752_IMG_4902.jpg)
 
 ▲*天津 · 糖糖*
 
@@ -148,15 +148,15 @@ And I cannot stress this enough.
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_4963.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_4963.jpg)
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_4959.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_4959.jpg)
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_4960.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_4960.jpg)
 
 ▲ *天津 · 串串店里面的我*
 
@@ -194,19 +194,19 @@ And I cannot stress this enough.
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_8332.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_8332.jpg)
 
 ▲ *天津财经大学 · 教学楼*
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_4976.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_4976.jpg)
 
 ▲ *天津财经大学 · 湖*
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_5004.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_5004.jpg)
 
 ▲ iPhone 7 Plus && iPhone 6s
 
@@ -222,19 +222,19 @@ And I cannot stress this enough.
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/Snapseed%203.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/Snapseed%203.jpg)
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/Snapseed%202.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/Snapseed%202.jpg)
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/Snapseed.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/Snapseed.jpg)
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/2ABAC868-83AD-49D8-8B0C-658F346E5F6F.JPG)
+![](http://owkccdyrm.bkt.clouddn.com/2ABAC868-83AD-49D8-8B0C-658F346E5F6F.JPG)
 
 <br>
 
@@ -250,7 +250,7 @@ And I cannot stress this enough.
 
 # 捌
 
-![img](http://owkccdyrm.bkt.clouddn.com/7518858448_IMG_5085.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/7518858448_IMG_5085.jpg)
 
 ▲ *天津 · 天津金皇大酒店*
 
@@ -286,15 +286,15 @@ And I cannot stress this enough.
 
 看看照片吧。
 
-![img](http://owkccdyrm.bkt.clouddn.com/7518858448_IMG_5146.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/7518858448_IMG_5146.jpg)
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_5112.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_5112.jpg)
 
 <br>
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_5187.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_5187.jpg)
 
 <br>
 
@@ -310,7 +310,7 @@ And I cannot stress this enough.
 
 晚安。
 
-![img](http://owkccdyrm.bkt.clouddn.com/D9B419A5-50D1-4EAA-82DF-95D92E75D4CC.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/D9B419A5-50D1-4EAA-82DF-95D92E75D4CC.jpg)
 
 ▲ *天津 · 海河*
 

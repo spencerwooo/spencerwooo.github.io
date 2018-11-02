@@ -26,10 +26,10 @@ Windows Phone Photography???
 ## 构图
 如何构图。
 如何把我们想要拍摄的主题表现的淋漓尽致。
-![img](http://owkccdyrm.bkt.clouddn.com/2016-07-27%2004.04.56%201.JPG)
+![](http://owkccdyrm.bkt.clouddn.com/2016-07-27%2004.04.56%201.JPG)
 *▲ 中心对称构图法 | 中国青岛八大关 | f/1.9 ISO:40 1/668s | shot on Samsung Galaxy S6 Edge*
 
-![img](http://owkccdyrm.bkt.clouddn.com/2016-07-16%2006.35.42%201.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/2016-07-16%2006.35.42%201.jpg)
 *▲ 三分黄金构图法 | 中国黑龙江帽儿山 | f/1.9 ISO:40 1/728s | shot on Samsung Galaxy S6 Edge*
 
 那么多的摄影师一直强调中心构图法、三分构图法、黄金分割法...
@@ -42,20 +42,20 @@ Windows Phone Photography???
  - 引导线
 
 以及由他们衍生出来的位置。
-![img](http://owkccdyrm.bkt.clouddn.com/12.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/12.jpg)
 *图片来自韩松老师*
 这样拍出来的照片，符合大众的审美，大多都不会出差错。
 
-![img](http://owkccdyrm.bkt.clouddn.com/steps.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/steps.jpg)
 *▲ 这里，开启手机的取景框分割线，构图更容易。*
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_7364.PNG)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_7364.PNG)
 *▲ 把主体放在三分线的交点处食用更佳。*
 
 啊对了，手机的镜头都是定焦镜头，不具备光学变焦，就算是双摄，也跟单反相差甚远。
 因此构图一定端稳、摆正、事先构图，**不要双指放大取景框再去拍摄。**
 
-![img](http://owkccdyrm.bkt.clouddn.com/building.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/building.jpg)
 *▲ 留白 | 仰视构图 | 北理 良乡校区 南校区 | f/1.8 ISO:20 1/507s | shot on iPhone 7 Plus*
 
 ## 色彩
@@ -63,7 +63,7 @@ Windows Phone Photography???
 阳光并不是从来都会恰好打在你所要拍摄的物体上面。
 后期软件所加上的滤镜，大多也是为了弥补前期颜色的黯淡、仓促。
 
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_7309.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_7309.jpg)
 *▲中心对称构图法构图 | 北理 良乡校区 理学楼 | f/1.8 ISO:20 1/224s | shot on iPhone 7 Plus*
 
 上面这张照片，是我刚下大学物理课，从教室走出来的时候，阳光从南操场倾泻进入教学楼的样子。
@@ -76,10 +76,10 @@ Windows Phone Photography???
 ## 场景
 #### 别拍全！！！
 有时候，为了展现留白的技巧、为了突出主体，可以只展现画面的一部分，这样更加具有视觉冲击力。
-![img](http://owkccdyrm.bkt.clouddn.com/2016-06-27%2003.27.39%201.JPG)
+![](http://owkccdyrm.bkt.clouddn.com/2016-06-27%2003.27.39%201.JPG)
 *▲ 留白 + 只露一个角 | 长春 居民区屋檐 | f/1.9 ISO:40 1/1500s | shot on Samsung Galaxy S6 Edge*
 这个技巧并不是所有场景都适用的，但是为了保证画面纯净、为了主体突出，可以考虑。
-![img](http://owkccdyrm.bkt.clouddn.com/IMG_20160613_122206-01.JPEG)
+![](http://owkccdyrm.bkt.clouddn.com/IMG_20160613_122206-01.JPEG)
 *▲ 延伸线 + 对称构图 | 北京 故宫内部 | f/1.9 ISO:40 1/1500s | shot on Samsung Galaxy S6 Edge*
 这里用小巷的纵深感体现故宫里面的幽深。
 旁边墙上的挂灯也很好的体现了故宫的历史感。

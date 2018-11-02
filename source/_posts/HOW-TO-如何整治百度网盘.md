@@ -69,7 +69,7 @@ tags:
 
   并运行，以测试是否安装成功，如果出现类似下图：
 
-  ![img](http://owkccdyrm.bkt.clouddn.com/aria2c-v.jpg)
+  ![](http://owkccdyrm.bkt.clouddn.com/aria2c-v.jpg)
 
   则证明安装 Aria2 成功。
 
@@ -92,7 +92,7 @@ tags:
 
   效果如下图：
 
-  ![img](http://owkccdyrm.bkt.clouddn.com/git_baidu_exporter.jpg)
+  ![](http://owkccdyrm.bkt.clouddn.com/git_baidu_exporter.jpg)
 
    - 在终端继续输入 `open BaiduExporter`，看到文件夹打开。
 
@@ -100,7 +100,7 @@ tags:
 
 #### 在文件夹中找到 Chrome.crx，直接拖入 Chrome 浏览器中，点击安装扩展程序。
 
-![img](http://owkccdyrm.bkt.clouddn.com/git_exporter_finder.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/git_exporter_finder.jpg)
 
 <br>
 
@@ -140,7 +140,7 @@ tags:
 
 直接勾选要下载的文件，点击下面的 ARIA2 RPC。
 
-![img](http://owkccdyrm.bkt.clouddn.com/baidu_works.jpg)
+![](http://owkccdyrm.bkt.clouddn.com/baidu_works.jpg)
 
 成功。
 

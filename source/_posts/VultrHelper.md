@@ -10,7 +10,7 @@ tags:
    - sspai
 ---
 
-![img](https://i.loli.net/2018/06/25/5b30d07d03b86.png)
+![](https://i.loli.net/2018/06/25/5b30d07d03b86.png)
 
 What is Vultr?
 
@@ -34,7 +34,7 @@ Vultr Helper 利用 [Vultr](https://vultr.com) 提供的 API 查询您的账户�
 
 [Vultr-Helper 下载地址](https://xteko.com/redir?name=Vultr-Helper&url=https://raw.githubusercontent.com/spencerwoo98/jsbox-vultr-helper/master/vultr-helper.js)
 
-![img](https://i.loli.net/2018/06/27/5b33475402316.png)
+![](https://i.loli.net/2018/06/27/5b33475402316.png)
 
 <br>
 
@@ -42,7 +42,7 @@ Vultr Helper 利用 [Vultr](https://vultr.com) 提供的 API 查询您的账户�
 
 访问链接 :link: [Vultr API Key](https://my.vultr.com/settings/#settingsapi) 来生成您自己的 API Key，此脚本依赖于 API Key 与 Vultr 账户进行沟通。
 
-![img](https://i.loli.net/2018/06/23/5b2e35fd242b2.jpg)
+![](https://i.loli.net/2018/06/23/5b2e35fd242b2.jpg)
 
 <br>
 
@@ -74,7 +74,7 @@ curl -H 'API-Key: YOUR_OWN_API_KEY' "https://api.vultr.com/v1/server/list"
 
 同样也要将上面命令中的 `API-Key` 后面换成你自己的 `API_Key`，得到返回数据的每个级别就是服务器唯一识别码，即 Server `SUBID`.
 
-![img](https://i.loli.net/2018/06/27/5b334eacc86d5.jpg)
+![](https://i.loli.net/2018/06/27/5b334eacc86d5.jpg)
 
 这样找到服务器唯一识别码之后，将此项数据在代码中更新，这样也就得到了服务器的具体信息显示。
 

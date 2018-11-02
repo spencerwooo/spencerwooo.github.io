@@ -17,7 +17,7 @@ tags:
 
 Linux 是个无底洞。我在虚拟机上玩耍甚至能让我着迷 3 天。我先后安装了 CentOS 四次，Arch Linux 一次，Ubuntu 一次。折腾 Gnome 桌面，折腾 `yum`, `pacman` 和 `apt` 源，折腾 `wine`，折腾各种东西。
 
-![img](https://i.loli.net/2018/04/28/5ae49915eca0d.jpg)
+![](https://i.loli.net/2018/04/28/5ae49915eca0d.jpg)
 
 我最终得到结论是：macOS 是最好的 Linux(-like) Distribution.
 
@@ -48,7 +48,7 @@ Linux 是个无底洞。我在虚拟机上玩耍甚至能让我着迷 3 天。�
 ### 目标具象
 
 
-![img](https://i.loli.net/2018/04/29/5ae49bd8eb8b4.jpg)
+![](https://i.loli.net/2018/04/29/5ae49bd8eb8b4.jpg)
 
 如图里面两个文件夹的五张图片，要用 `os` 库将 `original` 文件夹里面的全部图片读取，进行压缩，然后输出到 `result` 文件夹里面。这是我们的目标。
 

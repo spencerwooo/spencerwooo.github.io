@@ -25,13 +25,13 @@ ga('send', 'pageview');</script><script>var GLOBAL_CONFIG = {
 <p><br></p>
 <hr>
 <p>如今，为了我<strong>大金老师</strong>的安卓开发，我翻出来了陪伴我整个高二，只有在考试的时候失误了一次，才迫使我抛弃了它的 Galaxy S5，让它在 2018 年焕发新生。</p>
-<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5.JPG" alt="img"></p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5.JPG" alt=""></p>
 <p>Galaxy S5 是一部 2014 年春天发布的机器。除了它万年不变的塑料廉价质感的外壳，别的都是当年安卓界的翘楚，如日中天的三星令当年的小米华为之流难以望其项背。</p>
 <p>但是它那令人难堪的塑料背壳，毫无设计感可言的塑料边框，和难用同嚼蜡的 TouchWiz 真是令人失望。</p>
 <p>2018 年的今天，软件部分的改造工程从升级系统开始。</p>
 <p><br></p>
 <h1 id="壹-ME-heart-Lineage-OS"><a href="#壹-ME-heart-Lineage-OS" class="headerlink" title="壹. ME :heart: Lineage OS"></a>壹. ME :heart: Lineage OS</h1><p>自从上次刷机我不小心给我的 Galaxy S4 同时刷了两个二进制文件（SuperSU 和 Magisk 的二进制）进去导致了 Bootloop 让我的小 S4 变砖的惨痛经历，我这次异常谨慎。</p>
-<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_WholeView.JPG" alt="img"></p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_WholeView.JPG" alt=""></p>
 <p>翻遍了百度，由于我的 S5 是坑父亲的电信定制版，所以就算是大神云集的论坛：<a href="http://www.xda-developers.com" target="_blank" rel="noopener">xda-developers</a> 都很难找到第三方的 ROM。不过还好有 Lineage OS，令人激动。再说一遍，ME :heart: Lineage OS.</p>
 <p>这里具体步骤参考了 —&gt; <a href="http://bbs.gfan.com/forum.php?mod=viewthread&amp;tid=9153633" target="_blank" rel="noopener">机锋论坛上的这个帖子</a></p>
 <ol>
@@ -44,18 +44,18 @@ ga('send', 'pageview');</script><script>var GLOBAL_CONFIG = {
 <p><br></p>
 <h1 id="贰-ME-heart-Magisk"><a href="#贰-ME-heart-Magisk" class="headerlink" title="贰. ME :heart: Magisk"></a>贰. ME :heart: Magisk</h1><p>Magisk 是一名台湾的大佬开发的以「系统外挂」方式存在的 Root 插件。</p>
 <p>听说 SuperSU 被中国某个毒瘤厂家收购了，于是我转而投靠 Magisk 的怀抱。</p>
-<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_SystemInfo.JPG" alt="img"></p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_SystemInfo.JPG" alt=""></p>
 <p><a href="http://forum.xda-developers.com/apps/magisk" target="_blank" rel="noopener">XDA Developers Forum: Magisk</a></p>
 <p>Magisk 也是通过 TWRP 第三方 Recovery 卡刷的，原理同上。</p>
 <p>丢下一个链接就逃跑。</p>
 <p><br></p>
 <h1 id="叁-ME-heart-Xposed"><a href="#叁-ME-heart-Xposed" class="headerlink" title="叁. ME :heart: Xposed"></a>叁. ME :heart: Xposed</h1><p><strong>上帝之手</strong>，我只能这样形容 Xposed。</p>
-<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5-xposed-magisk.jpg" alt="img"></p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5-xposed-magisk.jpg" alt=""></p>
 <p>从安卓 4.x 就存在的神器：Xposed 可以在不修改 apk 本身的情况下直接干预系统行为。</p>
 <p>那些 wx 自动抢红包，wx 防撤回，修改应用启动图等等等等玄乎其玄的东东，都是 Xposed 干的。</p>
 <p>上一个步骤安装 Magisk 除了提取 root 权限，还有一个目的就是让 Android 7.1.2 吃上 Xposed，具体刷入 Xposed 的步骤在这个链接：<a href="http://forum.xda-developers.com/xposed/unofficial-systemless-xposed-t3388268" target="_blank" rel="noopener">XDA Developers Forum: Systemless Xposed Framework based on Magisk</a></p>
 <p>刷入 Xposed Framework 之后，我们就几乎可以在系统中为所欲为了。</p>
-<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_Xposed_NeteaseMusic.JPG" alt="img"></p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-S5_Xposed_NeteaseMusic.JPG" alt=""></p>
 <p>这里，我启用了 Xposed SDK25，安装了这些插件：</p>
 <ul>
 <li>网易云音乐插件：去除启动页广告，自动签到，<strong>本地显示</strong>会员、网易音乐人等等.</li>
@@ -65,19 +65,19 @@ ga('send', 'pageview');</script><script>var GLOBAL_CONFIG = {
 <li>MinMinGuard：全局去广告.</li>
 <li>…</li>
 </ul>
-<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-xposed%20framework.jpg" alt="img"></p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-xposed%20framework.jpg" alt=""></p>
 <h1 id="Finally"><a href="#Finally" class="headerlink" title="Finally."></a>Finally.</h1><p>在我折腾的这段时间，我让：</p>
 <ul>
 <li>一个曾经半天待机就把自己耗没电的老机器变成能坚持一天.</li>
 <li>一个停留在安卓 5.0.x 时代，还有着辣鸡到炸裂的系统 UI 的老机器吃上 Android Nougat.</li>
 <li>一个可自定义东西少之又少的机器，拥有上帝之手，整个系统尽在掌控.</li>
 </ul>
-<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-battery-drain.jpg" alt="img"></p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-battery-drain.jpg" alt=""></p>
 <blockquote>
 <p>是黄书，但也是好书，一本黄书，写得人民群众手不释纸，夜不能寐，虽不能催泪，至少能催情。人民群众喜欢读，自己读了，还要给朋友读，甭管黄不黄，都是好书。</p>
 </blockquote>
 <p>晚安。</p>
-<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-ECD88335-584A-41CE-B44C-E0BC365BC5BF.JPG" alt="img"></p>
+<p><img src="http://owkccdyrm.bkt.clouddn.com/blog/2018-01-20-ECD88335-584A-41CE-B44C-E0BC365BC5BF.JPG" alt=""></p>
 <p>这是我的第二只猫猫，他叫小脑斧。</p>
 <p><br></p>
 <p><br></p>

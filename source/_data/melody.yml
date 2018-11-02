@@ -13,12 +13,11 @@ theme_color:
 # Main menu navigation
 # ---------------
 menu:
-  主页: /
-  文章目录: /archives
-  文章标签: /tags
+  文章全览: /archives
+  内容标签: /tags
   与我相关: /about
   500px: https://500px.com/spencerwoo98
-  即刻关注: https://web.okjike.com/user/4DDA0425-FB41-4188-89E4-952CA15E3C5E/post
+  💡: https://spencerwoo.com/dowww/
   #XXX: /xxx
 
 # Favicon
@@ -50,8 +49,10 @@ code_word_wrap: true # or false
 # Nav settings
 # ---------------
 social:
+  rss: /atom.xml
   github: https://github.com/spencerwooo
   instagram: https://www.instagram.com/vertigo_woo98
+  telegram: https://t.me/Spencer_Woo
 
 # Algolia search
 # ---------------

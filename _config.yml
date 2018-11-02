@@ -4,7 +4,7 @@
 
 # Site
 title: Spencer Woo
-subtitle: 啊，你在看我的主页。
+subtitle: 啊，你在看我的主页
 description:
 keywords:
 author: Spencer Woo
@@ -74,6 +74,16 @@ algolia:
   applicationID: 'N0H6VWDJAW'
   apiKey: 'b848ec2f6e2e471694f4316fc8a350a5'
   indexName: 'blog_search'
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

@@ -5,7 +5,7 @@ date: 2018-06-16 22:40:40
 top_img: "https://i.loli.net/2018/06/17/5b25e3d258313.jpg"
 tags:
 	- tutorial
-	- sexy moves
+	- sexy-moves
 ---
 
 > 本篇文章在 macOS 下编写， 在 Windows 下的情况可能不尽相同，请根据自己系统情况进行自行改善。

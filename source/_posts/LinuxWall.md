@@ -4,7 +4,7 @@ date: 2018-04-29 21:34:37
 subtitle: Ubuntu and deepin optimized.
 top_img: https://i.loli.net/2018/04/29/5ae5cd8e9b854.jpg
 tags:
-    - sexy moves
+    - sexy-moves
     - github
 ---
 

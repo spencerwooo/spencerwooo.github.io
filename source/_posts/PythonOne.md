@@ -5,7 +5,7 @@ date: 2018-04-26 19:09:27
 top_img: https://i.loli.net/2018/04/26/5ae1b8e56b358.jpg
 tags:
     - code
-    - sexy moves
+    - sexy-moves
     - github
 ---
 

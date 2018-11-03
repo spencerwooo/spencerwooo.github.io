@@ -8,7 +8,7 @@ tags:
    - tutorial
    - code
    - atom
-   - sexy moves
+   - sexy-moves
    - sspai
 ---
 

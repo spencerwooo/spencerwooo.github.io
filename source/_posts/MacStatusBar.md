@@ -4,7 +4,7 @@ date: 2018-05-29 15:42:50
 subtitle: 一点微小的工作
 top_img: https://source.unsplash.com/1NTFSnV-KLs/1600x900
 tags:
-    - sexy moves
+    - sexy-moves
     - github
     - sspai
 ---

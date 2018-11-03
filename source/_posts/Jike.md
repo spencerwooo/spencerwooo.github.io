@@ -4,7 +4,7 @@ date: 2018-10-30 21:22:59
 subtitle: 牛逼，绝了，学习了。
 top_img: https://i.loli.net/2018/11/01/5bda84a5a22ab.png
 tags:
-    - sexy moves
+    - sexy-moves
     - fragments
 ---
 

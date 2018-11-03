@@ -5,7 +5,7 @@ subtitle: This noisy world.
 top_img: "https://i.loli.net/2018/03/29/5abcdbd8eacb0.jpg"
 categories: "碎碎念"
 tags:
-	- sexy moves
+	- sexy-moves
 	- fragments
 ---
 

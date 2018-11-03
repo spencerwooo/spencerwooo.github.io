@@ -5,7 +5,7 @@ subtitle: A greasy man.
 top_img: "https://i.loli.net/2018/04/19/5ad886e4bb755.jpg"
 categories: "碎碎念"
 tags:
-	- sexy moves
+	- sexy-moves
 	- fragments
 ---
 

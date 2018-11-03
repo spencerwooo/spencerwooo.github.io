@@ -7,7 +7,7 @@ tags:
    - tutorial
    - code
    - sublime text
-   - sexy moves
+   - sexy-moves
 ---
 
 ### 写在前面的话

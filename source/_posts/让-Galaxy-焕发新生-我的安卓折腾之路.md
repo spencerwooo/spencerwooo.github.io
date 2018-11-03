@@ -7,7 +7,7 @@ date: 2018-01-20 20:09:56
 tags:
     - code
     - android
-    - sexy moves
+    - sexy-moves
 ---
 
 > 世界就是这样告终，不是嘭的一声，而是嘘的一声。

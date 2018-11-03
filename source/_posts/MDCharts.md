@@ -4,7 +4,7 @@ date: 2018-09-10 20:14:55
 subtitle: 啊，指尖舞动算法美。
 top_img: https://i.loli.net/2018/09/10/5b96684035553.png
 tags:
-    - sexy moves
+    - sexy-moves
     - tutorial
     - sspai
 ---

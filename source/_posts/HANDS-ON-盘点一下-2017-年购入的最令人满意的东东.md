@@ -4,7 +4,7 @@ subtitle: 最好的当然是 Airpods 啦
 date: 2018-01-04 16:58:04
 top_img: "http://owkccdyrm.bkt.clouddn.com/blog/2018-01-04-joanna-kosinska-289519.jpg"
 tags:
-    - sexy moves
+    - sexy-moves
     - hands on
 ---
 

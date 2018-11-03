@@ -6,7 +6,7 @@ top_img: "https://i.loli.net/2018/01/28/5a6dbdff9ad3f.jpg"
 tags:
 	- code
 	- mac
-	- sexy moves
+	- sexy-moves
 ---
 
 > 曾踏月而来

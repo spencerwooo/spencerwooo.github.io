@@ -4,7 +4,7 @@ subtitle: To Vow Tim Pan.
 date: 2017-12-06 16:42:54
 tags:
 	- tutorial
-	- sexy moves
+	- sexy-moves
 ---
 
 > 本文首发于[知乎 - 如何用手机拍 Vlog？](http://www.zhihu.com/question/65198828/answer/269329730)

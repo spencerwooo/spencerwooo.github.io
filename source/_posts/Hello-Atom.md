@@ -6,7 +6,7 @@ top_img: "http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-robby-schlegel-48938.
 tags:
     - code
     - sublime text
-    - sexy moves
+    - sexy-moves
 ---
 
 ![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-golang.jpg)

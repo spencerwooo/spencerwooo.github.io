@@ -4,7 +4,7 @@ date: 2018-07-30 23:32:08
 subtitle: An image API displaying random pictures curated by Simple Desktops.
 top_img: "https://i.loli.net/2018/07/31/5b5f3cde5cc6a.jpg"
 tags:
-   - sexy moves
+   - sexy-moves
    - tutorial
    - code
    - github

@@ -6,7 +6,7 @@ date: 2017-09-22 13:57:50
 categories: "摄影"
 tags:
 	- tutorial
-	- sexy moves
+	- sexy-moves
 	- photography
 ---
 

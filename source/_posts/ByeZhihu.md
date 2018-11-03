@@ -5,7 +5,7 @@ subtitle:  A world with no ADs.
 top_img: "https://source.unsplash.com/qhixFFO8EWQ/1600x900"
 categories: "碎碎念"
 tags:
-	- sexy moves
+	- sexy-moves
 	- fragments
 ---
 

@@ -4,7 +4,7 @@ date: 2018-07-19 15:19:16
 subtitle: 从 macOS 转换到 Windows 生态圈的自我修养
 top_img: "https://i.loli.net/2018/07/18/5b4e145827a18.png"
 tags:
-   - sexy moves
+   - sexy-moves
    - tutorial
    - sspai
 ---

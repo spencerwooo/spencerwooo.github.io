@@ -5,7 +5,7 @@ subtitle: Dumb ways to code 2.
 top_img: https://i.loli.net/2018/04/28/5ae497625015a.jpg
 tags:
     - code
-    - sexy moves
+    - sexy-moves
     - github
 ---
 

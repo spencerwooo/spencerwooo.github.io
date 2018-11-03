@@ -7,7 +7,7 @@ tags:
     - code
     - Java
     - Linux
-    - sexy moves
+    - sexy-moves
 ---
 
 # [金旭亮](http://www.jinxuliang.com/MainWebSite)真是个可怕的人

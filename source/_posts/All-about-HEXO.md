@@ -5,7 +5,7 @@ date: 2017-12-13 15:30:37
 tags:
 	- tutorial
 	- code
-  - sexy moves
+  - sexy-moves
 ---
 
 ![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-13-hexo_logo.jpg)

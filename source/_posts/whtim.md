@@ -4,7 +4,7 @@ date: 2018-08-11 20:05:08
 subtitle: wht.im - The cutting edge of simplicity.
 top_img: "https://i.loli.net/2018/08/11/5b6ef58f31588.png"
 tags:
-   - sexy moves
+   - sexy-moves
    - tutorial
    - sspai
 ---

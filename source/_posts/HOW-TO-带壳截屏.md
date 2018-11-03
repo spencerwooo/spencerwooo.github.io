@@ -6,7 +6,7 @@ categories: "教程向"
 top_img: "https://i.loli.net/2018/04/01/5ac0c41a4d45e.jpg"
 tags:
 	- tutorial
-	- sexy moves
+	- sexy-moves
 ---
 
 > 本文首发于我的博客：[HOW TO | iPhone 带壳截屏 终极体验指北](https://spencerwoo.com/2018/04/01/HOW-TO-%E5%B8%A6%E5%A3%B3%E6%88%AA%E5%B1%8F/)

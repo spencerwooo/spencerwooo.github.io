@@ -6,7 +6,7 @@ date: 2017-09-20 14:00:35
 tags:
 	- code
 	- sublime text
-	- sexy moves
+	- sexy-moves
 ---
 
 Why you should use Sublime Text 3 as your text editor.

@@ -1,7 +1,7 @@
 ---
 title: HANDS ON | Sony 1000XM3 我的首款降噪耳机
 date: 2018-11-03 13:44:25
-top_img: https://i.loli.net/2018/11/03/5bdd643ba19c9.jpg
+top_img: https://i.loli.net/2018/11/03/5bdd8d31de838.png
 tags:
     - sexy-moves
     - hands-on

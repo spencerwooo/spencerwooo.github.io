@@ -85,11 +85,16 @@ block content
         a(href=url_for(item.path)).post-meta__tags #[=item.name]
   if (theme.QR_code)
     if (theme.QR_code.length > 0)
+      link(rel="stylesheet" href="/css/button.css")
+      script(src="/js/third-party/jquery.min.js")
+      script(src="/js/reward-button.js")
       .post-qr-code
-        each item in theme.QR_code
-          .post-qr-code-item
-            img.post-qr-code__img(src=(item.itemlist||item).img)
-            .post-qr-code__desc=(item.itemlist||item).text
+        button.post-qr-code-button 请喝咖啡
+        .post-qr-code-wrapper
+          each item in theme.QR_code
+            .post-qr-code-item
+              img.post-qr-code__img(src=(item.itemlist||item).img)
+              .post-qr-code__desc=(item.itemlist||item).text
   include includes/share/index.pug
   include includes/pagination.pug
   if (theme.adv && theme.adv.enable)

@@ -223,7 +223,7 @@ valine:
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
   verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
-  avatar: identicon # gravatar style https://valine.js.org/#/avatar
+  avatar: robohash # gravatar style https://valine.js.org/#/avatar
   lang: zh-cn # i18n: zh-cn/en
   placeholder: (/ω＼) 羞羞 🍳 # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header inf

@@ -80,23 +80,34 @@
 
 .jike {
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .jike .jike_btn {
+  background: #c96480;
   color: #fff;
-  padding: 0 1rem;
-  height: 1.8rem;
-  border-style: none;
-  background-color: #c96480;
+  padding: 0 1.2rem;
+  line-height: 1.6rem;
+  border: 1px solid #c96480;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .jike .jike_btn:hover {
   -webkit-animation: wobble-hor-top 1s both;
   animation: wobble-hor-top 1s both;
+  background: #fff;
+  color: #c96480;
+  border: 1px solid #c96480;
 }
 
 .jike .qr_code_img {
   display: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 18rem;
 }
 
 .post-qr-code .post-qr-code-button {

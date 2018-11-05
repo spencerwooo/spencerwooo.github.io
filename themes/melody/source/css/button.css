@@ -9,112 +9,114 @@
  * ----------------------------------------
  */
 @-webkit-keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
 
-    0%,
-    100% {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-    }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+    transform: translateX(-30px) rotate(6deg);
+  }
 
-    15% {
-        -webkit-transform: translateX(-30px) rotate(6deg);
-        transform: translateX(-30px) rotate(6deg);
-    }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+    transform: translateX(15px) rotate(-6deg);
+  }
 
-    30% {
-        -webkit-transform: translateX(15px) rotate(-6deg);
-        transform: translateX(15px) rotate(-6deg);
-    }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+    transform: translateX(-15px) rotate(3.6deg);
+  }
 
-    45% {
-        -webkit-transform: translateX(-15px) rotate(3.6deg);
-        transform: translateX(-15px) rotate(3.6deg);
-    }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+    transform: translateX(9px) rotate(-2.4deg);
+  }
 
-    60% {
-        -webkit-transform: translateX(9px) rotate(-2.4deg);
-        transform: translateX(9px) rotate(-2.4deg);
-    }
-
-    75% {
-        -webkit-transform: translateX(-6px) rotate(1.2deg);
-        transform: translateX(-6px) rotate(1.2deg);
-    }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+    transform: translateX(-6px) rotate(1.2deg);
+  }
 }
 
 @keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
 
-    0%,
-    100% {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-    }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+    transform: translateX(-30px) rotate(6deg);
+  }
 
-    15% {
-        -webkit-transform: translateX(-30px) rotate(6deg);
-        transform: translateX(-30px) rotate(6deg);
-    }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+    transform: translateX(15px) rotate(-6deg);
+  }
 
-    30% {
-        -webkit-transform: translateX(15px) rotate(-6deg);
-        transform: translateX(15px) rotate(-6deg);
-    }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+    transform: translateX(-15px) rotate(3.6deg);
+  }
 
-    45% {
-        -webkit-transform: translateX(-15px) rotate(3.6deg);
-        transform: translateX(-15px) rotate(3.6deg);
-    }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+    transform: translateX(9px) rotate(-2.4deg);
+  }
 
-    60% {
-        -webkit-transform: translateX(9px) rotate(-2.4deg);
-        transform: translateX(9px) rotate(-2.4deg);
-    }
-
-    75% {
-        -webkit-transform: translateX(-6px) rotate(1.2deg);
-        transform: translateX(-6px) rotate(1.2deg);
-    }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+    transform: translateX(-6px) rotate(1.2deg);
+  }
 }
 
-
 .jike {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .jike .jike_btn {
-    color: #fff;
-    padding: 0 1rem;
-    height: 1.8rem;
-    border-style: none;
-    background-color: #C96480;
+  color: #fff;
+  padding: 0 1rem;
+  height: 1.8rem;
+  border-style: none;
+  background-color: #c96480;
 }
 
 .jike .jike_btn:hover {
-    -webkit-animation: wobble-hor-top 1s both;
-    animation: wobble-hor-top 1s both;
+  -webkit-animation: wobble-hor-top 1s both;
+  animation: wobble-hor-top 1s both;
 }
 
 .jike .qr_code_img {
-    display: none;
+  display: none;
 }
 
 .post-qr-code .post-qr-code-button {
-    background-color: #fff;
-    color: #C96480;
-    padding: 0.1rem 1rem;
-    height: 2rem;
-    border: 1px solid #C96480;
+  background: #c96480;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0 1.2rem;
+  line-height: 1.6rem;
+  border: 1px solid #c96480;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .post-qr-code .post-qr-code-button:hover {
-    background: #C96480;
-    color: #fff;
+  background: #fff;
+  color: #c96480;
+  border: 1px solid #c96480;
 }
 
 .post-qr-code .post-qr-code-wrapper {
-    display: none;
+  display: none;
 }

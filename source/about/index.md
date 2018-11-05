@@ -17,7 +17,8 @@ top_img: "https://i.loli.net/2018/01/28/5a6d7a2d1ce68.jpg"
 - 我是 **少数派 Matrix 专栏作者**，在这里[**「少数派 - SpencerWoo」**](https://sspai.com/user/800610/posts)可以看到我的往期文章，少数派非付费内容我也都会在这里进行同步更新。
 - 我是 **即刻「编程话题优秀贡献者」**，即刻是一个友善、优秀的内容平台，有着微博的信息量，没有微博恼人的广告、垃圾的评论和恶俗的营销号，推荐大家下载使用。
 - 作为自己的本职，我还是个 **开发者**，在这里[「**GitHub - @spencerwooo**」](https://github.com/spencerwooo)可以看到我的个人项目。
-<link rel="stylesheet" type="text/css" href="/css/button.css"><script src="/js/third-party/jquery.min.js"></script><script src="/js/sp-button.js"></script><div class="jike"><button class="jike_btn">即刻关注</button><div class="qr_code_img"><img class="image" src="https://i.loli.net/2018/10/31/5bd947b278c0c.png" alt="Jike QR Code"></div></div>
+
+<link rel="stylesheet" type="text/css" href="/css/button.css"><script src="/js/third-party/jquery.min.js"></script><script src="/js/sp-button.js"></script><div class="jike"><span class="jike_btn">即刻关注</span><div class="qr_code_img"><img class="image" src="https://i.loli.net/2018/11/05/5bdfc8e98d5ca.jpg" alt="Jike QR Code"></div></div>
 
 ## 曾经的介绍 🎰
 

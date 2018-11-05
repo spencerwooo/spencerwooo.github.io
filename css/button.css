@@ -101,3 +101,20 @@
 .jike .qr_code_img {
     display: none;
 }
+
+.post-qr-code .post-qr-code-button {
+    background-color: #fff;
+    color: #C96480;
+    padding: 0.1rem 1rem;
+    height: 2rem;
+    border: 1px solid #C96480;
+}
+
+.post-qr-code .post-qr-code-button:hover {
+    background: #C96480;
+    color: #fff;
+}
+
+.post-qr-code .post-qr-code-wrapper {
+    display: none;
+}

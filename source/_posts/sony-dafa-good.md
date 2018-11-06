@@ -8,6 +8,8 @@ tags:
 ---
 
 > 🎧 没想到我这两年多剁手剁得最多的地方竟然是耳机。
+> 
+> 在少数派上阅读本文 > [Sony 1000XM3 | 我的首款降噪耳机](https://sspai.com/post/47794)
 
 从降噪耳机最初出现在我们的视野里面开始，Bose 和 Sony 就是行业老大哥的存在。Sony 在进军降噪耳机的行业之后，其 1000X 系列耳机就势不可挡，从第一代 MDR-1000X 开始便一发不可收拾。2018 年 8 月 30 日 Sony 在 IFA 2018 上发布了第三代降噪耳机：**Sony 1000XM3，即 Sony 1000X Mark III**。而从发布以来，各大测评与体验平台就对这个耳机不惜溢美之辞：「[Easily the best noise-cancelling headphones ever made.](https://www.trustedreviews.com/reviews/sony-wh-1000xm3) -- Trusted Reviews」「[SUPREME NOISE CANCELING](https://www.theverge.com/2018/9/11/17844914/sony-1000x-m3-review-noise-canceling-headphones) -- The Verge」「[值得更新的降噪旗舰](https://www.ifanr.com/1115745) -- 爱范儿」等等。当然，这次的 1000XM3 也确实有着这样的大幅提升：
 

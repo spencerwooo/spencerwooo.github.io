@@ -50,7 +50,7 @@ top_img: "https://i.loli.net/2018/01/28/5a6d7a2d1ce68.jpg"
 
 ---
 
-💡 Spencer's Blog © Spencer Woo. Released under the CC BY-NC-ND 4.0 International License.
+💡 Spencer's Blog © Spencer Woo. Released under the [CC BY-NC-SA 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Authored and maintained by Spencer Woo.
 

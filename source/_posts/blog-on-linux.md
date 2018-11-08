@@ -25,7 +25,9 @@ tags:
 - 有 Unix 操作环境
 - 支持 Photoshop，支持 Davinci
 
-macOS 是肯定极为符合我的需求的了。Windows 也还行，如果算上 WSL 的话。Linux 是目前一个值得考虑的问题。不得不承认，Deepin Desktop Environment 确实还可以，不是有设计感，而是像 macOS，这样就很讨人喜欢了。
+macOS 是肯定极为符合我的需求的了。Windows 也还行，如果算上 WSL 的话。Linux 是目前一个值得考虑的问题。
+
+不得不承认，Deepin Desktop Environment 确实还可以：「不是有设计感，而是像 macOS」这样就很讨人喜欢了。
 
 **并且，Linux 的字体渲染真的甩 Windows 几条街。**
 

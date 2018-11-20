@@ -3,12 +3,19 @@
 # ---------------
 theme_color:
   enable: true
-  main: "#C96480"
-  paginator: "#5CAEAE"
-  button_hover: "#E9C46A"
-  text_selection: "#5CAEAE"
-  link_color: "#C96480"
-  hr_color: "#C96480"
+  main: "#24292e"
+  paginator: "#24292e"
+  button_hover: "#C96480"
+  text_selection: "#C96480"
+  link_color: "#24292e"
+  hr_color: "#24292e"
+  # enable: true
+  # main: "#C96480"
+  # paginator: "#5CAEAE"
+  # button_hover: "#E9C46A"
+  # text_selection: "#5CAEAE"
+  # link_color: "#C96480"
+  # hr_color: "#C96480"
 
 # Main menu navigation
 # ---------------
@@ -123,7 +130,7 @@ cdn:
 # ---------------
 avatar: https://i.loli.net/2018/07/17/5b4db9b098c40.jpg
 
-top_img: /asset/header.png # false or url of img 
+top_img: https://api.spencerwoo.com # false or url of img 
 
 post_meta:
   date_type: created # created or updated 

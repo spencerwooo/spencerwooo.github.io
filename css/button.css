@@ -84,11 +84,11 @@
 }
 
 .jike .jike_btn {
-  background: #c96480;
+  background: #C492B1;
   color: #fff;
   padding: 0 1.2rem;
   line-height: 1.6rem;
-  border: 1px solid #c96480;
+  border: 1px solid #C492B1;
   display: inline-block;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -98,8 +98,8 @@
   -webkit-animation: wobble-hor-top 1s both;
   animation: wobble-hor-top 1s both;
   background: #fff;
-  color: #c96480;
-  border: 1px solid #c96480;
+  color: #C492B1;
+  border: 1px solid #C492B1;
 }
 
 .jike .qr_code_img {
@@ -110,12 +110,12 @@
 }
 
 .post-qr-code .post-qr-code-button {
-  background: #c96480;
+  background: #C492B1;
   color: #fff;
   margin-top: 1rem;
   padding: 0 1.2rem;
   line-height: 1.6rem;
-  border: 1px solid #c96480;
+  border: 1px solid #C492B1;
   display: inline-block;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -123,8 +123,8 @@
 
 .post-qr-code .post-qr-code-button:hover {
   background: #fff;
-  color: #c96480;
-  border: 1px solid #c96480;
+  color: #C492B1;
+  border: 1px solid #C492B1;
 }
 
 .post-qr-code .post-qr-code-wrapper {

@@ -1112,6 +1112,7 @@ footer {
 #pagination {
   overflow: hidden;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
 #pagination .pagination {
@@ -1288,7 +1289,7 @@ footer {
 #content-inner h6:before {
   position: absolute;
   top: calc(50% - 0.35rem);
-  left: 0;
+  right: 0;
   color: #c96480;
   content: "\f0c1";
   font: normal normal normal 14px/1 FontAwesome;
@@ -1305,7 +1306,7 @@ footer {
 #content-inner h4:hover,
 #content-inner h5:hover,
 #content-inner h6:hover {
-  padding-left: 1.1rem;
+  padding-left: 0.2rem;
 }
 #content-inner h1:hover:before,
 #content-inner h2:hover:before,
@@ -1315,65 +1316,29 @@ footer {
 #content-inner h6:hover:before {
   color: #4d7ea8;
 }
-#content-inner h1 {
-  padding-left: 1.1rem;
-}
 #content-inner h1:before {
   top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
   font-size: 1rem;
-}
-#content-inner h1:hover {
-  padding-left: 1.2rem;
-}
-#content-inner h2 {
-  padding-left: 1rem;
 }
 #content-inner h2:before {
   top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
   font-size: 0.9rem;
 }
-#content-inner h2:hover {
-  padding-left: 1.1rem;
-}
-#content-inner h3 {
-  padding-left: 0.9rem;
-}
 #content-inner h3:before {
   top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
   font-size: 0.8rem;
-}
-#content-inner h3:hover {
-  padding-left: 1rem;
-}
-#content-inner h4 {
-  padding-left: 0.8rem;
 }
 #content-inner h4:before {
   top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
   font-size: 0.7rem;
 }
-#content-inner h4:hover {
-  padding-left: 0.9rem;
-}
-#content-inner h5 {
-  padding-left: 0.7rem;
-}
 #content-inner h5:before {
   top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
   font-size: 0.6rem;
 }
-#content-inner h5:hover {
-  padding-left: 0.8rem;
-}
-#content-inner h6 {
-  padding-left: 0.7rem;
-}
 #content-inner h6:before {
   top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
   font-size: 0.6rem;
-}
-#content-inner h6:hover {
-  padding-left: 0.8rem;
 }
 #post-content {
   margin-bottom: 1rem;
@@ -1424,7 +1389,7 @@ footer {
   transition: all 0.3s ease-out;
 }
 #post-content ol li:before {
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 0.6rem;
@@ -1438,7 +1403,7 @@ footer {
   border-color: #c492b1;
 }
 #post-content ul li:before {
-  top: 10px;
+  top: 12px;
   margin-left: 0.45rem;
   width: 0.3rem;
   height: 0.3rem;

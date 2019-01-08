@@ -1,12 +1,12 @@
 headStyle(fontsize)
-  padding-left: unit(fontsize + 0.1, "rem")
+  // padding-left: unit(fontsize + 0.1, "rem")
 
   &:before
     top: calc(50% - unit(fontsize / 2 - 0.05, "rem"))
     font-size: unit(fontsize, "rem")
 
   &:hover
-    padding-left: unit(fontsize + 0.2, "rem")
+    // padding-left: unit(fontsize, "rem")
 
 #post-title
   font-size: 1.4rem
@@ -128,7 +128,7 @@ headStyle(fontsize)
     &:before
       position: absolute
       top: calc(50% - 0.35rem)
-      left: 0
+      right: 0
       color: $light-red
       content: "\f0c1"
       font: normal normal normal 14px / 1 FontAwesome
@@ -136,7 +136,7 @@ headStyle(fontsize)
       transition: all 0.2s ease-out
 
     &:hover
-      padding-left: 1.1rem
+      padding-left: 0.2rem
 
       &:before
         color: $light-blue
@@ -197,7 +197,7 @@ headStyle(fontsize)
   ol
     li
       &:before
-        margin-top: 0.2rem
+        margin-top: 0.3rem
         width: w = 1.2rem
         height: h = w
         border-radius: 0.5 * w
@@ -215,7 +215,7 @@ headStyle(fontsize)
 
       &:before
         $w = 0.3rem
-        top: 10px
+        top: 12px
         margin-left: 0.45rem
         width: w = $w
         height: h = w

@@ -3,12 +3,12 @@
 # ---------------
 theme_color:
   enable: true
-  main: "#4D7EA8"
-  paginator: "#C492B1"
-  button_hover: "#C492B1"
-  text_selection: "#C492B1"
-  link_color: "#4D7EA8"
-  hr_color: "#4D7EA8"
+  main: "#27261C"
+  paginator: "#525D33"
+  button_hover: "#525D33"
+  text_selection: "#525D33"
+  link_color: "#27261C"
+  hr_color: "#27261C"
   # enable: true
   # main: "#C96480"
   # paginator: "#5CAEAE"
@@ -130,7 +130,9 @@ cdn:
 # ---------------
 avatar: https://i.loli.net/2018/07/17/5b4db9b098c40.jpg
 
-top_img: https://wx2.sinaimg.cn/large/e264e10ely1fyyds76eypj21hc0u0u0y.jpg # false or url of img 
+top_img: https://ws3.sinaimg.cn/large/006Q2GRYly1fzvzoqgatmj35o03s518w.jpg
+
+# https://wx2.sinaimg.cn/large/e264e10ely1fyyds76eypj21hc0u0u0y.jpg # false or url of img 
 
 post_meta:
   date_type: created # created or updated 

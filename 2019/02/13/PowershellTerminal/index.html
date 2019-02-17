@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="告别 Windows 终端的难看难用，从改造 PowerShell 的外观开始"><meta name="keywords" content="tutorial,sspai,windows,powershell"><meta name="author" content="Spencer Woo,undefined"><meta name="copyright" content="Spencer Woo"><title>告别 Windows 终端的难看难用，从改造 PowerShell 的外观开始 | Spencer Woo</title><link rel="shortcut icon" href="/asset/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.5.6"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?version=1.5.6"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="stylesheet" href="/css/cantarell.css"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.1.1/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.1.1/dist/instantsearch.min.js" defer></script><link rel="dns-prefetch" href="https://www.google-analytics.com"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-111664763-1', 'auto');
+ga('send', 'pageview');</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"N0H6VWDJAW","apiKey":"b848ec2f6e2e471694f4316fc8a350a5","indexName":"blog_search","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容:${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Console、Terminal-和-Shell-的区别"><span class="toc-number">1.</span> <span class="toc-text">Console、Terminal 和 Shell 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#默认的-PowerShell-终端"><span class="toc-number">2.</span> <span class="toc-text">默认的 PowerShell 终端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#改进-PowerShell-的字体"><span class="toc-number">2.1.</span> <span class="toc-text">改进 PowerShell 的字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更换-PowerShell-的配色"><span class="toc-number">2.2.</span> <span class="toc-text">更换 PowerShell 的配色</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三方终端"><span class="toc-number">3.</span> <span class="toc-text">第三方终端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Fluent-Terminal"><span class="toc-number">3.1.</span> <span class="toc-text">Fluent Terminal</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hyper"><span class="toc-number">3.2.</span> <span class="toc-text">Hyper</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Terminus"><span class="toc-number">3.3.</span> <span class="toc-text">Terminus</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://i.loli.net/2018/07/17/5b4db9b098c40.jpg"></div><div class="author-info__name text-center">Spencer Woo</div><div class="author-info__description text-center"></div><div class="follow-button"><a href="https://web.okjike.com/user/4DDA0425-FB41-4188-89E4-952CA15E3C5E/post" target="_blank">即刻关注</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">54</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">21</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">5</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">Woo 和他的朋友们</div><a class="author-info-links__name text-center" href="https://spencerwoo.com" target="_blank">Spencer</a><a class="author-info-links__name text-center" href="https://code.felinae98.cn" target="_blank">Felinae</a><a class="author-info-links__name text-center" href="http://tenkeyseven.com" target="_blank">Tenkey</a><a class="author-info-links__name text-center" href="http://blog.csdn.net/silvester123" target="_blank">Big Old Zan's CSDN</a><a class="author-info-links__name text-center" href="https://www.trafalga.cn" target="_blank">Brandon</a><a class="author-info-links__name text-center" href="https://www.ricky29.tech" target="_blank">Ricky</a><a class="author-info-links__name text-center" href="https://felixxiong.github.io" target="_blank">故事熊</a><a class="author-info-links__name text-center" href="https://chungzh.cn" target="_blank">ChungZH</a><a class="author-info-links__name text-center" href="https://samwanng.com" target="_blank">SamWanng</a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://i.loli.net/2019/02/17/5c695c54511bc.png)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Spencer Woo</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a><a class="site-page" href="/archives">文章全览</a><a class="site-page" href="/tags">内容标签</a><a class="site-page" href="/about">与我相关</a><a class="site-page" href="https://500px.com/spencerwoo98">500px</a><a class="site-page" href="https://spencerwoo.com/dowww/">💡</a></span></div><div id="post-info"><div id="post-title">告别 Windows 终端的难看难用，从改造 PowerShell 的外观开始</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-02-13</time><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">2.5k</span><span class="post-meta__separator">|</span><span>阅读时长: 8 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p><strong>终端</strong>，是用户与操作系统进行交互的最原始的输入输出环境，也是执行一些高级系统操作的必要工具。而 Windows 的终端「小黑框」，一直给大家一种「难看难用」的印象。接下来，我将介绍一些小方法，对 Windows 的终端环境改造，让其使用体验比肩 macOS 和 Linux 的终端。</p>
+<h2 id="Console、Terminal-和-Shell-的区别"><a href="#Console、Terminal-和-Shell-的区别" class="headerlink" title="Console、Terminal 和 Shell 的区别"></a>Console、Terminal 和 Shell 的区别</h2><p>打住打住，在动手魔改 Windows 终端之前，由于我们接下来要分别从「终端」和「命令行解释器」的角度去改造 Windows 终端环境，所以先听我絮叨一些专有名词：控制台（Console）、<strong>终端（Terminal）和命令行解释器（Shell）</strong>。</p>
+<p><strong>推荐阅读：</strong><a href="https://link.zhihu.com/?target=http%3A//unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con" target="_blank" rel="noopener">What is the exact difference between a ‘terminal’, a ‘shell’, a ‘tty’ and a ‘console’?</a></p>
+<p>对于现在来讲：</p>
+<ul>
+<li>我们打开 Windows 的那个「小黑框」（Command Prompt），实际上就是打开了一个 <strong>终端</strong>（Terminal）</li>
+<li>在终端里面「输入命令，得到结果」的交互程序，就是 <strong>命令行解释器</strong>（Shell）</li>
+</ul>
+<p>也正因如此，Windows 最新的 Shell 叫 Power<strong>Shell</strong>。（控制台 Console 则是相对古老的概念，是大型机物理意义上面的独立终端，我们在这里先不探讨这个话题。）使用 macOS 和 Linux 的同学如果听说过 <code>bash</code> 和 <code>zsh</code> 的话，它们同样也是 Shell。</p>
+<p>打个比方，Terminal 就像是一个人的衣服，可以有各种颜色、形状甚至功能；那么 Shell 则是这个人，你和他沟通来获得信息，并且他可以在与你沟通的过程中事先告诉你许多信息、提醒，甚至自动帮你补充你想说的话。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695b7002661.gif" alt="Demo"></p>
+<p>就像我前面提到的：PowerShell 是 Windows 新一代 Shell。而大家可能更为了解的「小黑框 Command Prompt」则是 Windows 向前兼容的古老作品，bug 多不说，还有诸多不方便。<strong>所以我们不用犹豫，直接使用 PowerShell 吧！</strong></p>
+<p>接下来，我们来先改造 Windows PowerShell 的外在「默认终端」。</p>
+<h2 id="默认的-PowerShell-终端"><a href="#默认的-PowerShell-终端" class="headerlink" title="默认的 PowerShell 终端"></a>默认的 PowerShell 终端</h2><p>Windows 为我们提供了一个默认的 PowerShell 终端，可以在 Windows 开始菜单上右键，点击「Windows PowerShell」打开。虽然默认终端有很多限制，但是其技术底层，响应就高效迅速，碾压其他所有第三方终端模拟器。我们从默认终端开始魔改。🍌</p>
+<h3 id="改进-PowerShell-的字体"><a href="#改进-PowerShell-的字体" class="headerlink" title="改进 PowerShell 的字体"></a>改进 PowerShell 的字体</h3><p>不得不承认的是，在中文环境下，默认 PowerShell 的「新宋体」确实很（zhen）不（ta）耐（ma）看（chou）。然而由于默认 PowerShell 终端是一个非常底层的应用，其界面甚至没有利用 WinForm、WPF 等通用 UI 渲染框架来实现，而是直接调用底层 Windows API 来实现，因此其字体要求非常严格。（这也是我们不能随随便便下载一个我们喜欢的等宽字体给 PowerShell 默认终端使用的缘故。）</p>
+<p>目前据我所知，唯一支持这一严格要求的字体（中文环境下）只有「Sarasa Gothic / 更纱黑体 / 更紗黑體 / 更紗ゴシック」（后面简称更纱黑体），可以从 <a href="https://github.com/be5invis/Sarasa-Gothic/releases" target="_blank" rel="noopener">更纱黑体的 GitHub 页面下载</a>。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695ba435056.png" alt=""></p>
+<p>下载解压安装更纱黑体之后，我们重新启动一个 PowerShell 终端，就可以在菜单栏右键，选择「属性」→「字体」，并在字体中选择更纱黑体了。适合终端使用的等宽字体是「等距更纱黑体 T SC」或「Sarasa Mono T SC」。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695bbbf239c.png" alt=""></p>
+<p>这样一来，我们就不必面对新宋体发愁了。</p>
+<h3 id="更换-PowerShell-的配色"><a href="#更换-PowerShell-的配色" class="headerlink" title="更换 PowerShell 的配色"></a>更换 PowerShell 的配色</h3><p>微软官方提供了一个更换 PowerShell 配色的小工具：<a href="https://github.com/Microsoft/console/tree/master/tools/ColorTool" target="_blank" rel="noopener">ColorTool.exe</a>，我们可以利用它来更换 PowerShell 的主题颜色。ColorTool 支持 iTerm 主题（以 <code>.itermcolors</code> 结尾的主题文件）。</p>
+<p>我们可以从 <a href="https://github.com/Microsoft/console/releases" target="_blank" rel="noopener">ColorTool 的 GitHub 页面</a> 下载这个小工具。当然，如果你使用 <a href="https://sspai.com/post/52496" target="_blank" rel="noopener">Scoop</a>，也可以这样安装：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scoop install colortool</span><br></pre></td></tr></table></figure>
+<p>值得注意的是，如果你是直接从 GitHub 上面下载了 <code>colortool.zip</code> 并解压，<code>colortool.exe</code> 的路径就并没有自动加入环境变量，所以你没有办法全局调用这个工具。因此我更加推荐利用 Scoop 这个优质的包管理来安装 ColorTool。</p>
+<p><strong>推荐阅读：</strong><a href="https://sspai.com/post/52496" target="_blank" rel="noopener">「一行代码」搞定软件安装卸载，用 Scoop 管理你的 Windows 软件</a></p>
+<p>ColorTool 使用非常简单。工具自带了几种主题，我们可以利用下面这个命令进行查看：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">colortool -s <span class="comment"># -s 代表 schemes</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2019/02/17/5c695bcc44af3.png" alt=""></p>
+<p>其中前面列出的几个 <code>.ini</code> 和 <code>.itermcolors</code> 就是主题配置文件，我们可以直接通过下面这个命令设置主题：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 临时查看</span></span><br><span class="line">colortool &lt;主题名称&gt;</span><br><span class="line"><span class="comment"># 定义默认值</span></span><br><span class="line">colortool -d &lt;主题名称&gt;</span><br></pre></td></tr></table></figure>
+<p>比如我们希望将主题配色更换为 <code>OneHalfDark.itermcolors</code>，只需要输入下面这个命令就可以更换并预览更新：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">colortool OneHalfDark</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.loli.net/2019/02/17/5c695bdff21f9.gif" alt=""></p>
+<p>由于 ColorTool 直接支持 iTerm 主题配置文件，因此我们可以在 <a href="https://iterm2colorschemes.com/" target="_blank" rel="noopener">iterm2colorschemes</a> 这个网站找到我们想要的主题背景进行配置，方法和上面介绍的一样：在 PowerShell 中定位至你希望更换的主题文件，使用命令 <code>colortool &lt;主题名称&gt;.itermcolors</code> 进行配置即可。同时，如果你对上面的主题都不满意，你也可以直接在这个网站：<a href="https://terminal.sexy/" target="_blank" rel="noopener">terminal.sexy</a> 自行配置自己想要的主题，并通过同样的方式进行应用。</p>
+<h2 id="第三方终端"><a href="#第三方终端" class="headerlink" title="第三方终端"></a>第三方终端</h2><p>默认终端虽然响应迅速，但是其限制诸多，如果你对上面介绍的默认终端有所不满，也可以试一试下面这三个配置更方便，颜值更高的第三方终端模拟器。</p>
+<h3 id="Fluent-Terminal"><a href="#Fluent-Terminal" class="headerlink" title="Fluent Terminal"></a>Fluent Terminal</h3><p>Fluent Terminal 是现代的，也是我最推荐的终端。它是专属于 Windows 平台，利用 UWP 技术打造的颜值超高的终端模拟器。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695becd4110.png" alt=""></p>
+<p>Fluent Terminal 在 GitHub 上面开源，项目地址在：<a href="https://github.com/felixse/FluentTerminal" target="_blank" rel="noopener">felixse/FluentTerminal</a>。由于一些原因，作者并没有成功地将软件直接提交给微软商店上架，因此我们需要从 <a href="https://github.com/felixse/FluentTerminal/releases" target="_blank" rel="noopener">其 GitHub Release 页面</a> 下载安装它。通常情况下，如果你的 Windows 版本较新，可以直接使用 <code>No Dependencies</code> 的那个版本，不过如果接下来你安装过程出现问题，那么就使用第一个安装包。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695bf170d8a.png" alt=""></p>
+<p>解压之后，我们得到如下的文件目录：</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695bfb5614b.png" alt=""></p>
+<p>右键点击 <code>Install.ps1</code>，选择使用 PowerShell 运行，之后按照提示操作即可安装成功。</p>
+<p>Fluent Terminal 设置字体和主题颜色则简单得多：</p>
+<ul>
+<li><p>设置界面里，我们可以方便的选择合适的字体。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695c054aaff.png" alt=""></p>
+</li>
+<li><p>同时，我们也可以在 Profiles 里面将 PowerShell 设置为默认的 Shell。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695c0ccce56.png" alt=""></p>
+</li>
+<li><p>值得注意的是，Fluent Terminal 也支持 iTerm 主题配置文件，因此我们刚刚下载的主题同样可以在这里使用。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695c149acfd.png" alt=""></p>
+</li>
+</ul>
+<p>Fluent Terminal 是利用原生 Windows 10 最新的 UWP 技术打造而成，其响应速度仅稍逊于自带的默认 PowerShell 终端。值得推荐。👍</p>
+<h3 id="Hyper"><a href="#Hyper" class="headerlink" title="Hyper"></a>Hyper</h3><p>接下来介绍的 Hyper 以及下面的 Terminus，都是基于 Electron 的跨平台应用，配置方便、插件丰富、界面美丽。当然，避免不了的是 Electron 资源消耗大，打开和响应都没有前面介绍的快，但是它们的拓展性都非常强大，可以试一试。</p>
+<p>Hyper 也在 GitHub 上面开源，项目地址在：<a href="https://github.com/zeit/hyper" target="_blank" rel="noopener">zeit/hyper</a>，我们可以在 <a href="https://github.com/zeit/hyper/releases" target="_blank" rel="noopener">Hyper 的 GitHub Release 页面</a> 下载安装，也可以利用 <code>scoop install hyper</code> 来安装。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695c22c4d72.png" alt=""></p>
+<p>Hyper 的配置相对复杂，需要直接修改其设置文件 <code>.hyper.js</code>。这里我仅仅介绍如何配置 Hyper 的默认 Shell 和字体，以及如何安装主题、插件的内容。</p>
+<p>Hyper 配置的一切都发生在配置文件中，你可以通过快捷键 <code>Ctrl + ,</code> 或者直接定位至 <code>C:\Users\&lt;你的用户名&gt;\.hyper.js</code> 来打开配置文件。可以看到已经有很多配置项留给我们修改，其中：</p>
+<ul>
+<li>修改字体：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 以更纱黑体为例子</span></span><br><span class="line">fontFamily: <span class="string">'"Sarasa Mono T SC", monospace'</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改默认 Shell 为 PowerShell：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">shell: <span class="string">'C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe'</span>,</span><br><span class="line">shellArgs: [],</span><br><span class="line">env: &#123;&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装主题或其他插件：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 比如安装这个叫做 hyperterm-cobalt2-theme 的主题</span></span><br><span class="line">plugins: [<span class="string">"hyperterm-cobalt2-theme"</span>]</span><br></pre></td></tr></table></figure>
+<p>很简单，之后我们保存配置文件，Hyper 会自动重新加载，并下载相应的主题或插件并实时更新，只需要等待片刻即可看到我们的配置生效。Hyper 的社区很完善，有大量精美的主题和插件，我们可以在 <a href="https://hyper.is/plugins" target="_blank" rel="noopener">Hyper 插件</a> 寻找有趣的插件，在 <a href="https://hyper.is/themes" target="_blank" rel="noopener">Hyper 主题</a> 挑选配色方案，同时这个 <a href="https://github.com/bnb/awesome-hyper" target="_blank" rel="noopener">bnb/awesome-hyper</a> 整合仓库也可以参考很多。</p>
+<h3 id="Terminus"><a href="#Terminus" class="headerlink" title="Terminus"></a>Terminus</h3><p>Terminus 同样也在 GitHub 上面开源，项目地址在：<a href="https://github.com/Eugeny/terminus" target="_blank" rel="noopener">Eugeny/terminus</a>。其实我更推荐 Terminus，因为它原生支持了 Windows Fluent 背景，同时它的设置是 GUI 方式的，更用户友好。</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695c2ba04ad.png" alt=""></p>
+<p>安装 Terminus 很方便，我们一样可以从 <a href="">Terminus 的 GitHub Release 页面</a> 下载安装它，也可以利用 <code>scoop install terminus</code> 来安装。</p>
+<p>Terminus 也是为数不多的几个有 Fluent Design 背景的 Electron 应用，我们可以在下面这里开启 Fluent 背景渲染，并把 Background type 改为 Fluent：</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695c363db01.png" alt=""></p>
+<p>配置 Terminus 的字体、配色和默认 Shell 都很简单：</p>
+<ul>
+<li><p>在这里我们可以修改字体（Font）和配色主题（Color Scheme）：</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695c3e3c528.png" alt=""></p>
+</li>
+<li><p>在这里我们可以选择使用 PowerShell 作为默认的 Shell：</p>
+<p><img src="https://i.loli.net/2019/02/17/5c695c489ae43.png" alt=""></p>
+</li>
+</ul>
+<p>Terminus 的可玩性也很足，同样有很多插件可以安装，由于设置界面很清晰，我就不在这里一一列举了。</p>
+<p>💻 这篇文章到这里也就大概结束了，我们：</p>
+<ul>
+<li>不仅介绍了如何修改默认终端，让我们不需要每天面对新宋体发愁</li>
+<li>还推荐了三个更现代的终端，供大家选择</li>
+</ul>
+<p>但是 Windows 终端美化之路还没有到尽头，接下来我还会继续介绍如何让 Power<strong>Shell</strong> 的 <strong>Shell</strong> 更炫酷，敬请期待。感谢阅读。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Spencer Woo</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://spencerwoo.com/2019/02/13/PowershellTerminal/">https://spencerwoo.com/2019/02/13/PowershellTerminal/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://spencerwoo.com" target="_blank">Spencer Woo</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/tutorial/">tutorial</a><a class="post-meta__tags" href="/tags/sspai/">sspai</a><a class="post-meta__tags" href="/tags/windows/">windows</a><a class="post-meta__tags" href="/tags/powershell/">powershell</a></div><link rel="stylesheet" href="/css/button.css"><script src="/js/third-party/jquery.min.js"></script><script src="/js/reward-button.js"></script><div class="post-qr-code"><span class="post-qr-code-button">请喝咖啡</span><div class="post-qr-code-wrapper"><div class="post-qr-code-item"><img class="post-qr-code__img" src="https://i.loli.net/2018/03/13/5aa7ae214b63f.jpg"><div class="post-qr-code__desc">WechatPay</div></div><div class="post-qr-code-item"><img class="post-qr-code__img" src="https://i.loli.net/2018/03/13/5aa7ae11339cd.jpg"><div class="post-qr-code__desc">AliPay</div></div></div></div><nav id="pagination"><div class="next-post pull-right"><a href="/2019/02/06/NoMacType/"><span>不输 MacType，这些优化思路也能让 Windows 字体细腻清晰</span><i class="fa fa-chevron-right"></i></a></div></nav><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">📧 关于邮箱：</span><span class="post-copyright-info">评论前请务必填入您的邮箱，要不然评论回复无法收到通知哦 o(*￣▽￣*)ブ</span></div><div class="post-copyright__type"><span class="post-copyright-meta">😎 关于头像：</span><span class="post-copyright-info">Valine 使用 Gravatar 作为头像。请到<a href="https://cn.gravatar.com/">「Gravatar」</a>官网注册账户并留下您的注册邮箱，头像会自然同步过来 ( •̀ ω •́ )y</span></div></div><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.1.9-beta9/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'05w1SFXH6ohhRP0SkK79fx4P-gzGzoHsz',
+  appKey:'EhTTYJV4vboGdRmAxBeIxCv0',
+  placeholder:'(/ω＼) 羞羞 🍳',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10'
+})</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2017 - 2019 By Spencer Woo</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text"><a href="https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv">这篇文章被大家看了<span id="busuanzi_value_page_pv"></span><span> 次 (/ω＼)</span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.6"></script><script src="/js/fancybox.js?version=1.5.6"></script><script src="/js/sidebar.js?version=1.5.6"></script><script src="/js/copy.js?version=1.5.6"></script><script src="/js/fireworks.js?version=1.5.6"></script><script src="/js/transition.js?version=1.5.6"></script><script src="/js/scroll.js?version=1.5.6"></script><script src="/js/head.js?version=1.5.6"></script><script src="/js/search/algolia.js"></script><div class="search-dialog" id="algolia-search"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

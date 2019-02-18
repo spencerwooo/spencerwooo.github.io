@@ -21,6 +21,8 @@ script:
   # - hexo generate
   # - hexo algolia
   - yarn run build
+  #  Add CNAME record 'spencerwoo.com' after each build
+  - echo "spencerwoo.com" > public/CNAME
 
 deploy:
   provider: pages

@@ -16,33 +16,36 @@ import Icon from './Icon.vue'
 
 const nameMap = {
   'github': {
-    title: 'GitHub',
+    title: 'GitHub'
   },
   'facebook': {
-    title: 'Facebook',
+    title: 'Facebook'
   },
   'twitter': {
-    title: 'Twitter',
+    title: 'Twitter'
   },
   'linkedin': {
-    title: 'LinkedIn',
+    title: 'LinkedIn'
   },
   'weibo': {
-    title: '新浪微博',
+    title: '新浪微博'
   },
   'zhihu': {
-    title: '知乎',
+    title: '知乎'
   },
   'douban': {
-    title: '豆瓣',
+    title: '豆瓣'
   },
+  'sspai': {
+    title: '少数派'
+  }
 }
 
 export default {
   name: 'IconSns',
 
   components: {
-    Icon,
+    Icon
   },
 
   props: {
@@ -50,28 +53,28 @@ export default {
     account: {
       type: String,
       required: false,
-      default: '',
+      default: ''
     },
 
     // Name of SNS
     name: {
       type: String,
-      required: true,
+      required: true
     },
 
     // Size of FontAwesome
     size: {
       type: String,
       required: false,
-      default: '25px',
-    },
+      default: '25px'
+    }
   },
 
   computed: {
     title () {
       return `${nameMap[this.name].title}: ${this.account}`
-    },
-  },
+    }
+  }
 }
 </script>
 

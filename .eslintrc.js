@@ -5,8 +5,4 @@ module.exports = {
     'plugin:vue/strongly-recommended',
     'standard',
   ],
-
-  rules: {
-    'comma-dangle': ['error', 'always-multiline'],
-  },
 }

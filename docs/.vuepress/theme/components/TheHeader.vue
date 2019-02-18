@@ -39,7 +39,7 @@ const generators = [
   'tessellation',
   // 'nestedSquares',
   'mosaicSquares',
-  'chevrons',
+  'chevrons'
 ]
 
 export default {
@@ -48,7 +48,7 @@ export default {
   components: {
     TransitionFadeSlide,
     TheHeaderNavbar,
-    TheHeaderBanner,
+    TheHeaderBanner
   },
 
   computed: {
@@ -62,13 +62,13 @@ export default {
         'background-repeat': 'no-repeat',
         'background-position': 'center',
         'background-attachment': 'scroll',
-        'background-image': `url(${this.background.url})`,
+        'background-image': `url(${this.background.url})`
       } : !this.$ssrContext ? {
         // avoid prerendering the geopattern in build stage
         // or the html files will be 14KB larger
-        'background-image': this.gpImg(),
+        'background-image': this.gpImg()
       } : {}
-    },
+    }
   },
 
   methods: {
@@ -77,8 +77,8 @@ export default {
     gpImg () {
       return this.background.useGeo
         ? GeoPattern.generate(this.gpString(), {
-          // color: '#9fe0f6',
-          generator: this.gpGenerator(),
+          color: this.$themeConfig.headerColor,
+          generator: this.gpGenerator()
         }).toDataUrl()
         : null
     },
@@ -89,8 +89,8 @@ export default {
 
     gpGenerator () {
       return generators[Math.floor(Math.random() * generators.length)]
-    },
-  },
+    }
+  }
 }
 </script>
 

@@ -1,7 +1,5 @@
 <template>
   <article class="post">
-    <PostMeta />
-
     <Content
       :key="$page.path"
       class="post-content"
@@ -29,7 +27,7 @@ export default {
   name: 'Post',
 
   components: {
-    PostMeta,
+    PostMeta
   },
 
   computed: {
@@ -43,7 +41,7 @@ export default {
 
     useVssue () {
       return this.$frontmatter['vssue'] !== false && (this.vssueTitle || this.vssueId)
-    },
-  },
+    }
+  }
 }
 </script>

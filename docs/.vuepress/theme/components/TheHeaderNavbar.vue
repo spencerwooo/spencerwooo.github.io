@@ -100,7 +100,7 @@ export default {
   padding 0.7rem 1.5rem
   border-bottom 1px solid $borderColor
   color $textColor
-  background-color alpha($navbarColor, 0.8)
+  background-color alpha($navbarColor, 1.0)
   transition all 0.5s ease-out
   overflow hidden
   &.fixed

@@ -1,9 +1,7 @@
-const path = require('path')
-
 module.exports = {
-  title: 'vuepress-theme-meteorlxy',
+  title: 'Spencer Woo',
 
-  description: 'Vuepress theme of meteorlxy\'s blog',
+  description: '啊，你在看我的首页',
 
   locales: {
     '/': {
@@ -11,42 +9,20 @@ module.exports = {
     },
   },
 
-  theme: path.resolve(__dirname, '../../lib'),
-
   themeConfig: {
     personalInfo: {
-      nickname: 'meteorlxy',
-      description: 'Happy Coding<br/>Happy Life',
-      email: 'meteor.lxy@foxmail.com',
-      location: 'Xi\'an City, China',
-      organization: 'Xi\'an Jiao Tong University',
+      nickname: 'Spencer Woo',
+      description: '啊，你在看我的首页',
+      email: 'spencerwoo98@gmail.com',
+      location: 'Beijing, China',
+      organization: 'Beijing Institute of Technology',
 
-      avatar: 'https://www.meteorlxy.cn/assets/img/avatar.jpg',
+      avatar: 'https://i.loli.net/2018/07/17/5b4db9b098c40.jpg',
 
       sns: {
         github: {
-          account: 'meteorlxy',
-          link: 'https://github.com/meteorlxy',
-        },
-        facebook: {
-          account: 'meteorlxy.cn',
-          link: 'https://www.facebook.com/meteorlxy.cn',
-        },
-        linkedin: {
-          account: 'meteorlxy',
-          link: 'http://www.linkedin.com/in/meteorlxy',
-        },
-        twitter: {
-          account: 'meteorlxy_cn',
-          link: 'https://twitter.com/meteorlxy_cn',
-        },
-        weibo: {
-          account: '@焦炭君_Meteor',
-          link: 'https://weibo.com/u/2039655434',
-        },
-        zhihu: {
-          account: 'meteorlxy.cn',
-          link: 'https://www.zhihu.com/people/meteorlxy.cn',
+          account: 'spencerwooo',
+          link: 'https://github.com/spencerwooo',
         },
         douban: {
           account: '159342708',
@@ -66,15 +42,15 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/', exact: true },
       { text: 'Posts', link: '/posts/', exact: false },
-      { text: 'More Pages', link: '/more-pages/', exact: false },
-      { text: 'Github', link: 'https://github.com/meteorlxy/vuepress-theme-meteorlxy' },
+      { text: 'About', link: '/about/', exact: false },
+      { text: 'Github', link: 'https://github.com/spencerwooo' },
     ],
 
     comments: {
-      owner: 'meteorlxy',
-      repo: 'vuepress-theme-meteorlxy',
-      clientId: 'cbda894952ba70c00666',
-      clientSecret: '1ade785ca693bf3092be5e5338720d5ee43672b7',
+      owner: 'spencerwooo',
+      repo: 'spencerwooo.github.io',
+      clientId: 'f656ebf81043361f059e',
+      clientSecret: '21247be6b66180d3c85fbf19c31f17ae92abd714',
     },
   },
 }

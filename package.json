@@ -1,22 +1,14 @@
 {
-  "name": "vuepress-theme-meteorlxy",
-  "version": "1.0.0-alpha.11",
-  "description": "Vuepress theme - Meteorlxy",
-  "author": "meteorlxy <meteor.lxy@foxmail.com>",
+  "name": "spencer-blog",
+  "version": "1.0.0",
+  "description": "Spencer's Blog",
+  "author": "spencerwoo <spencerwoo98@gmail.com>",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "keywords": [
     "vuepress",
-    "theme"
+    "blog"
   ],
-  "homepage": "https://github.com/meteorlxy/vuepress-theme-meteorlxy",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/meteorlxy/vuepress-theme-meteorlxy.git"
-  },
-  "bugs": {
-    "url": "https://github.com/meteorlxy/vuepress-theme-meteorlxy/issues"
-  },
   "scripts": {
     "dev": "vuepress dev posts --temp .temp",
     "build": "vuepress build posts --dest public",

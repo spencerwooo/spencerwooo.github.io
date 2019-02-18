@@ -14,11 +14,6 @@
     "build": "vuepress build posts --dest public",
     "lint": "eslint --fix --ext .js,.vue ."
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "@vssue/vuepress-plugin-vssue": "^0.5.1",
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.35",

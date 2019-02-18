@@ -10,9 +10,8 @@
     "blog"
   ],
   "scripts": {
-    "dev": "vuepress dev posts --temp .temp",
-    "build": "vuepress build posts --dest public",
-    "lint": "eslint --fix --ext .js,.vue ."
+    "dev": "vuepress dev posts --temp ./.temp",
+    "build": "vuepress build posts -d ./public --temp ./.temp"
   },
   "dependencies": {
     "@vssue/vuepress-plugin-vssue": "^0.5.1",

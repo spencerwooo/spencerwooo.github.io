@@ -5,12 +5,12 @@ module.exports = {
 
   head: [
     ['link', {
-      rel: 'icon',
-      href: '/assets/apple-touch-icon.png'
+      rel: 'apple-touch-icon',
+      href: '/assets/img/apple-touch-icon.png'
     }],
     ['link', {
       rel: 'shortcut icon',
-      href: '/assets/favicon.ico'
+      href: '/assets/img/favicon.ico'
     }],
     ['link', {
       rel: 'stylesheet',

@@ -4,8 +4,7 @@ date: 2018-04-29 21:34:37
 subtitle: Ubuntu and deepin optimized.
 top_img: https://i.loli.net/2018/04/29/5ae5cd8e9b854.jpg
 tags:
-    - sexy-moves
-    - github
+  - github
 ---
 
 # 设计初衷
@@ -55,7 +54,7 @@ tags:
 <br>
 
 <div align='center'>
-**【版权信息】** 
+**【版权信息】**
 </div>
 
 底图来自 Google Image Search: Material Design Wallpapers.
@@ -63,7 +62,7 @@ tags:
 Logo 和其他品牌类配色版权归属：
 
 - Ubuntu 母公司 The Canonical Group
-- Deepin 武汉深度科技有限公司 Deepin Technology Co., Ltd. 
+- Deepin 武汉深度科技有限公司 Deepin Technology Co., Ltd.
 <br>
 
 # 为什么 GitHub ？

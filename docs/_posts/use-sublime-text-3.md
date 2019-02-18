@@ -4,9 +4,7 @@ subtitle: Sublime Text you are my love.
 categories: "教程向" #文章分類目錄
 date: 2017-09-20 14:00:35
 tags:
-	- code
-	- sublime text
-	- sexy-moves
+  - code
 ---
 
 Why you should use Sublime Text 3 as your text editor.

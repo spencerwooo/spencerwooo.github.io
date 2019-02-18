@@ -3,10 +3,8 @@ title: 给 Scoop 加上这些软件仓库，让它变成强大的 Windows 软件
 date: 2019-02-05 22:31:15
 top_img: https://i.loli.net/2019/02/05/5c59a23fc884e.png
 categories: 教程向
-tags:    
-    - code
-    - sexy-moves
-    - windows
+tags:
+  - scoop
 ---
 
 > 在少数派上阅读本文：[给 Scoop 加上这些软件仓库，让它变成强大的 Windows 软件管理器](https://sspai.com/post/52710)

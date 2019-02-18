@@ -4,9 +4,7 @@ subtitle: Dumb ways to code 1.
 date: 2018-04-26 19:09:27
 top_img: https://i.loli.net/2018/04/26/5ae1b8e56b358.jpg
 tags:
-    - code
-    - sexy-moves
-    - github
+  - python
 ---
 
 > A python a day keeps the PM away.
@@ -29,7 +27,7 @@ tags:
 
 第一天遇到的问题是这样的：
 
-> **【第 0000 题】** 
+> **【第 0000 题】**
 >
 > 将你的 QQ 头像（或者微博头像）右上角加上红色的数字，类似于微信未读信息数量那种提示效果。（类似于图中效果）
 

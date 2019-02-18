@@ -5,8 +5,6 @@ top_img: "https://i.loli.net/2018/03/17/5aad086ecebcb.jpg"
 date: 2017-09-22 13:57:50
 categories: "摄影"
 tags:
-	- tutorial
-	- sexy-moves
 	- photography
 ---
 

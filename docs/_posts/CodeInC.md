@@ -4,10 +4,7 @@ subtitle: 蒻。
 categories: "教程向"
 date: 2017-09-21 19:47:14
 tags:
-   - tutorial
-   - code
-   - sublime text
-   - sexy-moves
+	- sublime text
 ---
 
 ### 写在前面的话
@@ -17,7 +14,7 @@ tags:
 学弟问我，大一开始学 C 语言，很难的样子。
 
 第一堂课不知道老师说了些什么。不知道写什么，也不知道用什么写。
-  
+
 是啊，为什么要用 C 语言，作为一门入门编程语言呢。日常唉声叹气。
 
 ## The C Programming Language
@@ -25,7 +22,7 @@ tags:
 C 语言是一门悠久的语言，悠久到1972年。
 
 然而过了40年，现在教我们入门 C 语言的老师们，仍在叫我们用 [VC++ 6.0](http://baike.baidu.com/item/Microsoft%20Visual%20C++%206.0/8120077?fr=aladdin&fromid=2703807&fromtitle=vc%2B%2B6.0)，这个来自上个世纪，和我一般大小的，1998年的 IDE。
-  
+
 心疼。
 
 ## HOW TO
@@ -84,7 +81,7 @@ Integrated Development Environment
 	- [Why you should use Sublime Text 3 as your text editor.](http://spencerwoo98.github.io/2017/09/20/3/)
 	- [如何优雅的在 macOS 上编译调试 C++ 程序？](http://zhuanlan.zhihu.com/p/28045283)
 	希望进阶的同学，敬请等待更新。
-  
+
 ## 编译运行？喵喵喵？？
 
 **C语言源代码**
@@ -111,13 +108,13 @@ Integrated Development Environment
 4. 运行：`F9`
 
 最后我们的成功标志，就是在黑框框里面（终端/Console/CMD）出现 Hello World. 的字样。
-  
+
 FYI，如果你在 Mac 上面在终端里面用 gcc 编译运行，出现的效果大概是这个样子。
 
 ![](http://owkccdyrm.bkt.clouddn.com/Jietu20170921-204928@2x.jpg)
 
 这代表我们的代码执行成功。
-  
+
 
 #### 下面这个视频是我在自己的 MacBook 上面用 Sublime Text 3 创建文件 helloworld.c，在终端用 gcc 命令编译运行的过程。
 
@@ -128,9 +125,9 @@ FYI，如果你在 Mac 上面在终端里面用 gcc 编译运行，出现的效�
 学习新的语言都是艰难的过程.
 Learning curve 很陡峭。
 共勉。
-  
+
 毕竟，3年前的我，还不知道什么是 gcc 呢。
-  
+
 鞠躬。
-  
+
 ©2017 Spencer Woo

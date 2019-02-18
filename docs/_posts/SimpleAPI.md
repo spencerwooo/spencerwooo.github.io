@@ -4,11 +4,7 @@ date: 2018-07-30 23:32:08
 subtitle: An image API displaying random pictures curated by Simple Desktops.
 top_img: "https://i.loli.net/2018/07/31/5b5f3cde5cc6a.jpg"
 tags:
-   - sexy-moves
-   - tutorial
-   - code
-   - github
-   - sspai
+  - github
 ---
 
 [「一喵一图」](https://github.com/spencerwoo98/spencer-simple-desktop-api)：一个异常简单的随机图片 API，图源自极简主义桌面壁纸提供站点 → [Simple Desktops](http://simpledesktops.com) 🎉🎉🎉
@@ -80,7 +76,7 @@ https://api.spencerwoo.com
 **服务稳定全靠天，随时跑路不留名。**
 
 - Images at Simple Desktops are for personal use and for personal use only. They shouldn't be sold or reposted without the expressed written consent of the desktop creator. See [Simple Desktops](http://simpledesktops.com/about/) for more details.
-- A huge thank you to SM.MS for providing such a stable and awesome image hosting service. 
+- A huge thank you to SM.MS for providing such a stable and awesome image hosting service.
 - Server provided by [VULTR - The Infrastructure Cloud™](https://www.vultr.com/).
 
 项目经由 MIT License 发布。

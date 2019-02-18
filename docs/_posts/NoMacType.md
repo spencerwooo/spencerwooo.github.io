@@ -4,10 +4,7 @@ date: 2019-02-06 21:09:03
 top_img: https://i.loli.net/2019/02/17/5c695d3b2494d.png
 categories: 教程
 tags:
-  - tutorial
   - sspai
-  - windows
-  - font
 ---
 
 如何改善 Windows 的字体渲染是一个亘古不变的话题。长期以来，大家都有这样的一个印象：Windows 上面的字体渲染相比 macOS 没有那么细腻清晰。实际上，也确实是这个样子，由于 Windows 世界中参差不齐的硬件和向前兼容的「历史包袱」，Windows 新 UI 和新的渲染模式需要去兼容老旧的程序，往往也正是因为这些程序，给 Windows 用户「字体渲染模糊不清」的体验。

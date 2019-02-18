@@ -4,7 +4,7 @@ date: 2019-01-12 11:26:47
 top_img: https://i.loli.net/2019/01/12/5c395ec8d4635.png
 categories: 教程向
 tags:
-  - tutorial
+  - scoop
 ---
 
 > 在少数派上阅读本文：[「一行代码」搞定软件安装卸载，用 Scoop 管理你的 Windows 软件](https://sspai.com/post/52496)
@@ -108,7 +108,7 @@ scoop help
 
 ![](https://i.loli.net/2019/01/12/5c3960ec43d33.png)
 
-- 我们想要看看 Typora 的主页：`scoop home typora` 
+- 我们想要看看 Typora 的主页：`scoop home typora`
 
 ![](https://ws3.sinaimg.cn/large/e264e10ely1fz3ne1erlng21p30vw1ky.gif)
 

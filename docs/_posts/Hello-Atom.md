@@ -4,9 +4,7 @@ subtitle: I gave 'Sublime Text 3' up.
 date: 2017-12-26 21:39:24
 top_img: "http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-robby-schlegel-48938.jpg"
 tags:
-    - code
-    - sublime text
-    - sexy-moves
+  - atom
 ---
 
 ![](http://owkccdyrm.bkt.clouddn.com/blog/2017-12-27-golang.jpg)

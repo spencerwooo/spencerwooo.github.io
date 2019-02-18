@@ -4,10 +4,7 @@ date: 2018-10-01 16:16:22
 subtitle: 在 Windows 上面用 WSL 优雅开发
 top_img: "https://i.loli.net/2018/10/01/5bb1d3f780d16.jpg"
 tags:
-   - sexy-moves
-   - tutorial
-   - sspai
-   - github
+  - github
 ---
 
 首先达成一个共识：Windows 给编程初学者带来了很大的困难。比如 **缺乏好用的包管理系统**、**终端环境难看难用** 和 **环境变量不易配置** 等等，这些都让 Windows 在开发体验上难以匹敌 Linux 甚至 macOS（不包括一定需要 IDE 支持的语言，比如 Java 和 .NET 等等）。然而 Linux 桌面环境虽然在 2018 年的今天有很大的改善，但是相比 Windows 还是有很大的差距，程序假死、卡住、崩掉的情况依旧存在。（还有 Linux 每一个发行版几乎都没有能够像 Apple 和巨硬一样很好的支持 Emoji 啊！😥）

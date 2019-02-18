@@ -5,7 +5,7 @@ date: 2018-04-13 21:41:46
 categories: "碎碎念"
 top_img: "https://i.loli.net/2018/04/13/5ad0c449423ac.jpg"
 tags:
-   - sexy-moves
+  - sexy-moves
 ---
 
 > 仙人游碧峰，处处笙歌发。
@@ -86,7 +86,7 @@ tags:
 
 <img src="https://i.loli.net/2018/04/13/5ad0cc83ace98.gif" alt="tenkey_gif" width="400px"/>
 
-<img src="https://i.loli.net/2018/04/13/5ad0cc9985c16.gif" alt="cherry_gif" width="400px"/> 
+<img src="https://i.loli.net/2018/04/13/5ad0cc9985c16.gif" alt="cherry_gif" width="400px"/>
 
 <div style="text-align: center; font-size: 14px; color: #787D7B"; >*Image credit: Spencer Woo*</div>
 

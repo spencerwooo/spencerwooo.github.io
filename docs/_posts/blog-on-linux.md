@@ -4,8 +4,6 @@ date: 2018-11-07 13:22:24
 top_img: "https://i.loli.net/2018/11/07/5be28ccf0559c.jpg"
 categories: "碎碎念"
 tags:
-	- sexy-moves
-	- fragments
 	- Linux
 ---
 

@@ -4,9 +4,7 @@ subtitle: A heart-felt hands-on review.
 date: 2017-11-08 18:43:36
 top_img: "http://owkccdyrm.bkt.clouddn.com/Full_7.jpg"
 tags:
-	- sexy-moves
-	- hands on
-
+	- hands-on
 ---
 
 **这耳机太毒了。**

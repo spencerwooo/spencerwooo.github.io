@@ -4,10 +4,7 @@ subtitle: Teacher Kim's curse.
 date: 2017-11-25 23:51:29
 top_img: "http://owkccdyrm.bkt.clouddn.com/uros-jovicic-322314%281%29.jpg"
 tags:
-    - code
-    - Java
-    - Linux
-    - sexy-moves
+  - java
 ---
 
 # [金旭亮](http://www.jinxuliang.com/MainWebSite)真是个可怕的人

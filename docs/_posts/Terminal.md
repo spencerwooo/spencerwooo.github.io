@@ -5,7 +5,6 @@ date: 2018-06-16 22:40:40
 top_img: "https://i.loli.net/2018/06/17/5b25e3d258313.jpg"
 tags:
 	- tutorial
-	- sexy-moves
 ---
 
 > 本篇文章在 macOS 下编写， 在 Windows 下的情况可能不尽相同，请根据自己系统情况进行自行改善。
@@ -32,7 +31,7 @@ tags:
 
 # 0x01 抛弃系统自带终端
 
-不论是 macOS 还是 Windows 下，我都不推荐使用系统自带终端。无论是可拓展性还是可编程性都被「系统自带」这样的特点限制。特别是 Windows 下的万恶之源「小黑框」，在 8012 年真的是一无是处。它所用的等宽字体 (Monospace) 甚至是宋体 :poop:. 
+不论是 macOS 还是 Windows 下，我都不推荐使用系统自带终端。无论是可拓展性还是可编程性都被「系统自带」这样的特点限制。特别是 Windows 下的万恶之源「小黑框」，在 8012 年真的是一无是处。它所用的等宽字体 (Monospace) 甚至是宋体 :poop:.
 
 今天的主角是一款基于 `Electron` 的跨平台终端 Terminal Emulator: **Hyper**.
 
@@ -84,7 +83,7 @@ Hyper 的设置选项是一个 `.hyper.js` 文件，可以进行具体的样式�
 
 ## 安装
 
-首先你的系统上需要有 `curl` 或 `wget` 与 `git`. 
+首先你的系统上需要有 `curl` 或 `wget` 与 `git`.
 
 之后，通过运行：
 

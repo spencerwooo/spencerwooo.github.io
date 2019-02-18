@@ -5,7 +5,6 @@ date: 2018-01-26 20:18:24
 top_img: "https://i.loli.net/2018/01/28/5a6d7b196f31a.jpg"
 tags:
     - code
-    - sexy-moves
 ---
 
 ![](https://i.loli.net/2018/01/28/5a6d7b398184c.jpg)

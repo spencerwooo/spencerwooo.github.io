@@ -4,9 +4,7 @@ date: 2018-05-07 13:29:20
 subtitle: Dumb ways to code 3.
 top_img: https://i.loli.net/2018/05/07/5aefe7700bbc6.jpg
 tags:
-    - code
-    - sexy-moves
-    - github
+  - python
 ---
 
 [【上一篇：一个有意思的 Python 训练项目集 | 二周目】](https://spencerwoo.com/2018/04/28/PythonTwo/)

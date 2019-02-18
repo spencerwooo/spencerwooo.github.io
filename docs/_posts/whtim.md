@@ -4,12 +4,10 @@ date: 2018-08-11 20:05:08
 subtitle: wht.im - The cutting edge of simplicity.
 top_img: "https://i.loli.net/2018/08/11/5b6ef58f31588.png"
 tags:
-   - sexy-moves
-   - tutorial
-   - sspai
+  - sspai
 ---
 
-> 大约在 2000 年前后，由于互联网中的[网站](https://zh.wikipedia.org/wiki/%E7%BD%91%E7%AB%99)数量迅速增加，网站的 [URL](https://zh.wikipedia.org/wiki/URL) 不便于记忆，所以产生了一类将[互联网](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91)中的网站地址分类收集在一起的网站，此类网站被称为「网址导航」网站。—— [Wikipedia](https://zh.wikipedia.org/wiki/%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA) 
+> 大约在 2000 年前后，由于互联网中的[网站](https://zh.wikipedia.org/wiki/%E7%BD%91%E7%AB%99)数量迅速增加，网站的 [URL](https://zh.wikipedia.org/wiki/URL) 不便于记忆，所以产生了一类将[互联网](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91)中的网站地址分类收集在一起的网站，此类网站被称为「网址导航」网站。—— [Wikipedia](https://zh.wikipedia.org/wiki/%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA)
 
 **网址导航 - DirectIndustry Web Guide** 是一个出现在互联网萌芽期的事物。虽然从诞生之初，网址导航就被设计为一个方便我们浏览网站、查看与记录信息的地方，但是如今这类在国内被 2345 导航、hao123、360 导航等等毒瘤网站所「代言」的事物早已失去了曾经的意义。敛财、垃圾广告的泛滥、恶意装机与篡改用户主页等等毒瘤行为让这些「网址导航」变成了互联网上病毒、垃圾的代名词。
 
@@ -83,7 +81,7 @@ tags:
 
 作者维护了一个 GitHub 仓库并接受同学自由的添加自己学校的重点网站，比如教务处、网络教室、图书馆和邮箱系统等等。当然由于万花筒也是刚刚部署并发布正式版本，处于初期阶段，目前仅仅收录了清华大学、北京理工大学、澳门大学和北方工业大学的相关链接。
 
-> 由于目前收录的校园导航链接较少，可在 [GitHub](https://github.com/wht-im) 中提交你的学校常用链接。 
+> 由于目前收录的校园导航链接较少，可在 [GitHub](https://github.com/wht-im) 中提交你的学校常用链接。
 
 #### 多种素色主题的选择
 

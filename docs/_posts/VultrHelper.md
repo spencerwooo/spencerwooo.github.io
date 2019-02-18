@@ -4,10 +4,7 @@ date: 2018-06-28 16:12:05
 subtitle: A light weight widget on JSBox for checking your server status.
 top_img: "https://source.unsplash.com/89xuP-XmyrA/800x600"
 tags:
-   - sexy-moves
-   - tutorial
-   - code
-   - sspai
+  - github
 ---
 
 ![](https://i.loli.net/2018/06/25/5b30d07d03b86.png)

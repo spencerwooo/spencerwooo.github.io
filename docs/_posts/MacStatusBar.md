@@ -4,9 +4,7 @@ date: 2018-05-29 15:42:50
 subtitle: 一点微小的工作
 top_img: https://source.unsplash.com/1NTFSnV-KLs/1600x900
 tags:
-    - sexy-moves
-    - github
-    - sspai
+  - sspai
 ---
 
 开源的 FreeBSD 成就了今天的 macOS，但是今天的 macOS 却因为闭源而失去了很多可定制化的地方。在 Linux 下动动编辑器改改代码就可以实现所谓的 UI 魔改，在如今的 macOS 下确实难上加难。当然为了统一设计风格而这一做的苹果公司我们还是可以理解。不过通过一些曲线救国的方式，我们的确能在某种程度上对 macOS 进行个性化的自定义。今天的菜单栏定制就是我们个性化 macOS 的第一步。

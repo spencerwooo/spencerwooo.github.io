@@ -5,7 +5,6 @@ subtitle:  A world with no ADs.
 top_img: "https://source.unsplash.com/qhixFFO8EWQ/1600x900"
 categories: "碎碎念"
 tags:
-	- sexy-moves
 	- fragments
 ---
 
@@ -63,7 +62,7 @@ tags:
 
 等等等...
 
-Heart felt love. 
+Heart felt love.
 
 我千里迢迢赶到三里屯去参加「不知道诊所」。
 
@@ -71,7 +70,7 @@ Heart felt love.
 
 我还在书包上别了一个「刘看山饲养员」。
 
-2017 年初我回答了我的第一个千赞答案：[参观秦皇岛「中国最孤独的图书馆」是怎样的体验?](https://www.zhihu.com/question/30302242/answer/149936799) 
+2017 年初我回答了我的第一个千赞答案：[参观秦皇岛「中国最孤独的图书馆」是怎样的体验?](https://www.zhihu.com/question/30302242/answer/149936799)
 
 激动得不能自已。
 

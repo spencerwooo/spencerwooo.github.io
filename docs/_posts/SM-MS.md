@@ -4,9 +4,7 @@ subtitle: 一名优秀的图床的艺术之旅。
 date: 2018-01-28 16:25:32
 top_img: "https://i.loli.net/2018/01/28/5a6dbdff9ad3f.jpg"
 tags:
-	- code
-	- mac
-	- sexy-moves
+	- picbed
 ---
 
 > 曾踏月而来

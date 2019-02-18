@@ -4,10 +4,7 @@ date: 2019-02-13 20:36:51
 top_img: https://i.loli.net/2019/02/17/5c695c54511bc.png
 categories: 教程向
 tags:
-  - tutorial
   - sspai
-  - windows
-  - powershell
 ---
 
 **终端**，是用户与操作系统进行交互的最原始的输入输出环境，也是执行一些高级系统操作的必要工具。而 Windows 的终端「小黑框」，一直给大家一种「难看难用」的印象。接下来，我将介绍一些小方法，对 Windows 的终端环境改造，让其使用体验比肩 macOS 和 Linux 的终端。

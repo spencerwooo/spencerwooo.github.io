@@ -4,9 +4,7 @@ date: 2018-11-22 19:45:39
 top_img: 'https://i.loli.net/2018/11/22/5bf69f8fb908f.jpg'
 categories: '教程向'
 tags:
-    - Linux
-    - tutorial
-    - sexy-moves
+  - sspai
 ---
 
 > 在少数派上阅读本文：[看不惯那糟糕、老旧的桌面客户端？试试直接让网页版的应用做你的桌面 App](https://sspai.com/post/50250)

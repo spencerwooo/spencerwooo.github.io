@@ -22,7 +22,7 @@ script:
   # - hexo algolia
   - yarn run build
   #  Add CNAME record 'spencerwoo.com' after each build
-  - echo "spencerwoo.com" > public/CNAME
+  - echo "spencerwoo.com" > dist/CNAME
 
 deploy:
   provider: pages

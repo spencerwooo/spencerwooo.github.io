@@ -6,11 +6,11 @@ module.exports = {
   head: [
     ['link', {
       rel: 'icon',
-      href: '/apple-touch-icon.png'
+      href: '/assets/apple-touch-icon.png'
     }],
     ['link', {
       rel: 'shortcut icon',
-      href: '/favicon.ico'
+      href: '/assets/favicon.ico'
     }],
     ['link', {
       rel: 'stylesheet',
@@ -27,7 +27,7 @@ module.exports = {
   themeConfig: {
     personalInfo: {
       nickname: 'Spencer Woo',
-      description: '',
+      description: '冰阔落',
       email: 'spencerwoo98@gmail.com',
       location: 'Beijing, China',
       organization: 'Beijing Institute of Technology',

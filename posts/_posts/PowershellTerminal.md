@@ -7,6 +7,8 @@ tags:
   - sspai
 ---
 
+> 在少数派上阅读本文：[告别 Windows 终端的难看难用，从改造 PowerShell 的外观开始](https://sspai.com/post/52868)
+
 **终端**，是用户与操作系统进行交互的最原始的输入输出环境，也是执行一些高级系统操作的必要工具。而 Windows 的终端「小黑框」，一直给大家一种「难看难用」的印象。接下来，我将介绍一些小方法，对 Windows 的终端环境改造，让其使用体验比肩 macOS 和 Linux 的终端。
 
 ## Console、Terminal 和 Shell 的区别

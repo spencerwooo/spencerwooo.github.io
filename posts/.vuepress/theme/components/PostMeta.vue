@@ -1,6 +1,6 @@
 <template>
   <section class="post-meta main-div">
-    <section class="post-date clearfix">
+    <!-- <section class="post-date clearfix">
       <span class="create-date">
         发布时间：{{ $page.createdAt }}
       </span>
@@ -11,7 +11,7 @@
       >
         最后修改：{{ $page.updatedAt }}
       </span>
-    </section>
+    </section> -->
 
     <section class="post-links">
       <RouterLink
@@ -59,13 +59,13 @@ export default {
 @require '~@theme/styles/variables'
 
 .post-meta
-  .post-date
-    color lighten($grayTextColor, 50%)
-    margin-bottom 1rem
-    .create-date
-      float left
-    .update-date
-      float right
+  // .post-date
+  //   color lighten($grayTextColor, 50%)
+  //   margin-bottom 1rem
+  //   .create-date
+  //     float left
+  //   .update-date
+  //     float right
   .post-links
     .post-link
       display block

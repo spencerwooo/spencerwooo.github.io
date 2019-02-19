@@ -1,5 +1,8 @@
 <template>
   <article class="post">
+
+    <PrePostMeta />
+
     <Content
       :key="$page.path"
       class="post-content"
@@ -22,12 +25,14 @@
 
 <script>
 import PostMeta from '../PostMeta.vue'
+import PrePostMeta from '../PrePostMeta.vue'
 
 export default {
   name: 'Post',
 
   components: {
-    PostMeta
+    PostMeta,
+    PrePostMeta
   },
 
   computed: {

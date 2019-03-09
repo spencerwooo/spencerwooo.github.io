@@ -32,7 +32,7 @@ module.exports = {
       location: 'Beijing, China',
       organization: 'Beijing Institute of Technology',
 
-      avatar: 'https://i.loli.net/2018/07/17/5b4db9b098c40.jpg',
+      avatar: 'https://ws4.sinaimg.cn/large/e264e10ely1g0we0ujx11j20ut0utta1.jpg',
 
       sns: {
         github: {

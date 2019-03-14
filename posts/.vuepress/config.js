@@ -79,6 +79,11 @@ module.exports = {
       exact: false
     },
     {
+      text: 'Friends',
+      link: '/friends/',
+      exact: false
+    },
+    {
       text: 'Github',
       link: 'https://github.com/spencerwooo'
     }

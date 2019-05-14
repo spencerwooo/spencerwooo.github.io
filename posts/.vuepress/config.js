@@ -32,7 +32,7 @@ module.exports = {
       location: 'Beijing, China',
       organization: 'Beijing Institute of Technology',
 
-      avatar: 'https://ws4.sinaimg.cn/large/e264e10ely1g0we0ujx11j20ut0utta1.jpg',
+      avatar: 'https://i.loli.net/2019/05/14/5cda32ed2428f83754.jpg',
 
       sns: {
         github: {
@@ -61,7 +61,7 @@ module.exports = {
     },
 
     lastUpdated: true,
-    headerColor: '#C492B1',
+    headerColor: '#ac1b2e',
 
     nav: [{
       text: 'Home',

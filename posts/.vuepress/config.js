@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   title: 'Spencer Woo',
 
@@ -24,7 +26,11 @@ module.exports = {
     }
   },
 
+  theme: path.resolve(__dirname, '../../theme'),
+
   themeConfig: {
+    lang: require(path.resolve(__dirname, '../../theme/langs/zh-CN')),
+
     personalInfo: {
       nickname: 'Spencer Woo',
       description: '冰阔落',
@@ -54,14 +60,20 @@ module.exports = {
       }
     },
 
-    headerBackground: {
+    header: {
       // url: '/assets/img/bg.jpg',
-
-      useGeo: true
+      background: {
+        useGeo: true
+      },
+      showTitle: true
     },
 
     lastUpdated: true,
     headerColor: '#ac1b2e',
+
+    pagination: {
+      perPage: 10
+    },
 
     nav: [{
       text: 'Home',
@@ -98,7 +110,8 @@ module.exports = {
       owner: 'spencerwooo',
       repo: 'spencerwooo.github.io',
       clientId: 'f656ebf81043361f059e',
-      clientSecret: '21247be6b66180d3c85fbf19c31f17ae92abd714'
+      clientSecret: '21247be6b66180d3c85fbf19c31f17ae92abd714',
+      autoCreateIssue: false
     }
   },
 

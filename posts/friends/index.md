@@ -13,7 +13,6 @@ title: "(｀･ω･´) Spencer 和他的朋友们 (´･ω･｀)"
 - **[Vanilla](https://sspai.com/user/666443/posts)**：少数派首页编辑老师，负责我在少数派的文章
 - **[Minja](https://sspai.com/user/731139/posts)**：少数派 Power+ 编辑老师，负责我在付费栏目的投稿
 - **[SamWanng](https://samwanng.com)**：少数派运营老师，山姆王哥
-- **[ChungZH](https://chungzh.cn)**：一个小朋友，应该很闲吧
 
 # Websites
 

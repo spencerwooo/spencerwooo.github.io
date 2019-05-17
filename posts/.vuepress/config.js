@@ -106,12 +106,15 @@ module.exports = {
       icp: '<a href="https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe" rel="noopener" target="_blank">圣多美和普林西比民主共和国</a> ICP 备巴拉拉小魔仙号'
     },
 
+    // comments: false
+
     comments: {
+      platform: 'github',
       owner: 'spencerwooo',
       repo: 'spencerwooo.github.io',
       clientId: 'f656ebf81043361f059e',
       clientSecret: '21247be6b66180d3c85fbf19c31f17ae92abd714',
-      autoCreateIssue: false
+      autoCreateIssue: process.env.NODE_ENV !== 'development'
     }
   },
 

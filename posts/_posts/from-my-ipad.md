@@ -21,7 +21,7 @@ tags:
 
 - 利用 GitHub 创建一个私有仓库
 - 利用 Working Copy 将这个文档库克隆（Clone）至 iPad 上面
-- 在 Working Copy 中更新你的 Markdown 文档
+- 在 Working Copy 中更新仓库中的 Markdown 文档
 - 写好之后直接利用 Working Copy 的内置 Git 将更新推送至 GitHub 即可
 - 同时由于我的博客利用 Travis CI 自动构建，所以实际上不需要任何多余配置即可将网页端的内容更新
 
@@ -31,7 +31,7 @@ tags:
 
 ## 图片问题
 
-之前由于我的博客以及少数派文章，包括他们的配图，都是通过 OneDrive 进行同步的（因为我是 Office 365 会员，有 1T 的 OneDrive 空间不用白不用嘛）。
+之前由于我的博客以及少数派文章，包括他们的配图，都是通过 OneDrive 进行同步的（因为我是 Office 365 会员，有 1T 的 OneDrive 空间不用白不用嘛）。但是 Working Copy 和 MWeb 都不支持直接打开 OneDrive 里面的 Markdown 并显示本地图片。所以对于图片来说，如果需要上传图床，那么还是需要下面的配置：
 
 - 利用「捷径」或者 JSBox 将图片批量上传至图床，并通过图片外链的方式引用。
 - 利用相对路径进行引用
@@ -41,6 +41,8 @@ tags:
 如果是博客，可以使用 Travis CI 在每次 GitHub commit 之后自动进行构建，比如在 Travis 那里利用 Linux 服务器自动执行脚本将博客内容编译为静态文章，之后自动推送至 GitHub Pages 分支即可。
 
 ## Markdown 文章写作
+
+![](https://i.loli.net/2019/06/09/5cfcdcce66bcf69247.png)
 
 Working Copy 内部的 Markdown 写作体验并不是那么好。没有实时预览也没有很多的编辑、预览主题。但是由于 Working Copy 可以将 Markdown 文件导入 MWeb，在 MWeb 中编写好文章之后再回到 Working Copy，文章是同步更新的。MWeb 这种工作方式下，其高级版本都并不是很需要订阅，可行。👍
 

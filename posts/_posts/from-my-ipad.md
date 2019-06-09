@@ -42,7 +42,7 @@ tags:
 
 ## Markdown 文章写作
 
-![](https://i.loli.net/2019/06/09/5cfcdcce66bcf69247.png)
+![](https://i.loli.net/2019/06/09/5cfcdf727342016500.jpeg)
 
 Working Copy 内部的 Markdown 写作体验并不是那么好。没有实时预览也没有很多的编辑、预览主题。但是由于 Working Copy 可以将 Markdown 文件导入 MWeb，在 MWeb 中编写好文章之后再回到 Working Copy，文章是同步更新的。MWeb 这种工作方式下，其高级版本都并不是很需要订阅，可行。👍
 

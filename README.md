@@ -1,11 +1,14 @@
-# Spencer's Blog
+# Spencer's Blog Archive
 
-- Powered by Hexo.
-- Themed by hexo-theme-melody.
-- Hosted on GitHub pages.
-- CI by Travis.
+Latest post can be found at: [Spencer's Blog](https://blog.spencerwoo.com/)
 
-# Build Instructions
+<details>
+
+<summary>
+Archive Build Instructions
+</summary>
+
+## Build Instructions
 
 ``` bash
 # Install Node.js v10.x, using Ubuntu
@@ -26,3 +29,5 @@ $ sudo yarn install
 $ hexo generate
 $ hexo server
 ```
+
+</details>

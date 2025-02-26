@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>spencer's docs deck</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -15,11 +19,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,600,600i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
-    <link rel="manifest" href="/assets/site.webmanifest" />
+    <script src="theme.js"></script>
   </head>
+
   <body>
     <div class="container">
       <header class>
@@ -32,7 +34,7 @@
       </header>
 
       <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search projects..." />
+        <input type="text" id="searchInput" placeholder="search projects..." />
         <i class="fas fa-search search-icon"></i>
       </div>
 
@@ -40,9 +42,19 @@
         <!-- Projects will be inserted here by JavaScript -->
       </main>
     </div>
+
     <footer>
-      <p>copyright © 2020 - <span id="currentYear"></span> @ spencer woo</p>
+      <div class="footer-content">
+        <p>copyright © 2020 - <span id="currentYear"></span> @ spencer woo</p>
+        <div class="theme-switch-container">
+          <label class="theme-switch" for="theme-toggle">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

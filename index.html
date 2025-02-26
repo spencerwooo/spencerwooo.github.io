@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spencer's docs deck</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,600,600i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <header class>
+        <img id="icon" src="assets/icon.png" alt="docs deck" />
+        <h1>docs deck</h1>
+        <p>
+          deck for docs — projects brought to you by
+          <a href="https://spencerwoo.com" target="_blank" rel="noopener noreferrer">@spencerwoo</a>
+        </p>
+      </header>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search projects..." />
+        <i class="fas fa-search search-icon"></i>
+      </div>
+
+      <main id="projectsContainer">
+        <!-- Projects will be inserted here by JavaScript -->
+      </main>
+    </div>
+    <footer>
+      <p>copyright © 2020 - <span id="currentYear"></span> @ spencer woo</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
